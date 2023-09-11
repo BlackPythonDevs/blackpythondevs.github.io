@@ -13,17 +13,7 @@
 </head>
 
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="{{ '/' | relative_url }}"><i class="fa fa-home fa-fw"></i> Home</a></li>
-                <li><a href="{{ '/about' | relative_url }}"><i class="fa fa-info-circle fa-fw"></i> About Us</a></li>
-                <li><a href="{{ '/events' | relative_url }}"><i class="fa fa-calendar fa-fw"></i> Events</a></li>
-                <li><a href="{{ '/conferences' | relative_url }}"><i class="fa fa-microphone fa-fw"></i> Conferences</a></li>
-                <li><a href="{{ '/community' | relative_url }}"><i class="fa fa-users fa-fw"></i> Community</a></li>
-            </ul>
-        </nav>
-    </header>
+    {% include header.html %}
     <main>
         {{ content }}
     </main>
