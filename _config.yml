@@ -1,0 +1,34 @@
+# Site settings
+title: Black Python Developers Community
+description: >
+  blackpythondevs.com
+
+# baseurl: / # the subpath of your site, e.g. /blog/
+# url: https://blackpythondevs.com # the base hostname & protocol for your site
+
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - github-pages
+  - jemoji
+  - jekyll-feed
+
+
+exclude:
+  - README.md
+  - Gemfile*
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - .idea/
+  - .gitignore
+  - resources
+  - script
+  - test
+  - vendor
+
+# timezone: America/Toronto
