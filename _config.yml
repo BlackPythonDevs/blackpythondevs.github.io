@@ -6,6 +6,29 @@ description: >
 # baseurl: / # the subpath of your site, e.g. /blog/
 # url: https://blackpythondevs.com # the base hostname & protocol for your site
 
+# Favicon
+# favicon: images/favicon.png
+
+# Google Analytics id, e.g. "UA-NNNNNNNN-N"
+google_analytics: ""
+
+# Site navigation - each item must have a title, a url and font awesome class.
+navigation:
+  - text: Home
+    url: /
+    fa: fa fa-home fa-fw
+  - text: About Us
+    url: /about/
+    fa: fa fa-info-circle fa-fw
+  - text: Events
+    url: /events/
+    fa: fa fa-calendar fa-fw
+  - text: Conferences
+    url: /conferences/
+    fa: fa fa-microphone fa-fw
+  - text: Community
+    url: /community/
+    fa: fa fa-users fa-fw
 
 # Build settings
 markdown: kramdown
