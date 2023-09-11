@@ -18,16 +18,16 @@ navigation:
     url: /
     fa: fa fa-home fa-fw
   - text: About Us
-    url: /about/
+    url: about.html
     fa: fa fa-info-circle fa-fw
   - text: Events
-    url: /events/
+    url: events.html
     fa: fa fa-calendar fa-fw
   - text: Conferences
-    url: /conferences/
+    url: conferences.html
     fa: fa fa-microphone fa-fw
   - text: Community
-    url: /community/
+    url: community.html
     fa: fa fa-users fa-fw
 
 # Build settings
