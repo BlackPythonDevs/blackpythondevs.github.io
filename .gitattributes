@@ -1,0 +1,16 @@
+* text=auto
+
+* .md text
+* .html text
+* .css text
+* .js text
+* .yml text
+* .xml text
+
+* .bat eol=crlf
+
+* .sh eol=lf
+
+* .png binary
+* .jpg binary
+* .gif binary

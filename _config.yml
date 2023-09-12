@@ -52,4 +52,6 @@ exclude:
   - script
   - test
   - vendor
+  - venv
+  - .venv
 # timezone: America/Toronto
