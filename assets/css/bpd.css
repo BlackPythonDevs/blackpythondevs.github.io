@@ -237,7 +237,9 @@ input::-moz-focus-inner {
   text-decoration: none;
 }
 
-.menu-item a:hover {
+.menu-item a:hover,
+.menu-item.nav-current a:link,
+.menu-item.nav-current a:visited {
   color: #2d72d9;
 }
 
