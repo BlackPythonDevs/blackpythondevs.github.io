@@ -39,7 +39,6 @@ plugins:
   - jemoji
   - jekyll-feed
 
-
 exclude:
   - README.md
   - Gemfile*
@@ -53,5 +52,4 @@ exclude:
   - script
   - test
   - vendor
-
 # timezone: America/Toronto
