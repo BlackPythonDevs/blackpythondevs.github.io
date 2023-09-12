@@ -35,14 +35,6 @@ select {
 }
 
 button,
-html,
-input,
-select,
-textarea {
-    font-family: Lato, "Helvetica Neue", Helvetica, sans-serif;
-}
-
-button,
 html input[type=button],
 input[type=reset],
 input[type=submit] {
@@ -261,8 +253,8 @@ input::-moz-focus-inner {
     #menu-close {
         display: block;
         position: absolute;
-        right: 45px;
-        top: 3.33333rem
+        right: 30px;
+        top: 2.2rem
     }
 
     .site-navigation {
@@ -332,8 +324,8 @@ input::-moz-focus-inner {
 
 @media only screen and (max-width: 600px) {
     #menu-close {
-        right: 35px;
-        top: 2.8125rem
+        right: 30px;
+        top: 2.20rem
     }
 
     .menu {
