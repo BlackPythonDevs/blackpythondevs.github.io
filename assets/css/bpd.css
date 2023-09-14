@@ -338,3 +338,11 @@ input::-moz-focus-inner {
     padding: 6.375rem 35px 2.5rem;
   }
 }
+
+footer {
+  border-top: 1px solid #d7d7d7;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin-top: 2.5em;
+}

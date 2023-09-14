@@ -39,9 +39,7 @@
   <body>
     {% include header.html %}
     <main>{{ content }}</main>
-    <footer>
-      <p>&copy; {{ 'now' | date: "%Y" }} {{ site.title }}</p>
-    </footer>
+    {% include footer.html %}
     <script src="{{ '/assets/js/bpd.js' }}"></script>
   </body>
 </html>
