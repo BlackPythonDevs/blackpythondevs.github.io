@@ -1,0 +1,57 @@
+# Site settings
+title: Black Python Developers Community
+description: >
+  blackpythondevs.com
+
+# baseurl: / # the subpath of your site, e.g. /blog/
+# url: https://blackpythondevs.com # the base hostname & protocol for your site
+
+# Favicon
+# favicon: images/favicon.png
+
+# Google Analytics id, e.g. "UA-NNNNNNNN-N"
+google_analytics: ""
+
+# Site navigation - each item must have a title, a url and font awesome class.
+navigation:
+  - text: Home
+    url: /
+    fa: fa fa-home fa-fw
+  - text: About Us
+    url: /about.html
+    fa: fa fa-info-circle fa-fw
+  - text: Events
+    url: /events.html
+    fa: fa fa-calendar fa-fw
+  - text: Conferences
+    url: /conferences.html
+    fa: fa fa-microphone fa-fw
+  - text: Community
+    url: /community.html
+    fa: fa fa-users fa-fw
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+plugins:
+  - github-pages
+  - jemoji
+  - jekyll-feed
+
+exclude:
+  - README.md
+  - Gemfile*
+  - node_modules
+  - package.json
+  - package-lock.json
+  - Rakefile
+  - .idea/
+  - .gitignore
+  - resources
+  - script
+  - test
+  - vendor
+  - venv
+  - .venv
+# timezone: America/Toronto
