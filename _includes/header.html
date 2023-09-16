@@ -1,11 +1,11 @@
-<header class="site-header">
+<header class="site-header" role="banner">
   <h1 class="site-title"><a class="logo-text" href="/">BPDev</a></h1>
   <nav class="site-navigation">
     <div class="site-navigation-wrap">
-      <ul class="menu">
+      <ul class="menu" role="menu">
         {% for item in site.navigation %} {% assign current = nil %} {% if
         page.url == item.url %} {% assign current = 'nav-current' %} {% endif %}
-        <li class="menu-item {{ current }}">
+        <li class="menu-item {{ current }}" role="menuitem">
           <a class="{{ current }}" href="{{ item.url }}"
             ><i class="{{ item.fa }}"></i>&nbsp;{{ item.text }}</a
           >
