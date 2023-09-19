@@ -18,16 +18,16 @@ navigation:
     url: /
     fa: fa fa-home fa-fw
   - text: About Us
-    url: /about.html
+    url: /about/
     fa: fa fa-info-circle fa-fw
   - text: Events
-    url: /events.html
+    url: /events/
     fa: fa fa-calendar fa-fw
   - text: Conferences
-    url: /conferences.html
+    url: /conferences/
     fa: fa fa-microphone fa-fw
   - text: Community
-    url: /community.html
+    url: /community/
     fa: fa fa-users fa-fw
 
 # Build settings
@@ -38,8 +38,14 @@ plugins:
   - github-pages
   - jemoji
   - jekyll-feed
+  # - jekyll-seo-tag
+  # - jekyll-sitemap
 
 exclude:
+  - bin
+  - CNAME
+  - CODE_OF_CONDUCT.md
+  - CONTRIBUTING.md
   - README.md
   - Gemfile*
   - node_modules
@@ -55,3 +61,21 @@ exclude:
   - venv
   - .venv
 # timezone: America/Toronto
+
+permalink: "/:path/"
+
+collections:
+  articles:
+    output: true
+    permalink: "/:path/"
+
+defaults:
+  # - scope:
+  #     path: ""
+  #   values:
+  #     image: /assets/images/cards/default.png
+  - scope:
+      path: ""
+      type: articles
+    values:
+      layout: article

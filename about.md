@@ -1,5 +1,6 @@
 ---
 layout: default
+lang: en
 title: About Us
 ---
 

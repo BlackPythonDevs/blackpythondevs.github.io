@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="{{ page.lang }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -30,16 +30,38 @@
       href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}"
     />
     <link
-      rel="shortcut icon"
+      rel="icon"
       href="https://github.com/BlackPythonDevs.png"
       type="image/png"
     />
+    {% if page.lang and page.untranslated != true and site.data.locales.size > 1
+    %} {% assign locales = site.data.locales | sort %} {% for locale in locales
+    %} {% assign lang = locale[0] %} {% assign page_lang_slash = page.lang |
+    append: '/' | prepend: '/' %} {% assign default_url = page.url | replace:
+    page_lang_slash, '/' %} {% if lang == "en" %}
+    <link
+      rel="alternate"
+      hreflang="en"
+      href="{{ site.url }}{{ default_url }}"
+    />
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="{{ site.url }}{{ default_url }}"
+    />
+    {% else %}
+    <link
+      rel="alternate"
+      hreflang="{{ lang }}"
+      href="{{ site.url }}/{{ lang }}{{ default_url }}"
+    />
+    {% endif %} {% endfor %} {% endif %}
   </head>
 
   <body>
     {% include header.html %}
     <main role="main">{{ content }}</main>
     {% include footer.html %}
-    <script src="{{ '/assets/js/bpd.js' }}"></script>
+    <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
   </body>
 </html>
