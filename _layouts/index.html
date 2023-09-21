@@ -2,7 +2,6 @@
 layout: default
 ---
 
-{% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {%
-assign header = page.title %} {% else %} {% assign header = site.title %} {%
-endif %}
+{% assign t = site.data.locales[page.lang][page.lang] %}
+{% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
 <h1>{{ t.index.lead }}</h1>

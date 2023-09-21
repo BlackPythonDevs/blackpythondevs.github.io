@@ -1,2 +1,5 @@
 assets/js/jquery.min.js
 assets/js/index.js
+_layouts/default.html
+_layouts/index.html
+_includes/header.html

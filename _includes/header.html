@@ -4,23 +4,25 @@
   <nav class="site-navigation">
     <div class="site-navigation-wrap">
       <ul class="menu" role="menu">
-        {% for item in site.navigation %} {% assign current = nil %} {% if
-        page.url == item.url %} {% assign current = 'nav-current' %} {% endif %}
+        {% for item in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url == item.url %}
+        {% assign current = 'nav-current' %}
+        {% endif %}
         <li class="menu-item {{ current }}" role="menuitem">
-          <a class="{{ current }}" href="{{ item.url }}">
-            <i class="{{ item.fa }}"></i>&nbsp;{{ t.nav[forloop.index0] }}
-          </a>
+          <a class="{{ current }}" href="{{ item.url }}"> <i class="{{ item.fa }}"></i>&nbsp;{{ t.nav[forloop.index0] }} </a>
         </li>
-        {% endfor %} {% if page.lang and site.data.locales.size > 1 %}
+        {% endfor %}
+        {% if page.lang and site.data.locales.size > 1 %}
         <li class="menu-item" role="menuitem">
           <div class="">
             <select id="language" class="form-select">
-              {% assign locales = site.data.locales | sort %} {% for locale in
-              locales %} {% assign lang = locale[0] %} {% assign locale_name =
-              locale[1][lang].locale_name %} {% if page.lang == lang %}
-              <option value="{{ lang }}" selected="selected">
-                {{ locale_name }}
-              </option>
+              {% assign locales = site.data.locales | sort %}
+              {% for locale in locales %}
+              {% assign lang = locale[0] %}
+              {% assign locale_name = locale[1][lang].locale_name %}
+              {% if page.lang == lang %}
+              <option value="{{ lang }}" selected="selected">{{ locale_name }}</option>
               {% else %}
               <option value="{{ lang }}">{{ locale_name }}</option>
               {% endif %} {% endfor %}
