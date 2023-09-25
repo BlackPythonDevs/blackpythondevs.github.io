@@ -10,13 +10,14 @@
         {% assign current = 'nav-current' %}
         {% endif %}
         <li class="menu-item {{ current }}" role="menuitem">
-          <a class="{{ current }}" href="{{ item.url }}"> <i class="{{ item.fa }}"></i>&nbsp;{{ t.nav[forloop.index0] }} </a>
+          <a class="{{ current }}" href="{{ item.url }}"> <i class="{{ item.fa }}" aria-hidden="true"></i>&nbsp;{{ t.nav[forloop.index0] }} </a>
         </li>
         {% endfor %}
         {% if page.lang and site.data.locales.size > 1 %}
         <li class="menu-item" role="menuitem">
           <div class="">
-            <select id="language" class="form-select">
+            <i class="fa fa-language" aria-hidden="true"></i>
+            <select id="language" class="form-select" aria-label="Language">
               {% assign locales = site.data.locales | sort %}
               {% for locale in locales %}
               {% assign lang = locale[0] %}
