@@ -273,7 +273,8 @@ input::-moz-focus-inner {
     border: 0;
   }
 
-  .menu-item a {
+  .menu-item a,
+  .menu-item div {
     display: block;
     padding: 0.5rem 0;
   }
