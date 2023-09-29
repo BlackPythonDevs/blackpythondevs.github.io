@@ -99,7 +99,7 @@ input::-moz-focus-inner {
 }
 
 .menu-item a {
-  color: #9ba6ad;
+  color: #70777d;
   display: inline-block;
   font-size: 0.88889rem;
   font-weight: 700;
@@ -107,12 +107,14 @@ input::-moz-focus-inner {
   text-decoration: none;
 }
 
-.menu-item a:hover {
-  color: #2d72d9;
-}
-
 .menu-toggle {
   display: none;
+}
+
+.menu-item a:hover,
+.menu-item.nav-current a:link,
+.menu-item.nav-current a:visited {
+  color: #2d72d9;
 }
 
 .icon-menu {
@@ -217,36 +219,6 @@ input::-moz-focus-inner {
   margin-left: auto;
 }
 
-.menu {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu-item {
-  display: inline-block;
-  margin: 0 0 0 15px;
-}
-
-.menu-item a {
-  color: #9ba6ad;
-  display: inline-block;
-  font-size: 0.88889rem;
-  font-weight: 700;
-  padding: 5px 0;
-  text-decoration: none;
-}
-
-.menu-item a:hover,
-.menu-item.nav-current a:link,
-.menu-item.nav-current a:visited {
-  color: #2d72d9;
-}
-
-.menu-toggle {
-  display: none;
-}
-
 @media only screen and (max-width: 800px) {
   #menu-open {
     display: block;
@@ -301,7 +273,8 @@ input::-moz-focus-inner {
     border: 0;
   }
 
-  .menu-item a {
+  .menu-item a,
+  .menu-item div {
     display: block;
     padding: 0.5rem 0;
   }

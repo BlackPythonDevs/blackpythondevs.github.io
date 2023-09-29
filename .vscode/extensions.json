@@ -1,0 +1,9 @@
+{
+  "recommendations": [
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "redhat.vscode-yaml",
+    "github.vscode-github-actions"
+    // "deque-systems.vscode-axe-linter"
+  ]
+}

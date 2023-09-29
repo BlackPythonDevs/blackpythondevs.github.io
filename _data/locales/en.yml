@@ -1,0 +1,22 @@
+en:
+  locale_name: English
+  nav:
+    - Home
+    - About Us
+    - Events
+    - Conferences
+    - Community
+  index:
+    lead: Welcome to Black Python Developers Community.
+  article:
+    table_of_contents: Table of Contents
+  footer:
+    contribute:
+      heading: Contribute
+      description: Want to make a suggestion? This content is open source. Help us improve it.
+      button: Contribute
+    subscribe:
+      heading: Stay in touch
+      description: Be the first to hear about BPDevs's latest open source tips and resources.
+      label: Email Address
+      button: Subscribe

@@ -1,16 +1,37 @@
-<header class="site-header">
-  <h1 class="site-title"><a class="logo-text" href="/">BPDev</a></h1>
+{% assign t = site.data.locales[page.lang][page.lang] %}
+<header class="site-header" role="banner">
+  <h1 class="site-title"><a class="logo-text" href="/index.html">BPDev</a></h1>
   <nav class="site-navigation">
     <div class="site-navigation-wrap">
-      <ul class="menu">
-        {% for item in site.navigation %} {% assign current = nil %} {% if
-        page.url == item.url %} {% assign current = 'nav-current' %} {% endif %}
-        <li class="menu-item {{ current }}">
-          <a class="{{ current }}" href="{{ item.url }}"
-            ><i class="{{ item.fa }}"></i>&nbsp;{{ item.text }}</a
-          >
+      <ul class="menu" role="menu">
+        {% for item in site.navigation %}
+        {% assign current = nil %}
+        {% if page.url == item.url %}
+        {% assign current = 'nav-current' %}
+        {% endif %}
+        <li class="menu-item {{ current }}" role="menuitem">
+          <a class="{{ current }}" href="{{ item.url }}"> <i class="{{ item.fa }}" aria-hidden="true"></i>&nbsp;{{ t.nav[forloop.index0] }} </a>
         </li>
         {% endfor %}
+        {% if page.lang and site.data.locales.size > 1 %}
+        <li class="menu-item" role="menuitem">
+          <div class="">
+            <i class="fa fa-language" aria-hidden="true"></i>
+            <select id="language" class="form-select" aria-label="Language">
+              {% assign locales = site.data.locales | sort %}
+              {% for locale in locales %}
+              {% assign lang = locale[0] %}
+              {% assign locale_name = locale[1][lang].locale_name %}
+              {% if page.lang == lang %}
+              <option value="{{ lang }}" selected="selected">{{ locale_name }}</option>
+              {% else %}
+              <option value="{{ lang }}">{{ locale_name }}</option>
+              {% endif %}
+              {% endfor %}
+            </select>
+          </div>
+        </li>
+        {% endif %}
       </ul>
       <!-- .menu -->
       <button id="menu-close" class="menu-toggle">

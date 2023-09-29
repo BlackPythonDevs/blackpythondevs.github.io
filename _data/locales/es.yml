@@ -1,0 +1,22 @@
+es:
+  locale_name: Español
+  nav:
+    - Inicio
+    - Acerca de
+    - Eventos
+    - Conferencias
+    - Comunidad
+  index:
+    lead: Bienvenidos a la Comunidad de desarrolladores de Black Python.
+  article:
+    table_of_contents: Tabla de contenidos
+  footer:
+    contribute:
+      heading: Contribuir
+      description: ¿Tienes alguna sugerencia? Este contenido es de código abierto. Ayúdanos a mejorarlo.
+      button: Contribuir
+    subscribe:
+      heading: Suscribirse para novedades
+      description: Sea el primero en enterarse de los últimos consejos y recursos de código abierto.
+      label: Dirección de correo
+      button: Suscribirse
