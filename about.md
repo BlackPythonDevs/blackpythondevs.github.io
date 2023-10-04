@@ -6,9 +6,10 @@ title: About Us
 
 # About Us
 
-
 ## What is Black Python Devs
+
 ---
+
 Black Python Devs is an [online-first](https://github.com/BlackPythonDevs/blackpythondevs.github.io/issues/9#why-online-first) community for python developers of all skill levels that identify as black.
 
 Our goal is to:
@@ -18,6 +19,7 @@ Our goal is to:
 3. Learn from those who are creating and organizing events and other groups with communities of black developers.
 
 ## Why online first
+
 ---
 
 We hope in the long run to create many in-person user groups and events, but we have to understand where we can make the largest impacts.
