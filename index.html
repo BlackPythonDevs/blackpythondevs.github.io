@@ -3,3 +3,6 @@ layout: index
 lang: en
 title: Home
 ---
+
+{% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
+<h1>{{ t.index.lead }}</h1>
