@@ -6,7 +6,7 @@ title: Sobre Nosotros
 
 ## ¿Qué es Black Python Devs?
 
-Black Python Devs es una comunidad [online-first](#why-online-first) para desarrolladores de Python de todos los niveles de habilidad que se identifican como negros.
+Black Python Devs es una comunidad [online-first](https://github.com/BlackPythonDevs/blackpythondevs.github.io/issues/9#why-online-first) para desarrolladores de Python de todos los niveles de habilidad que se identifican como negros.
 
 Nuestro objetivo es:
 
