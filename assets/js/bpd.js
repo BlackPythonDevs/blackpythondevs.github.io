@@ -18,12 +18,20 @@ if (menuToggle) {
 }
 
 function loadLanguage(lang) {
-  base_pathname = window.location.pathname.replace(/\/[a-z]+([_-][a-z]+)?\//, "/");
-  if (lang === "en") {
-    url = base_pathname;
-  } else {
-    url = "/" + lang + base_pathname;
+  let base_pathname = window.location.pathname;
+  let lang_path_regex = /^\/[a-z]+([_-][a-z]+)?\//;
+
+  // Check if the URL path is more than just /path/ and starts with a language code
+  let path_parts = base_pathname.split("/");
+  let isLongPath = path_parts.length > 3;
+  let startsWithLangCode = lang_path_regex.test(base_pathname);
+
+  if (isLongPath && startsWithLangCode) {
+    base_pathname = base_pathname.replace(lang_path_regex, "/");
   }
+
+  let url = lang !== "en" ? "/" + lang + base_pathname : base_pathname;
+
   window.location.assign(url);
 }
 

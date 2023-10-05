@@ -53,7 +53,10 @@ exclude:
   - package-lock.json
   - Rakefile
   - .idea/
+  - .gitattributes
   - .gitignore
+  - .prettierrc
+  - .prettierignore
   - resources
   - script
   - test
