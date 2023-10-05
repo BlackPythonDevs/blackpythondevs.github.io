@@ -1,4 +1,3 @@
-
 import pytest
 from playwright.sync_api import Page, expect
 
@@ -12,6 +11,7 @@ routes = [
     ("events.html"),
 ]
 
+
 @pytest.mark.parametrize("url", routes)
 def test_destination_options(
     page: Page,
@@ -21,6 +21,7 @@ def test_destination_options(
     # Create a destination
     page.goto(f"{live_server_url}/{url}")
     page.on("response", lambda response: expect(response.status).to_equal(200))
+
 
 @pytest.mark.parametrize("url", routes)
 def test_destination_(
@@ -32,16 +33,18 @@ def test_destination_(
     page.goto(f"{live_server_url}/{url}")
     page.on("response", lambda response: expect(response.status).to_equal(200))
 
+
 @pytest.mark.parametrize(
-        "title, url",(
-        ("Acerca de", '/es/about/'),
+    "title, url",
+    (
+        ("Acerca de", "/es/about/"),
         ("Inicio", "/es/"),
         ("Eventos", "/es/events/"),
         ("Comunidad", "/es/community/"),
         ("Conferencias", "/es/conferences/"),
-        )
+    ),
 )
-def test_headers_in_language(page: Page, title:str, url:str) -> None:
+def test_headers_in_language(page: Page, title: str, url: str) -> None:
     page.goto("https://blackpythondevs.github.io/")
     page.get_by_label("Language").select_option("es")
     page.get_by_role("link", name=title).click()

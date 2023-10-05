@@ -1,9 +1,12 @@
 name: Playwright Tests
+# https://devblogs.microsoft.com/python/announcing-playwright-for-python-reliable-end-to-end-testing-for-the-web/
+# https://github.com/marketplace/actions/run-playwright-tests
 
 on:
   push:
     branches:
       - gh-pages
+  workflow_dispatch:
 
 jobs:
   test:
@@ -17,10 +20,10 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install playwright pytest pytest-playwright
+          pip install -r requirements-dev.txt
           python -m playwright install --with-deps
-      - name: Sleep for 30 seconds
+      - name: Sleep for 45 seconds
         run: sleep 45s
         shell: bash
       - name: Run tests
-        run: python -m pytest
+        run: python -m pytest -v

@@ -3,5 +3,5 @@ _site
 venv
 .venv
 .jekyll-metadata
-*/__pycache__
+**/__pycache__
 .pytest_cache
