@@ -26,4 +26,4 @@ jobs:
         run: sleep 45s
         shell: bash
       - name: Run tests
-        run: python -m pytest -v
+        run: python -m pytest
