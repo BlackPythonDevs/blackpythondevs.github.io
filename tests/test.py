@@ -1,7 +1,7 @@
 import pytest
 from playwright.sync_api import Page, expect
 
-live_server_url = "https://blackpythondevs.github.io"
+live_server_url = "http://localhost:4000"
 
 routes = [
     ("about.html"),
@@ -33,11 +33,11 @@ def test_destination(
     ),
 )
 def test_headers_in_language(page: Page, title: str, url: str) -> None:
-    page.goto("https://blackpythondevs.github.io/")
+    page.goto(live_server_url)
     lang = page.evaluate("document.documentElement.lang")
     assert lang == "en"
     page.get_by_label("Language").select_option("es")
     page.get_by_role("link", name=title).click()
-    expect(page).to_have_url(f"https://blackpythondevs.github.io{url}")
+    expect(page).to_have_url(f"{live_server_url}{url}")
     lang = page.evaluate("document.documentElement.lang")
     assert lang == "es"
