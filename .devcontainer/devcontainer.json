@@ -16,10 +16,11 @@
     4000,
     // Live reload server
     35729
-  ]
+  ],
 
   // Uncomment the next line to run commands after the container is created.
-  // "postCreateCommand": "jekyll --version"
+  // git config --global --add safe.directory /workspaces/blackpythondevs.github.io
+  "postCreateCommand": "python3 -m pip install black pytest-playwright && python3 -m playwright install --with-deps"
 
   // Configure tool-specific properties.
   // "customizations": {},
