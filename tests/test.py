@@ -41,6 +41,7 @@ def test_destination_(
         ("Conferencias", "/es/conferences/"),
         )
 )
+
 def test_headers_in_language(page: Page, title:str, url:str) -> None:
     page.goto("https://blackpythondevs.github.io/")
     page.get_by_label("Language").select_option("es")
