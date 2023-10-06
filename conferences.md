@@ -8,8 +8,8 @@ title: Conferences
 
 Black Python Devs aims to partner with Python conferences around the world to increase the visibility and opportunities for Black leadership in the Python community. We understand that when you put qualified individuals on stage and at conferences it increases their value and opportunities for employement.
 
-<!-- 
-To add a conference one of the following should apply 
+<!--
+To add a conference one of the following should apply
 
 1. A Black Python Dev Member should be speaking at the conference
 2. The conference should have programs in place to empower Black and other Historically Excluded Communities to contribute.
