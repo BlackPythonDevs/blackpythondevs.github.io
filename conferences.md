@@ -19,7 +19,7 @@ Sample
 
 ## CONFERENCE NAME (DATES), City, Region, Country
 
-ONE SENTENCE DESCRIPTION OF THE CONFERENCE
+ONE SENTENCE DESCRIPTION OF THE CONFERENCE. Be sure to link to the conference itself.
 
 ### Speaking
 - PERSON - TALK or ROLE NAME
@@ -38,5 +38,5 @@ Here are some highlighted upcoming conferences where you can find Black Python D
 - Kojo Idrissa - Orientation/Welcome & Lightning Talks Host
 - Abigail Mesrenyame Dogbe - Keynote: Finding Purpose in Open Source Through Community Building
 - Velda Kiara - Building Powerful APIs with Django, Django Rest Framework, and OpenAPI
-- AfroPython: Using Django to change black people's life in Brazil
+- Felipe de Morais - AfroPython: Using Django to change black people's life in Brazil
 - Jay Miller - Panel Discussion: Who put me in charge? Moving beyond day-to-day coding in Django
