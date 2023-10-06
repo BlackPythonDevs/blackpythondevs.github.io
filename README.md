@@ -6,7 +6,7 @@ This repo is the [GitHub Pages](https://pages.github.com/) website, built in Jek
 
 ## To Develop
 
-You can deploy your project locally but the fastest way to contribute is to use our [Codespace]((https://github.com/features/codespaces/)https://github.com/features/codespaces/).
+You can deploy your project locally but the fastest way to contribute is to use our [Codespace](<(https://github.com/features/codespaces/)https://github.com/features/codespaces/>).
 
 - Create an Issue (and wait to be assigned)
 - Fork the Code
