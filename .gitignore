@@ -5,3 +5,4 @@ venv
 .jekyll-metadata
 **/__pycache__
 .pytest_cache
+bin/

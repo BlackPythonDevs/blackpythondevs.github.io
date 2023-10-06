@@ -22,10 +22,11 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
           python -m playwright install --with-deps
-      - name: Jekyll detached
-        run: bundle exec jekyll serve --detach
-      - name: Sleep for 45 seconds
-        run: sleep 45s
-        shell: bash
-      - name: Run tests
-        run: python -m pytest
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - name: Jekyll detached and pytest
+        run: |
+          bundle exec jekyll serve --detach
+          python -m pytest
