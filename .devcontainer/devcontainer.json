@@ -7,7 +7,9 @@
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
-    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+    "ghcr.io/devcontainers/features/docker-in-docker": {},
+    "ghcr.io/devcontainers-contrib/features/act:1": {}
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
@@ -16,10 +18,11 @@
     4000,
     // Live reload server
     35729
-  ]
+  ],
 
   // Uncomment the next line to run commands after the container is created.
-  // "postCreateCommand": "jekyll --version"
+  // git config --global --add safe.directory /workspaces/blackpythondevs.github.io
+  "postCreateCommand": "python3 -m pip install black pytest-playwright && python3 -m playwright install --with-deps"
 
   // Configure tool-specific properties.
   // "customizations": {},

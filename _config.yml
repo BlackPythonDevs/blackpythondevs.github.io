@@ -63,6 +63,8 @@ exclude:
   - vendor
   - venv
   - .venv
+  - requirements*.txt
+  - pytest.ini
 # timezone: America/Toronto
 
 permalink: "/:path/"
