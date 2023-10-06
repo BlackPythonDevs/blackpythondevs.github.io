@@ -4,10 +4,10 @@ from playwright.sync_api import Page, expect
 live_server_url = "http://127.0.0.1:4000"
 
 routes = [
-    ("about.html"),
-    ("community.html"),
-    ("conferences.html"),
-    ("events.html"),
+    ("about"),
+    ("community"),
+    ("conferences"),
+    ("events"),
 ]
 
 
