@@ -3,10 +3,17 @@
 {
   "name": "Jekyll",
   // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+  // "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
+    // "ghcr.io/devcontainers/features/python:1": {
+    //   "version": "3.11"
+    // },
     "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
     "ghcr.io/devcontainers/features/docker-in-docker": {},
     "ghcr.io/devcontainers-contrib/features/act:1": {}
@@ -22,11 +29,11 @@
 
   // Uncomment the next line to run commands after the container is created.
   // git config --global --add safe.directory /workspaces/blackpythondevs.github.io
-  "postCreateCommand": "python3 -m pip install black pytest-playwright && python3 -m playwright install --with-deps"
+  // "postCreateCommand": "python3 -m pip install black pytest-playwright && python3 -m playwright install --with-deps"
 
   // Configure tool-specific properties.
   // "customizations": {},
 
   // Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
-  // "remoteUser": "root"
+  "remoteUser": "root"
 }
