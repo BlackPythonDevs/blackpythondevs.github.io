@@ -19,7 +19,7 @@ continents = ["Africa", "Asia", "Australia", "Europe", "North America", "South A
 num_users = 165
 users = []
 users_path = Path(__file__).parent / "users.json"
-membership_path = Path(__file__).parent / "membership_map.html"
+membership_path = Path(__file__).parent / "membership-map.html"
 
 print("[Faker] Generating fake users...")
 
