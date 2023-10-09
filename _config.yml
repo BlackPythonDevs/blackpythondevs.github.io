@@ -76,6 +76,8 @@ exclude:
   - .venv
   - requirements*.txt
   - pytest.ini
+  - _membership/schema.json
+  - _membership/users.json
 # timezone: America/Toronto
 
 permalink: "/:path/"
@@ -83,6 +85,9 @@ permalink: "/:path/"
 collections:
   articles:
     output: true
+    permalink: "/:path/"
+  membership:
+    output: false
     permalink: "/:path/"
 
 defaults:
