@@ -1,3 +1,8 @@
 black
+isort
 pre-commit
 pytest-playwright
+Faker
+folium
+geopy
+pandas
