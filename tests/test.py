@@ -18,8 +18,9 @@ def test_destination(
 ) -> None:
     """Test that the destinations page loads with seeded data"""
     # Create a destination
-    page.goto(f"{live_server_url}/{url}")
+    response = page.goto(f"{live_server_url}/{url}")
     page.on("response", lambda response: expect(response.status).to_equal(200))
+    assert response.url.endswith(f"/{url}/")  # Load the index.html
 
 
 @pytest.mark.parametrize(
