@@ -3,7 +3,11 @@
     "esbenp.prettier-vscode",
     "dbaeumer.vscode-eslint",
     "redhat.vscode-yaml",
-    "github.vscode-github-actions"
-    // "deque-systems.vscode-axe-linter"
+    "vscode.github",
+    "GitHub.vscode-pull-request-github",
+    "github.vscode-github-actions",
+    "DavidAnson.vscode-markdownlint",
+    // "deque-systems.vscode-axe-linter",
+    "ms-python.python"
   ]
 }
