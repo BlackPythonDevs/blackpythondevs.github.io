@@ -39,4 +39,6 @@ Here are some highlighted upcoming conferences where you can find Black Python D
 - Abigail Mesrenyame Dogbe - Keynote: Finding Purpose in Open Source Through Community Building
 - Velda Kiara - Building Powerful APIs with Django, Django Rest Framework, and OpenAPI
 - Felipe de Morais - AfroPython: Using Django to change black people's life in Brazil
+- Abigail Afi Gbadago - Strategies for handling conflicts and rollbacks in Django database migrations
+- Victor Ogunjobi - Nothing for Us, Without Us; Breaking Unconscious Bias in Building Products
 - Jay Miller - Panel Discussion: Who put me in charge? Moving beyond day-to-day coding in Django
