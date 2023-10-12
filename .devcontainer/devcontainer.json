@@ -29,7 +29,7 @@
 
   // Uncomment the next line to run commands after the container is created.
   // git config --global --add safe.directory /workspaces/blackpythondevs.github.io
-  "postCreateCommand": "pre-commit install",
+  "postCreateCommand": "sh /usr/local/post-create-bpdevs.sh",
 
   // Configure tool-specific properties.
   // "customizations": {},
