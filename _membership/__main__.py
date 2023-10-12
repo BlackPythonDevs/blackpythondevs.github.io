@@ -10,7 +10,6 @@ import faker
 import folium
 import geopy
 import pandas as pd
-import requests
 
 fake = faker.Faker()
 
@@ -63,20 +62,15 @@ users_by_continent = users_df.groupby("continent_location").agg(
 
 print("Members per continent:")
 print(f"{users_by_continent}\n")
-
-m = folium.Map(location=[0, 0], zoom_start=2)
-# heat_data = []
-geo_data = json.loads(
-    requests.get(
-        "https://geojson.xyz/naturalearth-3.3.0/ne_50m_admin_0_countries.geojson"
-    ).text
-)
+# Null Island
+m = folium.Map(location=(0, 0), zoom_start=2)
+# GeoJSON Countries Layer
+geo_data_url = "https://geojson.xyz/naturalearth-3.3.0/ne_50m_admin_0_countries.geojson"
 
 for index, row in users_by_continent.iterrows():
     continent = index
     user_count = row["user_count"]
     coords = row["continent_coords"]
-    # heat_data.append([coords[0], coords[1], user_count])
     # Marker with the coordinates and a popup text
     marker = folium.Marker(
         location=coords,
@@ -85,26 +79,18 @@ for index, row in users_by_continent.iterrows():
     )
     marker.add_to(m)
 
-
-# heat_map = plugins.HeatMap(
-#     heat_data,
-#     radius=50,
-#     gradient={0.4: "blue", 0.65: "lime", 1: "red"},
-#     min_opacity=0.5,
-# )
-# heat_map.add_to(m)
-
 users_by_continent = users_by_continent.reset_index(names=["continent"])
 
 folium.Choropleth(
-    geo_data=geo_data,
+    geo_data=geo_data_url,
     name="choropleth",
     data=users_by_continent,
     columns=["continent", "user_count"],
     key_on="feature.properties.continent",  # by name
     fill_color="YlOrRd",  # ‘YlGn’, ‘YlOrRd’, ‘BuPu’
-    fill_opacity=0.7,
-    line_opacity=0.2,
+    nan_fill_color="white",
+    fill_opacity=0.8,
+    line_opacity=0.3,
     legend_name="Number of members by continent",
 ).add_to(m)
 
