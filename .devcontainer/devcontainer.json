@@ -29,7 +29,7 @@
 
   // Uncomment the next line to run commands after the container is created.
   // git config --global --add safe.directory /workspaces/blackpythondevs.github.io
-  // "postCreateCommand": "python3 -m pip install black pytest-playwright && python3 -m playwright install --with-deps"
+  "postCreateCommand": "pre-commit install",
 
   // Configure tool-specific properties.
   // "customizations": {},
