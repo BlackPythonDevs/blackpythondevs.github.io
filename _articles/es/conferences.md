@@ -39,4 +39,6 @@ Estas son algunas de las próximas conferencias destacadas en las que puedes enc
 - Abigail Mesrenyame Dogbe - Ponencia magistral: Encontrar un Propósito en el Código Abierto a Través de la Creación de Comunidades
 - Velda Kiara - Creación de potentes API con Django, Django Rest Framework y OpenAPI
 - Felipe de Morais - AfroPython: Usando Django para cambiar la vida de las personas negras en Brasil
+- Abigail Afi Gbadago - Estrategias para manejar conflictos y reversiones en migraciones de bases de datos de Django
+- Víctor Ogunjobi - Nada para Nosotros, sin Nosotros; Romper el sesgo inconsciente en la construcción de productos
 - Jay Miller - Panel de discusión: ¿Quién me puso a cargo? Más allá de la codificación del día a día en Django
