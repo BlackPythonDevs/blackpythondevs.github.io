@@ -11,6 +11,7 @@ This repo is the [GitHub Pages](https://pages.github.com/) website, built in Jek
 You can deploy your project locally but the fastest way to contribute is to use our [Codespace](<(https://github.com/features/codespaces/)https://github.com/features/codespaces/>).
 
 ### 1. Create an Issue (and wait to be assigned)
+
 - Click on the Issues tab in the repository.
 
     <img src="_repo/issues_tab.png" width="1000" height="600">
@@ -26,6 +27,7 @@ You can deploy your project locally but the fastest way to contribute is to use 
     <img src="_repo/issue_assignment.png" width="1000" height="100">
 
 ### 2. Fork the Code
+
 - To fork the repository so you have a copy of the codebase, you will click on the "Fork" button from the repository main page
 
     <img src="_repo/fork_button_page.png" width="1000" height="200">
@@ -34,21 +36,21 @@ You can deploy your project locally but the fastest way to contribute is to use 
 
     <img src="_repo/create_new_fork_page.png" width="1000" height="300">
 
-
 ### 3. Make the changes
+
 - The easiest way to make changes and and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 - You can also access the Codespaces from the repository main page:
-    <img src="_repo/codespaces_tab.png" width="1000" height="600">
+  <img src="_repo/codespaces_tab.png" width="1000" height="600">
 
 - The web version of VSCode should open in a new tab in your browser:
-    <img src="_repo/blackpythondevs_codespace.png" width="1000" height="350">
+  <img src="_repo/blackpythondevs_codespace.png" width="1000" height="350">
 
 - Now that you have the code editor set up, you need to install the dependencies. To do this, you have to open the code editor's terminal and run the command `bundle install`.
 - The easiest way to open the terminal is to click on the 3 horizontal lines (also known as hamburger) at the top left of the code editor > Terminal > New Terminal:
 
     <img src="_repo/terminal_starter3.png" width="250" height="200">
 
-- In the terminal run  the command `bundle install`.
+- In the terminal run the command `bundle install`.
 
     <img src="_repo/bundle_install_terminal.png" width="1500" height="100">
 
@@ -56,14 +58,14 @@ You can deploy your project locally but the fastest way to contribute is to use 
 
     <img src="_repo/jekyll_serve_terminal.png" width="1500" height="200">
 
-- The server address shows `http:127.0.0.0.1:4000`. This is the address for any local computer so this server will be wrong since the application is running on a remote computer so we have to get the address of that computer.  We can get the address by clicking on the Ports tab next to the Terminal:
+- The server address shows `http:127.0.0.0.1:4000`. This is the address for any local computer so this server will be wrong since the application is running on a remote computer so we have to get the address of that computer. We can get the address by clicking on the Ports tab next to the Terminal:
 
     <img src="_repo/codespace_ports2.png" width="1000" height="200">
 
 - Ctrl + Click on the Forwarded Address assigned to Port 4000. This will open the running application in a new tab:
 
     <img src="_repo/running_page.png" width="1000" height="200">
-    
+
 - Test your changes (create new tests as needed)
 - Submit a PR
 
