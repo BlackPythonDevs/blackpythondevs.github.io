@@ -14,27 +14,27 @@ You can deploy your project locally but the fastest way to contribute is to use 
 
 - Click on the Issues tab in the repository.
 
-    ![Issues tab](/_repo/issues_tab.png)
+  ![Issues tab](/_repo/issues_tab.png)
 
 - Click on the green button with the label "New issue" and you should see the image below:
 
-    ![New issue button](/_repo/new_issue.png)
+  ![New issue button](/_repo/new_issue.png)
 
 - Type in the issue title in the title textbox and type in a clear explanation of the issue in the textarea. You can add images, code snippets, etc to explain your issue.
 - Once you are done, you can preview your issue by selecting the Preview tab. If you are satisfied with the issue presentation, you can click on the green "Submit new issue" button to create ypur issue.
 - Now you wait for your issue to be assigned to you by an admin. You should get an email notification of the issue being assigned to you or you can view the issue assignment in the issue page. It should look similar to this:
 
-    ![Issue assignment](/_repo/issue_assignment.png)
+  ![Issue assignment](/_repo/issue_assignment.png)
 
 ### 2. Fork the Code
 
 - To fork the repository so you have a copy of the codebase, you will click on the "Fork" button from the repository main page
 
-    ![Fork button](/_repo/fork_button_page.png)
+  ![Fork button](/_repo/fork_button_page.png)
 
 - Clicking on the Fork button takes you to the "Create New Fork" page where you select the owner (your personal github account) and click on the Create fork button.
 
-    ![Create new fork page](/_repo/create_new_fork_page.png)
+  ![Create new fork page](/_repo/create_new_fork_page.png)
 
 ### 3. Make the changes
 
@@ -48,23 +48,23 @@ You can deploy your project locally but the fastest way to contribute is to use 
 - Now that you have the code editor set up, you need to install the dependencies. To do this, you have to open the code editor's terminal and run the command `bundle install`.
 - The easiest way to open the terminal is to click on the 3 horizontal lines (also known as hamburger) at the top left of the code editor > Terminal > New Terminal:
 
-    ![Terminal starter](/_repo/terminal_starter3.png)
+  ![Terminal starter](/_repo/terminal_starter3.png)
 
 - In the terminal run the command `bundle install`.
 
-    ![Bundle install terminal](/_repo/bundle_install_terminal.png)
+  ![Bundle install terminal](/_repo/bundle_install_terminal.png)
 
 - After installing the dependencies, its time to run the application. We do this by running the command `bundle exec jekyll serve`:
 
-    ![Jekyll serve terminal](/_repo/jekyll_serve_terminal.png)
+  ![Jekyll serve terminal](/_repo/jekyll_serve_terminal.png)
 
 - The server address shows `http:127.0.0.0.1:4000`. This is the address for any local computer so this server will be wrong since the application is running on a remote computer so we have to get the address of that computer. We can get the address by clicking on the Ports tab next to the Terminal:
 
-    ![Codespace ports](/_repo/codespace_ports2.png)
+  ![Codespace ports](/_repo/codespace_ports2.png)
 
 - Ctrl + Click on the Forwarded Address assigned to Port 4000. This will open the running application in a new tab:
 
-    ![Running page](/_repo/running_page.png)
+  ![Running page](/_repo/running_page.png)
 
 - Test your changes (create new tests as needed)
 - Submit a PR
