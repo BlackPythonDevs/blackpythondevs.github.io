@@ -23,7 +23,7 @@ function loadLanguage(lang) {
 
   // Check if the URL path is more than just /path/ and starts with a language code
   let path_parts = base_pathname.split("/");
-  let isLongPath = path_parts.length > 3;
+  let isLongPath = path_parts.length >= 3;
   let startsWithLangCode = lang_path_regex.test(base_pathname);
 
   if (isLongPath && startsWithLangCode) {
