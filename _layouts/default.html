@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ page.lang }}">
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -27,9 +27,13 @@
   </head>
 
   <body>
-    {% include header.html %}
-    <main role="main">{{ content }}</main>
-    {% include footer.html %}
+    {%- include header.html -%}
+    <main role="main"  class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+    {%- include footer.html -%}
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
     <script src="https://kit.fontawesome.com/1bbe56de49.js" crossorigin="anonymous"></script>
   </body>
