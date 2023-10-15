@@ -71,7 +71,6 @@ exclude:
   - bin
   - CNAME
   - CODE_OF_CONDUCT.md
-  - CONTRIBUTING.md
   - README.md
   - Gemfile*
   - node_modules
