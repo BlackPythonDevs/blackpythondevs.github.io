@@ -39,9 +39,8 @@ bpdevs:
   # Generate social links in footer.
   #
   social_links:
-    - { platform: github,         user_url: "https://github.com/BlackPythonDevs/blackpythondevs.github.io" }
-    # - { platform: twitter,        user_url: "https://twitter.com/jekyllrb" }
-    - { platform: x,              user_url: "https://x.com/blackpythondevs" }
+    - { platform: github, user_url: "https://github.com/BlackPythonDevs/blackpythondevs.github.io" }
+    - { platform: x, user_url: "https://x.com/blackpythondevs" }
 
 # Build settings
 markdown: kramdown
