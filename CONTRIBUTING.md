@@ -81,3 +81,23 @@ Help us keep this project open and inclusive. Please read and follow our [Code o
 - Submit a Pull Request
 
 🥳
+
+## Translations
+
+We welcome translations for the Black Python Devs website in all languages! Here's how you can contribute:
+
+1. [**Fork the repository**](#2-fork-the-code): Make a copy of this project on your account.
+
+2. **Create a new branch**: Make a new branch for your translation work to keep it separate from the main project: e.g. `es` .
+
+3. **Translate**: Translate all the content in your preferred language. Please ensure that the translation is accurate and professional.
+
+   - Copy `_data/locales/en.yml` to your target language file e.g. `_data/locales/es.yml` and translate all the strings.
+
+   - Create a new directory in `_articles/` for your language e.g. `_articles/es/`, copy each guide from `_articles/` into that folder and translate the content in each guide.
+
+   - Copy `index.html` to your target language index file e.g. [`_articles/es/index.html`](https://github.com/BlackPythonDevs/blackpythondevs.github.io/blob/HEAD/_articles/es/index.html) and update the `lang:` and add the `permalink:` fields. Example: `lang: es` and `permalink: /es/`.
+
+4. **Submit a Pull Request**: You may send a pull request before all steps above are complete: e.g., you may want to ask for help with translations, or getting tests to pass. However, your pull request will not be merged until all steps above are complete.
+
+Our maintainers will review your pull request and merge it if everything is in order. We appreciate your contribution to making Black Python Devs accessible to more people around the world!
