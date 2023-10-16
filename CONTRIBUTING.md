@@ -86,6 +86,8 @@ Help us keep this project open and inclusive. Please read and follow our [Code o
 
 We welcome translations for the Black Python Devs website in all languages! Here's how you can contribute:
 
+The language code being used should be in the format [<ISO 639-1>](https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+
 1. [**Fork the repository**](#2-fork-the-code): Make a copy of this project on your account.
 
 2. **Create a new branch**: Make a new branch for your translation work to keep it separate from the main project: e.g. `es` .
