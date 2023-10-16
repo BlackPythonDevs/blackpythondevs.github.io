@@ -42,3 +42,11 @@ def test_headers_in_language(page: Page, title: str, url: str) -> None:
     expect(page).to_have_url(f"{live_server_url}{url}")
     lang = page.evaluate("document.documentElement.lang")
     assert lang == "es"
+
+
+def test_switching_lang_es_about(page: Page):
+    about_path = "/about/"
+    page.goto(f"{live_server_url}{about_path}")
+    page.get_by_label("Language").select_option("es")
+    # http://127.0.0.1:4000/es/about/
+    expect(page).to_have_url(f"{live_server_url}/es{about_path}")
