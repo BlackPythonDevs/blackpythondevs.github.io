@@ -12,7 +12,7 @@ Tutakuwa Durham na kwa tukio lisikua-na-pombe, ni Tafrija ya Aiskrimu.
 
 Mkutane na msalimiane.
 
-### Maelezo katika [Wasanidi Weusi wa Python Discord](https://discord.gg/kkGBdgAb?event=1099928131705507992)
+### Maelezo katika [Black Python Devs Discord](https://discord.gg/kkGBdgAb?event=1099928131705507992)
 
 ---
 

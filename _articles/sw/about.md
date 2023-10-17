@@ -6,11 +6,11 @@ title: Kutuhusu
 
 # Kutuhusu
 
-## Wasanidi Weusi wa Programu ya Python ni nini
+## Black Python Devs ni nini
 
 ---
 
-Wasanidi Weusi wa Programu ya Python ni jumuiya iliyoko mtandaoni-pekee ya wasanidi wa Python katika ngazi zote za ujuzi ambao wanatambulishwa kuwa weusi.
+Black Python Devs ni jumuiya iliyoko mtandaoni-pekee ya wasanidi wa Python katika ngazi zote za ujuzi ambao wanatambulishwa kuwa weusi.
 
 Lengo letu ni:
 
