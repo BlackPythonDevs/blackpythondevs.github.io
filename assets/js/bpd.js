@@ -19,7 +19,9 @@ if (menuToggle) {
 
 function loadLanguage(lang) {
   let base_pathname = window.location.pathname;
-  let lang_path_regex = /^\/[a-z]+([_-][a-z]+)?\//;
+  // ISO 639-1 language codes are two-letter codes
+  // ISO 3166-1 alpha-2 country codes are two-letter codes
+  let lang_path_regex = /^\/[a-z]{2}([_-][A-Z]{2})?\//;
 
   // Check if the URL path is more than just /path/ and starts with a language code
   let path_parts = base_pathname.split("/");
