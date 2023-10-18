@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "User",
+  "type": "object",
+  "properties": {
+    "full_name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "discord_username": {
+      "type": "string",
+      "pattern": "^\\w+#\\d{4}$"
+    },
+    "continent_location": {
+      "type": "string",
+      "enum": ["Africa", "Asia", "Australia", "Europe", "North America", "South America"]
+    }
+  },
+  "required": ["full_name", "discord_username", "continent_location"]
+}

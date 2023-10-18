@@ -4,8 +4,6 @@ lang: en
 title: About Us
 ---
 
-# About Us
-
 ## What is Black Python Devs
 
 ---
@@ -25,3 +23,9 @@ Our goal is to:
 We hope in the long run to create many in-person user groups and events, but we have to understand where we can make the largest impacts.
 
 To do this we're hoping to gather folks from around the world and see where our largest audiences are.
+
+## Membership Map
+
+---
+
+{% include membership-map.html %}
