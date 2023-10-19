@@ -30,7 +30,7 @@ Here are some highlighted upcoming conferences where you can find Black Python D
 
 <!-- conferences starts -->
 
-## DjangoCon Africa ( 6 nov - 11 Nov 2023) - Zanzibar, Tanzania
+## DjangoCon Africa (6 nov - 11 Nov 2023) - Zanzibar, Tanzania
 
 DjangoCon Africa will include 3 days of single-track talks, 2 days of workshops and sprints, through a total of 27 speakers, and one day of touring for international visitors. [Link here](https://2023.djangocon.africa/news/announcing-djangocon-africa-2023/)
 
