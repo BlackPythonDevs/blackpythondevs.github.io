@@ -54,7 +54,7 @@ for issue in open_issues:
             # Check if the conference end date is greater than today
             if endDate > datetime.now():
                 markdownContent += f"""
-## {name_match.group(1)} ({dates_match.group(1)}), {location_match.group(1)}
+## {name_match.group(1)} ({dates_match.group(1)}) - {location_match.group(1)}
 
 {summary_match.group(1)}
 
