@@ -45,7 +45,7 @@ body:
     attributes:
       label: Summary
       description: Summary of the news you're sharing about this conference.
-      placeholder: |-
+      placeholder: |
         DjangoCon US has been announced alongside it's [website](url).
          The conference is 16-20 October, is a five-day international
          conference for the community by the community about the Django
