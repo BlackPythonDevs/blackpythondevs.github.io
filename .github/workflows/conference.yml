@@ -20,12 +20,14 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install PyGithub
+        run: pip install PyGithub pre-commit
 
       - name: Run script
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: python _conferences
+        run: |
+          python _conferences
+          pre-commit run --all-files --show-diff-on-failure
 
       - name: Commit and push if it changed
         run: |
