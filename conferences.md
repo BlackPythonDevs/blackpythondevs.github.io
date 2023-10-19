@@ -28,6 +28,8 @@ ONE SENTENCE DESCRIPTION OF THE CONFERENCE. Be sure to link to the conference it
 
 Here are some highlighted upcoming conferences where you can find Black Python Developers involved on stage or behind the scenes
 
+<!-- conferences starts -->
+
 ## DjangoCon US (16-20 October 2023) - Durham, NC, USA
 
 [DjangoCon US](https://2023.djangocon.us/) is a five-day international conference for the community by the community about the Django web framework, held each year in North America.
@@ -78,3 +80,4 @@ The event will also include a Django Girls workshop to be held the weekend befor
 - Tahaa Farooq - Building Security Tools with Django: Web Application for Security Scans.
 - Victor Jotham Ashioya - Workshop: Deploying Machine Learning Models with Django.
 - Vuyisile Ndlovu - Mastering Debugging: Systematic Approaches and Python Tools for Developers.
+<!-- conferences ends -->
