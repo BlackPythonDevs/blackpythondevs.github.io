@@ -18,9 +18,9 @@ open_issues = repo.get_issues(state="open", labels=["conference"])
 markdownContent = ""
 
 for issue in open_issues:
-    print(issue.title)
+    # print(issue.title)
     if "conference" in [label.name for label in issue.labels]:
-        print(repr(issue.body))
+        # print(repr(issue.body))
         # Extract fields from issue body
         name_match = re.search(
             r"Conference Name(?:\r\n|\n){2}(.*?)(?:\r\n|\n){2}", issue.body
