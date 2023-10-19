@@ -12,7 +12,7 @@ conferences_path = ROOT / "conferences.md"
 auth = Auth.Token(TOKEN)
 g = Github(auth=auth)
 
-repo = g.get_repo("oleksis/blackpythondevs.com")
+repo = g.get_repo("BlackPythonDevs/blackpythondevs.github.io")
 open_issues = repo.get_issues(state="open", labels=["conference"])
 
 markdownContent = ""
