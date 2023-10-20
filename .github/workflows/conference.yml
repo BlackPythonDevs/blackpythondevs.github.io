@@ -1,5 +1,7 @@
 name: Conference Workflow
 on:
+  schedule:
+    - cron: "0 0 * * 0" # This will run the workflow every Sunday at midnight
   push:
     branches:
       - "**/issue**"
@@ -20,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install PyGithub pre-commit
+        run: pip install PyGithub PyYAML pre-commit
 
       - name: Run script
         env:

@@ -2,3 +2,4 @@ black
 pre-commit
 pytest-playwright
 PyGithub
+PyYAML
