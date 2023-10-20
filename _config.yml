@@ -17,6 +17,9 @@ navigation:
   - text: Home
     url: /
     fa: fa fa-home fa-fw
+  - text: Blog
+    url: /blog/
+    fa: fa fa-newspaper fa-fw
   - text: About Us
     url: /about/
     fa: fa fa-info-circle fa-fw

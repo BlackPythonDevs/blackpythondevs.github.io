@@ -2,6 +2,7 @@ en:
   locale_name: English
   nav:
     - Home
+    - Blog
     - About Us
     - Events
     - Conferences
