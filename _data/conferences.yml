@@ -1,0 +1,57 @@
+- dates: 6 nov - 11 Nov 2023
+  location: Zanzibar, Tanzania
+  name: DjangoCon Africa
+  speaking: "- Anna Makarudze - Empowering Minorities in Tech Communities and Promoting\
+    \ Inclusivity.\r\n- Atieno Ouma - Improving Django Queryset Optimization with\
+    \ DRY Principles.\r\n- Brayan Kai Mwanyumba - Fostering Inclusion in Open Source:\
+    \ Opportunities for Individuals with Disabilities.\r\n- Busola Marcus - Unleashing\
+    \ the Potential of Remote Work for African Tech Professionals.\r\n- Chris Achinga\
+    \ - Workshop: Building Authentication APIs with Django.\r\n- Daniele Procida -\
+    \ Exploring the Parallels Between Music, Software, and African Culture.\r\n- Dawn\
+    \ Wages - Enhancing Python/Django Development with Visual Studio Code's Dev Containers.\r\
+    \n- Eric Odhiambo - Optimizing Django Admin with Typesense for Large Datasets.\r\
+    \n- Eva Nanyonga - Mastering API Testing in Django.\r\n- Flavio Percoco - Bringing\
+    \ Your Software Ideas to Life.\r\n- Fuad Habib - Django: Empowering African Youth\
+    \ for Entrepreneurship and Job Creation.\r\n- Honza Kral - Transforming Software\
+    \ Ideas into Reality: A Django Core Contributor's Perspective.\r\n- Jon Atkinson\
+    \ - Rethinking Cloud as the Default: Exploring Simpler Deployment Options.\r\n\
+    - Joseph Adediji - Unleashing the Full Potential of Django's Management Commands\
+    \ for Creative Solutions.\r\n- Joseph Sowah - Workshop: Building, Deploying, and\
+    \ Automating Django Apps on Cloud Infrastructure.\r\n- Kojo Idrissa - Keynote:\
+    \ Global Patterns in Problem-Solving.\r\n- Lidya Tilahun - E-Farming: Advancing\
+    \ Rural Farmers' Interests through Digital Agriculture.\r\n- Mariam Muhammed -\
+    \ Enhancing Django's Performance with Caching Strategies.\r\n- Mariusz Felisiak\
+    \ - Exploring the Depths of Django ORM Lookups.\r\n- Omotola Omotayo - Navigating\
+    \ Career Paths in Open-Source Software: Insights from Outreachy Community Manager.\r\
+    \n- Robson Kanhalelo - Workshop: Building Real-Time Space Data Web Applications\
+    \ with Python and Django.\r\n- Ruth Ikegah - Open Source Career Opportunities:\
+    \ A Path to New Horizons.\r\n- Samweli Twesa Mwakisambwe - Harnessing Open-Source\
+    \ Python Tools for Geospatial Data Visualization and Analysis.\r\n- Sheena O'Connell\
+    \ - Adapting to COVID Disruptions with Django: Umuzi's Journey.\r\n- Tahaa Farooq\
+    \ - Building Security Tools with Django: Web Application for Security Scans.\r\
+    \n- Victor Jotham Ashioya - Workshop: Deploying Machine Learning Models with Django.\r\
+    \n- Vuyisile Ndlovu - Mastering Debugging: Systematic Approaches and Python Tools\
+    \ for Developers."
+  summary: DjangoCon Africa will include 3 days of single-track talks, 2 days of workshops
+    and sprints, through a total of 27 speakers, and one day of touring for international
+    visitors. [Link here](https://2023.djangocon.africa/news/announcing-djangocon-africa-2023/)
+  type: both
+  url: https://2023.djangocon.africa/
+- dates: 16 Oct - 20 Oct 2023
+  location: Durham, NC, USA
+  name: DjangoCon US
+  speaking: "- Dawn Wages - Supercharge your Python and Django Development Environment\
+    \ with VS Code and Dev Containers\r\n- Kojo Idrissa - Orientation/Welcome & Lightning\
+    \ Talks Host\r\n- Abigail Mesrenyame Dogbe - Keynote: Finding Purpose in Open\
+    \ Source Through Community Building\r\n- Velda Kiara - Building Powerful APIs\
+    \ with Django, Django Rest Framework, and OpenAPI\r\n- Felipe de Morais - AfroPython:\
+    \ Using Django to change black people's life in Brazil\r\n- Abigail Afi Gbadago\
+    \ - Strategies for handling conflicts and rollbacks in Django database migrations\r\
+    \n- Victor Ogunjobi - Nothing for Us, Without Us; Breaking Unconscious Bias in\
+    \ Building Products\r\n- Jay Miller - Panel Discussion: Who put me in charge?\
+    \ Moving beyond day-to-day coding in Django"
+  summary: '[DjangoCon US](https://2023.djangocon.us/) is a five-day international
+    conference for the community by the community about the Django web framework,
+    held each year in North America.'
+  type: in-person
+  url: https://2023.djangocon.us/

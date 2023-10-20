@@ -28,17 +28,4 @@ DESCRIPCIÓN DE LA CONFERENCIA EN UNA FRASE. Asegúrese de vincular a la confere
 
 Estas son algunas de las próximas conferencias destacadas en las que puedes encontrar a Black Python Developers involucrados en el escenario o entre bastidores
 
-## DjangoCon US (16-20 Octubre 2023) - Durham, NC, USA
-
-[DjangoCon US](https://2023.djangocon.us/) es una conferencia internacional de cinco días para la comunidad por la comunidad sobre el marco de desarrollo web Django, que se celebra cada año en América del Norte.
-
-### Ponentes:
-
-- Dawn Wages - Potencie su entorno de desarrollo de Python y Django con VS Code y Dev Containers
-- Kojo Idrissa - Anfitriona de Orientación/Bienvenida y Charlas Relámpago
-- Abigail Mesrenyame Dogbe - Ponencia magistral: Encontrar un Propósito en el Código Abierto a Través de la Creación de Comunidades
-- Velda Kiara - Creación de potentes API con Django, Django Rest Framework y OpenAPI
-- Felipe de Morais - AfroPython: Usando Django para cambiar la vida de las personas negras en Brasil
-- Abigail Afi Gbadago - Estrategias para manejar conflictos y reversiones en migraciones de bases de datos de Django
-- Víctor Ogunjobi - Nada para Nosotros, sin Nosotros; Romper el sesgo inconsciente en la construcción de productos
-- Jay Miller - Panel de discusión: ¿Quién me puso a cargo? Más allá de la codificación del día a día en Django
+{% include conferences.html %}

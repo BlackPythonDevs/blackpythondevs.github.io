@@ -1,26 +1,25 @@
 import os
 import re
-from datetime import datetime
+from datetime import datetime, time
 from pathlib import Path
 
+import yaml
 from github import Auth, Github
 
 TOKEN = os.getenv("GITHUB_TOKEN", "")
 ROOT = Path(__file__).parent.parent
-conferences_path = ROOT / "conferences.md"
+conferences_path = ROOT / "_data/conferences.yml"
 
 auth = Auth.Token(TOKEN)
 g = Github(auth=auth)
 
 repo = g.get_repo("BlackPythonDevs/blackpythondevs.github.io")
 open_issues = repo.get_issues(state="open", labels=["conference"])
-
-markdownContent = ""
+conferences = []
+today = datetime.combine(datetime.now(), time())
 
 for issue in open_issues:
-    # print(issue.title)
     if "conference" in [label.name for label in issue.labels]:
-        # print(repr(issue.body))
         # Extract fields from issue body
         name_match = re.search(
             r"Conference Name(?:\r\n|\n){2}(.*?)(?:\r\n|\n){2}", issue.body
@@ -47,35 +46,23 @@ for issue in open_issues:
         )
 
         if dates_match:
-            conferenceDates = dates_match.group(1)
+            conferenceDates = dates_match[1]
             # Parse the end date of the conference
             endDateStr = conferenceDates.split("-")[1].strip()
             endDate = datetime.strptime(endDateStr, "%d %b %Y")
             # Check if the conference end date is greater than today
-            if endDate > datetime.now():
-                markdownContent += f"""
-## {name_match.group(1)} ({dates_match.group(1)}) - {location_match.group(1)}
+            if endDate >= today:
+                conference = {
+                    "name": name_match[1],
+                    "url": url_match[1],
+                    "dates": dates_match[1],
+                    "type": type_match[1],
+                    "location": location_match[1],
+                    "summary": summary_match[1],
+                    "speaking": speaking_match[1],
+                }
+                conferences.append(conference)
 
-{summary_match.group(1)}
-
-### Speaking
-
-{speaking_match.group(1)}
-"""
-
-if markdownContent == "":
-    markdownContent = "No conferences"
-
-with conferences_path.open("r") as f:
-    content = f.read()
-
-newContent = re.sub(
-    r"<!-- conferences starts -->.*<!-- conferences ends -->",
-    f"<!-- conferences starts -->\n{markdownContent}\n<!-- conferences ends -->",
-    content,
-    flags=re.DOTALL,
-)
-
-# Write the new content to the file
+# Write the conferences to the _data/conferences.yml file
 with conferences_path.open("w") as f:
-    f.write(newContent)
+    yaml.dump(conferences, f)

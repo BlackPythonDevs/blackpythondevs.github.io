@@ -6,4 +6,4 @@ _includes/header.html
 _includes/social.html
 _includes/social-item.html
 _includes/svg_symbol.html
-conferences.md
+_data/conferences.yml

@@ -22,7 +22,7 @@ jobs:
           python-version: "3.11"
 
       - name: Install dependencies
-        run: pip install PyGithub pre-commit
+        run: pip install PyGithub PyYAML pre-commit
 
       - name: Run script
         env:
