@@ -6,18 +6,18 @@ sw:
     - Kutuhusu
     - Matukio
     - Mikutano
-    - Jamii
+    - Jumuiya
   index:
-    lead: Karibu kwenye Jumuiya ya Wasanidi Programu wa Python Nyeusi.
+    lead: Karibu kwenye Jumuiya ya Black Python Developers.
   article:
     table_of_contents: Jedwali la Yaliyomo
   footer:
     contribute:
       heading: Kuchangia
-      description: Unahitaji kutoa mapendekezo? Maudhui haya ni chanzo wazi. Tusaidie kuboresha.
-      button: Kuchangia
+      description: Unahitaji kutoa mapendekezo? Maudhui haya ni chanzo wazi. Tusaidie kuiboresha.
+      button: Changia
     subscribe:
       heading: Endelea kuwasiliana
       description: Kuwa wa kwanza kusikia kuhusu vidokezo vya hivi karibuni vya chanzo wazi vya BPDevs na rasilimali.
       label: Anwani ya barua pepe
-      button: Kujiunga
+      button: Jiandikishe

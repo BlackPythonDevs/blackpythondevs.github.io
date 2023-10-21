@@ -50,3 +50,32 @@ def test_switching_lang_es_about(page: Page):
     page.get_by_label("Language").select_option("es")
     # http://127.0.0.1:4000/es/about/
     expect(page).to_have_url(f"{live_server_url}/es{about_path}")
+
+
+@pytest.mark.parametrize(
+    "title, url",
+    (
+        ("Kutuhusu", "/sw/about/"),
+        ("Nyumbani", "/sw/"),
+        ("Matukio", "/sw/events/"),
+        ("Jumuiya", "/sw/community/"),
+        ("Mikutano", "/sw/conferences/"),
+    ),
+)
+def test_headers_in_sw(page: Page, title: str, url: str) -> None:
+    page.goto(live_server_url)
+    lang = page.evaluate("document.documentElement.lang")
+    assert lang == "en"
+    page.get_by_label("Language").select_option("sw")
+    page.get_by_role("link", name=title).click()
+    expect(page).to_have_url(f"{live_server_url}{url}")
+    lang = page.evaluate("document.documentElement.lang")
+    assert lang == "sw"
+
+
+def test_switching_lang_sw_about(page: Page):
+    about_path = "/about/"
+    page.goto(f"{live_server_url}{about_path}")
+    page.get_by_label("Language").select_option("sw")
+    # http://127.0.0.1:4000/sw/about/
+    expect(page).to_have_url(f"{live_server_url}/sw{about_path}")
