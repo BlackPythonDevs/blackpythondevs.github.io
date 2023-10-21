@@ -5,6 +5,10 @@ body {
   padding-right: 30px;
 }
 
+main.page-content div.wrapper p img {
+  width: 95%;
+}
+
 .screen-reader-text {
   border: 0 none;
   clip: rect(1px, 1px, 1px, 1px);
