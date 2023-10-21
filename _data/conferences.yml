@@ -37,21 +37,3 @@
     visitors. [Link here](https://2023.djangocon.africa/news/announcing-djangocon-africa-2023/)
   type: both
   url: https://2023.djangocon.africa/
-- dates: 16 Oct - 20 Oct 2023
-  location: Durham, NC, USA
-  name: DjangoCon US
-  speaking: "- Dawn Wages - Supercharge your Python and Django Development Environment\
-    \ with VS Code and Dev Containers\r\n- Kojo Idrissa - Orientation/Welcome & Lightning\
-    \ Talks Host\r\n- Abigail Mesrenyame Dogbe - Keynote: Finding Purpose in Open\
-    \ Source Through Community Building\r\n- Velda Kiara - Building Powerful APIs\
-    \ with Django, Django Rest Framework, and OpenAPI\r\n- Felipe de Morais - AfroPython:\
-    \ Using Django to change black people's life in Brazil\r\n- Abigail Afi Gbadago\
-    \ - Strategies for handling conflicts and rollbacks in Django database migrations\r\
-    \n- Victor Ogunjobi - Nothing for Us, Without Us; Breaking Unconscious Bias in\
-    \ Building Products\r\n- Jay Miller - Panel Discussion: Who put me in charge?\
-    \ Moving beyond day-to-day coding in Django"
-  summary: '[DjangoCon US](https://2023.djangocon.us/) is a five-day international
-    conference for the community by the community about the Django web framework,
-    held each year in North America.'
-  type: in-person
-  url: https://2023.djangocon.us/
