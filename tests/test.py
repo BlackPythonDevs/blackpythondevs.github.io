@@ -55,7 +55,7 @@ def test_switching_lang_es_about(page: Page):
 @pytest.mark.parametrize(
     "title, url",
     (
-        ("Kuhusu", "/sw/about/"),
+        ("Kutuhusu", "/sw/about/"),
         ("Nyumbani", "/sw/"),
         ("Matukio", "/sw/events/"),
         ("Jumuiya", "/sw/community/"),
