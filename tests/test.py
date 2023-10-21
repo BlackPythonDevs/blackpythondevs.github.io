@@ -51,6 +51,7 @@ def test_switching_lang_es_about(page: Page):
     # http://127.0.0.1:4000/es/about/
     expect(page).to_have_url(f"{live_server_url}/es{about_path}")
 
+
 @pytest.mark.parametrize(
     "title, url",
     (

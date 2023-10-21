@@ -21,6 +21,7 @@ Lengo letu ni:
 ## Mbona mtandaoni-pekee
 
 ---
+
 Tunatumaini hatimaye tutatengeza makundi na matukio mengi ya-kibinafsi, lakini inabidi tuelewa ni wapi twaweza kua na matokeo kubwa zaidi.
 
 Ili tufanya haya tunatumaini kukusanya watu kutoka duniani kote na kuona kule idadi kuu ya wasikilizaji ilioko.
