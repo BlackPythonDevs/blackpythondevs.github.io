@@ -27,7 +27,7 @@ DjangoCon hosted a [DjangoGirls](https://djangogirls.org/en/events/) event in in
 
 ### Black Python Devs Ice Cream Social
 
-The conference kicked off the night before with the Black Python Devs Ice Cream Social at Durhams [_The Parlour_](https://theparlour.co/), our first official in-person event! 10 members attended and enjoyed a relaxed atmosphere for many folks to meet for the first time. 
+The conference kicked off the night before with the Black Python Devs Ice Cream Social at Durhams [_The Parlour_](https://theparlour.co/), our first official in-person event! 10 members attended and enjoyed a relaxed atmosphere for many folks to meet for the first time.
 
 ![Selfie from attendees of the Ice Cream Social](https://kjaymiller.azureedge.net/media/DCUS%20IceCream%20Social.jpg)
 
