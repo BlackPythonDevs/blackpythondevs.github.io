@@ -6,32 +6,25 @@
     \ DRY Principles.\r\n- Brayan Kai Mwanyumba - Fostering Inclusion in Open Source:\
     \ Opportunities for Individuals with Disabilities.\r\n- Busola Marcus - Unleashing\
     \ the Potential of Remote Work for African Tech Professionals.\r\n- Chris Achinga\
-    \ - Workshop: Building Authentication APIs with Django.\r\n- Daniele Procida -\
-    \ Exploring the Parallels Between Music, Software, and African Culture.\r\n- Dawn\
-    \ Wages - Enhancing Python/Django Development with Visual Studio Code's Dev Containers.\r\
-    \n- Eric Odhiambo - Optimizing Django Admin with Typesense for Large Datasets.\r\
-    \n- Eva Nanyonga - Mastering API Testing in Django.\r\n- Flavio Percoco - Bringing\
-    \ Your Software Ideas to Life.\r\n- Fuad Habib - Django: Empowering African Youth\
-    \ for Entrepreneurship and Job Creation.\r\n- Honza Kral - Transforming Software\
-    \ Ideas into Reality: A Django Core Contributor's Perspective.\r\n- Jon Atkinson\
-    \ - Rethinking Cloud as the Default: Exploring Simpler Deployment Options.\r\n\
-    - Joseph Adediji - Unleashing the Full Potential of Django's Management Commands\
-    \ for Creative Solutions.\r\n- Joseph Sowah - Workshop: Building, Deploying, and\
-    \ Automating Django Apps on Cloud Infrastructure.\r\n- Kojo Idrissa - Keynote:\
-    \ Global Patterns in Problem-Solving.\r\n- Lidya Tilahun - E-Farming: Advancing\
-    \ Rural Farmers' Interests through Digital Agriculture.\r\n- Mariam Muhammed -\
-    \ Enhancing Django's Performance with Caching Strategies.\r\n- Mariusz Felisiak\
-    \ - Exploring the Depths of Django ORM Lookups.\r\n- Omotola Omotayo - Navigating\
-    \ Career Paths in Open-Source Software: Insights from Outreachy Community Manager.\r\
-    \n- Robson Kanhalelo - Workshop: Building Real-Time Space Data Web Applications\
-    \ with Python and Django.\r\n- Ruth Ikegah - Open Source Career Opportunities:\
-    \ A Path to New Horizons.\r\n- Samweli Twesa Mwakisambwe - Harnessing Open-Source\
-    \ Python Tools for Geospatial Data Visualization and Analysis.\r\n- Sheena O'Connell\
-    \ - Adapting to COVID Disruptions with Django: Umuzi's Journey.\r\n- Tahaa Farooq\
-    \ - Building Security Tools with Django: Web Application for Security Scans.\r\
-    \n- Victor Jotham Ashioya - Workshop: Deploying Machine Learning Models with Django.\r\
-    \n- Vuyisile Ndlovu - Mastering Debugging: Systematic Approaches and Python Tools\
-    \ for Developers."
+    \ - Workshop: Building Authentication APIs with Django.\r\n- Dawn Wages - Enhancing\
+    \ Python/Django Development with Visual Studio Code's Dev Containers.\r\n- Eric\
+    \ Odhiambo - Optimizing Django Admin with Typesense for Large Datasets.\r\n- Eva\
+    \ Nanyonga - Mastering API Testing in Django.\r\n- Fuad Habib - Django: Empowering\
+    \ African Youth for Entrepreneurship and Job Creation.\r\n- Joseph Adediji - Unleashing\
+    \ the Full Potential of Django's Management Commands for Creative Solutions.\r\
+    \n- Joseph Sowah - Workshop: Building, Deploying, and Automating Django Apps on\
+    \ Cloud Infrastructure.\r\n- Kojo Idrissa - Keynote: Global Patterns in Problem-Solving.\r\
+    \n- Lidya Tilahun - E-Farming: Advancing Rural Farmers' Interests through Digital\
+    \ Agriculture.\r\n- Mariam Muhammed - Enhancing Django's Performance with Caching\
+    \ Strategies.\r\n- Omotola Omotayo - Navigating Career Paths in Open-Source Software:\
+    \ Insights from Outreachy Community Manager.\r\n- Robson Kanhalelo - Workshop:\
+    \ Building Real-Time Space Data Web Applications with Python and Django.\r\n-\
+    \ Ruth Ikegah - Open Source Career Opportunities: A Path to New Horizons.\r\n\
+    - Samweli Twesa Mwakisambwe - Harnessing Open-Source Python Tools for Geospatial\
+    \ Data Visualization and Analysis.\r\n- Tahaa Farooq - Building Security Tools\
+    \ with Django: Web Application for Security Scans.\r\n- Victor Jotham Ashioya\
+    \ - Workshop: Deploying Machine Learning Models with Django.\r\n- Vuyisile Ndlovu\
+    \ - Mastering Debugging: Systematic Approaches and Python Tools for Developers."
   summary: DjangoCon Africa will include 3 days of single-track talks, 2 days of workshops
     and sprints, through a total of 27 speakers, and one day of touring for international
     visitors. [Link here](https://2023.djangocon.africa/news/announcing-djangocon-africa-2023/)
