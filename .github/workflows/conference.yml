@@ -1,4 +1,7 @@
 name: Conference Workflow
+permissions:
+  contents: write
+  pull-requests: write
 on:
   schedule:
     - cron: "0 0 * * 0" # This will run the workflow every Sunday at midnight
