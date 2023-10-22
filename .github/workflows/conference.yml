@@ -42,7 +42,7 @@ jobs:
           commit-message: Update conferences
           committer: GitHub Action <actions@github.com>
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
-          branch: example-patches
+          branch: update-conferences
           delete-branch: true
           title: "[CONFERENCE] Update Conferences"
           labels: |
