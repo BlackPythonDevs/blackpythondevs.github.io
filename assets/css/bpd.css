@@ -366,3 +366,30 @@ footer {
   fill: currentColor;
   vertical-align: text-bottom;
 }
+
+.wrapper {
+  max-width: calc(800px - (30px));
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 800px) {
+  .wrapper {
+    max-width: calc(800px - (30px * 2));
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+.wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.page-content {
+  padding: 30px 0;
+  flex: 1 0 auto;
+}
