@@ -13,3 +13,8 @@ You can deploy your project locally but the fastest way to contribute is to use 
 ## Contributing
 
 Please read [Contributing to Black Python Devs](CONTRIBUTING.md)
+
+## Contributors
+
+<!-- readme: collaborators,contributors -start -->
+<!-- readme: collaborators,contributors -end -->
