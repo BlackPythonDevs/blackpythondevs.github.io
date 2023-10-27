@@ -2,12 +2,14 @@ name: Monthly contributor report
 on:
   schedule:
     - cron: "3 2 1 * *"
-  push:
-    branches: ["gh-pages"]
   workflow_dispatch:
+#   push:
+#     branches: ["gh-pages"]
 
 permissions:
   issues: write
+  contents: write
+  pull-requests: write
 
 jobs:
   contributor_report_readme:
