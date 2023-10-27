@@ -1,0 +1,35 @@
+name: Monthly contributor report
+on:
+  schedule:
+    - cron: "3 2 1 * *"
+  push:
+    branches: ["gh-pages"]
+  workflow_dispatch:
+
+permissions:
+  issues: write
+
+jobs:
+  contributor_report_readme:
+    name: contributor report
+    runs-on: ubuntu-latest
+    steps:
+      - name: Run contributor action
+        uses: github/contributors@v1
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          ORGANIZATION: BlackPythonDevs
+          SPONSOR_INFO: "true"
+
+      - name: Create issue
+        uses: peter-evans/create-issue-from-file@v4
+        with:
+          title: Monthly contributor report
+          token: ${{ secrets.GITHUB_TOKEN }}
+          content-filepath: ./contributors.md
+          # assignees: <YOUR_GITHUB_HANDLE_HERE>
+
+      - name: Contribute List
+        uses: akhilmhdh/contributors-readme-action@v2.3.6
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
