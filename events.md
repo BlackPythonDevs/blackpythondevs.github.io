@@ -4,18 +4,6 @@ lang: en
 title: Events
 ---
 
-## Ice Cream Social at DjangoCon US
-
-Planning to meet and greet events before DjangoCon US.
-
-We'll be in Durham and for our Alcohol-Free event, it's an Ice Cream Social.
-
-Meet and greet with one another.
-
-### Details in the [Black Python Devs Discord](https://discord.gg/kkGBdgAb?event=1099928131705507992)
-
----
-
 ## Coffee and Code
 
 Join us every Friday for a cup of coffee and a chance to code with fellow Python enthusiasts. Our community is open to all levels of experience, from beginners to experts.

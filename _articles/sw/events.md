@@ -4,18 +4,6 @@ lang: sw
 title: Matukio
 ---
 
-## Tafrija Ya Aiskrimu katika DjangoCon US
-
-Mpango wa matukio ya kukutana na kusalimiana kabla ya DjangoCon US.
-
-Tutakuwa Durham na kwa tukio lisikua-na-pombe, ni Tafrija ya Aiskrimu.
-
-Mkutane na msalimiane.
-
-### Maelezo katika [Black Python Devs Discord](https://discord.gg/kkGBdgAb?event=1099928131705507992)
-
----
-
 ## Kahawa na Msimbo
 
 Jiunge nasi kila ijumaa kwa kikombe cha kahawa na uwezekano wa kuandika misimbo pamoja na wenye shauku wenzako wa Python. Jumuiya yetu iko wazi kwa ngazi zote ya uzoefu, kutoka wanaoanza hadi wataalamu.
