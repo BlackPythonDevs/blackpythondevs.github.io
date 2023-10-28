@@ -63,6 +63,13 @@ Please read [Contributing to Black Python Devs](CONTRIBUTING.md)
     </td></tr>
 <tr>
     <td align="center">
+        <a href="https://github.com/VeldaKiara">
+            <img src="https://avatars.githubusercontent.com/u/32552296?v=4" width="100;" alt="VeldaKiara"/>
+            <br />
+            <sub><b>Velda Kiara</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ankitgadling">
             <img src="https://avatars.githubusercontent.com/u/86833325?v=4" width="100;" alt="ankitgadling"/>
             <br />
