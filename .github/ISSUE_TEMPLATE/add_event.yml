@@ -1,0 +1,65 @@
+name: Add Event Name
+description: Add the event dates(start date and time), the location of the event(virtual or physical). If virtual, the platform to be used, speaking and other information that you would like shared. In case of a partnership or collaboration add the event here and add the necessary redirection links.
+title: "[Event] <Event NAME> YYYY"
+labels: ["event"]
+body:
+  - type: input
+    id: event_name
+    attributes:
+      label: Event Name
+      description: The name of the event.
+      placeholder: <EVENT NAME>
+    validations:
+      required: true
+  - type: input
+    attributes:
+      label: URL
+      description: The URL of the event.
+      placeholder: https://event.com
+    validations:
+      required: true
+  - type: input
+    id: event_date
+    attributes:
+      label: Event Date
+      description: The date of the event.
+      placeholder: "DD MMM YYYY"
+  - type: input
+    id: event_time
+    attributes:
+      label: Event start time & end time
+      description: The time the event starts and ends, time zone.
+      placeholder: "__9:00am to 5:00pm, GMT + 3"
+  - type: dropdown
+    id: event_type
+    attributes:
+      label: Event Type
+      description: Is the event in-person virtual or both?
+      options: ["hybrid", "physical", "virtual"]
+    validations:
+      required: true
+  - type: input
+    id: event_location
+    attributes:
+      label: Event Location
+      description: The location of the event. Leave blank if virtual only
+      placeholder: " PLACE, CITY, COUNTRY"
+    validations:
+      required: false
+  - type: textarea
+    id: event_description
+    attributes:
+      label: Summary
+      description: Information you're sharing about this event.
+      placeholder: |
+        Coffee and Chat is a weekly event we have every friday to talk about Black Python Devs, Tech and answer any questions that you have etc
+    validations:
+      required: false
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this form, you agree to follow our [Code of Conduct](https://github.com/BlackPythonDevs/.github/blob/main/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
