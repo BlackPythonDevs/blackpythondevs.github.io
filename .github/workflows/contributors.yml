@@ -24,12 +24,21 @@ jobs:
           SPONSOR_INFO: "true"
 
       - name: Create issue
+        id: ciff
         uses: peter-evans/create-issue-from-file@v4
         with:
           title: Monthly contributor report
           token: ${{ secrets.GITHUB_TOKEN }}
           content-filepath: ./contributors.md
+          labels: |
+            report
+            automated issue
           # assignees: <YOUR_GITHUB_HANDLE_HERE>
+
+      - name: Close Issue
+        run: gh issue close --comment "Auto-closing issue"  ${{ steps.ciff.outputs.issue-number }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Contribute List
         uses: akhilmhdh/contributors-readme-action@v2.3.6
