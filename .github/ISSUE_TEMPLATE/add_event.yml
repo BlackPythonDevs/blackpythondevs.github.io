@@ -1,5 +1,5 @@
 name: Add Event Name
-description: Add the event dates(start date and time), the location of the event(virtual or physical). If virtual, the platform to be used, speaking and other information that you would like shared. In case of a partnership or collaboration add the event here and add the necessary redirection links.
+description: Add the event, if virtual, the platform to be used, speaking, etc. In case of a partnership or collaboration add the event here and add the necessary redirection links.
 title: "[Event] <Event NAME> YYYY"
 labels: ["event"]
 body:
