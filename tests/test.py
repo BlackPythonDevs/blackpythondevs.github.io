@@ -44,7 +44,7 @@ def test_headers_in_language(page: Page, title: str, url: str) -> None:
     assert lang == "es"
 
 
-def test_switching_lang_es_about(page: Page):
+def test_switching_lang_es_about(page: Page) -> None:
     about_path = "/about/"
     page.goto(f"{live_server_url}{about_path}")
     page.get_by_label("Language").select_option("es")
@@ -73,9 +73,25 @@ def test_headers_in_sw(page: Page, title: str, url: str) -> None:
     assert lang == "sw"
 
 
-def test_switching_lang_sw_about(page: Page):
+def test_switching_lang_sw_about(page: Page) -> None:
     about_path = "/about/"
     page.goto(f"{live_server_url}{about_path}")
     page.get_by_label("Language").select_option("sw")
     # http://127.0.0.1:4000/sw/about/
     expect(page).to_have_url(f"{live_server_url}/sw{about_path}")
+
+
+@pytest.mark.parametrize(
+    "title, url",
+    (
+        ("Black Python Devs | Home", "/"),
+        ("Black Python Devs | Blog", "/blog"),
+        ("Black Python Devs | About Us", "/about/"),
+        ("Black Python Devs | Events", "/events/"),
+        ("Black Python Devs | Conferences", "/conferences/"),
+        ("Black Python Devs | Community", "/community/"),
+    ),
+)
+def test_bpdevs_title_en(page: Page, title: str, url: str) -> None:
+    page.goto(f"{live_server_url}/{url}")
+    expect(page).to_have_title(title)
