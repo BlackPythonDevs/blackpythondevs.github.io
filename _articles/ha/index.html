@@ -1,0 +1,9 @@
+---
+layout: index
+lang: ha
+title: Gida
+permalink: /ha/
+---
+
+{% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
+<h1>{{ t.index.lead }}</h1>
