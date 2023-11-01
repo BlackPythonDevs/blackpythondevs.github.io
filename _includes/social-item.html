@@ -1,7 +1,11 @@
 <li>{% assign entry = include.item %}
   <a {% unless entry.platform == 'rss' %}rel="me" {% endunless %}href="{{ entry.user_url }}" target="_blank" title="{{ entry.title | default: entry.platform }}">
+    {% if entry.platform == 'discord' %}
+    <i class="fab fa-discord" aria-hidden="true"></i>
+    {% else %}
     <svg class="svg-icon grey">
       <use xlink:href="{{ '/assets/minima-social-icons.svg#' | append: entry.platform | relative_url }}"></use>
     </svg>
+    {% endif %}
   </a>
 </li>

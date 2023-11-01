@@ -329,6 +329,13 @@ footer {
   margin-left: 0;
 }
 
+.footer-col {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
 .footer-col-wrapper,
 .social-links {
   font-size: 0.9375rem;
