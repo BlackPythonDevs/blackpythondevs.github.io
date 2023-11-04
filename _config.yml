@@ -45,6 +45,7 @@ bpdevs:
     - { platform: github, user_url: "https://github.com/BlackPythonDevs/blackpythondevs.github.io" }
     - { platform: discord, user_url: "https://discord.gg/XUc3tFqCT3" }
     - { platform: linkedin, user_url: "https://www.linkedin.com/groups/14336241/" }
+    - { platform: mastodon, user_url: "https://mastodon.social/@blackpythondevs" }
     - { platform: x, user_url: "https://x.com/blackpythondevs" }
 
 # Build settings
