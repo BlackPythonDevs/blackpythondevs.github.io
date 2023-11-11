@@ -6,3 +6,33 @@ title: Home
 
 {% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
 <h1>{{ t.index.lead }}</h1>
+<br />
+<h2 id="what-is-black-python-devs">What is Black Python Devs</h2>
+<hr />
+
+<p>Black Python Devs is an online-first community for python developers of all skill levels that identify as black.</p>
+<p>Our goal is to:</p>
+<ol>
+  <li>Show the vast community of black Python developers that exist but whose voices are often not amplified in the
+    community.</li>
+  <li>Support black Python developers in their careers by highlighting their expertise and creating mentorship
+    opportunities.</li>
+  <li>Learn from those who are creating and organizing events and other groups with communities of black developers.</li>
+</ol>
+
+<hr />
+
+<h2 id="recently-on-the-blog">Recently on the blog</h2>
+<br />
+{% if site.posts.size > 0 %}
+  {% for post in site.posts limit:3 %}
+    <h3>{{ post.title }}</h3>
+    {{ post.excerpt }}
+    <a href="{{ post.url }}">Read More »</a>
+    {% unless forloop.last %}
+      <hr />
+    {% endunless %}
+  {% endfor %}
+{% else %}
+  <p>No blog posts found.</p>
+{% endif %}
