@@ -3,8 +3,10 @@ assets/js/jquery.min.js
 assets/js/index.js
 _layouts/default.html
 _layouts/index.html
+_layouts/post.html
 _includes/header.html
 _includes/social.html
 _includes/social-item.html
 _includes/svg_symbol.html
+_includes/disqus_comments.html
 _data/conferences.yml

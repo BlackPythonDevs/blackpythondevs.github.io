@@ -1,6 +1,6 @@
 ---
 title: "What is the US Conference City Diversity Metric"
-layout: default
+layout: post
 lang: en
 date: 2023-11-11
 author: Jay Miller
