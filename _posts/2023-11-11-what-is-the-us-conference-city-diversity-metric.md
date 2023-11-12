@@ -29,4 +29,3 @@ Also diverse city doesn't mean diverse area. The general county may be inclusive
 ---
 
 If you're planning to take your event to a new area remember the closer you are to culturally diverse cities the more likely you'll have a diverse event. That said your location selection is only a part of the journey to a diverse conference.
-\*\*s started pushing conferences to more affordable areas with large international airports. These were places like Salt Lake City, Portland, and Montreal.
