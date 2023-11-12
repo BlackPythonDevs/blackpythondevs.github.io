@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 lang: en
 title: "DjangoCon US 2023"
 date: 2023-10-20

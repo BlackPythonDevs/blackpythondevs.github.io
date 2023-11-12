@@ -4,9 +4,6 @@ lang: en
 title: Home
 ---
 
-{% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
-<h1>{{ t.index.lead }}</h1>
-<br />
 <h2 id="what-is-black-python-devs">What is Black Python Devs</h2>
 <hr />
 
@@ -20,18 +17,3 @@ title: Home
 </ol>
 
 <hr />
-
-<h2 id="recently-on-the-blog">Recently on the blog</h2>
-<br />
-{% if site.posts.size > 0 %}
-  {% for post in site.posts limit:3 %}
-    <h3>{{ post.title }}</h3>
-    {{ post.excerpt }}
-    <a href="{{ post.url }}">Read More »</a>
-    {% unless forloop.last %}
-      <hr />
-    {% endunless %}
-  {% endfor %}
-{% else %}
-  <p>No blog posts found.</p>
-{% endif %}
