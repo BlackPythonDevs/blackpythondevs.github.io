@@ -9,4 +9,5 @@ _includes/social.html
 _includes/social-item.html
 _includes/svg_symbol.html
 _includes/disqus_comments.html
+_includes/posts.html
 _data/conferences.yml
