@@ -31,3 +31,30 @@ To keep an ecosystem alive you must feed it. We want to ensure that the members 
 We hope in the long run to create many in-person user groups and events, but we have to understand where we can make the largest impacts.
 
 To do this we're hoping to gather folks from around the world and see where our largest audiences are.
+
+## Leadership Team
+
+### Executor: Jay Miller
+
+<div style="display:flex; flex-wrap: wrap;">
+
+<div style="display:flex">
+<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Jay" src="https://avatars.githubusercontent.com/u/8632637?v=4">
+<p> Jay is a founder of Black Python Devs. Jay is an American Developer Advocate based in the Atlanta, Georgia area. </p>
+</div>
+
+### Technical Manager: Oleksis Fraga
+
+<div style="display:flex">
+<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Oleksis" src="https://avatars.githubusercontent.com/u/44526468?v=4">
+<p> Oleksis is a Cuban software engineer and open-source maintaner based in the Toronto Canada area.</p>
+</div>
+
+### Events Coordinator: Velda Kiara
+
+<div style="display:flex">
+<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Velda" src="https://avatars.githubusercontent.com/u/32552296?v=4">
+<p> Velda is a Kenyan software engineer and technical writer based in Nairobi.</p>
+</div>
+
+</div>
