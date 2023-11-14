@@ -1,11 +1,17 @@
-{% if site.data.conferences.size > 0 %} {% for conference in site.data.conferences %}
+{% if site.data.conferences.size > 0 %}
+  {% for conference in site.data.conferences %}
 <div class="conference">
-  <h2><a href="{{ conference.url }}">{{ conference.name }}</a> ({{ conference.dates }}) - {{ conference.location }}</h2>
+  <h2>
+    <a href="{{ conference.url }}">{{ conference.name }}</a> ({{ conference.dates }}) {% if conference.location != "_No response_" %}- {{ conference.location }}{% endif %}
+  </h2>
   <p>Type: {{ conference.type }}</p>
-  {{ conference.summary | markdownify }}
+  {% if conference.summary != "_No response_" %}
+    {{ conference.summary | markdownify }}
+  {% endif %}
   <h3>Speaking:</h3>
-  <p>{{ conference.speaking | markdownify }}</p>
+  {{ conference.speaking | markdownify }}
 </div>
-{% endfor %} {% else %}
+  {% endfor %}
+{% else %}
 <b>No conferences</b>
 {% endif %}
