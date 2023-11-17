@@ -358,7 +358,7 @@ footer {
 
 .social-media-list li a {
   display: block;
-  padding: 10px 12px;
+  padding: 8px 10px;
   border: 1px solid var(--minima-border-color-01);
 }
 
