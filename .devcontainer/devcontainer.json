@@ -12,12 +12,13 @@
 
   // Features to add to the dev container. More info: https://containers.dev/features.
   "features": {
-    // "ghcr.io/devcontainers/features/python:1": {
-    //   "version": "3.11"
-    // },
-    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
-    "ghcr.io/devcontainers/features/docker-in-docker": {},
-    "ghcr.io/devcontainers-contrib/features/act:1": {}
+    "ghcr.io/devcontainers/features/python:1": {
+      "version": "3.11"
+    },
+    "ghcr.io/oleksis/devcontainer-features/python-launcher:latest": {},
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+    // "ghcr.io/devcontainers/features/docker-in-docker": {},
+    // "ghcr.io/devcontainers-contrib/features/act:1": {}
   },
 
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
