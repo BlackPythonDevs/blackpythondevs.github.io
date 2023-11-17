@@ -1,4 +1,7 @@
 FROM mcr.microsoft.com/devcontainers/jekyll:2-bullseye
+LABEL org.opencontainers.image.source https://github.com/oleksis/blackpythondevs.com
+LABEL org.opencontainers.image.description "Black Python Developers website."
+
 ARG PYTHON_VERSION="3.11.6"
 ENV VERSION=${PYTHON_VERSION}
 
@@ -13,3 +16,5 @@ RUN /usr/local/python/${PYTHON_VERSION}/bin/python3 -m pip install --no-cache-di
     && /usr/local/python/${PYTHON_VERSION}/bin/python3 -m playwright install --with-deps
 
 COPY --chmod=0755 .devcontainer/post-create-bpdevs.sh /usr/local/post-create-bpdevs.sh
+
+EXPOSE 4000/tcp

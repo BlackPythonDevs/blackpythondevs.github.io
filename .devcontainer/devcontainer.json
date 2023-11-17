@@ -6,6 +6,7 @@
   // "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
   "build": {
     "dockerfile": "Dockerfile",
+    "cacheFrom": "ghcr.io/oleksis/blackpythondevs.com:latest",
     "context": ".."
   },
 
