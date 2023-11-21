@@ -1,27 +1,16 @@
-// For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/jekyll
 {
-  "name": "Jekyll",
-  // Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-  // "image": "mcr.microsoft.com/devcontainers/jekyll:2-bullseye",
-  "build": {
-    "dockerfile": "Dockerfile",
-    "cacheFrom": "ghcr.io/oleksis/blackpythondevs.com:latest",
-    "context": ".."
-  },
+  "name": "BPDevs",
+  "image": "ghcr.io/oleksis/blackpythondevs.com:latest",
+  "prebuild": true,
+  "prebuildCommand": "bundle install",
+  "prebuildVariants": [
+    {
+      "name": "development",
+      "prebuildCommand": "bundle install && JEKYLL_ENV=development bundle exec jekyll build"
+    }
+  ],
 
-  // Features to add to the dev container. More info: https://containers.dev/features.
-  "features": {
-    "ghcr.io/devcontainers/features/python:1": {
-      "version": "3.11"
-    },
-    "ghcr.io/oleksis/devcontainer-features/python-launcher:latest": {},
-    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
-    // "ghcr.io/devcontainers/features/docker-in-docker": {},
-    // "ghcr.io/devcontainers-contrib/features/act:1": {}
-  },
-
-  // Use 'forwardPorts' to make a list of ports inside the container available locally.
+  "appPort": "4000:4000",
   "forwardPorts": [
     // Jekyll server
     4000,
