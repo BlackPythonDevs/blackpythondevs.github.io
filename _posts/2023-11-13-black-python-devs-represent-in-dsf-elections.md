@@ -21,5 +21,5 @@ There are three seats open and I hope at least one can go to someone in this lis
 
 - Velda Kiara
 - Chris Achinga
-- Sarah Abdermane
+- Sarah Abderemane
 - Jay Miller
