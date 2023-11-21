@@ -194,7 +194,7 @@ input::-moz-focus-inner {
 }
 
 .site-title {
-  color: #2c343c;
+  color: #4c77a6;
   /* font-family: "Noto Serif",Georgia,serif; */
   font-size: 1.66667rem;
   font-weight: 700;
@@ -211,7 +211,7 @@ input::-moz-focus-inner {
 }
 
 .site-title a {
-  color: #2c343c;
+  color: #4c77a6
   text-decoration: none;
 }
 
@@ -339,7 +339,7 @@ footer {
 .footer-col-wrapper,
 .social-links {
   font-size: 0.9375rem;
-  color: var(--minima-brand-color);
+  color: #4c77a6;
 }
 
 .social-media-list {
