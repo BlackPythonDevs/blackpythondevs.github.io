@@ -1,5 +1,6 @@
 black
 pre-commit
+pytest-pyodide
 pytest-playwright
 PyGithub
 PyYAML
