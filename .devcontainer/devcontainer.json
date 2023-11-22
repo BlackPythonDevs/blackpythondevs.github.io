@@ -18,6 +18,8 @@
     35729
   ],
 
+  "onCreateCommand": "rbenv install",
+
   // Uncomment the next line to run commands after the container is created.
   // git config --global --add safe.directory /workspaces/blackpythondevs.github.io
   "postCreateCommand": "sh /usr/local/post-create-bpdevs.sh",
