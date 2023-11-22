@@ -82,6 +82,36 @@ Help us keep this project open and inclusive. Please read and follow our [Code o
 
 🥳
 
+## Accessibility
+
+Accessibility (A11y) using the **FastPass** tests for A11y and the [Accessibility Insights for Web
+][1] browser extension.
+
+### 1: Reproduce the Tests
+
+First, reproduce the **FastPass** tests for A11y using the [Accessibility Insights for Web
+][1] browser extension. This extension is designed to help you identify and fix accessibility issues on your website.
+
+![image](https://github.com/BlackPythonDevs/blackpythondevs.github.io/assets/44526468/222e6653-c963-4518-a297-262d656216a7)
+
+### 2: Capture the Issues
+
+If the Accessibility Insights for Web extension identifies any issues, capture a screenshot of the issues on the [BPDevs](https://blackpythondevs.github.io/) website. You can do this by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> on your keyboard.
+
+### 3: Make the Necessary Changes
+
+Next, make the necessary changes to fix the identified issues. This might involve modifying the CSS of the website.
+
+### 4: Test the Changes
+
+After making the changes, run the **FastPass** test again and capture a screenshot showing no accessibility issues. This will serve as proof that the issues have been successfully resolved.
+
+![image](https://github.com/BlackPythonDevs/blackpythondevs.github.io/assets/44526468/9a284f43-3cde-4370-9eab-1d302ed65e9e)
+
+### 5: Check and Pass Other Tests
+
+Finally, check and pass other tests, such as the rules with `pre-commit`. This ensures that your changes are in line with the existing codebase and do not introduce any new issues.
+
 ## Translations
 
 We welcome translations for the Black Python Devs website in all languages! Here's how you can contribute:
@@ -103,3 +133,5 @@ The language code being used should be in the format [<ISO 639-1>](https://en.wi
 4. **Submit a Pull Request**: You may send a pull request before all steps above are complete: e.g., you may want to ask for help with translations, or getting tests to pass. However, your pull request will not be merged until all steps above are complete.
 
 Our maintainers will review your pull request and merge it if everything is in order. We appreciate your contribution to making Black Python Devs accessible to more people around the world!
+
+[1]: https://microsoftedge.microsoft.com/addons/detail/accessibility-insights-fo/ghbhpcookfemncgoinjblecnilppimih
