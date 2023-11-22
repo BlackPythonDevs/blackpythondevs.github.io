@@ -14,11 +14,13 @@ py -m playwright install --with-deps
 ls ~/.vscode-remote/extensions
 
 # Define the extensions to be deleted
-extensions=("rebornix.ruby" "wingrunr21.vscode-ruby")
+extension1="rebornix.ruby"
+extension2="wingrunr21.vscode-ruby"
 
-for extension in "${extensions[@]}"; do
-  # Check if the extension directory exists
-  if [ -d "~/.vscode-remote/extensions/$extension"* ]; then
+# Check if the extension directories exist and delete them
+for extension in $extension1 $extension2
+do
+  if [ -d ~/.vscode-remote/extensions/$extension-* ]; then
     echo "Deleting $extension"
     rm -rf ~/.vscode-remote/extensions/$extension-*
   else
