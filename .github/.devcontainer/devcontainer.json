@@ -16,7 +16,10 @@
       "version": "3.11"
     },
     "ghcr.io/oleksis/devcontainer-features/python-launcher:latest": {},
-    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {}
+    "ghcr.io/devcontainers-contrib/features/pre-commit:2": {},
+    "ghcr.io/devcontainers/features/ruby:1": {
+      "version": "3.2.2"
+    }
     // "ghcr.io/devcontainers/features/docker-in-docker": {},
     // "ghcr.io/devcontainers-contrib/features/act:1": {}
   },
