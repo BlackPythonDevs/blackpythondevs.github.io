@@ -233,6 +233,7 @@ GEM
     prism (0.17.1)
     public_suffix (4.0.7)
     racc (1.7.3)
+    rake (13.1.0)
     rb-fsevent (0.11.2)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
@@ -277,6 +278,8 @@ DEPENDENCIES
   jekyll-feed
   jekyll-remote-theme
   jemoji
+  prism (~> 0.17.1)
+  rake
   ruby-lsp (~> 0.12.4)
   tzinfo-data
   webrick (~> 1.7)
