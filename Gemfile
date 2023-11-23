@@ -16,4 +16,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'webrick', '~> 1.7'
 
+gem "rake"
+gem 'prism', '~> 0.17.1'
 gem 'ruby-lsp', '~> 0.12.4'
