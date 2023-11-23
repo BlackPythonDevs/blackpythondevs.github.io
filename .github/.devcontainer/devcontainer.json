@@ -32,7 +32,7 @@
     35729
   ],
 
-  "onCreateCommand": "sh /usr/local/on-create-bpdevs.sh",
+  // "onCreateCommand": "sh /usr/local/on-create-bpdevs.sh",
 
   // Uncomment the next line to run commands after the container is created.
   // git config --global --add safe.directory /workspaces/blackpythondevs.github.io
