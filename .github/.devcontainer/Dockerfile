@@ -3,7 +3,7 @@ LABEL org.opencontainers.image.source https://github.com/oleksis/blackpythondevs
 LABEL org.opencontainers.image.description "Black Python Developers website."
 
 RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
-    && apt-get install -y build-essential \
+    && apt-get install -y build-essential git \
     && rm -rf /var/lib/apt/lists/*
 
 # Install rbenv and ruby-build
