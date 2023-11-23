@@ -6,12 +6,8 @@ RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
     && apt-get install -y build-essential git \
     && rm -rf /var/lib/apt/lists/*
 
-# Install rbenv and ruby-build
-RUN git clone https://github.com/rbenv/rbenv.git ~/.rbenv \
-    && echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bashrc \
-    && echo 'eval "$(rbenv init -)"' >> ~/.bashrc \
-    && git clone https://github.com/rbenv/ruby-build.git ~/.rbenv/plugins/ruby-build \
-    && echo 'export PATH="$HOME/.rbenv/plugins/ruby-build/bin:$PATH"' >> ~/.bashrc
+# Init rbenv
+RUN echo 'eval "$(rbenv init -)"' >> ~/.bashrc
 
 # Install Ruby 3.2.2
 RUN /bin/bash -c 'source ~/.bashrc && rbenv install $(cat .ruby-version) && rbenv global $(cat .ruby-version)'
