@@ -10,7 +10,7 @@ ls ~/.vscode-remote/extensions
 # Define the extensions to be deleted
 extension1="rebornix.ruby"
 extension2="wingrunr21.vscode-ruby"
-extension3="Shopify.ruby-lsp"
+extension3="shopify.ruby-lsp"
 
 # Check if the extension directories exist and delete them
 for extension in $extension1 $extension2 $extension3
