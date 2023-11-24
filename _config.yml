@@ -37,7 +37,7 @@ bpdevs:
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.
   #
-  # date_format: "%b %-d, %Y"
+  date_format: "%b %-d, %Y"
 
   # Generate social links in footer.
   #
@@ -75,6 +75,7 @@ exclude:
   - .gitignore
   - .prettierrc
   - .prettierignore
+  - .pytest_cache
   - resources
   - script
   - test
