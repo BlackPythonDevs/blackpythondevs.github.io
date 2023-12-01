@@ -70,6 +70,13 @@ Please read [Contributing to Black Python Devs](CONTRIBUTING.md)
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/Fahass">
+            <img src="https://avatars.githubusercontent.com/u/120847330?v=4" width="100;" alt="Fahass"/>
+            <br />
+            <sub><b>Umar Farouk</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ankitgadling">
             <img src="https://avatars.githubusercontent.com/u/86833325?v=4" width="100;" alt="ankitgadling"/>
             <br />
