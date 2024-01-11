@@ -47,7 +47,7 @@ To do this we're hoping to gather folks from around the world and see where our 
 
 <div style="display:flex">
 <img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Oleksis" src="https://github.com/oleksis.png">
-<p> Oleksis is a Cuban software engineer and open-source maintaner based in the Toronto Canada area.</p>
+<p> Oleksis is a Cuban software engineer and open-source maintainer based in the Toronto Canada area.</p>
 </div>
 
 ### Events Coordinator: Velda Kiara
