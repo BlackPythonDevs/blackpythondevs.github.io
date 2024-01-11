@@ -8,6 +8,7 @@
     "github.vscode-github-actions",
     "DavidAnson.vscode-markdownlint",
     // "deque-systems.vscode-axe-linter",
+    // "valentjn.vscode-ltex",
     "ms-python.python"
   ]
 }
