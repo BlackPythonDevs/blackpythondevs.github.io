@@ -2,8 +2,9 @@ image: "ghcr.io/oleksis/blackpythondevs.com:latest"
 tasks:
   - name: Init and Post create command
     init: |
-      sudo -i -u root
       cd /workspace/blackpythondevs.com
+      sudo usermod -a -G rvm gitpod
+      sudo chown -R gitpod /usr/local/rvm/gems/
       bundle install
     command: |
       sudo -i -u root
