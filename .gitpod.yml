@@ -2,8 +2,12 @@ image: "ghcr.io/oleksis/blackpythondevs.com:latest"
 tasks:
   - name: Init and Post create command
     init: |
+      sudo -i -u root
+      cd /workspace/blackpythondevs.com
       bundle install
     command: |
+      sudo -i -u root
+      cd /workspace/blackpythondevs.com
       sh /usr/local/post-create-bpdevs.sh
 ports:
   - port: 4000
