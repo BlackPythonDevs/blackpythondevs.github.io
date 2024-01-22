@@ -1,0 +1,16 @@
+image: "ghcr.io/oleksis/blackpythondevs.com:latest"
+tasks:
+  - name: Init and Post create command
+    init: |
+      bundle install
+    command: |
+      sh /usr/local/post-create-bpdevs.sh
+ports:
+  - port: 4000
+    onOpen: open-preview
+    name: Jekyll
+
+vscode:
+  extensions:
+    - ms-python.python
+    - DavidAnson.vscode-markdownlint
