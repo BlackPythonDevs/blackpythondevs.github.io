@@ -18,3 +18,5 @@ vscode:
   extensions:
     - ms-python.python
     - DavidAnson.vscode-markdownlint
+
+workspaceLocation: "/workspace/blackpythondevs.com"
