@@ -8,6 +8,8 @@ This repo is the [GitHub Pages](https://pages.github.com/) website, built in Jek
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 
+[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/BlackPythonDevs/blackpythondevs.github.io?folder=/workspace/blackpythondevs.github.io)
+
 You can deploy your project locally but the fastest way to contribute is to use our [Codespace](https://github.com/features/codespaces/).
 
 ## Contributing
