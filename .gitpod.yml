@@ -2,13 +2,13 @@ image: "ghcr.io/oleksis/blackpythondevs.com:latest"
 tasks:
   - name: Init and Post create command
     init: |
-      cd /workspace/blackpythondevs.com
+      cd /workspace/blackpythondevs.github.io
       sudo usermod -a -G rvm gitpod
       sudo chown -R gitpod /usr/local/rvm/gems/
       bundle install
     command: |
       sudo -i -u root
-      cd /workspace/blackpythondevs.com
+      cd /workspace/blackpythondevs.github.io
       sh /usr/local/post-create-bpdevs.sh
 ports:
   - port: 4000
@@ -20,4 +20,4 @@ vscode:
     - ms-python.python
     - DavidAnson.vscode-markdownlint
 
-workspaceLocation: "/workspace/blackpythondevs.com"
+workspaceLocation: "/workspace/blackpythondevs.github.io"
