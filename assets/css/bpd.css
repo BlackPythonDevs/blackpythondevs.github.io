@@ -208,6 +208,11 @@ a {
   margin: 0 15px 0 0;
 }
 
+a.logo-text img {
+  width: 200px;
+  height: 32px;
+}
+
 @media only screen and (max-width: 600px) {
   .site-title {
     font-size: 1.5rem;
