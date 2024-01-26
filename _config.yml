@@ -88,8 +88,6 @@ exclude:
 
 permalink: "/:path/"
 
-limit_posts: 3
-
 collections:
   articles:
     output: true
