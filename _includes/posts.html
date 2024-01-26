@@ -10,7 +10,10 @@
   {%- endif -%}
   <ul class="post-list">
     {%- assign date_format = site.bpdevs.date_format | default: "%b %-d, %Y" -%}
+    {% assign count = 0 %}
+    {% assign limit_posts = 3 %}
     {%- for post in posts -%}
+      {%- if count < limit_posts -%}
     <li>
       <span class="post-meta">{{ post.date | date: date_format }}</span>
       <h3>
@@ -22,6 +25,8 @@
         {{ post.excerpt }}
       {%- endif -%}
     </li>
+      {%- assign count = count | plus:1 -%}
+      {%- endif -%}
     {%- endfor -%}
   </ul>
 
