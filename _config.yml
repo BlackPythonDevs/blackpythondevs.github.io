@@ -18,9 +18,7 @@ navigation:
     url: /
     fa: fa fa-home fa-fw
   - text: Blog
-    url: /eng/blog/
-  - text: Blog
-    url: /sw/blog/
+    url: /blog/
     fa: fa fa-newspaper fa-fw
   - text: About Us
     url: /about/
