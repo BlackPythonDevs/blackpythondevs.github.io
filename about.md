@@ -30,7 +30,7 @@ New programs and initiatives are often done with the help of those that have com
 
 Communities that are void of opportunities are often abandoned. While we can't move entire companies to these areas we can make sure that the local areas and businesses continue to thrive.
 
-When we need to spend money, we look at where our members are and invest in their hometowns. This allows Black communities to begin to build reputations and shine.
+When we need to spend money, we look at where our members are and invest in their hometowns. This allows Black communities to shine beyond their point on the map.
 
 ## Why online first
 
