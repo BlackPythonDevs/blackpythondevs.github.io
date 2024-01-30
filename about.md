@@ -10,7 +10,7 @@ title: About Us
 
 ### Own your Masters: Support members while ensuring they control the message around
 
-We're here to amplify your voice, not the other way around. That's why we're happy to share what you've done without without making it about us.
+We're here to amplify your voice, not the other way around. That's why we're happy to share what you've done without making it about us.
 
 Any content that a member contributes to the community is given to them to publish as they please. That means if it's on our platforms, they allowed us to publish and have the right to change their mind at any time.
 
