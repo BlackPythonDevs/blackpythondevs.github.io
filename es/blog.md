@@ -1,8 +1,8 @@
 ---
 layout: default
-lang: en
+lang: es
 title: Blog
-permalink: /eng/blog/
+permalink: /es/blog/
 list_title: Posts
 ---
 
