@@ -9,6 +9,7 @@
     "DavidAnson.vscode-markdownlint",
     // "deque-systems.vscode-axe-linter",
     // "valentjn.vscode-ltex",
+    "ms-azuretools.vscode-docker",
     "ms-python.python"
   ]
 }
