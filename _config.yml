@@ -1,7 +1,8 @@
 # Site settings
 title: Black Python Devs
+domain: blackpythondevs.com
 description: >
-  blackpythondevs.com
+  Black Python Devs
 
 # baseurl: / # the subpath of your site, e.g. /blog/
 # url: https://blackpythondevs.com # the base hostname & protocol for your site
