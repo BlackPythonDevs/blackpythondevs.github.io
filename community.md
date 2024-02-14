@@ -26,6 +26,10 @@ Follow us on [X](https://x.com/blackpythondevs) for the latest updates, news, an
 
 Join our [LinkedIn Group](https://www.linkedin.com/groups/14336241/) to connect with professionals in the field, participate in relevant discussions, and stay updated with job opportunities and industry trends.
 
+### **Email** <i class="far fa-envelope"></i>
+
+Contact us via email at [black-python-devs@buttondown.email](mailto:black-python-devs@buttondown.email) for inquiries, collaborations, or any other questions.
+
 ## **Get Involved**
 
 There are many ways to get involved with the Black Python Devs Community:
