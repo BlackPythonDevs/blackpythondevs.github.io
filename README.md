@@ -50,20 +50,27 @@ Please read [Contributing to Black Python Devs](CONTRIBUTING.md)
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/kazz54">
+            <img src="https://avatars.githubusercontent.com/u/3674788?v=4" width="100;" alt="kazz54"/>
+            <br />
+            <sub><b>Null</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/bilesanmiahmad">
             <img src="https://avatars.githubusercontent.com/u/5029577?v=4" width="100;" alt="bilesanmiahmad"/>
             <br />
             <sub><b>Bilesanmi Ahmad</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/mannyanebi">
             <img src="https://avatars.githubusercontent.com/u/25439000?v=4" width="100;" alt="mannyanebi"/>
             <br />
             <sub><b>Emmanuel Anebi</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/VeldaKiara">
             <img src="https://avatars.githubusercontent.com/u/32552296?v=4" width="100;" alt="VeldaKiara"/>
