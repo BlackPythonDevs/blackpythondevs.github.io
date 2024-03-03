@@ -2,7 +2,8 @@
   "name": "BPDevs",
   "image": "ghcr.io/oleksis/blackpythondevs.com:latest",
   "prebuild": true,
-  "prebuildCommand": "bundle install",
+  "prebuildCommand": "bundle install", // bundle update
+
   "prebuildVariants": [
     {
       "name": "development",
