@@ -12,17 +12,29 @@ title: Sobre Nosotros
 
 La falta de empleo estable a menudo impide que los miembros contribuyan a la comunidad en general en el nivel que desean. Es importante que los _Black Python Devs_ estén empleados y compensados a una tarifa justa en primer lugar.
 
-### Ampliar Su Alcance: Ampliar el apoyo de las organizaciones existentes centradas en Python y otras tecnologías a las comunidades de miembros de _Black Python Devs_
+### Sé dueño de tus Maestros: Apoya a los miembros mientras te aseguras de que controlen el mensaje
 
-No podemos ser todo para todos. Tampoco necesitamos recrear todos los increíbles programas diseñados para Pythonistas. Nuestro objetivo es apoyar a llevar estos programas existentes a los desarrolladores negros y llenar los vacíos donde existen.
+Estamos aquí para amplificar tu voz, no al revés. Es por eso que estamos felices de compartir lo que has hecho sin que se trate de nosotros.
 
-### Apoyar el Ecosistema: Crear oportunidades para invertir en las comunidades locales que representan los miembros de _Black Python Devs_
+Cualquier contenido que un miembro contribuya a la comunidad se le da para que lo publique a su antojo. Eso significa que si está en nuestras plataformas, nos permitieron publicar y tienen derecho a cambiar de opinión en cualquier momento.
 
-Las comunidades que carecen de oportunidades a menudo son abandonadas. Si bien no podemos trasladar empresas enteras a estas áreas, podemos asegurarnos de que las áreas locales y las empresas continúen prosperando.
+### Asegure la bolsa: Establezca orientación, tutoría y apoyo profesional para Miembros de _Black miembros de Python Devs_
 
-### Echar una mano: Establecer orientación, mentoría y apoyo para los miembros de _Black Python Devs_
+La falta de empleo estable a menudo impide que los miembros contribuyan a la comunidad en general en el nivel deseado. Es importante que los desarrolladores de Black Python sean contratados y compensados a un precio justo y que se les den oportunidades para prosperar.
 
-Para mantener vivo un ecosistema, debes alimentarlo. Queremos asegurarnos de que los miembros varíen en diferentes roles técnicos, habilidades y niveles de habilidad para que podamos abordar la mayor variedad de necesidades de la comunidad.
+Queremos asegurarnos de que los miembros tengan diferentes roles técnicos, habilidades y niveles de habilidad para que podamos abordar la más amplia variedad de necesidades de la comunidad.
+
+### Amplíe Su Alcance: Amplíe el soporte de las organizaciones existentes centradas en Python y otras tecnologías a las comunidades de miembros de _Black Python Devs_
+
+No podemos ser todo para todos. Tampoco necesitamos recrear todos los increíbles programas diseñados para Pythonistas. Nuestro objetivo es apoyar la entrega de estos programas existentes a los desarrolladores negros y llenar los vacíos donde existan.
+
+A menudo, los nuevos programas e iniciativas se llevan a cabo con la ayuda de aquellos que nos han precedido, de modo que podamos garantizar la mejor oportunidad para nuestros miembros.
+
+### Apoyar el Ecosistema: Crear oportunidades para invertir en las comunidades locales que los miembros de _Black Python Devs_ representan.
+
+Las comunidades que carecen de oportunidades a menudo son abandonadas. Si bien no podemos trasladar empresas enteras a estas áreas, podemos asegurarnos de que las áreas y las empresas locales continúen prosperando.
+
+Cuando necesitamos gastar dinero, miramos dónde están nuestros miembros e invertimos en sus ciudades natales. Esto permite que las comunidades negras brillen más allá de su punto en el mapa.
 
 ## ¿Por qué en línea primero?
 
