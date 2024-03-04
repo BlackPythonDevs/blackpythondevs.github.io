@@ -86,6 +86,13 @@ Please read [Contributing to Black Python Devs](CONTRIBUTING.md)
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/zablon-oigo">
+            <img src="https://avatars.githubusercontent.com/u/143833326?v=4" width="100;" alt="zablon-oigo"/>
+            <br />
+            <sub><b>Zablon</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/ankitgadling">
             <img src="https://avatars.githubusercontent.com/u/86833325?v=4" width="100;" alt="ankitgadling"/>
             <br />
