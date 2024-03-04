@@ -18,7 +18,7 @@ Estamos aquí para amplificar tu voz, no al revés. Es por eso que estamos felic
 
 Cualquier contenido que un miembro contribuya a la comunidad se le da para que lo publique a su antojo. Eso significa que si está en nuestras plataformas, nos permitieron publicar y tienen derecho a cambiar de opinión en cualquier momento.
 
-### Asegure la bolsa: Establezca orientación, tutoría y apoyo profesional para Miembros de _Black miembros de Python Devs_
+### Asegure la bolsa: Establezca orientación, tutoría y apoyo profesional para Miembros de _Black Python Devs_
 
 La falta de empleo estable a menudo impide que los miembros contribuyan a la comunidad en general en el nivel deseado. Es importante que los desarrolladores de Black Python sean contratados y compensados a un precio justo y que se les den oportunidades para prosperar.
 
