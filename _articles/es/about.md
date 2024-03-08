@@ -8,10 +8,6 @@ title: Sobre Nosotros
 
 ---
 
-### Asegurar la Bolsa: Aumentar las inversiones organizacionales en áreas con mayores densidades de _Black Python Devs_ a nivel mundial
-
-La falta de empleo estable a menudo impide que los miembros contribuyan a la comunidad en general en el nivel que desean. Es importante que los _Black Python Devs_ estén empleados y compensados a una tarifa justa en primer lugar.
-
 ### Sé dueño de tus Maestros: Apoya a los miembros mientras te aseguras de que controlen el mensaje
 
 Estamos aquí para amplificar tu voz, no al revés. Es por eso que estamos felices de compartir lo que has hecho sin que se trate de nosotros.
