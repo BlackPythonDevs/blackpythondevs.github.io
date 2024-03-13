@@ -2,7 +2,7 @@
 layout: post
 lang: en
 title: "Black Python Devs x PyCon US"
-date: 2023-10-20
+date: 2024-03-13
 ---
 
 PyCon US is coming and Black Python Devs will represented strongly.
