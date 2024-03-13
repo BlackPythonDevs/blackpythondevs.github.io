@@ -49,7 +49,7 @@ bpdevs:
     - { platform: mastodon, user_url: "https://mastodon.social/@blackpythondevs" }
     - { platform: youtube, user_url: "https://www.youtube.com/@BlackPythonDevs" }
     - { platform: x, user_url: "https://x.com/blackpythondevs" }
-    - { platform: email, user_url: "mailto:black-python-devs@buttondown.email" }
+    - { platform: email, user_url: "contact@blackpythondevs.com" }
 
 # Build settings
 markdown: kramdown

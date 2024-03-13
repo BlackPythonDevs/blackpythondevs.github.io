@@ -410,9 +410,14 @@ footer {
   background-image: url("/assets/images/hero-bpd-background.jpg");
   background-color: RGBA(25, 25, 25, 0.8);
   height: 25rem;
+  display: flex;
   flex-flow: column;
   justify-content: center;
-  align-items: center;
+}
+
+.hero > p {
+  color: #fff;
+  font-size: larger;
 }
 
 .hero-text {
@@ -425,4 +430,8 @@ img.leadership-photo {
   margin: 0 1rem;
   border-radius: 1em;
   max-width: 10rem;
+}
+
+.post-title > h3 {
+  font-size: smaller;
 }

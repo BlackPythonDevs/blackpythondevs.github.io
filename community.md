@@ -28,7 +28,7 @@ Join our [LinkedIn Group](https://www.linkedin.com/groups/14336241/) to connect 
 
 ### **Email** <i class="far fa-envelope"></i>
 
-Contact us via email at [black-python-devs@buttondown.email](mailto:black-python-devs@buttondown.email) for inquiries, collaborations, or any other questions.
+Contact us via email at [contact@blackpythondevs.com](mailto:contact@blackpythondevs.com) for inquiries, collaborations, or any other questions.
 
 ## **Get Involved**
 
