@@ -1,7 +1,7 @@
 {% if site.paginate %} {% assign posts = paginator.posts %} {% else %} {% assign posts = site.posts %} {% endif %} {%- if posts.size > 0 -%} {%- if page.list_title -%}
 <h2 class="post-list-heading">{{ page.list_title }}</h2>
 {%- endif -%}
-<div class="post-list">
+<article class="post-list">
   {%- assign date_format = site.bpdevs.date_format | default: "%b %-d, %Y" -%} {% assign count = 0 %} {% assign limit_posts = 3 %} {%- for post in posts -%} {%- if count < limit_posts -%}
   <div>
     <h3>
@@ -11,7 +11,7 @@
     {%- if site.show_excerpts -%} {{ post.excerpt }} {%- endif -%}
   </div>
   {%- assign count = count | plus:1 -%} {%- endif -%} {%- endfor -%}
-</div>
+</article>
 
 {% if site.paginate %}
 <div class="pager">
