@@ -3,7 +3,7 @@ layout: default
 ---
 <div class="home">
   {% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
-  <article class="hero grid">
+  <article class="hero">
     <div class="hero-text">{{ t.index.lead }}</div>
   </article>
   {{ content }}
@@ -11,5 +11,6 @@ layout: default
   <img src="{{'/assets/images/dcus.jpg' | relative_url }}" />
 
   {%- include latest-posts.html -%}
+  {%- include join_us.html -%}
   {%- include newsletter_form.html -%}
 </div>
