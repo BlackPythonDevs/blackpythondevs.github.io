@@ -287,7 +287,8 @@ details summary[role="button"]:not(.outline)::after {
 [data-theme="light"] input:is([type="submit"], [type="button"], [type="reset"], [type="checkbox"], [type="radio"], [type="file"]) {
   --pico-form-element-focus-color: var(--pico-primary-focus);
 }
-@media only screen and (prefers-color-scheme: dark) {
+/* disabled */
+/* @media only screen and (prefers-color-scheme: dark) {
   :root:not([data-theme]) {
     --pico-background-color: #13171f;
     --pico-color: #c2c7d0;
@@ -403,6 +404,7 @@ details summary[role="button"]:not(.outline)::after {
     filter: brightness(0);
   }
 }
+*/
 [data-theme="dark"] {
   --pico-background-color: #13171f;
   --pico-color: #c2c7d0;
