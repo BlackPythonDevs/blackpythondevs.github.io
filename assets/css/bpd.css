@@ -55,11 +55,6 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-a {
-  color: #4c77a6;
-  text-decoration: none;
-}
-
 div#newsletter {
   margin: 1rem 0;
   padding: 1rem;
