@@ -14,7 +14,9 @@ We're here to amplify your voice, not the other way around. That's why we're hap
 
 Any content that a member contributes to the community is given to them to publish as they please. That means if it's on our platforms, they allowed us to publish and have the right to change their mind at any time.
 
-### Secure the Bag: Establish guidance, mentorship, and career support for _Black Python Devs_ Members
+### Secure the Bag:
+
+**Establish guidance, mentorship, and career support for _Black Python Devs_ Members**
 
 Lack of stable employment often prevents members from contributing to the greater community at their desired leve. It is important that Black Python Developers are first and foremost employed and compensated at a fair rate and given opportunities to thrive.
 
@@ -44,24 +46,24 @@ To do this we're hoping to gather folks from around the world and see where our 
 
 ### Executor: Jay Miller
 
-<div style="display:flex; flex-wrap: wrap;" markdown="1">
+<div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
 
 <div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Jay" src="https://github.com/kjaymiller.png">
+<img class="leadership-photo" alt="photo of Jay" src="https://github.com/kjaymiller.png">
 <p> Jay is a founder of Black Python Devs. Jay is an American Developer Advocate based in the Atlanta, Georgia area. </p>
 </div>
 
 ### Technical Manager: Oleksis Fraga
 
 <div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Oleksis" src="https://github.com/oleksis.png">
+<img class="leadership-photo" alt="photo of Oleksis" src="https://github.com/oleksis.png">
 <p> Oleksis is a Cuban software engineer and open-source maintainer based in the Toronto Canada area.</p>
 </div>
 
 ### Events Coordinator: Velda Kiara
 
 <div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
+<img class="leadership-photo" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
 <p> Velda is a Kenyan software engineer and technical writer based in Nairobi.</p>
 </div>
 
