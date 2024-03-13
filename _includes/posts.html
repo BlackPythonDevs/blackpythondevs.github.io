@@ -8,27 +8,24 @@
   {%- if page.list_title -%}
     <h2 class="post-list-heading">{{ page.list_title }}</h2>
   {%- endif -%}
-  <ul class="post-list">
+  <div class="post-list">
     {%- assign date_format = site.bpdevs.date_format | default: "%b %-d, %Y" -%}
     {% assign count = 0 %}
-    {% assign limit_posts = 3 %}
     {%- for post in posts -%}
-      {%- if count < limit_posts -%}
-    <li>
-      <span class="post-meta">{{ post.date | date: date_format }}</span>
+    <div>
       <h3>
         <a class="post-link" href="{{ post.url | relative_url }}">
           {{ post.title | escape }}
         </a>
       </h3>
+      <span class="post-meta">{{ post.date | date: date_format }}</span>
       {%- if site.show_excerpts -%}
-        {{ post.excerpt }}
+      {{ post.excerpt }}
       {%- endif -%}
-    </li>
+    </div>
       {%- assign count = count | plus:1 -%}
-      {%- endif -%}
     {%- endfor -%}
-  </ul>
+  </div>
 
   {% if site.paginate %}
     <div class="pager">
