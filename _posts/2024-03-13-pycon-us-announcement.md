@@ -7,6 +7,8 @@ date: 2023-10-20
 
 PyCon US is coming and Black Python Devs will represented strongly.
 
+![Black Python Devs x PyCon US 24](/assets/images/bpd_x_github.jpg)
+
 Here's a list of all the things happening at PyCon US!
 
 ## Come hang out at the August Williams African Cultural Center 📖
@@ -32,5 +34,3 @@ We're going to be back for our 3rd Black Python Developers Open Space. Connect w
 ## When is all this happening!
 
 We'll have information on all the happenings at our booth and in the Black Python Devs discord. [Join the community](/community) and stay up to date!
-
-![Black Python Devs x PyCon US 24](/assets/images/Black Python Devs x PyCon.jpg)
