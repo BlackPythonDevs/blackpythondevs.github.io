@@ -4,8 +4,6 @@ lang: sw
 title: Matukio
 ---
 
-## Kahawa na Msimbo
+## Kahawa na Code
 
-Jiunge nasi kila ijumaa kwa kikombe cha kahawa na uwezekano wa kuandika misimbo pamoja na wenye shauku wenzako wa Python. Jumuiya yetu iko wazi kwa ngazi zote ya uzoefu, kutoka wanaoanza hadi wataalamu.
-
-Tutazungumzia mielekeo ya hivi karibuni katika usanidi wa Python, tukipaziana vidokezo na ujanja, na kufanya kazi ya miradi kwa pamoja. Iwe unatazamia kujifunza kitu kipya ama tu wataka kuzuruza-zurura na waliona maoni sawa, hii ndiyo fursa kamilifu ya kufanya hivyo. Tunatazamia kukuona pale!
+Jiunge nasi kila Ijumaa kwajili ya kikombe cha kahawa na uwezekano waku code na wanashauku wezeko wa Python. Jumuiya yetu iko wazi kwa ngazi zote za uzoefu, kuanzia wanao anza hadi wataalamu. Tutanzungumzia yale yote yaliyo jiri hivi karibuni kwenye usanidi wa Python, tuki shirikiana kwenye mbinu na ujanja, na kufanya kazi kwenye miradi pamoj. Iwe unataka kujifunza kitu kipya au unataka kuwa karibu na watu wenye maoni sawa, hii ndiyo fursa sahihi kufanya hivyo.Tunatanzamia kukutana na wewe hapa.
