@@ -55,6 +55,13 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
+/*
+a {
+  color: #4c77a6;
+  text-decoration: none;
+}
+*/
+
 div#newsletter {
   margin: 1rem 0;
   padding: 1rem;
@@ -90,8 +97,8 @@ div#newsletter {
 .back-to-top:active,
 .back-to-top:focus,
 .back-to-top:hover {
-  border-color: #2d72d9;
-  color: #2d72d9;
+  border-color: #3588ff;
+  color: #3588ff;
   outline: 0;
 }
 
@@ -107,7 +114,7 @@ div#newsletter {
 }
 
 .menu-item a {
-  color: #70777d;
+  color: #868e96;
   display: inline-block;
   font-size: 0.88889rem;
   font-weight: 700;
@@ -122,7 +129,7 @@ div#newsletter {
 .menu-item a:hover,
 .menu-item.nav-current a:link,
 .menu-item.nav-current a:visited {
-  color: #2d72d9;
+  color: #3588ff;
 }
 
 .icon-menu {
@@ -214,7 +221,7 @@ a.logo-text img {
 }
 
 .site-title a:hover {
-  color: #2d72d9;
+  color: #3588ff;
 }
 
 .site-navigation {
