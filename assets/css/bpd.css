@@ -55,12 +55,12 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-/*
-a.contrast, a.secondary {
-  color: #00d7ff;
-  text-decoration: none;
+article.post-list a,
+article.pico-background-pumpkin-650 a.contrast,
+article.pico-background-pumpkin-800 a.contrast,
+article.pico-background-zinc-800 a.contrast {
+  color: #00a2c3;
 }
- */
 
 div#newsletter {
   margin: 1rem 0;
