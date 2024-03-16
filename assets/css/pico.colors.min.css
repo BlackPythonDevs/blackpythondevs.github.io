@@ -340,7 +340,7 @@
   --pico-color-sand-250: #beb8a7;
   --pico-color-sand-200: #ccc6b4;
   --pico-color-sand-150: #dad4c2;
-  --pico-color-sand-100: #e8e2d2;
+  --pico-color-sand-100: #f3eddc;
   --pico-color-sand-50: #f2f0ec;
   --pico-color-sand: #ccc6b4;
   --pico-color-grey-950: #111111;
@@ -403,7 +403,7 @@
   --pico-color-slate-100: #dfe3eb;
   --pico-color-slate-50: #eff1f4;
   --pico-color-slate: #525f7a;
-  --pico-color-light: #fff;
+  --pico-color-light: #03d5ff;
   --pico-color-dark: #000;
 }
 .pico-color-red-950 {
