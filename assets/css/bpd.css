@@ -56,11 +56,11 @@ input::-moz-focus-inner {
 }
 
 /*
-a {
-  color: #4c77a6;
+a.contrast, a.secondary {
+  color: #00d7ff;
   text-decoration: none;
 }
-*/
+ */
 
 div#newsletter {
   margin: 1rem 0;
