@@ -1,5 +1,5 @@
 - dates: 22 - 25 Sep 2024
-  location: Durham, North Caroline, United States
+  location: Durham, North Carolina, United States
   name: DjangoCon US 2024
   speaking: Not Available
   summary: DjangoCon US 2024 has been announced! Join us for five days of inspiration,
@@ -9,7 +9,8 @@
 - dates: 16 - 25 May 2024
   location: Pittsburgh, Pennsylvania, United States
   name: PyCon US 2024
-  speaking: _No response_
+  speaking: "Keynote - Jay Miller \n \
+    \ Geospatial Validations Using FastAPI and PostGIS - Lazouich Ford"
   summary: "At PyCon US 2024, you will find an amazing program filled with pre-conference\
     \ tutorials and sponsor presentations, 90+ of our community\u2019s best talks,\
     \ which includes our Charlas track, brilliant keynote speakers, posters on display,\
