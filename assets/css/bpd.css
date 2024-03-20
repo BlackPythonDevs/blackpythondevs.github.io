@@ -55,11 +55,14 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-article.post-list a,
+article.post-list a {
+  color: #00a2c3;
+}
+
 article.pico-background-pumpkin-650 a.contrast,
 article.pico-background-pumpkin-800 a.contrast,
 article.pico-background-zinc-800 a.contrast {
-  color: #00a2c3;
+  color: #03d5ff;
 }
 
 div#newsletter {
