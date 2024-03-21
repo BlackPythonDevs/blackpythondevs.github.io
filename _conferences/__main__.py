@@ -59,7 +59,7 @@ for issue in open_issues:
                     "type": type_match[1],
                     "location": location_match[1],
                     "summary": summary_match[1],
-                    "speaking": speaking_match[1],
+                    "speaking": speaking_match[1] if speaking_match else "",
                 }
                 conferences.append(conference)
 
