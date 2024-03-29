@@ -95,3 +95,9 @@ def test_switching_lang_sw_about(page: Page) -> None:
 def test_bpdevs_title_en(page: Page, title: str, url: str) -> None:
     page.goto(f"{live_server_url}/{url}")
     expect(page).to_have_title(title)
+
+
+def test_mailto_bpdevs(page: Page) -> None:
+    page.goto(f"{live_server_url}")
+    mailto = page.get_by_role("link", name="email")
+    expect(mailto).to_have_attribute("href", "mailto:contact@blackpythondevs.com")
