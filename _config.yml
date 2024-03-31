@@ -59,8 +59,10 @@ plugins:
   - github-pages
   - jemoji
   - jekyll-feed
-  # - jekyll-seo-tag
-  # - jekyll-sitemap
+  - jekyll-sitemap
+# - jekyll-seo-tag
+# - jekyll-redirect-from
+# - jekyll-remote-theme
 
 exclude:
   - bin
