@@ -43,17 +43,17 @@ Please read [Contributing to Black Python Devs](CONTRIBUTING.md)
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/shaswat-satyam">
-            <img src="https://avatars.githubusercontent.com/u/70892928?v=4" width="100;" alt="shaswat-satyam"/>
-            <br />
-            <sub><b>Shaswat Satyam</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/kazz54">
             <img src="https://avatars.githubusercontent.com/u/3674788?v=4" width="100;" alt="kazz54"/>
             <br />
             <sub><b>Null</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/shaswat-satyam">
+            <img src="https://avatars.githubusercontent.com/u/70892928?v=4" width="100;" alt="shaswat-satyam"/>
+            <br />
+            <sub><b>Shaswat Satyam</b></sub>
         </a>
     </td>
     <td align="center">
