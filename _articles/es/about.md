@@ -44,24 +44,25 @@ Para hacer esto, esperamos reunir a personas de todo el mundo y ver dónde está
 
 ### Ejecutor: Jay Miller
 
-<div style="display:flex; flex-wrap: wrap;" markdown="1">
+<div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
 
 <div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Jay" src="https://github.com/kjaymiller.png">
+<img class="leadership-photo" alt="photo of Jay" src="https://github.com/kjaymiller.png">
 <p> Jay es uno de los fundadores de Black Python Devs. Jay es un Defensor de Desarrolladores Estadounidenses con sede en el área de Atlanta, Georgia. </p>
 </div>
 
 ### Gerente Técnico: Oleksis Fraga
 
 <div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Oleksis" src="https://github.com/oleksis.png">
+<img class="leadership-photo" alt="photo of Oleksis" src="https://github.com/oleksis.png">
 <p> Oleksis es un ingeniero de software cubano y un desarrollador de código abierto con sede en el área de Toronto, Canadá.</p>
 </div>
 
 ### Coordinadora de Eventos: Velda Kiara
 
 <div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
+<img class="leadership-photo" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
+
 <p> Velda es una ingeniera de software y escritora técnica Keniana que vive en Nairobi.</p>
 </div>
 
