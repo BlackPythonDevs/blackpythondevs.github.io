@@ -435,6 +435,7 @@ img.leadership-photo {
   margin: 0 1rem;
   border-radius: 1em;
   max-width: 10rem;
+  height: 150px;
 }
 
 .post-title > h3 {

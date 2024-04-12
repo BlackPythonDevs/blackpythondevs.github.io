@@ -64,6 +64,7 @@ To do this we're hoping to gather folks from around the world and see where our 
 
 <div style="display:flex">
 <img class="leadership-photo" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
+
 <p> Velda is a Kenyan software engineer and technical writer based in Nairobi.</p>
 </div>
 
