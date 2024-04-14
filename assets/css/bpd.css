@@ -431,6 +431,12 @@ footer {
   color: #fff;
   font-style: italic;
 }
+
+.leadership-photo-container {
+  display: flex;
+  flex-direction: column;
+}
+
 img.leadership-photo {
   margin: 0 1rem;
   border-radius: 1em;
