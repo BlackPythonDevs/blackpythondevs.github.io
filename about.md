@@ -42,6 +42,51 @@ We hope in the long run to create many in-person user groups and events, but we 
 
 To do this we're hoping to gather folks from around the world and see where our largest audiences are.
 
+## Initiatives
+
+---
+
+### Build Black Developers
+
+Create opportunities to partner with learning platforms to provide free/discounted access to content.
+
+Promote and amplify open source projects that are maintained by Black Python Devs members.
+Current/Developing Partners
+
+- [TalkPython Training](https://training.talkpython.fm/)
+- [Python Morsels (In Planning)](https://www.pythonmorsels.com/)
+
+### Build Local Community Initiative
+
+Sponsor regional conferences to provide tickets to local Black Python Devs members to increase involvement in local communities.
+
+Provide support to local conferences to reach local Black communities.
+
+Current Partners:
+
+- [PyTexas 2024](https://pytexas.org/2024/)
+- [DjangoCon US 2024](https://djangocon.us/)
+- [PyCon US 2024](https://us.pycon.org/)
+- [PyCon Nigeria](https://ng.pycon.org/)
+
+### Black Python Devs Opportunity Fund (Planning)
+
+Provide supplemental funding to help Black Python Devs members attend impact conferences (Conferences that can lead to personal developer career growth opportunities in the Python community)
+
+Conference Targets:
+
+- [PyCon US 2024](https://us.pycon.org/)
+- [DjangoCon US 2024](https://djangocon.us/)
+- [PyData Global Events](https://pydata.org/upcoming-events/)
+
+### Users to Leaders Initiatives
+
+Partner with programs and communities to create pipelines to establish more leaders from Black Python Devs members. We hope to get them involved, mentored, and develop them into leaders.
+
+Partner Organizations:
+
+- [Djangonaut Space](https://djangonaut.space/)
+
 ## Leadership Team
 
 <div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
