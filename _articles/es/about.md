@@ -40,6 +40,52 @@ Esperamos a largo plazo crear muchos grupos de usuarios y eventos en persona, pe
 
 Para hacer esto, esperamos reunir a personas de todo el mundo y ver dónde están nuestras audiencias más grandes.
 
+## Iniciativas
+
+---
+
+### Construir Desarrolladores Negros
+
+Cree oportunidades para asociarse con plataformas de aprendizaje para proporcionar acceso gratuito o con descuento al contenido.
+
+Promover y amplificar los proyectos de código abierto que son mantenidos por miembros de Black Python Devs.
+
+Socios Actuales/ Desarrollo
+
+- [TalkPython Training](https://training.talkpython.fm/)
+- [Python Morsels (In Planning)](https://www.pythonmorsels.com/)
+
+### Iniciativa de Construcción de la Comunidad Local
+
+Patrocinar conferencias regionales para proporcionar entradas a los miembros locales de Black Python Devs para aumentar la participación en las comunidades locales.
+
+Brindar apoyo a las conferencias locales para llegar a las comunidades negras locales.
+
+Socios Actuales:
+
+- [PyTexas 2024](https://pytexas.org/2024/)
+- [DjangoCon US 2024](https://djangocon.us/)
+- [PyCon US 2024](https://us.pycon.org/)
+- [PyCon Nigeria](https://ng.pycon.org/)
+
+### Fondo de Oportunidades para Desarrolladores de Black Python (Planificación)
+
+Proporcionar fondos suplementarios para ayudar a los miembros de Black Python Devs a asistir a conferencias de impacto (Conferencias que pueden conducir a oportunidades de crecimiento profesional de desarrolladores personales en la comunidad de Python)
+
+Conferencias Objetivos:
+
+- [PyCon US 2024](https://us.pycon.org/)
+- [DjangoCon US 2024](https://djangocon.us/)
+- [PyData Global Events](https://pydata.org/upcoming-events/)
+
+### Iniciativas de Usuarios a Líderes
+
+Asóciate con programas y comunidades para crear canalizaciones para establecer más líderes de los miembros de Black Python Devs. Esperamos involucrarlos, orientarlos y convertirlos en líderes.
+
+Organizaciones Asociadas:
+
+- [Djangonaut Space](https://djangonaut.space/)
+
 ## Equipo de Liderazgo
 
 <div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
