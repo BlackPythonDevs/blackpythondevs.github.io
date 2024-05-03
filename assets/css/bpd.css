@@ -447,3 +447,7 @@ img.leadership-photo {
 .post-title > h3 {
   font-size: smaller;
 }
+
+img.featured-image {
+  max-height: 20rem;
+}
