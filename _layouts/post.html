@@ -1,6 +1,11 @@
 ---
 layout: default
 ---
+{%- if page.featured_image -%}
+<div class="hero-banner">
+  <img src="{{page.featured_image}}" class="featured-image">
+</div>
+{%- endif -%}
 <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
