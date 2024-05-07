@@ -4,7 +4,6 @@ lang: en
 title: Contributing
 ---
 
-
 # Contributing at Black Python Devs
 
 First off, thank you for considering contributing to Black Python Devs website. It's people like you that make Black Python Devs such a great community. Navigate through the following to understand more about contributing here.
@@ -18,14 +17,13 @@ First off, thank you for considering contributing to Black Python Devs website. 
 
 ## Code of Conduct
 
-Black Python Devs follows the following [Code of Conduct](https://github.com/BlackPythonDevs/.github/blob/main/CODE_OF_CONDUCT.md) . The comfort and safety of Black Python Devs community members are our priority. Please do well to adhere to the Code of Conduct to participate in the  Black Python Devs community.
+Black Python Devs follows the following [Code of Conduct](https://github.com/BlackPythonDevs/.github/blob/main/CODE_OF_CONDUCT.md) . The comfort and safety of Black Python Devs community members are our priority. Please do well to adhere to the Code of Conduct to participate in the Black Python Devs community.
 
 ## issues & Pull Requests
 
 ### Creating an issue
 
 Before **creating** an issue i.e for `features`/`bugs`/`improvements` please follow these steps:
-
 
 1. Search existing issues before creating a new issue (look to see if the issue has already been created).
 1. If it doesn't exist create a new issue giving as much context as possible (please take note and select the correct issue type, for example `bug`, `documentation` or `feature`.
@@ -37,12 +35,12 @@ Before working on an existing issue please follow these steps:
 
 1. Comment asking for the issue to be assigned to you.
 1. To best position yourself for issues assignment, we recommend that you:
-    1. Confirm that you have read the CONTRIBUTING.md.
-    1. Have a functional development environment (have built and are able to run the project).
-    1. Convey your intended approach to solving the issue.
-    1. Put each of these items in writing in one or more comments.
+   1. Confirm that you have read the CONTRIBUTING.md.
+   1. Have a functional development environment (have built and are able to run the project).
+   1. Convey your intended approach to solving the issue.
+   1. Put each of these items in writing in one or more comments.
 1. After the issue is assigned to you, you can start working on it.
-1. In general, **only** start working on this issue (and open a Pull Request) when it has been assigned to you. Doing so will prevent confusion, duplicate work (some of which may go unaccepted given its duplicity), incidental stepping on toes, and the headache involved for maintainers and contributors alike as issue assignments collide and heads bump together. 
+1. In general, **only** start working on this issue (and open a Pull Request) when it has been assigned to you. Doing so will prevent confusion, duplicate work (some of which may go unaccepted given its duplicity), incidental stepping on toes, and the headache involved for maintainers and contributors alike as issue assignments collide and heads bump together.
 1. Reference the issue in your Pull Request (for example `This PR fixes #123`), so that the corresponding issue is automatically closed upon merge of your Pull Request.
 
 > Notes:
@@ -68,10 +66,9 @@ We welcome everyone to review Pull Requests. It is a great way to learn, network
 - Do not repeat feedback, this creates more noise than value (check the existing conversation), use GitHub reactions if you agree/disagree with a comment
 - Do not blindly approve Pull Requests to improve your GitHub contributors graph
 
-
 ## Discord Community
 
-Join the [Discord](https://discord.gg/XUc3tFqCT3)  to discuss suggested new features, possible bugs, enhancement in user experience, and any other aspects of the site. The comment section of each issue is our preferred method of communication as it retains conversations history for future contributors wanting to gain insights/updates on the topic in question, you can, however, inquire in the #community-discussion channel in the Black Python Devs  Discord workspace.
+Join the [Discord](https://discord.gg/XUc3tFqCT3) to discuss suggested new features, possible bugs, enhancement in user experience, and any other aspects of the site. The comment section of each issue is our preferred method of communication as it retains conversations history for future contributors wanting to gain insights/updates on the topic in question, you can, however, inquire in the #community-discussion channel in the Black Python Devs Discord workspace.
 
 # Contributing to Black Python Devs Projects
 
@@ -111,8 +108,7 @@ Please follow these steps and note these guidelines to begin contributing:
 
   ![issue assignment](/assets/images/issue_assignment.png)
 
-  
-##  (Option 1) Working on an issue - Make the changes via Codespaces
+## Working on an issue
 
 - The easiest way to make changes and and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 
@@ -149,122 +145,6 @@ Please follow these steps and note these guidelines to begin contributing:
 - Test your changes (create new tests as needed)
 
 - Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. Please ensure that you compare your feature branch to the desired branch of the repo you are supposed to make a PR to. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes in your development branch and update it. 🥳
-
-## (Option 2) Working on an issue - Make the changes via Locally
-
-Make sure you have the following prerequisites installed on your operating system before you start contributing:
-
-- [Nodejs and npm](https://nodejs.org/en/)
-
-  To verify run:
-
-  ```
-  node -v
-  ```
-
-  ```
-  npm -v
-  ```
-
-### Set up your Local Development Environment
-
-Follow the following instructions to start contributing.
-
-**1.** Fork [this](https://github.com/BlackPythonDevs/blackpythondevs.github.io) repository.
-
-
-**2.** Clone your forked copy of the project.
-
-⚠️ Cloning this repository ⚠️
-
-Cloning the repo with all its history could result in large portion of space (GB) being occupied on your machine. If you don't need the whole history you can use the depth parameter to significantly reduce download size.
-
-```
-git clone --depth=1 https://github.com/<your-username>/BlackPythonDevs/blackpythondevs.github.io.git
-```
-
-**3.** Navigate to the project directory.
-
-```
-cd Black Python Devs
-```
-
-**4.** Add a reference(remote) to the original repository.
-
-```
-git remote add upstream https://github.com/BlackPythonDevs/blackpythondevs.io.git
-```
-
-**5.** Check the remotes for this repository.
-
-```
-git remote -v
-```
-
-**6.** Always take a pull from the upstream repository to your main branch to keep it at par with the main project (updated repository).
-
-```
-git pull upstream main
-```
-
-**7.** Create a new branch.
-
-```
-git checkout -b <your_branch_name>
-```
-
-**8.** Install the dependencies for running the site.
-
-```
-npm install
-```
-
-**9.** Make the desired changes.
-
-**10.** Run the site locally to preview changes.
-
-```
-npm run build
-```
-
-This will run a local webserver with "live reload" conveniently enabled
-
-**11.** Track your changes.
-
-```
-git add .
-```
-
-**12.** Commit your changes.
-
-```
-git commit -m "<commit subject>"
-```
-
-**13.** While you are working on your branch, other developers may update the `main` branch with their branch. This action means your branch is now out of date with the `main` branch and missing content. So to fetch the new changes, follow along:
-
-```
-git checkout main
-git fetch origin main
-git merge upstream/main
-git push origin
-```
-
-Now you need to merge the `main` branch into your branch. This can be done in the following way:
-
-```
-git checkout <your_branch_name>
-git merge main
-```
-
-**14.** Push the committed changes in your feature branch to your remote repo.
-
-```
-git push -u origin <your_branch_name>
-```
-
-**15.** Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. Please ensure that you compare your feature branch to the desired branch of the repo you are supposed to make a PR to. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes in your development branch and update it. 🥳
-
 
 # Accessibility
 
