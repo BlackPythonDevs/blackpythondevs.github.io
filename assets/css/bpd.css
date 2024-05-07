@@ -437,11 +437,15 @@ footer {
   flex-direction: column;
 }
 
+.leadership-photo-container > p {
+  text-align: center;
+}
+
 img.leadership-photo {
   margin: 0 1rem;
   border-radius: 1em;
-  max-width: 10rem;
-  height: 150px;
+  width: 8rem;
+  height: 8rem;
 }
 
 .post-title > h3 {
