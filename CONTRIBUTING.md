@@ -5,58 +5,50 @@ title: Contributing
 ---
 
 
-# Contributing at BlackPythonDevs
+# Contributing at Black Python Devs
 
 First off, thank you for considering contributing to Black Python Devs website. It's people like you that make Black Python Devs such a great community. Navigate through the following to understand more about contributing here.
 
 - [Before You Get Started](#before-you-get-started)
 
-⚠️ Cloning this repository ⚠️
-
-Cloning the repo with all its history could result in large portion of space (GB) being occupied on your machine. If you don't need the whole history you can use the depth parameter to significantly reduce download size.
-
-```bash
-git clone --depth=1 https://github.com/BlackPythonDevs/blackpythondevs.git
-```
-
 # Before You Get Started
 
 ## Code of Conduct
 
-BlackPythonDevs follows the [XYZ](https://Link.com) Code of Conduct.nThe comfort and safety of BlackPythonDevs community members are our priority. Please do well to adhere to the Code of Conduct to participate in the  BlackPythonDevs community.
+Black Python Devs follows the [XYZ](https://Link.com) Code of Conduct.nThe comfort and safety of Black Python Devs community members are our priority. Please do well to adhere to the Code of Conduct to participate in the  Black Python Devs community.
 
-## Issues & Pull Requests
+## issues & Pull Requests
 
-### Creating an Issue
+### Creating an issue
 
-Before **creating** an Issue i.e for `features`/`bugs`/`improvements` please follow these steps:
+Before **creating** an issue i.e for `features`/`bugs`/`improvements` please follow these steps:
 
 
-1. Search existing Issues before creating a new Issue (look to see if the Issue has already been created).
-1. If it doesn't exist create a new Issue giving as much context as possible (please take note and select the correct Issue type, for example `bug`, `documentation` or `feature`.
-1. If you wish to work on the Issue add this to the issue description.
+1. Search existing issues before creating a new issue (look to see if the issue has already been created).
+1. If it doesn't exist create a new issue giving as much context as possible (please take note and select the correct issue type, for example `bug`, `documentation` or `feature`.
+1. If you wish to work on the issue add this to the issue description.
 
-### Working on an Issue
+### Working on an issue
 
-Before working on an existing Issue please follow these steps:
+Before working on an existing issue please follow these steps:
 
-1. Comment asking for the Issue to be assigned to you.
-1. To best position yourself for Issues assignment, we recommend that you:
+1. Comment asking for the issue to be assigned to you.
+1. To best position yourself for issues assignment, we recommend that you:
     1. Confirm that you have read the CONTRIBUTING.md.
     1. Have a functional development environment (have built and are able to run the project).
     1. Convey your intended approach to solving the issue.
     1. Put each of these items in writing in one or more comments.
-1. After the Issue is assigned to you, you can start working on it.
-1. In general, **only** start working on this Issue (and open a Pull Request) when it has been assigned to you. Doing so will prevent confusion, duplicate work (some of which may go unaccepted given its duplicity), incidental stepping on toes, and the headache involved for maintainers and contributors alike as Issue assignments collide and heads bump together. 
-1. Reference the Issue in your Pull Request (for example `This PR fixes #123`), so that the corresponding Issue is automatically closed upon merge of your Pull Request.
+1. After the issue is assigned to you, you can start working on it.
+1. In general, **only** start working on this issue (and open a Pull Request) when it has been assigned to you. Doing so will prevent confusion, duplicate work (some of which may go unaccepted given its duplicity), incidental stepping on toes, and the headache involved for maintainers and contributors alike as issue assignments collide and heads bump together. 
+1. Reference the issue in your Pull Request (for example `This PR fixes #123`), so that the corresponding issue is automatically closed upon merge of your Pull Request.
 
 > Notes:
 >
-> - Check the `Assignees` box at the top of the page to see if the Issue has been assigned to someone else before requesting this be assigned to you. If the issue has a current Assignee, but appears to be inactive, politely inquire with the current Assignee as to whether they are still working on a solution and/or if you might collaborate with them.
-> - Only request to be assigned an Issue if you know how to work on it.
-> - If an Issue is unclear, ask questions to get more clarity before asking to have the Issue assigned to you; avoid asking "what do I do next? how do I fix this?" (see the item above this line)
-> - An Issue can be assigned to multiple people, if you all agree to collaborate on the Issue (the Pull Request can contain commits from different collaborators)
-> - Any Issues that has no activity after 2 weeks will be unassigned and re-assigned to someone else.
+> - Check the `Assignees` box at the top of the page to see if the issue has been assigned to someone else before requesting this be assigned to you. If the issue has a current Assignee, but appears to be inactive, politely inquire with the current Assignee as to whether they are still working on a solution and/or if you might collaborate with them.
+> - Only request to be assigned an issue if you know how to work on it.
+> - If an issue is unclear, ask questions to get more clarity before asking to have the issue assigned to you; avoid asking "what do I do next? how do I fix this?" (see the item above this line)
+> - An issue can be assigned to multiple people, if you all agree to collaborate on the issue (the Pull Request can contain commits from different collaborators)
+> - Any issues that has no activity after 2 weeks will be unassigned and re-assigned to someone else.
 
 ## Reviewing Pull Requests
 
@@ -76,15 +68,15 @@ We welcome everyone to review Pull Requests. It is a great way to learn, network
 
 ## Discord Community
 
-Join the [Discord](https://linktodiscord)  to discuss suggested new features, possible bugs, enhancement in user experience, and any other aspects of the site. The comment section of each issue is our preferred method of communication as it retains conversations history for future contributors wanting to gain insights/updates on the topic in question, you can, however, inquire in the [#website] (https://linktochsnnel) channel in the BlackPythonDevs  Discord workspace.
+Join the [Discord](https://discord.gg/XUc3tFqCT3)  to discuss suggested new features, possible bugs, enhancement in user experience, and any other aspects of the site. The comment section of each issue is our preferred method of communication as it retains conversations history for future contributors wanting to gain insights/updates on the topic in question, you can, however, inquire in the [#website] (https://linktochsnnel) channel in the Black Python Devs  Discord workspace.
 
-# Contributing to BlackPythonDevs Projects
+# Contributing to Black Python Devs Projects
 
 Please follow these steps and note these guidelines to begin contributing:
 
 1. First step is to set up the local development environment.
-1. Bug fixes are always welcome. Start by reviewing the [list of bugs](https://github.com/BlackPythonDevs/issues).
-1. A good way to easily start contributing is to pick and work on a [good first issue](https://github.com/BlackPythonDevs/blackPythonDevs.io/labels/good%20first%20issue). We try to make these Issues as clear as possible and provide basic info on how the code should be changed, and if something is unclear feel free to ask for more information on the Issue.
+1. Bug fixes are always welcome. Start by reviewing the [list of bugs](https://github.com/BlackPythonDevs/blackpythondevs.github.io/issues).
+1. A good way to easily start contributing is to pick and work on a [good first issue](https://github.com/BlackPythonDevs/blackpythondevs.github.io/labels/good%20first%20issue). We try to make these issues as clear as possible and provide basic info on how the code should be changed, and if something is unclear feel free to ask for more information on the issue.
 
 # How to Contribute
 
@@ -98,11 +90,11 @@ Please follow these steps and note these guidelines to begin contributing:
 
   ![Create new fork page](/assets/images/create_new_fork_page.png)
 
-## Createing an Issue
+## Createing an issue
 
-- Click on the Issues tab in the repository.
+- Click on the issues tab in the repository.
 
-  ![Issues tab](/assets/images/issues_tab.png)
+  ![issues tab](/assets/images/issues_tab.png)
 
 - Click on the green button with the label **"New issue"** and you should see the image below:
 
@@ -114,10 +106,10 @@ Please follow these steps and note these guidelines to begin contributing:
 
 - And that's it! If you cose to comment requesting the issue to be assigned to you, wait for a maintainer to do so. You should get an email notification of the issue being assigned to you or you can view the issue assignment in the issue page. It should look similar to this:
 
-  ![Issue assignment](/assets/images/issue_assignment.png)
+  ![issue assignment](/assets/images/issue_assignment.png)
 
   
-##  (Option 1) Working on an Issue - Make the changes via Codespaces
+##  (Option 1) Working on an issue - Make the changes via Codespaces
 
 - The easiest way to make changes and and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 
@@ -127,7 +119,7 @@ Please follow these steps and note these guidelines to begin contributing:
 
 - The web version of VSCode should open in a new tab in your browser:
 
-  ![BlackPythonDevs Codespace](/assets/images/blackpythondevs_codespace.png)
+  ![Black Python Devs Codespace](/assets/images/BlackPythonDevs_codespace.png)
 
 - Now that you have the code editor set up, you need to install the dependencies. To do this, you have to open the code editor's terminal and run the command `bundle install`.
 
@@ -155,7 +147,7 @@ Please follow these steps and note these guidelines to begin contributing:
 
 - Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. Please ensure that you compare your feature branch to the desired branch of the repo you are supposed to make a PR to. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes in your development branch and update it. 🥳
 
-## (Option 2) Working on an Issue - Make the changes via Locally
+## (Option 2) Working on an issue - Make the changes via Locally
 
 Make sure you have the following prerequisites installed on your operating system before you start contributing:
 
@@ -175,18 +167,23 @@ Make sure you have the following prerequisites installed on your operating syste
 
 Follow the following instructions to start contributing.
 
-**1.** Fork [this](https://github.com/BlackPythonDevs/BlackPythonDevs.io) repository.
+**1.** Fork [this](https://github.com/BlackPythonDevs/blackpythondevs.github.io) repository.
+
 
 **2.** Clone your forked copy of the project.
 
+⚠️ Cloning this repository ⚠️
+
+Cloning the repo with all its history could result in large portion of space (GB) being occupied on your machine. If you don't need the whole history you can use the depth parameter to significantly reduce download size.
+
 ```
-git clone --depth=1 https://github.com/<your-username>/BlackPythonDevs.git
+git clone --depth=1 https://github.com/<your-username>/BlackPythonDevs/blackpythondevs.github.io.git
 ```
 
 **3.** Navigate to the project directory.
 
 ```
-cd BlackPythonDevs
+cd Black Python Devs
 ```
 
 **4.** Add a reference(remote) to the original repository.
@@ -266,37 +263,37 @@ git push -u origin <your_branch_name>
 **15.** Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. Please ensure that you compare your feature branch to the desired branch of the repo you are supposed to make a PR to. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes in your development branch and update it. 🥳
 
 
-## Accessibility
+# Accessibility
 
 Accessibility (A11y) using the **FastPass** tests for A11y and the [Accessibility Insights for Web
 ][1] browser extension.
 
-### 1: Reproduce the Tests
+## 1: Reproduce the Tests
 
 First, reproduce the **FastPass** tests for A11y using the [Accessibility Insights for Web
 ][1] browser extension. This extension is designed to help you identify and fix accessibility issues on your website.
 
 ![image](https://github.com/BlackPythonDevs/blackpythondevs.github.io/assets/44526468/222e6653-c963-4518-a297-262d656216a7)
 
-### 2: Capture the Issues
+## 2: Capture the issues
 
-If the Accessibility Insights for Web extension identifies any issues, capture a screenshot of the issues on the [BPDevs](https://blackpythondevs.github.io/) website. You can do this by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> on your keyboard.
+If the Accessibility Insights for Web extension identifies any issues, capture a screenshot of the issues on the [BPDevs](https://BlackPythonDevs.github.io/) website. You can do this by pressing <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd> on your keyboard.
 
-### 3: Make the Necessary Changes
+## 3: Make the Necessary Changes
 
 Next, make the necessary changes to fix the identified issues. This might involve modifying the CSS of the website.
 
-### 4: Test the Changes
+## 4: Test the Changes
 
 After making the changes, run the **FastPass** test again and capture a screenshot showing no accessibility issues. This will serve as proof that the issues have been successfully resolved.
 
 ![image](https://github.com/BlackPythonDevs/blackpythondevs.github.io/assets/44526468/9a284f43-3cde-4370-9eab-1d302ed65e9e)
 
-### 5: Check and Pass Other Tests
+## 5: Check and Pass Other Tests
 
 Finally, check and pass other tests, such as the rules with `pre-commit`. This ensures that your changes are in line with the existing codebase and do not introduce any new issues.
 
-## Translations
+# Translations
 
 We welcome translations for the Black Python Devs website in all languages! Here's how you can contribute:
 
