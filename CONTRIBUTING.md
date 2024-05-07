@@ -71,7 +71,7 @@ We welcome everyone to review Pull Requests. It is a great way to learn, network
 
 ## Discord Community
 
-Join the [Discord](https://discord.gg/XUc3tFqCT3)  to discuss suggested new features, possible bugs, enhancement in user experience, and any other aspects of the site. The comment section of each issue is our preferred method of communication as it retains conversations history for future contributors wanting to gain insights/updates on the topic in question, you can, however, inquire in the [#website] (https://linktochsnnel) channel in the Black Python Devs  Discord workspace.
+Join the [Discord](https://discord.gg/XUc3tFqCT3)  to discuss suggested new features, possible bugs, enhancement in user experience, and any other aspects of the site. The comment section of each issue is our preferred method of communication as it retains conversations history for future contributors wanting to gain insights/updates on the topic in question, you can, however, inquire in the #community-discussion channel in the Black Python Devs  Discord workspace.
 
 # Contributing to Black Python Devs Projects
 
