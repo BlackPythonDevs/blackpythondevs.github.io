@@ -10,12 +10,15 @@ title: Contributing
 First off, thank you for considering contributing to Black Python Devs website. It's people like you that make Black Python Devs such a great community. Navigate through the following to understand more about contributing here.
 
 - [Before You Get Started](#before-you-get-started)
+- [How to Contribute](#how-to-contribute)
+- [Accessibility](#accessibility)
+- [Translations](#translations)
 
 # Before You Get Started
 
 ## Code of Conduct
 
-Black Python Devs follows the [XYZ](https://Link.com) Code of Conduct.nThe comfort and safety of Black Python Devs community members are our priority. Please do well to adhere to the Code of Conduct to participate in the  Black Python Devs community.
+Black Python Devs follows the following [Code of Conduct](https://github.com/BlackPythonDevs/.github/blob/main/CODE_OF_CONDUCT.md) . The comfort and safety of Black Python Devs community members are our priority. Please do well to adhere to the Code of Conduct to participate in the  Black Python Devs community.
 
 ## issues & Pull Requests
 
