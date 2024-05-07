@@ -30,13 +30,13 @@ Here is a look at our current initiatives? Select to learn more.
 
 <div class="grid">
 <article>
-<h3>Build Black Developers</h3>
+<h3><a href="/initiatives#build-local-black-community">Build Local Black Community</a></h3>
 </article>
 <article>
-<h3>Build Local Black Community</h3>
+<h3><a href="/initiatives#black-leadership-opportunity-fundblack-">Black Leadership Opportunity Fund</a></h3>
 </article>
 <article>
-<h3>Black Leadership Opportunity Fund</h3>
+<h3><a href="/initiatives#build-black-excellence-equally">Build Black Excellence Equally</a></h3>
 </article>
 </div>
 
@@ -44,30 +44,28 @@ Here is a look at our current initiatives? Select to learn more.
 
 <div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
 
-<div class="leadership-photo-container">
+<article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Jay" src="https://github.com/kjaymiller.png">
 <p><strong>Jay Miller</strong><br/>
 Executor</p>
-</div>
+</article>
 
-<div class="leadership-photo-container">
+<article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
 <p><strong>Velda Kiara</strong><br/>
 Events Coordinator</p>
-</div>
-
-<div class="leadership-photo-container">
+</article>
+<article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Oleksis" src="https://github.com/oleksis.png">
 <p><strong>Oleksis Fraga</strong><br/>
 Technical Manager</p>
+</article>
 
-</div>
-
-<div class="leadership-photo-container">
+<article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Doreen" src="/assets/images/doreen.png">
 <p><strong>Doreen Nangira</strong><br/>
 Treasurer</p>
-</div>
+</article>
 </div>
 
 We also vet our actions through our Black Python Devs Leadership Council made up of members who serve as Python Community leaders on a local, regional, or global scale.
