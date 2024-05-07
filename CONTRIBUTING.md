@@ -19,7 +19,7 @@ First off, thank you for considering contributing to Black Python Devs website. 
 
 Black Python Devs follows the following [Code of Conduct](https://github.com/BlackPythonDevs/.github/blob/main/CODE_OF_CONDUCT.md) . The comfort and safety of Black Python Devs community members are our priority. Please do well to adhere to the Code of Conduct to participate in the Black Python Devs community.
 
-## issues & Pull Requests
+## Issues & Pull Requests
 
 ### Creating an issue
 
