@@ -30,13 +30,13 @@ Aqu√≠ hay un vistazo a nuestras iniciativas actuales. Seleccione para obtener m√
 
 <div class="grid">
 <article>
-<h3><a href="/initiatives#build-local-black-community">Build Local Black Community</a></h3>
+<h3><a href="/es/initiatives#construir-una-comunidad-negra-local">Construir una Comunidad Negra Local</a></h3>
 </article>
 <article>
-<h3><a href="/initiatives#black-leadership-opportunity-fundblack-">Black Leadership Opportunity Fund</a></h3>
+<h3><a href="/es/initiatives#fondo-de-oportunidades-de-liderazgo-negro">Fondo de Oportunidades de Liderazgo Negro</a></h3>
 </article>
 <article>
-<h3><a href="/initiatives#build-black-excellence-equally">Build Black Excellence Equally</a></h3>
+<h3><a href="/es/initiatives#construir-la-excelencia-negra-por-igual">Construir la Excelencia Negra por Igual</a></h3>
 </article>
 </div>
 
