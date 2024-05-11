@@ -4,115 +4,71 @@ lang: es
 title: Sobre Nosotros
 ---
 
-## Misión
+# Sobre Black Python Devs
 
----
+Black Python Devs fue creado por su fundador Jay Miller después de ver una tendencia del mismo puñado de desarrolladores negros que hablaban en conferencias importantes, tomaban posiciones de liderazgo y se enfrentaban a los mismos desafíos hacia el agotamiento.
 
-### Sé dueño de tus Maestros: Apoya a los miembros mientras te aseguras de que controlen el mensaje
+Después de asistir a PyCon US en 2022, se dio cuenta de que podían contar físicamente el número de desarrolladores negros que asistían en persona y que representaban MENOS DEL 0,01% del total de asistentes. Jay comenzó a preguntar a los oradores Black Pythonistas si consideraban conectarse con la comunidad y la respuesta casi unánime fue "¿Por qué haría eso?". Después de un poco de aliento, se convenció a una persona para que diera un discurso relámpago.
 
-Estamos aquí para amplificar tu voz, no al revés. Es por eso que estamos felices de compartir lo que has hecho sin que se trate de nosotros.
+Al año siguiente, vimos que esa persona se involucraba más en su grupo de usuarios local y establecía conexiones que le ayudaron a avanzar en el desarrollo de su carrera. Esa misma persona también hablaría en PyCon US en 2023. Después de mucho empuje de las comunidades de África y Brasil, vimos que el número total de Pythonistas negros se triplicó en número.
 
-Cualquier contenido que un miembro contribuya a la comunidad se le da para que lo publique a su antojo. Eso significa que si está en nuestras plataformas, nos permitieron publicar y tienen derecho a cambiar de opinión en cualquier momento.
+En PyCon US 2023, después de un espacio abierto, se creó un servidor de Discord llamado Black Python Devs, donde la comunidad pudo seguir fomentando este impulso y apoyarse mutuamente.
 
-### Asegure la bolsa: Establezca orientación, tutoría y apoyo profesional para Miembros de _Black Python Devs_
+## El Objetivo de Black Python Devs
 
-La falta de empleo estable a menudo impide que los miembros contribuyan a la comunidad en general en el nivel deseado. Es importante que los desarrolladores de Black Python sean contratados y compensados a un precio justo y que se les den oportunidades para prosperar.
+Nuestro objetivo es convertirnos en la comunidad más grande de desarrolladores negros de Python en el mundo y establecer nuestra comunidad como una fuente para diversos líderes en la gran comunidad de Python.
 
-Queremos asegurarnos de que los miembros tengan diferentes roles técnicos, habilidades y niveles de habilidad para que podamos abordar la más amplia variedad de necesidades de la comunidad.
+Nuestro objetivo es:
 
-### Amplíe Su Alcance: Amplíe el soporte de las organizaciones existentes centradas en Python y otras tecnologías a las comunidades de miembros de _Black Python Devs_
-
-No podemos ser todo para todos. Tampoco necesitamos recrear todos los increíbles programas diseñados para Pythonistas. Nuestro objetivo es apoyar la entrega de estos programas existentes a los desarrolladores negros y llenar los vacíos donde existan.
-
-A menudo, los nuevos programas e iniciativas se llevan a cabo con la ayuda de aquellos que nos han precedido, de modo que podamos garantizar la mejor oportunidad para nuestros miembros.
-
-### Apoyar el Ecosistema: Crear oportunidades para invertir en las comunidades locales que los miembros de _Black Python Devs_ representan.
-
-Las comunidades que carecen de oportunidades a menudo son abandonadas. Si bien no podemos trasladar empresas enteras a estas áreas, podemos asegurarnos de que las áreas y las empresas locales continúen prosperando.
-
-Cuando necesitamos gastar dinero, miramos dónde están nuestros miembros e invertimos en sus ciudades natales. Esto permite que las comunidades negras brillen más allá de su punto en el mapa.
-
-## ¿Por qué en línea primero?
-
----
-
-Esperamos a largo plazo crear muchos grupos de usuarios y eventos en persona, pero tenemos que entender dónde podemos tener los mayores impactos.
-
-Para hacer esto, esperamos reunir a personas de todo el mundo y ver dónde están nuestras audiencias más grandes.
+- Establecer orientación, tutoría y apoyo profesional para los Pythonistas negros de todo el mundo.
+- Crear oportunidades para que la comunidad de Python invierta en las comunidades locales de miembros de Black Python Devs
+- Aumentar la participación de los miembros de Black Python Devs en los programas, eventos e iniciativas existentes de la comunidad de Python.
 
 ## Iniciativas
 
----
+Aquí hay un vistazo a nuestras iniciativas actuales. Seleccione para obtener más información.
 
-### Construir Desarrolladores Negros
-
-Cree oportunidades para asociarse con plataformas de aprendizaje para proporcionar acceso gratuito o con descuento al contenido.
-
-Promover y amplificar los proyectos de código abierto que son mantenidos por miembros de Black Python Devs.
-
-Socios Actuales/ Desarrollo
-
-- [TalkPython Training](https://training.talkpython.fm/)
-- [Python Morsels (In Planning)](https://www.pythonmorsels.com/)
-
-### Iniciativa de Construcción de la Comunidad Local
-
-Patrocinar conferencias regionales para proporcionar entradas a los miembros locales de Black Python Devs para aumentar la participación en las comunidades locales.
-
-Brindar apoyo a las conferencias locales para llegar a las comunidades negras locales.
-
-Socios Actuales:
-
-- [PyTexas 2024](https://pytexas.org/2024/)
-- [DjangoCon US 2024](https://djangocon.us/)
-- [PyCon US 2024](https://us.pycon.org/)
-- [PyCon Nigeria](https://ng.pycon.org/)
-
-### Fondo de Oportunidades para Desarrolladores de Black Python (Planificación)
-
-Proporcionar fondos suplementarios para ayudar a los miembros de Black Python Devs a asistir a conferencias de impacto (Conferencias que pueden conducir a oportunidades de crecimiento profesional de desarrolladores personales en la comunidad de Python)
-
-Conferencias Objetivos:
-
-- [PyCon US 2024](https://us.pycon.org/)
-- [DjangoCon US 2024](https://djangocon.us/)
-- [PyData Global Events](https://pydata.org/upcoming-events/)
-
-### Iniciativas de Usuarios a Líderes
-
-Asóciate con programas y comunidades para crear canalizaciones para establecer más líderes de los miembros de Black Python Devs. Esperamos involucrarlos, orientarlos y convertirlos en líderes.
-
-Organizaciones Asociadas:
-
-- [Djangonaut Space](https://djangonaut.space/)
+<div class="grid">
+<article>
+<h3><a href="/initiatives#build-local-black-community">Build Local Black Community</a></h3>
+</article>
+<article>
+<h3><a href="/initiatives#black-leadership-opportunity-fundblack-">Black Leadership Opportunity Fund</a></h3>
+</article>
+<article>
+<h3><a href="/initiatives#build-black-excellence-equally">Build Black Excellence Equally</a></h3>
+</article>
+</div>
 
 ## Equipo de Liderazgo
 
 <div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
 
-<div class="leadership-photo-container">
-
-<h3 id="ejecutor-jay-miller">Ejecutor: Jay Miller</h3>
-
+<article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Jay" src="https://github.com/kjaymiller.png">
-<p> Jay es uno de los fundadores de Black Python Devs. Jay es un Defensor de Desarrolladores Estadounidenses con sede en el área de Atlanta, Georgia. </p>
-</div>
+<p><strong>Jay Miller</strong><br/>
+Ejecutor</p>
+</article>
 
-<div class="leadership-photo-container">
-
-<h3 id="gerente-tcnico-oleksis-fraga">Gerente Técnico: Oleksis Fraga</h3>
-
-<img class="leadership-photo" alt="photo of Oleksis" src="https://github.com/oleksis.png">
-<p> Oleksis es un ingeniero de software cubano y un desarrollador de código abierto con sede en el área de Toronto, Canadá.</p>
-</div>
-
-<div class="leadership-photo-container">
-
-<h3 id="coordinadora-de-eventos-velda-kiara">Coordinadora de Eventos: Velda Kiara</h3>
-
+<article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
+<p><strong>Velda Kiara</strong><br/>
+Coordinadora de Eventos</p>
+</article>
 
-<p> Velda es una ingeniera de software y escritora técnica Keniana que vive en Nairobi.</p>
+<article class="leadership-photo-container">
+<img class="leadership-photo" alt="photo of Oleksis" src="https://github.com/oleksis.png">
+<p><strong>Oleksis Fraga</strong><br/>
+Gerente Técnico</p>
+</article>
+
+<article class="leadership-photo-container">
+<img class="leadership-photo" alt="photo of Doreen" src="/assets/images/doreen.png">
+<p><strong>Doreen Nangira</strong><br/>
+Tesorera</p>
+</article>
 </div>
 
-</div>
+También examinamos nuestras acciones a través de nuestro Consejo de Liderazgo de Desarrolladores de Black Python, compuesto por miembros que se desempeñan como líderes de la comunidad de Python a escala local, regional o global.
+
+También contamos con un Consejo Asesor formado por aliados estratégicos para ayudar a guiar el progreso de nuestra comunidad como Organización sin Fines de Lucro.
