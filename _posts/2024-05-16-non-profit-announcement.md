@@ -3,7 +3,7 @@ layout: post
 lang: en
 title: “Black Python Devs is a Non-Profit Organization Under the GNOME Foundation”
 date: 2024-05-16
-featured_image: TBD
+featured_image: /assets/images/BPD_STACKED_featured.png
 ——-
 
 The GNOME Foundation and Black Python Devs are proud to announce that our organizations have entered into a fiscal sponsorship agreement for the mutual benefit of our communities and the greater OS world.
