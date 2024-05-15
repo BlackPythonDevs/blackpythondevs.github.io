@@ -6,6 +6,8 @@
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
     <title>{% if page.title %}{{ site.title }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
     <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/pico.min.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/pico.colors.min.css' | relative_url }}" />
     <link rel="stylesheet" href="{{ '/assets/css/bpd.css' | relative_url }}" />
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
@@ -28,10 +30,8 @@
 
   <body>
     {%- include header.html -%}
-    <main role="main"  class="page-content" aria-label="Content">
-      <div class="wrapper">
+    <main class="container" role="main" aria-label="Content">
         {{ content }}
-      </div>
     </main>
     {%- include footer.html -%}
     <script src="{{ '/assets/js/index.js' | relative_url }}"></script>

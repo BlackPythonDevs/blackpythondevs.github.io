@@ -8,8 +8,10 @@
   {% if conference.summary != "_No response_" %}
     {{ conference.summary | markdownify }}
   {% endif %}
-  <h3>Speaking:</h3>
-  {{ conference.speaking | markdownify }}
+  {% if conference.speaking != "_No response_" %}
+    <h3>Speaking:</h3>
+    {{ conference.speaking | markdownify }}
+  {% endif %}
 </div>
   {% endfor %}
 {% else %}

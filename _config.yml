@@ -49,7 +49,7 @@ bpdevs:
     - { platform: mastodon, user_url: "https://mastodon.social/@blackpythondevs" }
     - { platform: youtube, user_url: "https://www.youtube.com/@BlackPythonDevs" }
     - { platform: x, user_url: "https://x.com/blackpythondevs" }
-    - { platform: email, user_url: "mailto:black-python-devs@buttondown.email" }
+    - { platform: email, user_url: "mailto:contact@blackpythondevs.com" }
 
 # Build settings
 markdown: kramdown
@@ -59,8 +59,10 @@ plugins:
   - github-pages
   - jemoji
   - jekyll-feed
-  # - jekyll-seo-tag
-  # - jekyll-sitemap
+  - jekyll-sitemap
+# - jekyll-seo-tag
+# - jekyll-redirect-from
+# - jekyll-remote-theme
 
 exclude:
   - bin

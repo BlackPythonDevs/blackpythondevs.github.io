@@ -1,8 +1,6 @@
 body {
   /* color: #6b747a; */
   line-height: 1.66667;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 main.page-content div.wrapper p img {
@@ -57,9 +55,14 @@ input::-moz-focus-inner {
   padding: 0;
 }
 
-a {
-  color: #4c77a6;
-  text-decoration: none;
+article.post-list a {
+  color: #007b95;
+}
+
+article.pico-background-pumpkin-650 a.contrast,
+article.pico-background-pumpkin-800 a.contrast,
+article.pico-background-zinc-800 a.contrast {
+  color: #03d5ff;
 }
 
 div#newsletter {
@@ -97,8 +100,8 @@ div#newsletter {
 .back-to-top:active,
 .back-to-top:focus,
 .back-to-top:hover {
-  border-color: #2d72d9;
-  color: #2d72d9;
+  border-color: #3588ff;
+  color: #3588ff;
   outline: 0;
 }
 
@@ -114,7 +117,7 @@ div#newsletter {
 }
 
 .menu-item a {
-  color: #70777d;
+  color: #868e96;
   display: inline-block;
   font-size: 0.88889rem;
   font-weight: 700;
@@ -129,7 +132,7 @@ div#newsletter {
 .menu-item a:hover,
 .menu-item.nav-current a:link,
 .menu-item.nav-current a:visited {
-  color: #2d72d9;
+  color: #3588ff;
 }
 
 .icon-menu {
@@ -200,23 +203,12 @@ div#newsletter {
   border-bottom: 1px solid #d7d7d7;
   align-items: center;
   display: flex;
-  padding-bottom: 3.33333em;
-  padding-top: 2.5em;
-}
-
-.site-title {
-  color: #2c343c;
-  /* font-family: "Noto Serif",Georgia,serif; */
-  font-size: 1.66667rem;
-  font-weight: 700;
-  letter-spacing: -1px;
-  line-height: 1.2;
-  margin: 0 15px 0 0;
+  padding: 1.33333rem 0.5rem;
+  background-color: #222;
 }
 
 a.logo-text img {
-  width: 247px;
-  height: 46px;
+  width: 15rem;
 }
 
 @media only screen and (max-width: 600px) {
@@ -232,7 +224,7 @@ a.logo-text img {
 }
 
 .site-title a:hover {
-  color: #2d72d9;
+  color: #3588ff;
 }
 
 .site-navigation {
@@ -321,7 +313,7 @@ a.logo-text img {
   }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1080px) {
   #menu-close {
     right: 30px;
     top: 2.2rem;
@@ -415,4 +407,51 @@ footer {
 .page-content {
   padding: 30px 0;
   flex: 1 0 auto;
+}
+
+.hero {
+  width: 100%;
+  /* background-color: #222; */
+  background-image: url("/assets/images/hero-bpd-background.jpg");
+  background-color: RGBA(25, 25, 25, 0.8);
+  height: 25rem;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.hero > p {
+  color: #fff;
+  font-size: larger;
+}
+
+.hero-text {
+  font-size: 2rem;
+  font-weight: 100;
+  color: #fff;
+  font-style: italic;
+}
+
+.leadership-photo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.leadership-photo-container > p {
+  text-align: center;
+}
+
+img.leadership-photo {
+  margin: 0 1rem;
+  border-radius: 1em;
+  width: 8rem;
+  height: 8rem;
+}
+
+.post-title > h3 {
+  font-size: smaller;
+}
+
+img.featured-image {
+  max-height: 20rem;
 }

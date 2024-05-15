@@ -4,65 +4,70 @@ lang: en
 title: About Us
 ---
 
-## Mission
+# About Black Python Devs
 
----
+Black Python Devs was created by its founder Jay Miller after seeing a trend of the same handful of Black developers speaking at major conferences, taking leadership positions, and dealing with the same challenges towards burnout.
 
-### Own your Masters: Support members while ensuring they control the message around
+After attending PyCon US in 2022, he noticed they were able to physically count the number of Black developers that attended in person and that they made up LESS THAN 0.01% of the total attendees. Jay began asking speakers Black Pythonistas if they considered connecting with the community and the almost unanimous response was "Why would I do that?". After some encouragement one person was convinced to give a lightning talk.
 
-We're here to amplify your voice, not the other way around. That's why we're happy to share what you've done without making it about us.
+In the following year, we saw that person get more involved in their local user group and make connections that helped lead to forward progress in their career development. That same person was also to speak at PyCon US in 2023. After much push from communities in Africa and Brazil we saw the total number of Black Pythonistas triple in number.
 
-Any content that a member contributes to the community is given to them to publish as they please. That means if it's on our platforms, they allowed us to publish and have the right to change their mind at any time.
+At PyCon US 2023 after an open space a Discord server called Black Python Devs was created where the community could continue to encourage this momentum and support one another.
 
-### Secure the Bag: Establish guidance, mentorship, and career support for _Black Python Devs_ Members
+## The Goal of Black Python Devs
 
-Lack of stable employment often prevents members from contributing to the greater community at their desired leve. It is important that Black Python Developers are first and foremost employed and compensated at a fair rate and given opportunities to thrive.
+Our goal is to become the largest community of Black Python Developers in the world and establish our community as a source for diverse leaders in the greater Python community.
 
-We want to ensure that the members range in different technical roles, skills, and skill levels so that we can address the widest variety of needs from the community.
+We aim to:
 
-### Extend Their Reach: Expand support from existing Python and Other Technology focused organizations to communities of _Black Python Devs_ members
+- Establish guidance, mentorship, and career support for Black Pythonistas around the world.
+- Create opportunities for the Python community to invest in local communities of Black Python Devs members
+- Increase participation of Black Python Devs members in existing Python community programs, events, and initiatives.
 
-We can't be everything to everyone. We also don't need to recreate all of the amazing programs designed for Pythonistas. Our goal is to support getting these existing programs to Black developers and fill in the gaps where they exists.
+## Initiatives
 
-New programs and initiatives are often done with the help of those that have come before us, so that we can ensure the best opportunity for our members.
+Here is a look at our current initiatives? Select to learn more.
 
-### Support the Ecosystem: Create opportunities to invest in the local communities that members of _Black Python Devs_ represent
-
-Communities that are void of opportunities are often abandoned. While we can't move entire companies to these areas we can make sure that the local areas and businesses continue to thrive.
-
-When we need to spend money, we look at where our members are and invest in their hometowns. This allows Black communities to shine beyond their point on the map.
-
-## Why online first
-
----
-
-We hope in the long run to create many in-person user groups and events, but we have to understand where we can make the largest impacts.
-
-To do this we're hoping to gather folks from around the world and see where our largest audiences are.
+<div class="grid">
+<article>
+<h3><a href="/initiatives#build-local-black-community">Build Local Black Community</a></h3>
+</article>
+<article>
+<h3><a href="/initiatives#black-leadership-opportunity-fundblack-">Black Leadership Opportunity Fund</a></h3>
+</article>
+<article>
+<h3><a href="/initiatives#build-black-excellence-equally">Build Black Excellence Equally</a></h3>
+</article>
+</div>
 
 ## Leadership Team
 
-### Executor: Jay Miller
+<div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
 
-<div style="display:flex; flex-wrap: wrap;" markdown="1">
+<article class="leadership-photo-container">
+<img class="leadership-photo" alt="photo of Jay" src="https://github.com/kjaymiller.png">
+<p><strong>Jay Miller</strong><br/>
+Executor</p>
+</article>
 
-<div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Jay" src="https://github.com/kjaymiller.png">
-<p> Jay is a founder of Black Python Devs. Jay is an American Developer Advocate based in the Atlanta, Georgia area. </p>
+<article class="leadership-photo-container">
+<img class="leadership-photo" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
+<p><strong>Velda Kiara</strong><br/>
+Events Coordinator</p>
+</article>
+<article class="leadership-photo-container">
+<img class="leadership-photo" alt="photo of Oleksis" src="https://github.com/oleksis.png">
+<p><strong>Oleksis Fraga</strong><br/>
+Technical Manager</p>
+</article>
+
+<article class="leadership-photo-container">
+<img class="leadership-photo" alt="photo of Doreen" src="/assets/images/doreen.png">
+<p><strong>Doreen Nangira</strong><br/>
+Treasurer</p>
+</article>
 </div>
 
-### Technical Manager: Oleksis Fraga
+We also vet our actions through our Black Python Devs Leadership Council made up of members who serve as Python Community leaders on a local, regional, or global scale.
 
-<div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Oleksis" src="https://github.com/oleksis.png">
-<p> Oleksis is a Cuban software engineer and open-source maintainer based in the Toronto Canada area.</p>
-</div>
-
-### Events Coordinator: Velda Kiara
-
-<div style="display:flex">
-<img style="margin: 0 1rem; border-radius:1em" height="150px" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
-<p> Velda is a Kenyan software engineer and technical writer based in Nairobi.</p>
-</div>
-
-</div>
+We also have an Advisory Council made of strategic allies to help guide the progress of our community as a Non-Profit Organization.
