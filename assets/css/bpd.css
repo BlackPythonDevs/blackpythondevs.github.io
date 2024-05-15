@@ -447,3 +447,8 @@ img.leadership-photo {
 .post-title > h3 {
   font-size: smaller;
 }
+
+img.donation-photo {
+  max-width: 20rem;
+  max-height: 20rem;
+}
