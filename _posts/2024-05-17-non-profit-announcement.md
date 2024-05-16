@@ -2,7 +2,7 @@
 layout: post
 lang: en
 title: Black Python Devs is now a Non-Profit Under the GNOME Foundation
-date: 2024-05-17
+date: 2024-05-16
 featured_image: /assets/images/BPD_STACKED_featured.png
 ---
 
