@@ -452,6 +452,10 @@ img.leadership-photo {
   font-size: smaller;
 }
 
+img.donation-photo {
+  max-width: 20rem;
+}
+
 img.featured-image {
   max-height: 20rem;
 }
