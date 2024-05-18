@@ -4,7 +4,6 @@ Black Python Devs is an online-first community for Python devlopers who identify
 
 This repo is the [GitHub Pages](https://pages.github.com/) website, built in Jekyll.
 
-
 # Contributing to Black Python Devs Projects
 
 Please read [Contributing to Black Python Devs](CONTRIBUTING.md)
