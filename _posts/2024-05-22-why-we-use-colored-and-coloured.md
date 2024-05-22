@@ -22,7 +22,7 @@ The use of Coloured is also intentional. We understand Blackness is also divided
 
 ## Our messaging is supported by those it defines
 
-I want to note that our global leadership made up of representatives across 4 continents along with our advisors and hundreds of members support our wording and more importantly its inclusive meaning. We've had the challenging conversation of people of Afro-Latin and Indigenous communities who were hesitant to join because of the word "Black". They appreciate our attemps to include them in both membership and messaging.
+I want to note that our global leadership made up of representatives across 4 continents along with our advisors and hundreds of members support our wording and more importantly its inclusive meaning. We've had the challenging conversation of people of Afro-Latin and Indigenous communities who were hesitant to join because of the word "Black". They appreciate our attempts to include them in both membership and messaging.
 
 We respect that Black identity is not a clear cut designation. We do not gate or police blackness in our community and our [Code of Conduct](https://github.com/BlackPythonDevs/.github/blob/main/CODE_OF_CONDUCT.md) and policies prohibit the act of attacking a person's blackness.
 
