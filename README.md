@@ -153,6 +153,13 @@ You can deploy your project locally but the fastest way to contribute is to use 
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/sandramsc">
+            <img src="https://avatars.githubusercontent.com/u/19821445?v=4" width="100;" alt="sandramsc"/>
+            <br />
+            <sub><b>Sandra Ashipala</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/Fahass">
             <img src="https://avatars.githubusercontent.com/u/120847330?v=4" width="100;" alt="Fahass"/>
             <br />
@@ -166,6 +173,14 @@ You can deploy your project locally but the fastest way to contribute is to use 
             <sub><b>Zablon</b></sub>
         </a>
     </td>
+    <td align="center">
+        <a href="https://github.com/tim-schilling">
+            <img src="https://avatars.githubusercontent.com/u/1281215?v=4" width="100;" alt="tim-schilling"/>
+            <br />
+            <sub><b>Tim Schilling</b></sub>
+        </a>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/ankitgadling">
             <img src="https://avatars.githubusercontent.com/u/86833325?v=4" width="100;" alt="ankitgadling"/>
