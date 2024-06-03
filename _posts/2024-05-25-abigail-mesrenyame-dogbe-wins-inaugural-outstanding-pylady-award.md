@@ -3,13 +3,10 @@ layout: post
 lang: en
 title: "Abigail Mesrenyame Dogbe Honored with Inaugural Outstanding PyLady Award"
 date: 2024-01-25
+featured_image: /assets/images/opa_winners_2024.png
 ---
-<div style="display: flex; align-items: flex-start;">
-
-<img src="https://mesreandfriends.org/wp-content/uploads/2024/03/Dogbe_Abigail-DSC07499-1-1-1.jpg" style="margin-right: 20px; width: 100px; height: 100px; border-radius: 50%;" alt="Abigail Mesrenyame Dogbe">
-
+<div>
 <p>Every year, the PyLadies community recognizes individuals for their remarkable contributions to the open-source community with the <a href="https://kit.pyladies.com/en/latest/global/award.html">Inaugural Outstanding PyLady award</a>. This year, we are thrilled to announce that <a href="https://mesrenyamedogbe.hashnode.dev/">Abigail Mesrenyame Dogbe</a>, a dedicated member of Black Python Devs, has been honored with this prestigious award at PyCon 2024 in Pittsburgh, PA.</p>
-
 </div>
 
 [PyLadies](https://pyladies.com/) is an international mentorship group committed to increasing the participation of women in the Python open-source community. The group’s mission is to cultivate a diverse Python community through outreach, education, conferences, and social gatherings, and it also provides funding for women to attend open-source conferences. The PyLadies community consists of many remarkable members and volunteers who significantly contribute to enhancing the Python community. The Global Council’s Outstanding PyLady award aims to highlight and celebrate the achievements of diverse Pythonistas, recognizing women and non-binary individuals who make extraordinary contributions.
