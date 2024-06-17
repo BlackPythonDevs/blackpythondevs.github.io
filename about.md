@@ -10,7 +10,7 @@ Black Python Devs was created by its founder Jay Miller after seeing a trend of 
 
 After attending PyCon US in 2022, he noticed they were able to physically count the number of Black developers that attended in person and that they made up LESS THAN 0.01% of the total attendees. Jay began asking speakers Black Pythonistas if they considered connecting with the community and the almost unanimous response was "Why would I do that?". After some encouragement one person was convinced to give a lightning talk.
 
-In the following year, we saw that person get more involved in their local user group and make connections that helped lead to forward progress in their career development. That same person was also to speak at PyCon US in 2023. After much push from communities in Africa and Brazil we saw the total number of Black Pythonistas triple in number.
+In the following year, we saw that person get more involved in their local user group and make connections that helped lead to forward progress in their career development.That same person was accepted to speak at PyCon US in 2023. With much push from community in Africa and Brazil, we saw the total number of Black Attendees in 2023 triple in number.
 
 At PyCon US 2023 after an open space a Discord server called Black Python Devs was created where the community could continue to encourage this momentum and support one another.
 
