@@ -146,6 +146,13 @@ You can deploy your project locally but the fastest way to contribute is to use 
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/zablon-oigo">
+            <img src="https://avatars.githubusercontent.com/u/143833326?v=4" width="100;" alt="zablon-oigo"/>
+            <br />
+            <sub><b>Zablon</b></sub>
+        </a>
+    </td>
+    <td align="center">
         <a href="https://github.com/VeldaKiara">
             <img src="https://avatars.githubusercontent.com/u/32552296?v=4" width="100;" alt="VeldaKiara"/>
             <br />
@@ -167,20 +174,20 @@ You can deploy your project locally but the fastest way to contribute is to use 
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/zablon-oigo">
-            <img src="https://avatars.githubusercontent.com/u/143833326?v=4" width="100;" alt="zablon-oigo"/>
+        <a href="https://github.com/dragid10">
+            <img src="https://avatars.githubusercontent.com/u/4042877?v=4" width="100;" alt="dragid10"/>
             <br />
-            <sub><b>Zablon</b></sub>
+            <sub><b>Alex Oladele</b></sub>
         </a>
-    </td>
+    </td></tr>
+<tr>
     <td align="center">
         <a href="https://github.com/tim-schilling">
             <img src="https://avatars.githubusercontent.com/u/1281215?v=4" width="100;" alt="tim-schilling"/>
             <br />
             <sub><b>Tim Schilling</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/ankitgadling">
             <img src="https://avatars.githubusercontent.com/u/86833325?v=4" width="100;" alt="ankitgadling"/>
