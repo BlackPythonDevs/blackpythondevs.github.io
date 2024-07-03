@@ -5,18 +5,4 @@
   summary: DjangoCon US 2024 has been announced! Join us for five days of inspiration,
     education, and networking opportunities centering around the Django web framework.
   type: both
-  url: 2024.djangocon.us/
-- dates: 16 - 25 May 2024
-  location: Pittsburgh, Pennsylvania, United States
-  name: PyCon US 2024
-  speaking: ''
-  summary: "At PyCon US 2024, you will find an amazing program filled with pre-conference\
-    \ tutorials and sponsor presentations, 90+ of our community\u2019s best talks,\
-    \ which includes our Charlas track, brilliant keynote speakers, posters on display,\
-    \ a lively Expo Hall filled with our incredible Sponsors\u2019 booths, and our\
-    \ famed lightning talks on each main conference day. Following the conference\
-    \ days, there are 4 days of sprints that are free to all attendees and offer an\
-    \ opportunity for anyone to collaborate and contribute to a project even if it\
-    \ is their first time."
-  type: both
-  url: https://pycon.us
+  url: https://2024.djangocon.us/
