@@ -16,6 +16,6 @@ During the announcement of this partnership, our founder, Jay Miller, shared his
 
 This partnership is a pivotal step in our efforts to support Black Python developers, starting with those in Ohio. We aim to increase their participation and engagement in the PyOhio community conference through volunteering, speaking, and other collaborative efforts. Our excitement about this partnership is immense, and we look forward to a long and fruitful collaboration with PyOhio.
 
-At this year's PyOhio conference, the Black Python Devs team will be actively supporting the event in various capacities. We will have a dedicated Black Python Devs booth, and we encourage all attendees to visit and show their support. This partnership promises to be a cornerstone of our efforts to foster a more inclusive and engaged Python community.
+At this year's PyOhio conference, the Black Python Devs will have a dedicated Black Python Devs booth, and we encourage all attendees to visit and show their support. This partnership promises to be a cornerstone of our efforts to foster a more inclusive and engaged Python community.
 
 We are excited about the future and the positive impact this collaboration will have on our community. Here's to many more years of growth and success together with PyOhio!
