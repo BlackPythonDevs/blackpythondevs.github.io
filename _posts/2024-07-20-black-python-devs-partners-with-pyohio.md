@@ -4,6 +4,7 @@ date: 2024-07-20
 author: "Anotida Expected Msiiwa"
 lang: "en"
 layout: "post"
+featured_image: "/assets/images/black-python-devs-x-pyohio.png"
 ---
 
 We are thrilled to announce a significant new partnership between Black Python Devs and [PyOhio](https://www.pyohio.org/2024/)! This collaboration marks a major milestone in our mission to amplify the involvement of Black developers within the Python community, with a particular focus on the Ohio region. Our financial support for PyOhio is designed to stimulate community engagement and foster growth in the years to come.
