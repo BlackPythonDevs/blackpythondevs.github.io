@@ -14,7 +14,7 @@ body:
   - type: input
     attributes:
       label: URL
-      description: The URL of the conference.
+      description: The full URL of the conference (make sure to include `https://`).
       placeholder: https://example.com
     validations:
       required: true
