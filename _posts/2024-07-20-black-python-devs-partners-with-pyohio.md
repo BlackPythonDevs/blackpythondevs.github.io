@@ -14,7 +14,7 @@ During the announcement of this partnership, our founder, Jay Miller, shared his
 
 > "We are excited to work with the PyOhio team. The PyCon US event in Cleveland was the most diverse location a PyCon US event has been held in the last 10 years. We want to continue to show other communities that when you extend your communities into locations where there are many talented Black present and future developers, we are able to make a positive impact across the board. We are encouraged by PyOhio's ambition and eagerness to work with us and hope they will serve as a standard for other communities across the United States."
 
-This partnership is a pivotal step in our efforts to support Black Python developers, starting with those in Ohio. We aim to increase their participation and engagement in the PyOhio community conference through volunteering, keynote speaking, and other collaborative efforts. Our excitement about this partnership is immense, and we look forward to a long and fruitful collaboration with PyOhio.
+This partnership is a pivotal step in our efforts to support Black Python developers, starting with those in Ohio. We aim to increase their participation and engagement in the PyOhio community conference through volunteering, speaking, and other collaborative efforts. Our excitement about this partnership is immense, and we look forward to a long and fruitful collaboration with PyOhio.
 
 At this year's PyOhio conference, the Black Python Devs team will be actively supporting the event in various capacities. We will have a dedicated Black Python Devs booth, and we encourage all attendees to visit and show their support. This partnership promises to be a cornerstone of our efforts to foster a more inclusive and engaged Python community.
 
