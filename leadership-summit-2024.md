@@ -16,12 +16,11 @@ This year we're bringing presentation from folks all over the world to energize 
 
 ## Schedule
 
-### 8:00 - 9:00 am: Registration, Breakfast, and Mingling
-
 ### BPD Leadership Track (Morning)
 
 The leadership Track is for BPD Members, Donors, and Distinguished Guests.
 
+- 8:00 - 9:00 am: Registration, Breakfast, and Mingling
 - 9:00 - 9:10 am: Welcome and Opening Remarks
 - 9:10-9:15: Gold Sponsor Lightning Talk
 - 9:20 - 10:05: Chop it Up Session with BPD Leaders
@@ -33,6 +32,7 @@ The leadership Track is for BPD Members, Donors, and Distinguished Guests.
 
 Our Community track is available for everyone to join us in.
 
+- 12:00 - 1:00 am: Registration
 - 1:15 - 2:00 am: Keynote Address
 - 2:05 - 2:55: Interactive Session
 - 3:00 - 3:45 pm: Panel Discussion
