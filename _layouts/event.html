@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
+    <title>{% if page.title %}{{ site.title }} | {{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/pico.min.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/pico.colors.min.css' | relative_url }}" />
+    <link rel="stylesheet" href="{{ '/assets/css/bpd.css' | relative_url }}" />
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="icon" href="https://fav.farm/%E2%9C%8A%F0%9F%8F%BE" type="image/svg" />
+    {% if page.lang and page.untranslated != true and site.data.locales.size > 1 %}
+    {% assign locales = site.data.locales | sort %}
+    {% for locale in locales %}
+    {% assign lang = locale[0] %}
+    {% assign page_lang_slash = page.lang | append: '/' | prepend: '/' %}
+    {% assign default_url = page.url | replace: page_lang_slash, '/' %}
+    {% if lang == "en" %}
+    <link rel="alternate" hreflang="en" href="{{ site.url }}{{ default_url }}" />
+    <link rel="alternate" hreflang="x-default" href="{{ site.url }}{{ default_url }}" />
+    {% else %}
+    <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ default_url }}" />
+    {% endif %}
+    {% endfor %}
+    {% endif %}
+    <style>
+      article > ul >li {
+        margin-left: 2em;
+        list-style: none !important;
+      }
+    </style>
+  </head>
+  <body>
+    {%- include header.html -%}
+    <main class="container" role="main" aria-label="Content">
+      <article>
+        <h1>{{page.title}}</h1>
+        <img src="{{page.event_banner}}" alt="event banner" />
+        {{ content }}
+        <h2>Donate & Register</h2>
+        <div class="grid">
+          <div>
+            <h3>Register for the Event!</h3>
+            <tito-widget event="{{ page.tito_event }}"
+            prefill="{&quot;name&quot;: &quot;Eve Moneypenny&quot;, &quot;email&quot;: &quot;ticketing@blackpythondevs.com&quot;, &quot;metadata&quot;:{&quot;foo&quot;: &quot;bar&quot;}}"
+          ></tito-widget>
+          </div>
+          <div>
+            <h3>Donate to the Event</h3>
+            <a data-amounts='25,50,100,250,500,1000' class='commitchange-donate' data-embedded='' data-campaign-id="{{page.commitchange_campaign_id}}" data-designation="{{commitchange_designation}}"></a>
+            {{ page.registration_embed }}
+          </div>
+        </div>
+        <h2>Our Sponsors</h2>
+        <h3>Gold Sponsors</h3>
+        <div class="grid">
+          {%- for sponsor in page.sponsors_gold -%}
+          <img src="{{sponsor}}">
+          {% endfor %}
+        </div>
+
+        <h3>Silver Sponsors</h3>
+        <div class="grid">
+          {%- for sponsor in page.sponsors_silver -%}
+          <img src="{{sponsor}}">
+          {% endfor %}
+        </div>
+          <h3>Bronze Sponsors</h3>
+        <div class="grid">
+          {%- for sponsor in page.sponsors_bronze -%}
+          <img src="{{sponsor}}">
+          {% endfor %}
+        </div>
+        <div class="grid">
+          <h3>Distinguished Individual Donors ($50 or More)</h3>
+          <ul>
+            {%- for sponsor in page.donors -%}
+            <li>{{sponsor}}"</li>
+          </ul>
+          {% endfor %}
+        </div>
+        <p>For more information on sponsorship, check out <a href="{{page.prospectus}}">our prospectus</a> or email: <a href="mailto:sponsorships@blackpythondevs.com">Sponsorships@blackpythondevs.com</a></p>
+      </article>
+      </main>
+    {%- include footer.html -%}
+    <script>
+      (function() {
+      if(document.getElementById('commitchange-script')) return;
+      var npo = 6464;
+      var script = document.createElement('script');
+      var first = document.getElementsByTagName('script')[0];
+      script.setAttribute('data-npo-id', npo);
+      script.id = 'commitchange-script';
+      script.src = 'https://us.commitchange.com/js/donate-button.v2.js';
+      first.parentNode.insertBefore(script, first);
+      })();
+      </script>
+      <script src="https://js.tito.io/v2" async></script>
+    <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
+    <script src="https://kit.fontawesome.com/1bbe56de49.js" crossorigin="anonymous"></script>
+  </body>
+</html>

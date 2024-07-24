@@ -1,9 +1,7 @@
 index.html
 assets/js/jquery.min.js
 assets/js/index.js
-_layouts/default.html
-_layouts/index.html
-_layouts/post.html
+_layouts/*.html
 _includes/conferences.html
 _includes/header.html
 _includes/social.html
