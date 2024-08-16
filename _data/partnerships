@@ -1,7 +1,7 @@
 - name: "TalkPython Training"
   promo_code: "bpd-20pc-1c1da"
   description: "When you use the promo code: <strong>bpd-20pc-1c1da</strong> at checkout, you will receive 10% off your course purchase. TalkPython Training will also donate 20% of the purchase to Black Python Devs."
-  url: "https://blackpythondevs.com/training-talkpython-partnership"
+  url: "/2024-08-16-talkpython-training-partnership"
 - name: "Python Morsels"
   promo_code: "BlackPythonDevs"
   description: "When signing up for the <em>High Five</em> getting started with Python program, use the promo code <strong>BlackPythonDevs</strong> at checkout, you will receive $30 off your course purchase. Python Morsels will also donate $70 of the purchase to Black Python Devs."
