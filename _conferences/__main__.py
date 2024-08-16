@@ -2,6 +2,7 @@ import os
 import re
 from datetime import datetime, time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 from github import Auth, Github
@@ -45,6 +46,13 @@ for issue in open_issues:
             re.DOTALL,
         )
 
+        # Check if there is a scheme (`https`) already in the parsed url
+        valid_url = None
+        if url_match is not None and url_match[1].strip() != "":
+            parsed_url = urlparse(url_match[1])
+            if "http" not in parsed_url.scheme.casefold():
+                valid_url = f"https://{url_match[1]}"
+
         if dates_match:
             conferenceDates = dates_match[1]
             # Parse the end date of the conference
@@ -54,7 +62,7 @@ for issue in open_issues:
             if endDate >= today:
                 conference = {
                     "name": name_match[1],
-                    "url": url_match[1],
+                    "url": valid_url,
                     "dates": dates_match[1],
                     "type": type_match[1],
                     "location": location_match[1],
