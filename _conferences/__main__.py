@@ -46,9 +46,14 @@ for issue in open_issues:
             re.DOTALL,
         )
 
-        # Check if there is a scheme (`https`) already in the parsed url
+        # Set a default value of None for when the url field isn't as expected
         valid_url = None
+
+        # Ensure the url field is not blank and the url matches the regex
         if url_match is not None and url_match[1].strip() != "":
+            # Parse the url and see if a scheme (`https`) is included in it
+            # If not, then prepend `https` to the url from the issue body
+            # This guards against the website thinking the passed in url is another page on https://blackpythondevs.com/
             parsed_url = urlparse(url_match[1])
             if "http" not in parsed_url.scheme.casefold():
                 valid_url = f"https://{url_match[1]}"
