@@ -1,5 +1,3 @@
-{# This is the partnerships section of the home page #}
-
 <div>
   <h2>Partnerships</h2>
 
@@ -7,8 +5,8 @@
 
   {% for partner in partnerships %}
   <div>
-    <h3>{{ data.partner.name }}</h3>
-    <p>{{ data.partner.description }}</p>
+    <h3>{{ site.data.partner.name }}</h3>
+    <p>{{ site.data.partner.description }}</p>
     <a href="{{ data.partner.url }}">Learn more</a>
   </div>
   {% endfor %}
