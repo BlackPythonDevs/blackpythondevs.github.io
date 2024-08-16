@@ -1,0 +1,22 @@
+<div>
+  <h2>Partnerships</h2>
+
+  <p>We're happy to share with you our proud sponsors who offer their products at discounted rates and a portion of proceeds go to support Black Python Devs!</p>
+
+  <div class="grid">
+    {% for partner in site.data.partnerships %}
+    <article>
+      <div class="grid">
+        <div>
+          <img src="{{partner.logo}}" alt="{{partner.name}} Logo" style="max-height: 14em" />
+        </div>
+        <div>
+          <h3><a href="{{partner.url}}">{{ partner.name }}</a></h3>
+          <p>{{ partner.description }}</p>
+          <a href="{{ partner.url }}">Learn more</a>
+        </div>
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</div>
