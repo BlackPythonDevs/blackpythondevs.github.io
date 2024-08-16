@@ -1,0 +1,15 @@
+{# This is the partnerships section of the home page #}
+
+<div>
+  <h2>Partnerships</h2>
+
+  <p>We're happy to share with you our proud sponsors who offer their products at discounted rates and a portion of proceeds go to support Black Python Devs!</p>
+
+  {% for partner in partnerships %}
+  <div>
+    <h3>{{ data.partner.name }}</h3>
+    <p>{{ data.partner.description }}</p>
+    <a href="{{ data.partner.url }}">Learn more</a>
+  </div>
+  {% end
+</div>
