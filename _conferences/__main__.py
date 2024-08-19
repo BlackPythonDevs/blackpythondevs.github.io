@@ -2,6 +2,7 @@ import os
 import re
 from datetime import datetime, time
 from pathlib import Path
+from urllib.parse import urlparse
 
 import yaml
 from github import Auth, Github
@@ -45,6 +46,18 @@ for issue in open_issues:
             re.DOTALL,
         )
 
+        # Set a default value of None for when the url field isn't as expected
+        valid_url = None
+
+        # Ensure the url field is not blank and the url matches the regex
+        if url_match is not None and url_match[1].strip() != "":
+            # Parse the url and see if a scheme (`https`) is included in it
+            # If not, then prepend `https` to the url from the issue body
+            # This guards against the website thinking the passed in url is another page on https://blackpythondevs.com/
+            parsed_url = urlparse(url_match[1])
+            if "http" not in parsed_url.scheme.casefold():
+                valid_url = f"https://{url_match[1]}"
+
         if dates_match:
             conferenceDates = dates_match[1]
             # Parse the end date of the conference
@@ -54,7 +67,7 @@ for issue in open_issues:
             if endDate >= today:
                 conference = {
                     "name": name_match[1],
-                    "url": url_match[1],
+                    "url": valid_url,
                     "dates": dates_match[1],
                     "type": type_match[1],
                     "location": location_match[1],
