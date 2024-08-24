@@ -15,6 +15,7 @@ In the following year, we saw that person get more involved in their local user 
 At PyCon US 2023 after an open space a Discord server called Black Python Devs was created where the community could continue to encourage this momentum and support one another.
 
 ## Mission statement
+
 Extending the ecosystem of Python Communities to Black and Colo(u)red Communities around the world.
 
 ## The Goal of Black Python Devs
