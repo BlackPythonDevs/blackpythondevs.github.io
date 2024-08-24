@@ -12,7 +12,7 @@ Participants will work on issues from repositories around Black Python Devs as w
 
 By the end of the program, participants will have enhanced their technical skills, expanded their professional network, and made tangible contributions to the open-source community.
 
-## Applications for the next Cohort are now open
+## Applications for the next Cohort are now closed
 
 The next cohort is now seeking contributors and mentors to collaborate on the following projects:
 
