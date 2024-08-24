@@ -3,6 +3,7 @@
 Black Python Devs is an online-first community for Python devlopers who identify as Black.
 
 # Mission statements
+
 Extending the ecosystem of Python Communities to Black and Colo(u)red Communities around the world.
 
 This repo is the [GitHub Pages](https://pages.github.com/) website, built in Jekyll.
