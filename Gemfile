@@ -1,7 +1,7 @@
 source "https://rubygems.org"
 ruby RUBY_VERSION
 
-gem "jekyll", "3.9.3"
+gem "jekyll"
 
 # If you have any plugins, put them here!
 group :jekyll_plugins do
