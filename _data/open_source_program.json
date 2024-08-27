@@ -1,0 +1,38 @@
+[
+  {
+    "org": {
+      "name": "Black Python Devs",
+      "url": "https://github.com/blackpythondevs"
+    },
+    "repos": [
+      {
+        "name": "Black Python Devs",
+        "url": "https://github.com/blackpythondevs/blackpythondevs",
+        "description": "This is the base operating Documentation for Black Python Devs"
+      },
+      {
+        "name": "Black Python Devs Website",
+        "url": "https://github.com/blackpythondevs/blackpythondevs.github.io",
+        "description": "The jekyll website that routes to BlackPythonDevs.com"
+      }
+    ]
+  },
+  {
+    "org": {
+      "name": "DAGWorks-Inc",
+      "url": "https://github.com/DAGWorks-Inc"
+    },
+    "repos": [
+      {
+        "name": "Hamilton",
+        "url": "https://github.com/DAGWorks-Inc/hamilton",
+        "description": "Hamilton helps data scientists and engineers define testable, modular, self-documenting dataflows, that encode lineage/tracing and metadata. Runs and scales everywhere python does."
+      },
+      {
+        "name": "Burr",
+        "url": "https://github.com/DAGWorks-Inc/burr",
+        "description": "Build applications that make decisions (chatbots, agents, simulations, etc...). Monitor, trace, persist, and execute on your own infrastructure."
+      }
+    ]
+  }
+]
