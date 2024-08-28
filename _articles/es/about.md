@@ -53,7 +53,7 @@ Ejecutor</p>
 <article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Velda" src="https://github.com/VeldaKiara.png">
 <p><strong>Velda Kiara</strong><br/>
-Coordinadora de Eventos</p>
+Vice ejecutora</p>
 </article>
 
 <article class="leadership-photo-container">
