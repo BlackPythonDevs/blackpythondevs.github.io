@@ -10,7 +10,10 @@
   {% endif %}
   {% if conference.speaking != "_No response_" %}
     <h3>Speaking:</h3>
-    {{ conference.speaking | markdownify }}
+    <!-- add padding to the ul items-->
+    <ul class="speaking-list">
+      {{ conference.speaking | markdownify }}
+    </ul>
   {% endif %}
 </div>
   {% endfor %}
