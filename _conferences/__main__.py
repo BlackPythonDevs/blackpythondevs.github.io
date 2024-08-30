@@ -95,7 +95,7 @@ def write_conferences_to_file(confs: list[dict]):
         yaml.dump(confs, f)
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     conferences = []
 
     # Get open issues from repo
