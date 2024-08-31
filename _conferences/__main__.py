@@ -16,8 +16,9 @@ conferences_path = ROOT / "_data/conferences.yml"
 def create_github_client():
     gh_token = os.getenv("GITHUB_TOKEN", "")
     auth = Auth.Token(gh_token)
-    g = Github(auth=auth)
-    return g
+    client = Github(auth=auth)
+    return client
+
 
 
 def get_open_issues(gh: Github) -> PaginatedList[Issue]:
