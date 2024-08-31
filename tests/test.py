@@ -19,7 +19,7 @@ routes = [
 @pytest.fixture(autouse=True)
 def slow_down_tests():
     yield
-    time.sleep(2)
+    time.sleep(1)
 
 
 @pytest.mark.parametrize("url", routes)
