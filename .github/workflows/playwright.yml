@@ -34,8 +34,10 @@ jobs:
           # Start up local copy of site
           bundle exec jekyll serve --detach
 
-          # Sleep for 10 secs to allow Jekyll to start
-          sleep 10
+          # Sleep for 5 secs to allow Jekyll to start
+          startup_wait=5
+          echo "Sleeping for $startup_wait seconds"
+          sleep $startup_wait
 
           # Run tests
           python -m pytest
