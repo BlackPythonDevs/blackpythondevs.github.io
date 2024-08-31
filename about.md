@@ -24,9 +24,13 @@ Our goal is to become the largest community of Black Python Developers in the wo
 
 We aim to:
 
-- Establish guidance, mentorship, and career support for Black Pythonistas around the world.
-- Create opportunities for the Python community to invest in local communities of Black Python Devs members
-- Increase participation of Black Python Devs members in existing Python community programs, events, and initiatives.
+<div>
+<article class="markdown-list">
+<li>Establish guidance, mentorship, and career support for Black Pythonistas around the world.</li>
+<li>Create opportunities for the Python community to invest in local communities of Black Python Devs members.</li>
+<li>Increase participation of Black Python Devs members in existing Python community programs, events, and initiatives.</li>
+</article>
+</div>
 
 ## Initiatives
 
