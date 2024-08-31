@@ -9,16 +9,19 @@ from github import Auth, Github
 from github.Issue import Issue
 from github.PaginatedList import PaginatedList
 
-TOKEN = os.getenv("GITHUB_TOKEN", "")
 ROOT = Path(__file__).parent.parent
 conferences_path = ROOT / "_data/conferences.yml"
 
-auth = Auth.Token(TOKEN)
-g = Github(auth=auth)
+
+def create_github_client():
+    gh_token = os.getenv("GITHUB_TOKEN", "")
+    auth = Auth.Token(gh_token)
+    g = Github(auth=auth)
+    return g
 
 
-def get_open_issues() -> PaginatedList[Issue]:
-    repo = g.get_repo("BlackPythonDevs/blackpythondevs.github.io")
+def get_open_issues(gh: Github) -> PaginatedList[Issue]:
+    repo = gh.get_repo("BlackPythonDevs/blackpythondevs.github.io")
     issues = repo.get_issues(state="open", labels=["conference"])
     return issues
 
@@ -98,8 +101,11 @@ def write_conferences_to_file(confs: list[dict]):
 if __name__ == "__main__":
     conferences = []
 
+    # Create Github client object
+    gh_client = create_github_client()
+
     # Get open issues from repo
-    open_issues: PaginatedList[Issue] = get_open_issues()
+    open_issues: PaginatedList[Issue] = get_open_issues(gh_client)
 
     # Parse each conference issue so long as it has the "conference" label
     for issue in open_issues:
