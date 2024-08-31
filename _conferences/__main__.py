@@ -105,6 +105,7 @@ if __name__ == "__main__":
     for issue in open_issues:
         if "conference" in [label.name for label in issue.labels]:
             parsed_conf = parse_conference_details(issue_body=issue.body)
-            conferences.append(parsed_conf)
+            if parsed_conf:
+                conferences.append(parsed_conf)
 
     write_conferences_to_file(conferences)
