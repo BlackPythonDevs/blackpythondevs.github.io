@@ -1,17 +1,21 @@
 {% if site.data.conferences.size > 0 %}
   {% for conference in site.data.conferences %}
 <div class="conference">
-  <h2>
-    <a href="{{ conference.url }}">{{ conference.name }}</a> ({{ conference.dates }}) {% if conference.location != "_No response_" %}- {{ conference.location }}{% endif %}
-  </h2>
-  <p>Type: {{ conference.type }}</p>
-  {% if conference.summary != "_No response_" %}
-    {{ conference.summary | markdownify }}
-  {% endif %}
-  {% if conference.speaking != "_No response_" %}
-    <h3>Speaking:</h3>
-    {{ conference.speaking | markdownify }}
-  {% endif %}
+  <article>
+    <h2>
+      <a href="{{ conference.url }}">{{ conference.name }}</a> ({{ conference.dates }}) {% if conference.location != "_No response_" %}- {{ conference.location }}{% endif %}
+    </h2>
+    <p>Type: {{ conference.type }}</p>
+    {% if conference.summary != "_No response_" %}
+      {{ conference.summary | markdownify }}
+    {% endif %}
+    {% if conference.speaking != "_No response_" %}
+      <h3>Speaking:</h3>
+      <li>
+      {{ conference.speaking | markdownify }}
+      </li>
+    {% endif %}
+  </article>
 </div>
   {% endfor %}
 {% else %}

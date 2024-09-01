@@ -14,8 +14,10 @@ They raise the overall capability of Pythonistas in their area with much more co
 
 ### Our Strategy
 
-- Sponsor Local Conferences/Meetups organized by Black Python Devs Community Leaders
-- Sponsorships go towards tickets for local community members to attend
+<article class="markdown-list">
+<li>Sponsor Local Conferences/Meetups organized by Black Python Devs Community Leaders</li>
+<li>Sponsorships go towards tickets for local community members to attend</li>
+</article>
 
 ## Black Leadership Opportunity Fund
 
@@ -27,9 +29,11 @@ Lastly the process for getting visas to attend can be confusing and daunting and
 
 ### Our Strategy
 
-- Offer a limited grant to community leaders to cover expenses around visa appointments.
-- Work with travel professionals to coordinate flights, hotels, and transportation while travelling
-- Work with conferences to make their opportunity grants accessible to as many as possible addressing the concerns of our community leaders.
+<article class="markdown-list">
+<li>Offer a limited grant to community leaders to cover expenses around visa appointments.</li>
+<li>Work with travel professionals to coordinate flights, hotels, and transportation while travelling.</li>
+<li>Work with conferences to make their opportunity grants accessible to as many as possible addressing the concerns of our community leaders.</li>
+</article>
 
 ## Build Black Excellence Equally
 
@@ -39,7 +43,9 @@ Black Python Devs will work with content creators to give as many opportunities 
 
 ### Our Strategy
 
-- Partner with content creators for bulk discounts on learning content
-- Host regular events and programs in our Discord for folks to skill up, network, and learn from one another
+<article class="markdown-list">
+<li>Partner with content creators for bulk discounts on learning content.</li>
+<li>Host regular events and programs in our Discord for folks to skill up, network, and learn from one another.</li>
+</article>
 
 [Learn more about Black Python Devs](/about)

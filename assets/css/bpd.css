@@ -59,6 +59,24 @@ article.post-list a {
   color: #007b95;
 }
 
+article li {
+  padding-left: 2rem;
+}
+
+/* prevent ::marker from being displayed in DOM */
+li {
+  list-style: none;
+}
+
+/* style the markdown files */
+.markdown-list {
+  padding-left: 2rem;
+}
+
+.markdown-list li {
+  list-style: disc;
+}
+
 article.pico-background-pumpkin-650 a.contrast,
 article.pico-background-pumpkin-800 a.contrast,
 article.pico-background-zinc-800 a.contrast {
@@ -458,4 +476,8 @@ img.donation-photo {
 
 img.featured-image {
   max-height: 20rem;
+}
+
+ul.speaking-list {
+  padding-left: 2rem;
 }
