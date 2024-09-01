@@ -1,5 +1,9 @@
+import time
+
 import pytest
 from playwright.sync_api import Page, expect
+
+from _conferences.__main__ import parse_conference_details
 
 live_server_url = "http://127.0.0.1:4000"
 
@@ -9,6 +13,13 @@ routes = [
     ("conferences"),
     ("events"),
 ]
+
+
+# Add a delay to each test to help with playwright race conditions
+@pytest.fixture(autouse=True)
+def slow_down_tests():
+    yield
+    time.sleep(1)
 
 
 @pytest.mark.parametrize("url", routes)
@@ -101,3 +112,113 @@ def test_mailto_bpdevs(page: Page) -> None:
     page.goto(f"{live_server_url}")
     mailto = page.get_by_role("link", name="email")
     expect(mailto).to_have_attribute("href", "mailto:contact@blackpythondevs.com")
+
+
+def test_conference_parsing_valid_url():
+    example_conf_issue = """### Conference Name
+
+Test Conference Title
+
+### URL
+
+https://microsoft.com
+
+### Conference Dates
+
+10 - 15 Sep 2050
+
+### Conference Type
+
+both
+
+### Conference Location
+
+Redmond, WA, USA
+
+### Summary
+
+Test Conference Summary
+
+### Speaking
+
+* [Satya Nadella](https://www.linkedin.com/in/satyanadella/)
+"""
+    expected_name = "Test Conference Title"
+    expected_url = "https://microsoft.com"
+    parsed_conf = parse_conference_details(issue_body=example_conf_issue)
+
+    assert parsed_conf["name"] == expected_name
+    assert parsed_conf["url"] == expected_url
+
+
+def test_conference_parsing_logic_no_url_scheme():
+    example_conf_issue = """### Conference Name
+
+Test Conference Title
+
+### URL
+
+microsoft.com
+
+### Conference Dates
+
+10 - 15 Sep 2050
+
+### Conference Type
+
+both
+
+### Conference Location
+
+Redmond, WA, USA
+
+### Summary
+
+Test Conference Summary
+
+### Speaking
+
+* [Satya Nadella](https://www.linkedin.com/in/satyanadella/)
+"""
+    expected_name = "Test Conference Title"
+    expected_url = "https://microsoft.com"
+    parsed_conf = parse_conference_details(issue_body=example_conf_issue)
+
+    assert parsed_conf["name"] == expected_name
+    assert parsed_conf["url"] == expected_url
+
+
+def test_conference_parsing_logic_no_url():
+    example_conf_issue = """### Conference Name
+
+Test Conference Title
+
+### URL
+
+
+### Conference Dates
+
+10 - 15 Sep 2050
+
+### Conference Type
+
+both
+
+### Conference Location
+
+Redmond, WA, USA
+
+### Summary
+
+Test Conference Summary
+
+### Speaking
+
+* [Satya Nadella](https://www.linkedin.com/in/satyanadella/)
+"""
+    expected_name = "Test Conference Title"
+    expected_url = None
+    parsed_conf = parse_conference_details(issue_body=example_conf_issue)
+
+    assert parsed_conf["name"] == expected_name
+    assert parsed_conf["url"] == expected_url
