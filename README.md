@@ -135,13 +135,20 @@ You can deploy your project locally but the fastest way to contribute is to use 
         </a>
     </td>
     <td align="center">
+        <a href="https://github.com/dragid10">
+            <img src="https://avatars.githubusercontent.com/u/4042877?v=4" width="100;" alt="dragid10"/>
+            <br />
+            <sub><b>Alex Oladele</b></sub>
+        </a>
+    </td></tr>
+<tr>
+    <td align="center">
         <a href="https://github.com/VeldaKiara">
             <img src="https://avatars.githubusercontent.com/u/32552296?v=4" width="100;" alt="VeldaKiara"/>
             <br />
             <sub><b>Velda Kiara</b></sub>
         </a>
-    </td></tr>
-<tr>
+    </td>
     <td align="center">
         <a href="https://github.com/zablon-oigo">
             <img src="https://avatars.githubusercontent.com/u/143833326?v=4" width="100;" alt="zablon-oigo"/>
@@ -171,13 +178,6 @@ You can deploy your project locally but the fastest way to contribute is to use 
         </a>
     </td>
     <td align="center">
-        <a href="https://github.com/dragid10">
-            <img src="https://avatars.githubusercontent.com/u/4042877?v=4" width="100;" alt="dragid10"/>
-            <br />
-            <sub><b>Alex Oladele</b></sub>
-        </a>
-    </td>
-    <td align="center">
         <a href="https://github.com/sandramsc">
             <img src="https://avatars.githubusercontent.com/u/19821445?v=4" width="100;" alt="sandramsc"/>
             <br />
@@ -190,6 +190,27 @@ You can deploy your project locally but the fastest way to contribute is to use 
             <img src="https://avatars.githubusercontent.com/u/120847330?v=4" width="100;" alt="Fahass"/>
             <br />
             <sub><b>Umar Farouk</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/DonBoscoBlaiseA">
+            <img src="https://avatars.githubusercontent.com/u/140850829?v=4" width="100;" alt="DonBoscoBlaiseA"/>
+            <br />
+            <sub><b>Don Bosco Blaise</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/mbuguadouglas">
+            <img src="https://avatars.githubusercontent.com/u/105845499?v=4" width="100;" alt="mbuguadouglas"/>
+            <br />
+            <sub><b>Mbugua.</b></sub>
+        </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/TimOsahenru">
+            <img src="https://avatars.githubusercontent.com/u/93861430?v=4" width="100;" alt="TimOsahenru"/>
+            <br />
+            <sub><b>Osahenru</b></sub>
         </a>
     </td>
     <td align="center">
