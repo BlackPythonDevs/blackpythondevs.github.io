@@ -20,7 +20,6 @@ def create_github_client():
     return client
 
 
-
 def get_open_issues(gh: Github) -> PaginatedList[Issue]:
     repo = gh.get_repo("BlackPythonDevs/blackpythondevs.github.io")
     issues = repo.get_issues(state="open", labels=["conference"])
