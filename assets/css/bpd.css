@@ -283,9 +283,19 @@ a.logo-text img {
 
   .site-navigation-wrap {
     height: 100%;
+    width: 100%;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
     position: relative;
+  }
+
+  .site-navigation-wrap ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .site-navigation-wrap ul li {
+    width: 90%;
   }
 
   .menu {

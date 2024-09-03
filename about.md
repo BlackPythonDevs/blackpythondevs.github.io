@@ -50,7 +50,7 @@ Here is a look at our current initiatives? Select to learn more.
 
 ## Leadership Team
 
-<div class="grid" style="display:flex; flex-wrap: wrap;" markdown="1">
+<div class="grid" style="display:flex; flex-wrap: wrap; justify-content:center;" markdown="1">
 
 <article class="leadership-photo-container">
 <img class="leadership-photo" alt="photo of Jay" src="https://github.com/kjaymiller.png">
