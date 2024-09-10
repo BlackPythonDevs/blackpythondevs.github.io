@@ -14,28 +14,56 @@ We are happy to announce the 2024 Black Python Devs Leadership Summit, held at t
 
 This year we're bringing presentation from folks all over the world to energize and inform our Black Python Devs leaders and guests.
 
+## Keynote Speaker
+
+![Wesley Faulkner Flyer]()
+
+### About Wesley
+
+Wesley Faulkner is a podcaster, public speaker, advocate for social change, and a developer relations professional. He has a background in technology, working for companies like AMD, Atlassian, Dell, IBM, and MongoDB. Wesley co-hosts two podcasts: Community Pulse, which explores the challenges and opportunities of community building in Developer Relations, and Radical Respect, which features conversations with Kim Scott on creating more inclusive and equitable workplaces. Wesley is passionate about racial justice, workplace equity, and neurodiversity.
+
+## Interactive Talks
+
+This is a summit focused on learning, and we learn by asking questions and connecting so we've asked three amazing speakers from inside Black Python Devs and outside of it to share knowledge with our leaders that can be taken back to their communities or used to make their efforts stronger.
+
+![Interactive Talks]()
+
+
+## Breakout Sessions
+
+We're excited to bring breakout sessions to the group. 
+
+We'll take topics from the audience and break out into small groups to communicate and learn from one another.
+
+Then we'll reconvene and share what we've learned.
+
 ## Schedule
 
 ### BPD Leadership Track (Morning)
 
-The leadership Track is for BPD Members, Donors, and Distinguished Guests.
+The leadership Track is for BPD Members, Donors, and Distinguished Guests. In this time we will be heads down focused on how we can make the most of 2025 for Black Python Devs.
 
 - 8:00am - 9:00am: Registration, Breakfast, and Mingling
 - 9:00am - 9:10am: Welcome and Opening Remarks
-- 9:10am - 9:15am: Gold Sponsor Lightning Talk
+- 9:10am - 9:15am: Gold Sponsor Lightning Talk - Caktus Group
 - 9:20am - 10:05am: Chop it Up Session with BPD Leaders
 - 10:05am - 10:15am: Break
-- 10:15am - 11:00am: Sponsor Talk
+- 10:15am - 10:20am: Gold Sponsor Lightning Talk - Python Software Foundation
+- 10:15am - 11:00am: Jay Miller: State of BPD
 - 11:00am - 1:00pm: Lunch / Snack Break (BYOL)
 
 ### Community Building Track (Afternoon)
 
-Our Community track is available for everyone to join us in.
+Our Community track is available for everyone to join us in. We will be sharing some of the highlights from 2024 as well as revealing some plans for 2025 and collecting with fellow leaders in the community to learn from one another.
 
 - 12:00pm - 1:00pm: Registration
-- 1:15pm - 2:00pm: Keynote Address
-- 2:05pm - 2:55pm: Interactive Session
-- 3:00pm - 3:45pm: Panel Discussion
+- 9:00am - 9:10am: Welcome and Opening Remarks
+- 1:15pm - 2:00pm: Keynote Address - Wesley Faulkner
+- 2:05pm - 2:55pm: Interactive Sessions
+  - Afi Gbadago: Black Python Devs Open Source Program
+  - Tim Schilling: On Open-Source Packagement
+  - Kudzayi Bamhare: Challenges of Educating New Pythonistas in Zimbabwe
+- 3:00pm - 3:45pm: Panel Discussion 
 - 3:50pm - 4:00pm: Breakout Session Prep
 - 4:00pm - 5:00pm: Breakout Sessions
 - 5:15pm - 5:45pm: Breakout Session Recap
