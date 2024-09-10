@@ -17,6 +17,10 @@ main.page-content div.wrapper p img {
   width: 1px;
 }
 
+ul li {
+  list-style: none !important;
+}
+
 button,
 input,
 optgroup,

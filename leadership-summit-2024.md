@@ -16,7 +16,7 @@ This year we're bringing presentation from folks all over the world to energize 
 
 ## Keynote Speaker
 
-![Wesley Faulkner Flyer]()
+![Wesley Faulkner Flyer](/assets/images/bpd-leadership-summit-keynote-wesley-faulkner.jpg)
 
 ### About Wesley
 
@@ -26,12 +26,25 @@ Wesley Faulkner is a podcaster, public speaker, advocate for social change, and 
 
 This is a summit focused on learning, and we learn by asking questions and connecting so we've asked three amazing speakers from inside Black Python Devs and outside of it to share knowledge with our leaders that can be taken back to their communities or used to make their efforts stronger.
 
-![Interactive Talks]()
+![Interactive Talks Flyer](/assets/images/bpd-leadership-summit-2024-interactive-speakers.jpg)
 
+## Panel Discussion
+
+![Panelists](/assets/images/bpd-leadership-summit-2024-panelists..jpg)
+
+Our Vice-Executor is leading a conversation with folks across Black Python Devs and the Python Community to speak to topics concerning Black Leaders in Python.
+
+### Panelists
+
+- Monica Oyugi - PyCon Kenya
+- Jeff Triplett - BPD Advisor
+- Benedict Kofi Amofah - BPD Assistant Leadership
+- Loren Crary - Python Software Foundation
+- **Host** Velda Kiara - Black Python Devs
 
 ## Breakout Sessions
 
-We're excited to bring breakout sessions to the group. 
+We're excited to bring breakout sessions to the group.
 
 We'll take topics from the audience and break out into small groups to communicate and learn from one another.
 
@@ -63,7 +76,7 @@ Our Community track is available for everyone to join us in. We will be sharing 
   - Afi Gbadago: Black Python Devs Open Source Program
   - Tim Schilling: On Open-Source Packagement
   - Kudzayi Bamhare: Challenges of Educating New Pythonistas in Zimbabwe
-- 3:00pm - 3:45pm: Panel Discussion 
+- 3:00pm - 3:45pm: Panel Discussion
 - 3:50pm - 4:00pm: Breakout Session Prep
 - 4:00pm - 5:00pm: Breakout Sessions
 - 5:15pm - 5:45pm: Breakout Session Recap
