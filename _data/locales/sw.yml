@@ -5,7 +5,7 @@ sw:
     - Blog
     - Kutuhusu
     - Matukio
-    - Mikutano
+    # - Mikutano
     - Jumuiya
   index:
     lead: Nyeusi kuliko formatter yako.
