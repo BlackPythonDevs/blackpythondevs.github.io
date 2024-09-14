@@ -5,7 +5,7 @@ es:
     - Blog
     - Acerca de
     - Eventos
-    - Conferencias
+    # - Conferencias
     - Comunidad
   index:
     lead: Extendiendo la Comunidad de Python a nuestras Comunidades
