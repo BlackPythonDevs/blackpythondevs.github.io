@@ -5,7 +5,7 @@ en:
     - Blog
     - About Us
     - Events
-    - Conferences
+    # - Conferences
     - Community
   index:
     lead: Extending the ecosystem of Python Communities to Black and Colo(u)red Communities around the world.
