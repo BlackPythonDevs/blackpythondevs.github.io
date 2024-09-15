@@ -27,9 +27,6 @@ navigation:
   - text: Events
     url: /events/
     fa: fa fa-calendar fa-fw
-  # - text: Conferences
-  #   url: /conferences/
-  #   fa: fa fa-microphone fa-fw
   - text: Community
     url: /community/
     fa: fa fa-users fa-fw
