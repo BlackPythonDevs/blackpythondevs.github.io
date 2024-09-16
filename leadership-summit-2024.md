@@ -12,7 +12,7 @@ prospectus: https://drive.google.com/file/d/1-YDkO9W6EsmAdy1z8TADak_H6aIdOYsG/vi
 
 We are happy to announce the 2024 Black Python Devs Leadership Summit, held at the Caktus Group in Durham, North Carolina.
 
-This year we're bringing presentation from folks all over the world to energize and inform our Black Python Devs leaders and guests.
+This year we're bringing presentations from folks all over the world to energize and inform our Black Python Devs leaders and guests.
 
 ## Keynote Speaker
 
