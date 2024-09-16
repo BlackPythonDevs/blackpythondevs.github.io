@@ -50,7 +50,7 @@ Follow these steps and note these guidelines to begin contributing:
 
 ## Working on an issue
 
-- The easiest way to make changes and and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
+- The easiest way to make changes and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 
 - You can also access the Codespaces from the repository main page:
 
@@ -70,6 +70,14 @@ Follow these steps and note these guidelines to begin contributing:
 
   ![Bundle install terminal](/assets/images/bundle_install_terminal.png)
 
+- Afterwards, run the command `pip install -r requirements-dev.txt` to install the python dev dependencies.
+
+  ![Pip install terminal](/assets/images/pip_install_terminal.png)
+
+- Install the pre-commit hooks to automatically format the code before committing. Run the command `pre-commit install`:
+
+  ![Pre-commit install terminal](/assets/images/pre-commit_install_terminal.png)
+
 - After installing the dependencies, its time to run the application. We do this by running the command `bundle exec jekyll serve` or run the default **Build Task** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>:
 
   ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
@@ -81,6 +89,8 @@ Follow these steps and note these guidelines to begin contributing:
 - <kbd>Ctrl</kbd> + Click on the Forwarded Address assigned to Port 4000. This will open the running application in a new tab:
 
   ![Running page](/assets/images/running_page.png)
+
+### Testing Changes
 
 - Test your changes (create new tests as needed)
 
