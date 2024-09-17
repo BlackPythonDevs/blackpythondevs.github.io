@@ -61,7 +61,7 @@ The leadership Track is for BPD Members, Donors, and Distinguished Guests. In th
 - 9:10am - 9:15am: Gold Sponsor Lightning Talk - Caktus Group
 - 9:20am - 10:05am: Chop it Up Session with BPD Leaders
 - 10:05am - 10:15am: Break
-- 10:15am - 10:20am: Gold Sponsor Lightning Talk - Python Software Foundation
+- 10:15am - 10:20am: Silver Sponsor Lightning Talk - Python Software Foundation
 - 10:15am - 11:00am: Jay Miller: State of BPD
 - 11:00am - 1:00pm: Lunch / Snack Break (BYOL)
 
