@@ -10,7 +10,6 @@ live_server_url = "http://127.0.0.1:4000"
 routes = [
     ("about"),
     ("community"),
-    ("conferences"),
     ("events"),
 ]
 
@@ -41,7 +40,6 @@ def test_destination(
         ("Inicio", "/es/"),
         ("Eventos", "/es/events/"),
         ("Comunidad", "/es/community/"),
-        ("Conferencias", "/es/conferences/"),
     ),
 )
 def test_headers_in_language(page: Page, title: str, url: str) -> None:
@@ -70,7 +68,6 @@ def test_switching_lang_es_about(page: Page) -> None:
         ("Nyumbani", "/sw/"),
         ("Matukio", "/sw/events/"),
         ("Jumuiya", "/sw/community/"),
-        ("Mikutano", "/sw/conferences/"),
     ),
 )
 def test_headers_in_sw(page: Page, title: str, url: str) -> None:
@@ -99,7 +96,6 @@ def test_switching_lang_sw_about(page: Page) -> None:
         ("Black Python Devs | Blog", "/blog"),
         ("Black Python Devs | About Us", "/about/"),
         ("Black Python Devs | Events", "/events/"),
-        ("Black Python Devs | Conferences", "/conferences/"),
         ("Black Python Devs | Community", "/community/"),
     ),
 )
