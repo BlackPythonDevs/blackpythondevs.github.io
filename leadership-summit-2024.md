@@ -7,6 +7,8 @@ event_banner: "/assets/images/bpd-summit-card-deck.jpg"
 commitchange_campaign_id: 5515
 commitchange_designation: Black Python Dev Leadership Summit
 sponsors_gold: ["/assets/images/caktus-logo-426x234.deaf567beb3d.png"]
+sponsors_silver: ["/assets/images/psf-logo.png"]
+sponsors_bronze: ["/assets/images/defna-logo.png"]
 prospectus: https://drive.google.com/file/d/1-YDkO9W6EsmAdy1z8TADak_H6aIdOYsG/view?usp=drive_link
 ---
 
