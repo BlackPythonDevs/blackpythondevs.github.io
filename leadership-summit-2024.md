@@ -16,6 +16,22 @@ We are happy to announce the 2024 Black Python Devs Leadership Summit, held at t
 
 This year we're bringing presentations from folks all over the world to energize and inform our Black Python Devs leaders and guests.
 
+## Watch Online
+
+<section>
+<div class="grid">
+<article>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/p95Cuczqig8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </article>
+<article>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/A9HkxFDH1Cs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+  </article>
+</div>
+<footer>
+  <p>View on YouTube to interact in the comments.</p>
+  </footer>
+</section>
+
 ## Keynote Speaker
 
 ![Wesley Faulkner Flyer](/assets/images/bpd-leadership-summit-keynote-wesley-faulkner.jpg)
