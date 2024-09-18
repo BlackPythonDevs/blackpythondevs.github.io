@@ -22,6 +22,10 @@ Join our Discord server where we discuss everything from Python basics to advanc
 
 Follow us on [X](https://x.com/blackpythondevs) for the latest updates, news, and insights from our community.
 
+### **Instagram** <i class="fab fa-instagram"></i>
+
+Follow, Like, and Share us on [Instagram](https://www.instagram.com/blackpythondevs/) for updates, news, fun videos, and insights from the community.
+
 ### **LinkedIn** <i class="fab fa-linkedin"></i>
 
 Join our [LinkedIn Group](https://www.linkedin.com/groups/14336241/) to connect with professionals in the field, participate in relevant discussions, and stay updated with job opportunities and industry trends.
