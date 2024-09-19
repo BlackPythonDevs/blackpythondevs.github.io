@@ -1,7 +1,7 @@
 ---
 layout: default
 lang: en
-title: Contributing
+title: BPD Website Maintainer's Guide
 ---
 
 # Contributing at Black Python Devs
