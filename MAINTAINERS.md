@@ -4,7 +4,7 @@ lang: en
 title: BPD Website Maintainer's Guide
 ---
 
-# Contributing at Black Python Devs
+# BPD Website Maintainer's Guide
 
 First off, thank you for considering contributing to Black Python Devs website. It's people like you that make Black Python Devs such a great community. Navigate through the following to understand more about contributing here.
 
