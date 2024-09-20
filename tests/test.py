@@ -8,9 +8,11 @@ from _conferences.__main__ import parse_conference_details
 live_server_url = "http://127.0.0.1:4000"
 
 routes = [
+    ("blog"),
     ("about"),
-    ("community"),
     ("events"),
+    ("community"),
+    ('meet-our-leaders'),
 ]
 
 
@@ -97,6 +99,7 @@ def test_switching_lang_sw_about(page: Page) -> None:
         ("Black Python Devs | About Us", "/about/"),
         ("Black Python Devs | Events", "/events/"),
         ("Black Python Devs | Community", "/community/"),
+        ("Black Python Devs | Meet our leaders", "/meet-our-leaders/"),
     ),
 )
 def test_bpdevs_title_en(page: Page, title: str, url: str) -> None:
