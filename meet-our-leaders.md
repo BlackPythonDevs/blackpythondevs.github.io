@@ -34,7 +34,6 @@ Technical Manager</p>
 Treasurer</p>
 </article>
 </div>
-<!-- end -->
 
 ## Execution Team
 
