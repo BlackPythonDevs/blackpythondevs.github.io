@@ -5,7 +5,9 @@ title: Meet our leaders
 ---
 
 ## Leadership Team
+
 The BPD Leadership Team is the ultimate responsibility for continued operation of Black Python Devs.
+
 <!-- Leadership team -->
 <div class="grid" style="display:flex; flex-wrap: wrap; justify-content:center;" markdown="1">
 
@@ -35,7 +37,9 @@ Treasurer</p>
 <!-- end -->
 
 ## Execution Team
+
 The BPD Execution Team are those carrying out the leadership and execution of our many programs.
+
 <!-- Execution team -->
 <div class="grid" style="display:flex; flex-wrap: wrap; justify-content:center;" markdown="1">
 
@@ -102,9 +106,10 @@ Code of Conduct Team Coordinator</p>
 </div>
 <!-- end -->
 
-
 ## Meetup Team
+
 The BPD Meetup Leaders are those responsible for the execution of our local meetups in select areas.
+
 <!-- Meetup team -->
 <div class="grid" style="display:flex; flex-wrap: wrap; justify-content:center;" markdown="1">
 
@@ -131,7 +136,6 @@ BPD Atlanta</p>
 BPD Denver</p>
 </article>
 
-
 <article class="leadership-photo-container">
 <img class="leadership-photo" alt="bpd logo" src="/assets/images/bpd_stacked.png">
 <p><strong>Derek "DA" Arnold</strong><br/>
@@ -141,27 +145,29 @@ Ohio Liaison</p>
 </div>
 <!-- end -->
 
-
 ## Community Leadership Council
-Leaders in their own communities. This council consists of several local leaders and provide consult to our BPD Leadership.
- - Sarah Abderemane
- - Denny Perez
- - Dawn Wages
- - Abigail Mesrenyame Dogbe
- - Brayan Kai
- - Chris Achinga
- - Aisha Belamo
- - Kafui Alardo
- - Felipe Quieroz
- - Marlene Mhangami
- - Monica Oyugi
- - Ngazetunge Muheue
 
+Leaders in their own communities. This council consists of several local leaders and provide consult to our BPD Leadership.
+
+- Sarah Abderemane
+- Denny Perez
+- Dawn Wages
+- Abigail Mesrenyame Dogbe
+- Brayan Kai
+- Chris Achinga
+- Aisha Belamo
+- Kafui Alardo
+- Felipe Quieroz
+- Marlene Mhangami
+- Monica Oyugi
+- Ngazetunge Muheue
 
 ## Allyship Council
+
 Respected Experts and allies of the Black Python Devs mission. This group serves an outward role of guidance to our leaders in operating responsibly towards the success of our organization mission.
- - Carol Willing
- - Jeff Triplett
- - Holly Million
- - Kojo Idrissa
- - Iqbal Abdullah
+
+- Carol Willing
+- Jeff Triplett
+- Holly Million
+- Kojo Idrissa
+- Iqbal Abdullah

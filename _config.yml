@@ -34,7 +34,6 @@ navigation:
     url: /meet-our-leaders/
     fa: fa fa-user-tie fa-fw
 
-
 bpdevs:
   # Minima date format.
   # Refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this.

@@ -12,7 +12,7 @@ routes = [
     ("about"),
     ("events"),
     ("community"),
-    ('meet-our-leaders'),
+    ("meet-our-leaders"),
 ]
 
 
