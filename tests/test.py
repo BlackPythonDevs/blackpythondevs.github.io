@@ -14,8 +14,8 @@ routes = [
 
 @pytest.mark.parametrize("url", routes)
 def test_destination(
-        page: Page,
-        url: str,
+    page: Page,
+    url: str,
 ) -> None:
     """Test that the destinations page loads with seeded data"""
     # Create a destination
@@ -28,10 +28,10 @@ def test_destination(
 @pytest.mark.parametrize(
     "title, url",
     (
-            ("Acerca de", "/es/about/"),
-            ("Inicio", "/es/"),
-            ("Eventos", "/es/events/"),
-            ("Comunidad", "/es/community/"),
+        ("Acerca de", "/es/about/"),
+        ("Inicio", "/es/"),
+        ("Eventos", "/es/events/"),
+        ("Comunidad", "/es/community/"),
     ),
 )
 def test_headers_in_language(page: Page, title: str, url: str) -> None:
@@ -56,10 +56,10 @@ def test_switching_lang_es_about(page: Page) -> None:
 @pytest.mark.parametrize(
     "title, url",
     (
-            ("Kutuhusu", "/sw/about/"),
-            ("Nyumbani", "/sw/"),
-            ("Matukio", "/sw/events/"),
-            ("Jumuiya", "/sw/community/"),
+        ("Kutuhusu", "/sw/about/"),
+        ("Nyumbani", "/sw/"),
+        ("Matukio", "/sw/events/"),
+        ("Jumuiya", "/sw/community/"),
     ),
 )
 def test_headers_in_sw(page: Page, title: str, url: str) -> None:
@@ -84,11 +84,11 @@ def test_switching_lang_sw_about(page: Page) -> None:
 @pytest.mark.parametrize(
     "title, url",
     (
-            ("Black Python Devs | Home", "/"),
-            ("Black Python Devs | Blog", "/blog"),
-            ("Black Python Devs | About Us", "/about/"),
-            ("Black Python Devs | Events", "/events/"),
-            ("Black Python Devs | Community", "/community/"),
+        ("Black Python Devs | Home", "/"),
+        ("Black Python Devs | Blog", "/blog"),
+        ("Black Python Devs | About Us", "/about/"),
+        ("Black Python Devs | Events", "/events/"),
+        ("Black Python Devs | Community", "/community/"),
     ),
 )
 def test_bpdevs_title_en(page: Page, title: str, url: str) -> None:
