@@ -1,5 +1,3 @@
-import time
-
 import pytest
 from playwright.sync_api import Page, expect
 
@@ -14,13 +12,6 @@ routes = [
 ]
 
 
-# Add a delay to each test to help with playwright race conditions
-@pytest.fixture(autouse=True)
-def slow_down_tests():
-    yield
-    time.sleep(1)
-
-
 @pytest.mark.parametrize("url", routes)
 def test_destination(
     page: Page,
@@ -29,7 +20,8 @@ def test_destination(
     """Test that the destinations page loads with seeded data"""
     # Create a destination
     response = page.goto(f"{live_server_url}/{url}")
-    page.on("response", lambda response: expect(response.status).to_equal(200))
+
+    assert response.status == 200  # Check that the page loaded successfully
     assert response.url.endswith(f"/{url}/")  # Load the index.html
 
 
