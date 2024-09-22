@@ -78,7 +78,7 @@ Follow these steps and note these guidelines to begin contributing:
 
   ![Pre-commit install terminal](/assets/images/pre-commit_install_terminal.png)
 
-- After installing the dependencies, its time to run the application. We do this by running the command `bundle exec jekyll serve > /dev/null 2>&1 &` or run the default **Build Task** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>:
+- After installing the dependencies, its time to run the application. We do this by running the command `bundle exec jekyll serve --detach` or run the default **Build Task** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>:
 
   ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
 
@@ -94,11 +94,11 @@ Follow these steps and note these guidelines to begin contributing:
 
 - To run the test suites for the codebase
 
-  - Ensure the site is running locally with `bundle exec jekyll serve > /dev/null 2>&1 &`. This will run the server in the background, and any content changes will immediately reflect on the site.
+  - Ensure the site is running locally with `bundle exec jekyll serve --detach`. This will run the server in the background, and any content changes will immediately reflect on the site.
 
     ![Jekyll serve terminal](/assets/images/jekyll_server_start_terminal.png)
 
-    - If you need to restart the server, you can run `killall jekyll` to stop the server and then run `bundle exec jekyll serve > /dev/null 2>&1 &` to start the server again.
+    - If you need to restart the server, you can run `killall jekyll` to stop the server and then run `bundle exec jekyll serve --detach` to start the server again.
 
   - Run all tests in the test-suite with the command `python3 -m pytest`:
 
