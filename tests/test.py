@@ -20,7 +20,8 @@ def test_destination(
     """Test that the destinations page loads with seeded data"""
     # Create a destination
     response = page.goto(f"{live_server_url}/{url}")
-    assert response.status == 200
+
+    assert response.status == 200  # Check that the page loaded successfully
     assert response.url.endswith(f"/{url}/")  # Load the index.html
 
 
