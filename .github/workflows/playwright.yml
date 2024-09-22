@@ -40,4 +40,4 @@ jobs:
           sleep $startup_wait
 
           # Run tests
-          python -m pytest
+          python -m pytest --tracing=retain-on-failure
