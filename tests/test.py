@@ -14,13 +14,6 @@ routes = [
 ]
 
 
-# Add a delay to each test to help with playwright race conditions
-@pytest.fixture(autouse=True)
-def slow_down_tests():
-    yield
-    time.sleep(1)
-
-
 @pytest.mark.parametrize("url", routes)
 def test_destination(
     page: Page,
