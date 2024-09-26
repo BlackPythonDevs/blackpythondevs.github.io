@@ -31,39 +31,43 @@ Treasurer</p>
 </div>
 
 ## Execution Team
-The BPD Execution Team are those carrying out the leadership and execution of our many programs.
- - Afi Gbadago - Open Source Project Coordinator
 
- - Nuel - Co-Africa Events Coordinator
+The BPD Execution Team are those carrying out the leadership and execution of our many programs.
+
+- Afi Gbadago - Open Source Project Coordinator
+
+- Nuel - Co-Africa Events Coordinator
 
 - Steve Yonkeu - Co-African Events Sponsorship Coordinator
 
- - Nadir "Q" Abdullahq - US Events Coordinator
+- Nadir "Q" Abdullahq - US Events Coordinator
 
- - Damilola Oladele - Documentation Team Coordinator
+- Damilola Oladele - Documentation Team Coordinator
 
- - Ron Maravanyika - Zimbabwe Events Coordinator
+- Ron Maravanyika - Zimbabwe Events Coordinator
 
- - Benedict Kofi - US NYC Leadership Coordinator
+- Benedict Kofi - US NYC Leadership Coordinator
 
- - Israel - Nigerian Events Coordinator
+- Israel - Nigerian Events Coordinator
 
- - Sandra - New Members Liaison
+- Sandra - New Members Liaison
 
- - TBD - Content Team Coordinator
+- TBD - Content Team Coordinator
 
- - TBD - Code of Conduct Team Coordinator
+- TBD - Code of Conduct Team Coordinator
 
 ## Meetup Team
-The BPD Meetup Leaders are those responsible for the execution of our local meetups in select areas.
- - Nadir "Q" Abdullahq - BPD DMV (DC, Maryland, Virginia)
- - Stancy - BPD Ghana
- - Jay Miller - BPD Atlanta
- - Lazouich Ford - BPD Denver
- - Derek "DA" Arnold - Ohio Liaison
 
+The BPD Meetup Leaders are those responsible for the execution of our local meetups in select areas.
+
+- Nadir "Q" Abdullahq - BPD DMV (DC, Maryland, Virginia)
+- Stancy - BPD Ghana
+- Jay Miller - BPD Atlanta
+- Lazouich Ford - BPD Denver
+- Derek "DA" Arnold - Ohio Liaison
 
 ## Community Leadership Council
+
 Leaders in their own communities. This council consists of several local leaders and provide consult to our BPD Leadership.
 
 - Sarah Abderemane
@@ -80,6 +84,7 @@ Leaders in their own communities. This council consists of several local leaders
 - Ngazetunge Muheue
 
 ## Allyship Council
+
 Respected Experts and allies of the Black Python Devs mission. This group serves an outward role of guidance to our leaders in operating responsibly towards the success of our organization mission.
 
 - Carol Willing
