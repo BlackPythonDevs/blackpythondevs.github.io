@@ -10,7 +10,7 @@ routes = [
     ("about"),
     ("events"),
     ("community"),
-    ("meet-our-leaders"),
+    ("leadership"),
 ]
 
 
