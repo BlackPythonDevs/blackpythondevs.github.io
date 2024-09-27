@@ -6,9 +6,11 @@ from _conferences.__main__ import parse_conference_details
 live_server_url = "http://127.0.0.1:4000"
 
 routes = [
+    ("blog"),
     ("about"),
-    ("community"),
     ("events"),
+    ("community"),
+    ("leadership"),
 ]
 
 
