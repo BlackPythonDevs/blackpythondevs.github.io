@@ -30,9 +30,6 @@ navigation:
   - text: Community
     url: /community/
     fa: fa fa-users fa-fw
-  - text: Leadership
-    url: /meet-our-leaders/
-    fa: fa fa-user-tie fa-fw
 
 bpdevs:
   # Minima date format.
