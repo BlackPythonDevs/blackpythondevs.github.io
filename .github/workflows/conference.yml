@@ -53,3 +53,20 @@ jobs:
           labels: |
             report
             automated pr
+  add_comment:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Add comment to the issue
+      uses: actions/github-script@v6
+      with:
+        github-token: ${{ secrets.GITHUB_TOKEN }}
+        script: |
+          const issueNumber = context.payload.issue.number;
+          const comment = "Automated issue, no action is required."
+          
+          github.issues.createComment({
+            ...context.repo,
+            issue_number: issueNumber,
+            body: comment
+          });
