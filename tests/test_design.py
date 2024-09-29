@@ -1,6 +1,8 @@
 import pathlib
+
 import pytest
 from playwright.sync_api import Page, sync_playwright
+from xprocess import ProcessStarter
 
 
 @pytest.fixture(scope="module")
@@ -9,7 +11,7 @@ def per_device_page_url(xprocess, loaded_profile, url_port):
 
     url, port = url_port
 
-    class Starter(xprocess.ProcessStarter):
+    class Starter(ProcessStarter):
         # Start the process
         args = [
             "bundle",
