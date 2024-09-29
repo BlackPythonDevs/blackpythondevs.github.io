@@ -1,6 +1,8 @@
 black
+ephemeral_port_reserve
 pre-commit
 pytest-pyodide
 pytest-playwright
+pytest-xprocess
 PyGithub
 PyYAML
