@@ -59,6 +59,7 @@ jobs:
     steps:
     - name: Add comment to the issue
       uses: actions/github-script@v6
+      if: ${{ github.event.issue.user.type != 'User' }} #adds comment only if the issue is created by a bot
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
         script: |
