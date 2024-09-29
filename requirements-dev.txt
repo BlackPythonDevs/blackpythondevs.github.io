@@ -2,5 +2,6 @@ black
 pre-commit
 pytest-pyodide
 pytest-playwright
+pytest-xprocess
 PyGithub
 PyYAML
