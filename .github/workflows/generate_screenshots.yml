@@ -37,4 +37,5 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: page_screenshots
-          path: test_images/
+          path: /test_images/
+          compression-level: 9
