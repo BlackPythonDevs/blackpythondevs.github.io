@@ -61,5 +61,8 @@ def test_route_designs(
     # Create a destination
     page, live_server_url = per_device_page_url
     response = page.goto(f"{live_server_url}/{loaded_route}")
-    page.screenshot(path=create_test_image.joinpath(request.node.name), full_page=True)
+    page.screenshot(
+        path=create_test_image.joinpath(request.node.name).with_suffix(".jpg"),
+        full_page=True,
+    )
     assert response.status == 200
