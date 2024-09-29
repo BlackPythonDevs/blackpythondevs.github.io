@@ -12,6 +12,7 @@ First off, thank you for considering contributing to Black Python Devs website. 
 - [How to Contribute](#how-to-contribute)
 - [Accessibility](#accessibility)
 - [Translations](#translations)
+- [Styling](#styling)
 
 # Before You Get Started
 
@@ -123,3 +124,26 @@ The language code being used should be in the format [<ISO 639-1>](https://en.wi
 Our maintainers will review your pull request and merge it if everything is in order. We appreciate your contribution to making Black Python Devs accessible to more people around the world!
 
 [1]: https://microsoftedge.microsoft.com/addons/detail/accessibility-insights-fo/ghbhpcookfemncgoinjblecnilppimih
+
+# Styling
+
+Black Python Devs website uses [Pico CSS](https://picocss.com/) for styling. To maintain optimal performance:
+
+1. **Optimize Color Profiles**:
+
+   - Regularly review `pico.colors.min.css`
+   - Remove unused color profiles to reduce file size
+   - The color profiles file should be similar in size to `pico.min.css`
+
+2. **Testing After Changes**:
+
+   - Thoroughly test the website after removing unused colors
+   - Ensure all necessary styles are still applied correctly
+
+3. **Performance Monitoring**:
+
+   - Monitor website load time after CSS optimizations
+   - Report significant changes in performance to the team
+
+4. **Framework Updates**:
+   - When updating Pico CSS, re-evaluate and optimize color profiles
