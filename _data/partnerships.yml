@@ -1,7 +1,7 @@
 - name: "TalkPython Training"
   promo_code: "bpd-20pc-1c1da"
   description: "When you use the promo code: <strong>bpd-20pc-1c1da</strong> at checkout, you will receive 10% off your course purchase. TalkPython Training will also donate 20% of the purchase to Black Python Devs."
-  url: "/2024-08-16-talkpython-training-partnership"
+  url: "https://training.talkpython.fm/black-python-devs" # NEW URL UPDATED in _data/partnerships.yaml to now share affiliate landing page which provides an easier workflow for those that want to support Black Python Devs while also learning.
   logo: "/assets/images/talkpython.webp"
 - name: "O'Reilly Media"
   promo_code: "https://oreillymedia.pxf.io/c/5713155/2126973/15173"
