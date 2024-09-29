@@ -55,19 +55,19 @@ jobs:
             automated pr
   add_comment:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - name: Add comment to the issue
-      uses: actions/github-script@v6
-      if: ${{ github.event.issue.user.type != 'User' }} #adds comment only if the issue is created by a bot
-      with:
-        github-token: ${{ secrets.GITHUB_TOKEN }}
-        script: |
-          const issueNumber = context.payload.issue.number;
-          const comment = "Automated issue, no action is required."
-          
-          github.issues.createComment({
-            ...context.repo,
-            issue_number: issueNumber,
-            body: comment
-          });
+      - name: Add comment to the issue
+        uses: actions/github-script@v6
+        if: ${{ github.event.issue.user.type == 'User' && startsWith(github.event.issue.title, '[CONFERENCE]') && contains(github.event.issue.labels.*.name, 'conference') }} #adds comment only if the issue is created by a user
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          script: |
+            const issueNumber = context.payload.issue.number;
+            const comment = "Automated issue, no action is required."
+
+            github.issues.createComment({
+              ...context.repo,
+              issue_number: issueNumber,
+              body: comment
+            });
