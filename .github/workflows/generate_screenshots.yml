@@ -1,4 +1,4 @@
-name: Playwright Tests
+name: Generate and Upload Screenshots
 # https://devblogs.microsoft.com/python/announcing-playwright-for-python-reliable-end-to-end-testing-for-the-web/
 # https://github.com/marketplace/actions/run-playwright-tests
 
