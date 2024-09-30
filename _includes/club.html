@@ -1,4 +1,9 @@
-{% if site.data.books.size > 0 %}
+---
+layout: default
+title: "Club Page"
+description: "This is the club page."
+---
+
 <section class="book-club">
   <h1><strong>Black Python Devs Book Club: A Community of Readers and Learners</strong></h1>
   <p>The Black Python Devs book club was born from the community's growing passion for technical reading and learning.</p>
@@ -16,10 +21,17 @@
   <div class="book">
     <h2>{{ book.title }}</h2>
     <p><strong>Author:</strong> {{ book.author }}</p>
-    {% if book.cover %}
-    <img src="{{ book.cover }}" alt="Cover of {{ book.title }}" />
+
+    <h4>Reviews</h4>
+    {% if book.reviews %}
+    <ul>
+      {% for review in book.reviews %}
+      <li><a href="{{ review.url }}" target="_blank">{{ review.title }}</a> by {{ review.author }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p><em>No reviews available.</em></p>
     {% endif %}
-    <p><strong>Summary:</strong> {{ book.summary }}</p>
   </div>
   {% endfor %}
 
@@ -33,9 +45,6 @@
   <h4>Join Today</h4>
   <p>Our Book club meets twice a month on <a href="https://discord.com/invite/XUc3tFqCT3">Discord</a>.</p>
 </section>
-{% else %}
-<p><strong>No books found</strong></p>
-{% endif %}
 
 <hr />
 <p>Have a book suggestion? <a href="https://github.com/BlackPythonDevs/blackpythondevs.github.io/issues/new?assignees=&labels=book&projects=&template=add_book.yml&title=%5BBOOK%5D+%3CBOOK+TITLE%3E+BY+AUTHOR">Submit a Suggestion</a></p>
