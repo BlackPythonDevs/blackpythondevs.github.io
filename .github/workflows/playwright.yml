@@ -20,17 +20,17 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: "3.12"
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements-dev.txt
-          python -m playwright install --with-deps
+          python -m playwright install --with-deps chromium
       - name: Set up Ruby
         uses: ruby/setup-ruby@v1
         with:
           bundler-cache: true
-      - name: Jekyll detached and pytest
+      - name: Detach jekyll and run Pytest
         run: |
           # Start up local copy of site
           bundle exec jekyll serve --detach
@@ -41,10 +41,4 @@ jobs:
           sleep $startup_wait
 
           # Run tests
-          python -m pytest tests --tracing on --tracing=retain-on-failure
-      - uses: actions/upload-artifact@v4
-        name: Upload test results
-        if: always()
-        with:
-          name: playwright-traces
-          path: ./test-results/
+          python -m pytest
