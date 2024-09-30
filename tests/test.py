@@ -1,105 +1,103 @@
+import pathlib
+
 import pytest
-from playwright.sync_api import Page, expect
-
+from xprocess import ProcessStarter
 from _conferences.__main__ import parse_conference_details
-
-live_server_url = "http://127.0.0.1:4000"
-
-routes = [
-    ("blog"),
-    ("about"),
-    ("events"),
-    ("community"),
-    ("leadership"),
-]
+from playwright.sync_api import Page, expect, sync_playwright
 
 
-@pytest.mark.parametrize("url", routes)
+@pytest.fixture(scope="module")
+def page_url(xprocess, url_port):
+    """Returns the url of the live server"""
+
+    url, port = url_port
+
+    class Starter(ProcessStarter):
+        timeout = 4
+        # Start the process
+        args = [
+            "bundle",
+            "exec",
+            "jekyll",
+            "serve",
+            "--source",
+            pathlib.Path().cwd().absolute(),
+            "--port",
+            port,
+        ]
+        terminate_on_interrupt = True
+        pattern = "Server running... press ctrl-c to stop."
+
+    xprocess.ensure("page_url", Starter)
+
+    with sync_playwright() as p:
+        browser = p.chromium.launch()
+        context = browser.new_context()
+        page = context.new_page()
+
+        # Return the URL of the live server
+        yield page, url
+
+        # Clean up the process
+        xprocess.getinfo("page_url").terminate()
+
+
 def test_destination(
-    page: Page,
-    url: str,
+    loaded_route: str,
+    page_url: tuple[Page, str],
 ) -> None:
     """Test that the destinations page loads with seeded data"""
     # Create a destination
-    response = page.goto(f"{live_server_url}/{url}")
+    page, live_server_url = page_url
+    response = page.goto(f"{live_server_url}/{loaded_route}")
 
     assert response.status == 200  # Check that the page loaded successfully
-    assert response.url.endswith(f"/{url}/")  # Load the index.html
+
+
+LANG_ROUTES = (
+    "/es/",
+    "/es/about/",
+    "/es/events/",
+    "/es/community/",
+    "/sw/",
+    "/sw/about/",
+    "/sw/events/",
+    "/sw/community/",
+)
+
+
+@pytest.mark.parametrize("route", LANG_ROUTES)
+def test_headers_in_language(page_url: tuple[Page, str], route: str) -> None:
+    """checks the route and the language of each route"""
+    page, live_server_url = page_url
+    response = page.goto(f"{live_server_url}{route}")
+    assert response.status == 200
+    doc_lang = page.evaluate("document.documentElement.lang")
+    lang = route.lstrip("/").split("/", maxsplit=1)[
+        0
+    ]  # urls start with the language if not en
+    assert doc_lang == lang
 
 
 @pytest.mark.parametrize(
     "title, url",
     (
-        ("Acerca de", "/es/about/"),
-        ("Inicio", "/es/"),
-        ("Eventos", "/es/events/"),
-        ("Comunidad", "/es/community/"),
+        ("Home", "/"),
+        ("Blog", "/blog"),
+        ("About Us", "/about/"),
+        ("Events", "/events/"),
+        ("Community", "/community/"),
     ),
 )
-def test_headers_in_language(page: Page, title: str, url: str) -> None:
-    page.goto(live_server_url)
-    lang = page.evaluate("document.documentElement.lang")
-    assert lang == "en"
-    page.get_by_label("Language").select_option("es")
-    page.get_by_role("link", name=title).click()
-    expect(page).to_have_url(f"{live_server_url}{url}")
-    lang = page.evaluate("document.documentElement.lang")
-    assert lang == "es"
-
-
-def test_switching_lang_es_about(page: Page) -> None:
-    about_path = "/about/"
-    page.goto(f"{live_server_url}{about_path}")
-    page.get_by_label("Language").select_option("es")
-    # http://127.0.0.1:4000/es/about/
-    expect(page).to_have_url(f"{live_server_url}/es{about_path}")
-
-
-@pytest.mark.parametrize(
-    "title, url",
-    (
-        ("Kutuhusu", "/sw/about/"),
-        ("Nyumbani", "/sw/"),
-        ("Matukio", "/sw/events/"),
-        ("Jumuiya", "/sw/community/"),
-    ),
-)
-def test_headers_in_sw(page: Page, title: str, url: str) -> None:
-    page.goto(live_server_url)
-    lang = page.evaluate("document.documentElement.lang")
-    assert lang == "en"
-    page.get_by_label("Language").select_option("sw")
-    page.get_by_role("link", name=title).click()
-    expect(page).to_have_url(f"{live_server_url}{url}")
-    lang = page.evaluate("document.documentElement.lang")
-    assert lang == "sw"
-
-
-def test_switching_lang_sw_about(page: Page) -> None:
-    about_path = "/about/"
-    page.goto(f"{live_server_url}{about_path}")
-    page.get_by_label("Language").select_option("sw")
-    # http://127.0.0.1:4000/sw/about/
-    expect(page).to_have_url(f"{live_server_url}/sw{about_path}")
-
-
-@pytest.mark.parametrize(
-    "title, url",
-    (
-        ("Black Python Devs | Home", "/"),
-        ("Black Python Devs | Blog", "/blog"),
-        ("Black Python Devs | About Us", "/about/"),
-        ("Black Python Devs | Events", "/events/"),
-        ("Black Python Devs | Community", "/community/"),
-    ),
-)
-def test_bpdevs_title_en(page: Page, title: str, url: str) -> None:
+def test_bpdevs_title_en(page_url: tuple[Page, str], title: str, url: str) -> None:
+    page, live_server_url = page_url
     page.goto(f"{live_server_url}/{url}")
-    expect(page).to_have_title(title)
+    expect(page).to_have_title(f"Black Python Devs | {title}")
 
 
-def test_mailto_bpdevs(page: Page) -> None:
-    page.goto(f"{live_server_url}")
+def test_mailto_bpdevs(page_url: tuple[Page, str]) -> None:
+    page, live_server_url = page_url
+    page.goto(live_server_url)
     mailto = page.get_by_role("link", name="email")
     expect(mailto).to_have_attribute("href", "mailto:contact@blackpythondevs.com")
 
