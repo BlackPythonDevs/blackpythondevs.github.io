@@ -21,10 +21,17 @@ description: "This is the club page."
   <div class="book">
     <h2>{{ book.title }}</h2>
     <p><strong>Author:</strong> {{ book.author }}</p>
-    {% if book.cover %}
-    <img src="{{ book.cover }}" alt="Cover of {{ book.title }}" />
+
+    <h4>Reviews</h4>
+    {% if book.reviews %}
+    <ul>
+      {% for review in book.reviews %}
+      <li><a href="{{ review.url }}" target="_blank">{{ review.title }}</a> by {{ review.author }}</li>
+      {% endfor %}
+    </ul>
+    {% else %}
+    <p><em>No reviews available.</em></p>
     {% endif %}
-    <p><strong>Summary:</strong> {{ book.summary }}</p>
   </div>
   {% endfor %}
 
