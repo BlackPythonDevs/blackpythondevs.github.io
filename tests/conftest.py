@@ -18,6 +18,7 @@ ROUTES = [
     "events",
     "community",
     "leadership",
+    "book-club",
 ]
 
 
