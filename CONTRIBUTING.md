@@ -82,15 +82,15 @@ Follow these steps and note these guidelines to begin contributing:
 
 - To run the test suites for the codebase
 
-    - Ensure the site is running locally with `bundle exec jekyll serve --detach`. This will run the server in the background, and any content changes will immediately reflect on the site.
+  - Ensure the site is running locally with `bundle exec jekyll serve --detach`. This will run the server in the background, and any content changes will immediately reflect on the site.
 
-      ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
+    ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
 
-        - If you need to restart the server, you can run `pkill -f jekyll` to stop the server and then run `bundle exec jekyll serve --detach` to start the server again.
+    - If you need to restart the server, you can run `pkill -f jekyll` to stop the server and then run `bundle exec jekyll serve --detach` to start the server again.
 
-    - Run all tests in the test-suite with the command `python3 -m pytest`:
+  - Run all tests in the test-suite with the command `python3 -m pytest`:
 
-      ![Pytest terminal](/assets/images/pytest_run_terminal.png)
+    ![Pytest terminal](/assets/images/pytest_run_terminal.png)
 
 ### Pushing Changes
 
