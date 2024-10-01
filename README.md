@@ -1,5 +1,7 @@
 # blackpythondevs.github.io
 
+[![OpenSSF Scorecard](https://api.scorecard.dev/projects/github.com/BlackPythonDevs/blackpythondevs.github.io/badge)](https://scorecard.dev/viewer/?uri=github.com/BlackPythonDevs/blackpythondevs.github.io)
+
 Black Python Devs is an online-first community for Python devlopers who identify as Black.
 
 # Mission statements
