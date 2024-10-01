@@ -38,8 +38,7 @@ Follow these steps and note these guidelines to begin contributing:
 
 ## Working on an issue
 
-- As a first-time contributor, please do not request assignment to more than one issue at a time, except in rare scenarios where the issues are closely related.
-- As a returning contributor, ensure that you do not have an open pull request before requesting assignment to a new issue. Your pull request from a previous issue must be reviewed and merged first.
+- Please create a separate branch for each issue you work on. Avoid working on multiple issues from the same branch, as this can complicate the review process
 - The easiest way to make changes and and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 
 - You can also access the Codespaces from the repository main page:
