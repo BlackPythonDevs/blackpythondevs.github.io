@@ -1,7 +1,7 @@
 name: Add Conference
 description: Add Conference dates, location, speaking and other information that you would like shared
 title: "[CONFERENCE] <CONFERENCE NAME> YYYY"
-labels: ["conference"]
+labels: ["conference", "CFP"]
 body:
   - type: input
     id: conference_name
@@ -40,6 +40,22 @@ body:
       placeholder: "CITY, <REGION>, COUNTRY"
     validations:
       required: false
+  - type: input
+    id: cfp_link
+    attributes:
+      label: CFP Link
+      description: Provide the URL for the Call for Proposals (CFP) (make sure to include `https://`).
+      placeholder: "https://example.com/cfp"
+    validations:
+      required: true
+  - type: input
+    id: cfp_deadline
+    attributes:
+      label: CFP Deadline
+      description: Enter the deadline for submitting CFPs (YYYY-MM-DD).
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
   - type: textarea
     id: conference_description
     attributes:

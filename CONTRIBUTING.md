@@ -38,6 +38,7 @@ Follow these steps and note these guidelines to begin contributing:
 
 ## Working on an issue
 
+- Please create a separate branch for each issue you work on. Avoid working on multiple issues from the same branch, as this can complicate the review process
 - The easiest way to make changes and and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 
 - You can also access the Codespaces from the repository main page:
@@ -58,7 +59,15 @@ Follow these steps and note these guidelines to begin contributing:
 
   ![Bundle install terminal](/assets/images/bundle_install_terminal.png)
 
-- After installing the dependencies, its time to run the application. We do this by running the command `bundle exec jekyll serve` or run the default **Build Task** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>:
+- Afterwards, run the command `pip install -r requirements-dev.txt` to install the python dev dependencies.
+
+  ![Pip install terminal](/assets/images/pip_install_terminal.png)
+
+- Install the pre-commit hooks to automatically format the code before committing. Run the command `pre-commit install`:
+
+  ![Pre-commit install terminal](/assets/images/pre-commit_install_terminal.png)
+
+- After installing the dependencies, its time to run the application. We do this by running the command `bundle exec jekyll serve --detach` or run the default **Build Task** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>:
 
   ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
 
@@ -70,6 +79,32 @@ Follow these steps and note these guidelines to begin contributing:
 
   ![Running page](/assets/images/running_page.png)
 
-- Test your changes (create new tests as needed)
+### Testing Changes (create new tests as needed)
+
+- To run the test suites for the codebase
+
+  - Ensure the site is running locally with `bundle exec jekyll serve --detach`. This will run the server in the background, and any content changes will immediately reflect on the site.
+
+    ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
+
+    - If you need to restart the server, you can run `pkill -f jekyll` to stop the server and then run `bundle exec jekyll serve --detach` to start the server again.
+
+  - Run all tests in the test-suite with the command `python3 -m pytest`:
+
+    ![Pytest terminal](/assets/images/pytest_run_terminal.png)
+
+### Pushing Changes
+
+- Run `pre-commit run --all` to ensure your code is formatted and linted correctly before pushing your changes.
+
+  ![Pre-commit run terminal](/assets/images/pre-commit_run_terminal.png)
+
+- Run `git commit -m "<Your commit message>"` to commit your changes.
+
+  ![Git commit terminal](/assets/images/git_commit_terminal.png)
+
+- Finally run `git push origin <your-branch-name>` to push your changes to your fork.
+
+  ![Git push terminal](/assets/images/git_push_terminal.png)
 
 - Once you’ve committed and pushed all of your changes to GitHub, go to the page for your fork on GitHub, select your development branch, and click the pull request button. Please ensure that you compare your feature branch to the desired branch of the repo you are supposed to make a PR to. If you need to make any adjustments to your pull request, just push the updates to GitHub. Your pull request will automatically track the changes in your development branch and update it. 🥳
