@@ -79,15 +79,16 @@ jobs:
 
       - name: Add comment to the issue
         uses: actions/github-script@v6
-        if: ${{ github.event.action == 'opened'  && startsWith(github.event.issue.title, '[CONFERENCE]') && contains(github.event.issue.labels.*.name, 'conference') }} #adds comment only if the issue is created by a user
+        if: ${{ github.event.action == 'opened' && startsWith(github.event.issue.title, '[CONFERENCE]') && contains(github.event.issue.labels.*.name, 'conference') }}
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const issueNumber = context.payload.issue.number;
-            const comment = "Automated issue, no action is required."
+            const comment = "Automated issue, no action is required.";
 
-            github.issues.createComment({
+            await github.issues.createComment({
               ...context.repo,
               issue_number: issueNumber,
               body: comment
             });
+            
