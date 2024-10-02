@@ -53,6 +53,7 @@ jobs:
           labels: |
             report
             automated pr
+
   add_comment:
     runs-on: ubuntu-latest
 
@@ -91,4 +92,3 @@ jobs:
               issue_number: issueNumber,
               body: comment
             });
-            
