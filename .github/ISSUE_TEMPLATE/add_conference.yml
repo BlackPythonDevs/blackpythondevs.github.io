@@ -19,11 +19,17 @@ body:
     validations:
       required: true
   - type: input
-    id: conference_dates
+    id: conference_start_date
     attributes:
-      label: Conference Dates
-      description: The start and end date of the conference.
-      placeholder: "DD (MMM) -DD MMM YYYY"
+      label: Conference Start Date
+      description: The start date of the conference. Use `YEAR-MONTH-DAY`
+      placeholder: "2024-12-31"
+  - type: input
+    id: conference_end_date
+    attributes:
+      label: Conference End Date
+      description: The end date of the conference. The website will no longer show the conference after this date. Use `YEAR-MONTH-DAY` format.
+      placeholder: "2024-12-31"
   - type: dropdown
     id: conference_type
     attributes:
