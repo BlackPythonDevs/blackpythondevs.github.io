@@ -47,7 +47,7 @@ Follow these steps and note these guidelines to begin contributing:
 
 - The web version of VSCode should open in a new tab in your browser:
 
-  ![Black Python Devs Codespace](/assets/images/BlackPythonDevs_codespace.png)
+  ![Black Python Devs Codespace](/assets/images/blackpythondevs_codespace.png)
 
 - Now that you have the code editor set up, you need to install the dependencies. To do this, you have to open the code editor's terminal and run the command `bundle install`.
 
