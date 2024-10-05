@@ -148,7 +148,6 @@ Black Python Devs website uses [Pico CSS](https://picocss.com/) for styling. To 
 
 4. **Framework Updates**:
    - When updating Pico CSS, re-evaluate and optimize color profiles
-     Here's your content in proper markdown:
 
 # Adding New Pages
 
