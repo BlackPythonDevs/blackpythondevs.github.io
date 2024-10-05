@@ -66,10 +66,10 @@ jobs:
       - name: Setup Python environment
         uses: actions/setup-python@v4
         with:
-          python-version: "3.11"
+          python-version: "3.12"
 
       - name: Install dependencies
-        run: pip install PyGithub PyYAML pre-commit
+        run: pip install -r requirements-dev.txt
 
       - name: Run script
         env:

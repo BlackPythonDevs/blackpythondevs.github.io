@@ -1,4 +1,3 @@
-import json
 import pytest
 import datetime
 from gh_issues import Repo, Issue
@@ -25,7 +24,7 @@ https://pycon.us
 
 {tomorrow.isoformat()}
 
-## Conference Type 
+## Conference Type
 
 online
 
