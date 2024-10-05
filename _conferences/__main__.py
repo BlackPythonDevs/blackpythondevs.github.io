@@ -61,7 +61,8 @@ def parse_conference(issue: gh_issues.Issue) -> dict[str, str | None]:
     return _issue
 
 
-def _validate_issue(issue: gh_issues.Issue, date_to_check: str):
+def _validate_issue(issue: gh_issues.Issue, date_to_check: str) -> bool:
+
     """Validate an issue based on its `date_to_check`"""
     if not (valid_date := getattr(issue, date_to_check, False)):
         return False
