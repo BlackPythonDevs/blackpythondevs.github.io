@@ -162,8 +162,6 @@ When adding a new page to the website, follow these steps:
 2. **Add Data (if needed)**:
    If your page requires new data, add a file in the `_data/` directory. Choose the appropriate format:
 
-Here is your updated content in proper markdown:
-
 ---
 
 - **JSON (Preferred)**: Use for most structured data, especially when the data structure is complex or nested. JSON is the default choice for new data files.
