@@ -2,6 +2,7 @@ black
 ephemeral_port_reserve
 gh-issues
 pre-commit
+pytest-mock
 pytest-pyodide
 pytest-playwright
 pytest-xprocess

@@ -18,3 +18,4 @@ vendor/
 test_images
 *-version
 .DS_Store
+.coverage

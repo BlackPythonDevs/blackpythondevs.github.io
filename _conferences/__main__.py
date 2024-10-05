@@ -7,39 +7,39 @@ import json
 import gh_issues
 
 
-def get_conference_issues() -> Iterator[gh_issues.Issue]:
-    query = "repo:blackpythondevs/blackpythondevs.github.io type:issue label:conference"
+QUERY = "repo:blackpythondevs/blackpythondevs.github.io type:issue label:conference"
+
+
+def get_conference_issues(
+    query: str = QUERY,
+) -> Iterator[gh_issues.Issue]:  # pragma no cover
     issues = gh_issues.issues_by_query(query)
     return issues
 
 
-def normalize_url(url_match: str = str):
-    valid_url = None
-    # Ensure the url field is not blank and the url matches the regex
-    if url_match is not None and url_match.strip() != "":
-        # Parse the url and see if a scheme (`https`) is included in it
-        # If not, then prepend `https` to the url from the issue body
-        # This guards against the website thinking the passed in url is another page on https://blackpythondevs.com/
+def normalize_url(url_match: str | None) -> str | None:
+    """
+    Parse the url and see if a scheme (`https`) is included in it.
+    If not, then prepend `https` to the url from the issue body
+
+    This guards against the website thinking the passed in url is another page on https://blackpythondevs.com/
+    """
+    if url_match:
         parsed_url = urlparse(url_match)
 
         if "http" not in parsed_url.scheme.casefold():
-            valid_url = f"https://{url_match}"
+            return f"https://{url_match}"
         else:
-            valid_url = url_match
-
-    return valid_url
-
-
-def write_conferences_to_file(confs: list[dict]):
-    # Write the conferences to the _data/conferences.yml file
-    conferences_path.write_text(json.dumps(confs))
+            return url_match
 
 
 def __to_conference_date(conference_date: str) -> datetime.date:
     return datetime.date.fromisoformat(conference_date)
 
 
-if __name__ == "__main__":
+def parse_conference(issue: gh_issues.Issue) -> dict[str, str | None]:
+    """convert an issue to a dictionary of parsed data"""
+
     KEYS = [
         "conference_name",
         "url",
@@ -51,16 +51,31 @@ if __name__ == "__main__":
         "speaking",
     ]
 
-    conferences = []
-    for _issue in get_conference_issues():
-        if not hasattr(_issue, "conference_end_date"):
-            continue
+    _issue = {k: getattr(issue, k, None) for k in KEYS}
+    _issue["url"] = normalize_url(_issue.get("url", None))
+    return _issue
 
-        if __to_conference_date(_issue.conference_end_date) >= datetime.date.today():
-            conferences.append({k: getattr(_issue, k, None) for k in KEYS})
 
+def _validate_issue(issue: gh_issues.Issue, date_to_check: str):
+    """Validate an issue based on its `date_to_check`"""
+    if not (valid_date := getattr(issue, date_to_check, False)):
+        return False
+    else:
+        return __to_conference_date(valid_date) >= datetime.date.today()
+
+
+def build_conferences() -> list[dict[str, str | None]]:  # pragma: no cover
+    return [
+        parse_conference(issue)
+        for issue in get_conference_issues()
+        if _validate_issue(issue, "conference_end_date")
+    ]
+
+
+if __name__ == "__main__":  # pragma: no cover
     ROOT = pathlib.Path(__file__).parent.parent
     conferences_path = ROOT.joinpath("_data/conferences.json")
+    conferences = build_conferences()
     conferences_path.write_text(
         json.dumps(
             list(
