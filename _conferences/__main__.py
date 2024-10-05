@@ -33,6 +33,11 @@ def normalize_url(url_match: str | None) -> str | None:
             return url_match
 
 
+def write_conferences_to_file(confs: list[dict]):
+    # Write the conferences to the _data/conferences.yml file
+    conferences_path.write_text(json.dumps(confs))
+
+
 def __to_conference_date(conference_date: str) -> datetime.date:
     return datetime.date.fromisoformat(conference_date)
 

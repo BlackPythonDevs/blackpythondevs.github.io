@@ -1,7 +1,7 @@
 [
   {
     "conference_name": "PyconUg",
-    "url": "https://ug.pycon.org",
+    "url": "ug.pycon.org",
     "conference_start_date": "2024-10-09",
     "conference_end_date": "2024-10-13",
     "conference_type": "in-person",
