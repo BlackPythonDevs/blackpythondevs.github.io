@@ -29,6 +29,7 @@ jobs:
               issue_number: issueNumber,
               body: comment
             });
+
       - name: Add approved comment
         uses: actions/github-script@v6
         if: ${{ github.event.action == 'opened' && startsWith(github.event.issue.title, '[CONFERENCE]') && contains(github.event.issue.labels.*.name, 'conference_accepted') }}
