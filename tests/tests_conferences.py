@@ -45,7 +45,7 @@ TEST_ISSUE = Issue(
 )
 
 
-@pytest.mark.parametrize("test_url", ["pycon.us", "https://pycon.us"])
+@pytest.mark.parametrize("test_url", ["pycon.us", "https://pycon.us", "ftp://pycon.us"])
 def test_normalize_url(test_url: str):
     """
     Tests that urls are valid URLs with https:// protocols
@@ -85,6 +85,6 @@ def tests_parse_conference():
     ],
 )
 def tests_validate_issue(check_value, asserted_value):
-    """tests the date validator againse yesterday value (fail) and tomorrow value (pass)"""
+    """tests the date validator against yesterday value (fail) and tomorrow value (pass)"""
 
     assert conferences._validate_issue(TEST_ISSUE, check_value) == asserted_value
