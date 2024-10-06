@@ -45,7 +45,7 @@ TEST_ISSUE = Issue(
 )
 
 
-@pytest.mark.parametrize("test_url", ["pycon.us", "https://pycon.us"])
+@pytest.mark.parametrize("test_url", ["pycon.us", "https://pycon.us", "ftp://pycon.us"])
 def test_normalize_url(test_url: str):
     """
     Tests that urls are valid URLs with https:// protocols
