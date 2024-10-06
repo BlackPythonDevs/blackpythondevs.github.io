@@ -32,15 +32,12 @@ def normalize_url(url_match: str | None) -> str | None:
             return url_match
 
         # If the scheme is not "https", then we need to prepend "https" to the url
-        fixed_url = None
-
         if url_scheme.strip() == "":
-            fixed_url = f"https://{url_match}"
+            return f"https://{url_match}"
         else:
             # If the scheme is a valid protocol (ftp, http, etc.),
             # but not "https", then we need to replace it with "https"
-            fixed_url = url_match.replace(parsed_url.scheme, "https")
-        return fixed_url
+            return url_match.replace(parsed_url.scheme, "https")
 
 
 def write_conferences_to_file(confs: list[dict]):
