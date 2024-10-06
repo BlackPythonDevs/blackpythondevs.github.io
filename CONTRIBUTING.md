@@ -55,14 +55,16 @@ The diagram below explains how information is generated for the about page, show
 ```mermaid
     flowchart TD
     about.md --> _layouts/default.html
-    about.md --> _includes/header.html
-    about.md --> _includes/footer.html
     about.md --> _config.yml
+    _layouts/default.html --> _includes/header.html
+    _layouts/default.html --> _includes/footer.html
     _layouts/default.html --> about.html
     _config.yml --> about.html
     about.html --> assets/css/style.css
     about.html --> assets/js/script.js
 ```
+
+# How to Contribute
 
 ## Fork the repository
 
