@@ -85,6 +85,6 @@ def tests_parse_conference():
     ],
 )
 def tests_validate_issue(check_value, asserted_value):
-    """tests the date validator against yesterday value (fail) and tomorrow value (pass)"""
+    """tests the date validator againse yesterday value (fail) and tomorrow value (pass)"""
 
     assert conferences._validate_issue(TEST_ISSUE, check_value) == asserted_value
