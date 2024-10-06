@@ -23,8 +23,6 @@ jobs:
           script: |
             const issueNumber = context.issue.number;
             const comment = "Thank you for submitting this issue. A member of the triage team will review the information and followup on this request. There is no code action to be taken.";
-
-            github.rest.issues.createComment({
               ...context.repo,
               issue_number: issueNumber,
               body: comment
