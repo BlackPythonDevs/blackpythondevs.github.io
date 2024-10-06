@@ -81,14 +81,13 @@ if __name__ == "__main__":  # pragma: no cover
     ROOT = pathlib.Path(__file__).parent.parent
     conferences_path = ROOT.joinpath("_data/conferences.json")
     conferences = build_conferences()
-    conferences_path.write_text(
-        json.dumps(
-            list(
-                sorted(
-                    conferences,
-                    key=lambda x: __to_conference_date(x["conference_start_date"]),
-                )
-            ),
-            indent=2,
-        )
+    j_conferences = json.dumps(
+        list(
+            sorted(
+                conferences,
+                key=lambda x: __to_conference_date(x["conference_start_date"]),
+            )
+        ),
+        indent=2,
     )
+    conferences_path.write_text(f"{j_conferences}\n")
