@@ -1,11 +1,10 @@
 import datetime
-import pathlib
-from urllib.parse import urlparse
-from typing import Iterator
-
 import json
-import gh_issues
+import pathlib
+from typing import Iterator
+from urllib.parse import urlparse
 
+import gh_issues
 
 QUERY = "repo:blackpythondevs/blackpythondevs.github.io type:issue label:conference"
 
@@ -26,11 +25,19 @@ def normalize_url(url_match: str | None) -> str | None:
     """
     if url_match:
         parsed_url = urlparse(url_match)
+        url_scheme = parsed_url.scheme
 
-        if "http" not in parsed_url.scheme.casefold():
+        # If "https" is already the scheme, then we're good and don't need to do anything else
+        if url_scheme == "https":
+            return url_match
+
+        # If the scheme is not "https", then we need to prepend "https" to the url
+        if url_scheme.strip() == "":
             return f"https://{url_match}"
         else:
-            return url_match
+            # If the scheme is a valid protocol (ftp, http, etc.),
+            # but not "https", then we need to replace it with "https"
+            return url_match.replace(parsed_url.scheme, "https")
 
 
 def write_conferences_to_file(confs: list[dict]):
