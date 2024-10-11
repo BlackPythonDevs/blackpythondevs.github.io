@@ -6,7 +6,7 @@ Follow these steps and note these guidelines to begin contributing:
 1. Bug fixes are always welcome. Start by reviewing the [list of bugs](https://github.com/BlackPythonDevs/blackpythondevs.github.io/issues).
 1. A good way to easily start contributing is to pick and work on a [good first issue](https://github.com/BlackPythonDevs/blackpythondevs.github.io/labels/good%20first%20issue). We try to make these issues as clear as possible and provide basic info on how the code should be changed, and if something is unclear feel free to ask for more information on the issue.
 
-# Diagram of infracstructure in use
+# Diagram of the infrastructure in use
 
 Below are some diagrams to best explain the file structure of the website, the development structure and how some information are been generated
 
