@@ -90,7 +90,7 @@ The diagram below explains how information is generated for the about page, show
 
 - Once you are done, you can preview your issue by selecting the Preview tab. If you are satisfied with the issue presentation, you can click on the green "Submit new issue" button to create your issue.
 
-- And that's it! If you cose to comment requesting the issue to be assigned to you, wait for a maintainer to do so. You should get an email notification of the issue being assigned to you or you can view the issue assignment in the issue page. It should look similar to this:
+- And that's it! If you choose to comment requesting the issue to be assigned to you, wait for a maintainer to do so. You should get an email notification of the issue being assigned to you or you can view the issue assignment in the issue page. It should look similar to this:
 
   ![issue assignment](/assets/images/issue_assignment.png)
 
