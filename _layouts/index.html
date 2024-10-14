@@ -2,10 +2,6 @@
 layout: default
 ---
 <div class="home">
-  {% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
-  <article class="hero">
-    <div class="hero-text">{{ t.index.lead }}</div>
-  </article>
   {{ content }}
 
   <img src="{{'/assets/images/dcus.jpg' | relative_url }}"  alt="DjangoCon US 2023"/>
