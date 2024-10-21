@@ -4,6 +4,7 @@ date: 2023-12-14
 author: Jay Miller
 lang: en
 layout: post
+featured_image: /assets/images/bpd_stacked.png
 ---
 
 Each year the _Django Software Foundation_, selects a person or group that exemplifies the outstanding service to community as shown by the award's namesake.

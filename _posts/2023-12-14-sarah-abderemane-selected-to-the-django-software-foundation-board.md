@@ -4,6 +4,7 @@ date: 2023-12-14
 author: Jay Miller
 lang: en
 layout: post
+featured_image: /assets/images/bpd_stacked.png
 ---
 
 This year Black Python Devs were strongly represented with [41% of the folks running](https://blackpythondevs.github.io/2023-11-13-black-python-devs-represent-in-dsf-elections/) belonging to the community.

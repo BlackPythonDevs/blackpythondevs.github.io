@@ -4,6 +4,7 @@ date: 2024-01-12
 author: Jay Miller
 lang: en
 layout: post
+featured_image: /assets/images/bpd_stacked.png
 ---
 
 We've got some fantastic updates to share about our upcoming involvement with PyTexas! We're thrilled to announce that we are a community sponsor for PyTexas!

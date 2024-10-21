@@ -4,6 +4,7 @@ date: 2024-07-03
 author: Anotida Expected Msiiwa
 lang: en
 layout: post
+featured_image: /assets/images/bpd_stacked.png
 ---
 
 We are thrilled to announce that four exceptional Black Python developers are running for the [Python Software Foundation (PSF)](https://www.python.org/psf-landing/) Board of Directors this year. The candidates are Monica Oyugi, Abigail Dogbe, Darrell Jenkins, and Jeremy Tanner. Their dedication and contributions to the Python community are truly inspiring.

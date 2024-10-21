@@ -4,6 +4,7 @@ date: 2023-11-13
 author: Jay Miller
 lang: en
 layout: post
+featured_image: /assets/images/bpd_stacked.png
 ---
 
 The DSF Board Elections have opened and voting is available for DSF members now until 27 November 2023 (Anywhere on Earth).

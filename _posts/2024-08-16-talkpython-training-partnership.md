@@ -3,6 +3,7 @@ title: "Talk Python Training Partners with Black Python Devs"
 date: 2024-08-16
 author: Jay Miller
 lang: en
+featured_image: /assets/images/bpd_stacked.png
 ---
 
 We are excited to announce a new partnership with TalkPython Training!
