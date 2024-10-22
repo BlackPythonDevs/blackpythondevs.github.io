@@ -1,6 +1,44 @@
 <footer role="contentinfo">
   <div class="wrapper">
-    <nav class="social-links">{%- include social.html -%}</nav>
+    <div class="footer-grid">
+      <div class="footer-column">
+        <h4>About</h4>
+        <ul>
+          <li><a href="/about/">About BPD</a></li>
+          <li><a href="/leadership">Leadership</a></li>
+          <li><a href="/mission">Mission</a></li>
+          <li><a href="/coc/">Code of Conduct</a></li>
+        </ul>
+      </div>
+
+      <!-- Support Column -->
+      <div class="footer-column">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="#">Support</a></li>
+        </ul>
+      </div>
+
+      <!-- Programs and Events Column -->
+      <div class="footer-column">
+        <h4>Programs and Events</h4>
+        <ul>
+          <li><a href="/events">Events</a></li>
+          <li><a href="/meetup">Meetup</a></li>
+          <li><a href="programs">Programs</a></li>
+        </ul>
+      </div>
+
+      <!-- Community Column -->
+      <div class="footer-column">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="/community.md">Community</a></li>
+          <li>{%- include social.html -%}</li>
+        </ul>
+      </div>
+    </div>
+
     <div class="footer-col-wrapper">
       <div class="footer-col">
         <a href="/coc/">Code of Conduct</a>
