@@ -45,6 +45,7 @@ def page_url(xprocess, url_port):
         # Clean up the process
         xprocess.getinfo("page_url").terminate()
 
+
 def test_accessibility(page_url: tuple[Page, str]):
     """Run accessibility tests on the homepage"""
     page, live_server_url = page_url
@@ -53,7 +54,10 @@ def test_accessibility(page_url: tuple[Page, str]):
     axe = Axe()
     results = axe.run(page)
 
-    assert len(results["violations"]) == 0, f"Accessibility violations found: {results['violations']}"
+    assert (
+        len(results["violations"]) == 0
+    ), f"Accessibility violations found: {results['violations']}"
+
 
 def test_destination(
     loaded_route: str,
@@ -94,8 +98,9 @@ def test_headers_in_language(page_url: tuple[Page, str], route: str) -> None:
     axe = Axe()
     results = axe.run(page)
 
-    assert len(results["violations"]) == 0, f"Accessibility violations found: {results['violations']}"
-
+    assert (
+        len(results["violations"]) == 0
+    ), f"Accessibility violations found: {results['violations']}"
 
 
 @pytest.mark.parametrize(
@@ -117,8 +122,9 @@ def test_bpdevs_title_en(page_url: tuple[Page, str], title: str, url: str) -> No
     axe = Axe()
     results = axe.run(page)
 
-    assert len(results["violations"]) == 0, f"Accessibility violations found: {results['violations']}"
-
+    assert (
+        len(results["violations"]) == 0
+    ), f"Accessibility violations found: {results['violations']}"
 
 
 def test_mailto_bpdevs(page_url: tuple[Page, str]) -> None:
@@ -130,8 +136,9 @@ def test_mailto_bpdevs(page_url: tuple[Page, str]) -> None:
     axe = Axe()
     results = axe.run(page)
 
-    assert len(results["violations"]) == 0, f"Accessibility violations found: {results['violations']}"
-
+    assert (
+        len(results["violations"]) == 0
+    ), f"Accessibility violations found: {results['violations']}"
 
 
 @pytest.mark.parametrize(
@@ -148,8 +155,9 @@ def test_page_description_in_index_and_blog(page_url: tuple[Page, str], url: str
     axe = Axe()
     results = axe.run(page)
 
-    assert len(results["violations"]) == 0, f"Accessibility violations found: {results['violations']}"
-
+    assert (
+        len(results["violations"]) == 0
+    ), f"Accessibility violations found: {results['violations']}"
 
 
 def stem_description(
@@ -186,5 +194,6 @@ def test_page_blog_posts(
     axe = Axe()
     results = axe.run(page)
 
-    assert len(results["violations"]) == 0, f"Accessibility violations found: {results['violations']}"
-
+    assert (
+        len(results["violations"]) == 0
+    ), f"Accessibility violations found: {results['violations']}"
