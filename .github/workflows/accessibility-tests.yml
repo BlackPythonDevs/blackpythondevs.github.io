@@ -1,0 +1,35 @@
+name: Accessibility Tests
+
+on:
+  pull_request:
+    branches:
+      - gh-pages
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: |
+          python3 -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install axe-core-python pytest playwright axe-playwright-python
+
+      - name: Install Playwright browsers
+        run: |
+          playwright install
+
+      - name: Run accessibility tests
+        run: |
+          python3 -m pytest tests/
