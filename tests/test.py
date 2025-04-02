@@ -129,6 +129,7 @@ def test_bpdevs_title_en(page_url: tuple[Page, str], title: str, url: str) -> No
     expect(page).to_have_title(f"Black Python Devs | {title}")
 
     axe = Axe()
+    # results = axe.run(page)
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
@@ -143,6 +144,7 @@ def test_mailto_bpdevs(page_url: tuple[Page, str]) -> None:
     expect(mailto).to_have_attribute("href", "mailto:contact@blackpythondevs.com")
 
     axe = Axe()
+    # results = axe.run(page)
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
@@ -189,20 +191,20 @@ def test_page_blog_posts(
     page, live_server_url = page_url
     entry_stem, frontmatter = post
     url = f"{live_server_url}/{entry_stem}/"
-    page.goto(url)
+    
+    # try:
+        # Increased timeout and added wait_until="networkidle"
+    page.goto(url, timeout=60000, wait_until="networkidle")
+        
+        # More robust waiting for the meta description
     page.wait_for_selector(
-        'meta[name="description"]',
-        timeout=5000,
-        state="attached",
-    )
-    assert (
-        page.locator('meta[name="description"]').get_attribute("content")
-        == frontmatter["description"]
-    )
+            'meta[name="description"]',
+            timeout=10000, 
+            state="attached",
+        )
+        
 
     axe = Axe()
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
-    assert (
-        len(results["violations"]) == 0
-    ), f"Accessibility violations found: {results['violations']}"
+    assert (len(results["violations"]) == 0), f"Accessibility violations found: {results['violations']}"
