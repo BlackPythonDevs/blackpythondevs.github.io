@@ -52,7 +52,6 @@ def test_accessibility(page_url: tuple[Page, str]):
     page.goto(f"{live_server_url}/")
 
     axe = Axe()
-    # results = axe.run(page)
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
