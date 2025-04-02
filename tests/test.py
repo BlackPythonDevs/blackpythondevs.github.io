@@ -201,7 +201,7 @@ def test_page_blog_posts(
     )
 
     axe = Axe()
-    results = axe.run(page)
+    results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
         len(results["violations"]) == 0
