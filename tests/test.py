@@ -192,11 +192,11 @@ def test_page_blog_posts(
     entry_stem, frontmatter = post
     url = f"{live_server_url}/{entry_stem}/"
     
-    # try:
-        # Increased timeout and added wait_until="networkidle"
+    
+    # Increased timeout and added wait_until="networkidle"
     page.goto(url, timeout=60000, wait_until="networkidle")
         
-        # More robust waiting for the meta description
+    # More robust waiting for the meta description
     page.wait_for_selector(
             'meta[name="description"]',
             timeout=10000, 
