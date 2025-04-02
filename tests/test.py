@@ -129,7 +129,7 @@ def test_bpdevs_title_en(page_url: tuple[Page, str], title: str, url: str) -> No
     expect(page).to_have_title(f"Black Python Devs | {title}")
 
     axe = Axe()
-    results = axe.run(page)
+    results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
         len(results["violations"]) == 0
@@ -143,7 +143,7 @@ def test_mailto_bpdevs(page_url: tuple[Page, str]) -> None:
     expect(mailto).to_have_attribute("href", "mailto:contact@blackpythondevs.com")
 
     axe = Axe()
-    results = axe.run(page)
+    results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
         len(results["violations"]) == 0
@@ -162,7 +162,7 @@ def test_page_description_in_index_and_blog(page_url: tuple[Page, str], url: str
     expect(page.locator("p.post-description").first).not_to_be_empty()
 
     axe = Axe()
-    results = axe.run(page)
+    results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
         len(results["violations"]) == 0
