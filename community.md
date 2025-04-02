@@ -41,10 +41,12 @@ Contact us via email at [contact@blackpythondevs.com](mailto:contact@blackpython
 There are many ways to get involved with the Black Python Devs Community:
 
 <article class="markdown-list">
+<ul>
 <li>Participate in discussions on Discord.</li>
 <li>Share your projects and get feedback.</li>
 <li>Contribute to our community projects.</li>
 <li>Attend our virtual meetups and events.</li>
+</ul>
 </article>
 
 We're excited to see what we can achieve together in this community. Let's code, learn, and grow together!

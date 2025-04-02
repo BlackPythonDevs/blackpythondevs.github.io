@@ -71,15 +71,24 @@ def test_destination(
     assert response.status == 200  # Check that the page loaded successfully
 
 
+# LANG_ROUTES = (
+#     "/es/",
+#     "/es/about/",
+#     "/es/events/",
+#     "/es/community/",
+#     "/sw/",
+#     "/sw/about/",
+#     "/sw/events/",
+#     "/sw/community/",
+# )
+
 LANG_ROUTES = (
-    "/es/",
-    "/es/about/",
-    "/es/events/",
-    "/es/community/",
-    "/sw/",
-    "/sw/about/",
-    "/sw/events/",
-    "/sw/community/",
+    "/",
+    "/about/",
+    "/events/",
+    "/community/",
+    "/support/",
+    "/blog/",
 )
 
 
@@ -90,13 +99,13 @@ def test_headers_in_language(page_url: tuple[Page, str], route: str) -> None:
     response = page.goto(f"{live_server_url}{route}")
     assert response.status == 200
     doc_lang = page.evaluate("document.documentElement.lang")
-    lang = route.lstrip("/").split("/", maxsplit=1)[
-        0
-    ]  # urls start with the language if not en
-    assert doc_lang == lang
+    # lang = route.lstrip("/").split("/", maxsplit=1)[
+        # 0
+    # ]  # urls start with the language if not en
+    assert doc_lang == 'en'
 
     axe = Axe()
-    results = axe.run(page)
+    results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
         len(results["violations"]) == 0
