@@ -13,3 +13,5 @@ python-frontmatter
 ephemeral_port_reserve
 pytest-playwright
 pytest-xprocess
+axe-core-python==0.1.0
+axe-playwright-python==0.1.4
