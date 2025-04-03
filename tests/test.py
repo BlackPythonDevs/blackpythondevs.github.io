@@ -100,9 +100,9 @@ def test_headers_in_language(page_url: tuple[Page, str], route: str) -> None:
     assert response.status == 200
     doc_lang = page.evaluate("document.documentElement.lang")
     # lang = route.lstrip("/").split("/", maxsplit=1)[
-        # 0
+    # 0
     # ]  # urls start with the language if not en
-    assert doc_lang == 'en'
+    assert doc_lang == "en"
 
     axe = Axe()
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
@@ -191,20 +191,20 @@ def test_page_blog_posts(
     page, live_server_url = page_url
     entry_stem, frontmatter = post
     url = f"{live_server_url}/{entry_stem}/"
-    
-    
+
     # Increased timeout and added wait_until="networkidle"
     page.goto(url, timeout=60000, wait_until="networkidle")
-        
+
     # More robust waiting for the meta description
     page.wait_for_selector(
-            'meta[name="description"]',
-            timeout=10000, 
-            state="attached",
-        )
-        
+        'meta[name="description"]',
+        timeout=10000,
+        state="attached",
+    )
 
     axe = Axe()
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
-    assert (len(results["violations"]) == 0), f"Accessibility violations found: {results['violations']}"
+    assert (
+        len(results["violations"]) == 0
+    ), f"Accessibility violations found: {results['violations']}"
