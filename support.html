@@ -21,6 +21,15 @@ title: Support
           script.setAttribute("data-npo-id", npo);
           script.id = "commitchange-script";
           script.src = "https://us.commitchange.com/js/donate-button.v2.js";
+
+          // Add this to your existing CommitChange script
+          const observer = new MutationObserver(() => {
+            document.querySelectorAll(".commitchange-iframe-embedded").forEach((iframe) => {
+              if (!iframe.title) iframe.title = "Donation form for Black Python Devs";
+            });
+          });
+          observer.observe(document.body, { childList: true, subtree: true });
+
           first.parentNode.insertBefore(script, first);
         })();
       </script>
@@ -78,6 +87,7 @@ title: Support
   <div style="position: relative; width: 100%; height: 0; padding-top: 56.25%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden; border-radius: 8px; will-change: transform">
     <iframe
       loading="lazy"
+      title="Black Python Devs support information"
       style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0"
       src="https://www.canva.com/design/DAGKXBERZ2s/AbT0GzW284THN6wSayNMMg/view?embed"
       allowfullscreen="allowfullscreen"
