@@ -1,12 +1,12 @@
 ---
-title: Baolova Anna Maria Added to BPD Council
+title: BAOVOLA Marie Anna Added to BPD Council
 date: 2025-04-28
 author: Jay Miller
-description: The BPD Council has recognized the work of BAOVOLA Anna Maria and invited her to join the Council.
+description: The BPD Council has recognized the work of BAOVOLA Marie Anna and invited her to join the Council.
 featured_image: /assets/images/baovola-jay-pg-day-chi-2025.webp
 ---
 
-Congratulations to [Baovola Anna Maria](https://www.linkedin.com/in/baovola-gis-data/) from Madagascar on her recognition and consideration for the BPD Council!
+Congratulations to [BAOVOLA Marie Anna](https://www.linkedin.com/in/baovola-gis-data/) from Madagascar on her recognition and consideration for the BPD Council!
 
 BAOVOLA hails from Madagascar and is a cofounder of the only official PostgreSQL user group in Africa (recognized by both US and Europe NGOs as there is not Africa NGO)
 
