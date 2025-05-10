@@ -82,7 +82,7 @@ title: About Us
   <article>
     <p>We also vet our actions through our Black Python Devs Leadership Council made up of members who serve as Python Community leaders on a local, regional, or global scale.</p>
     <div>
-      {% assign council = site.data.leadership.Council | sort %} {% for leader in council | sort %}
+      {% assign council = site.data.leadership.Council | sort %} {% for leader in council %}
       <ul>
         <li><strong>{{ leader }}</strong></li>
       </ul>
