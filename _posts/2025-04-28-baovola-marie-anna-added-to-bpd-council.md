@@ -2,6 +2,8 @@
 title: BAOVOLA Marie Anna Added to BPD Council
 date: 2025-04-28
 author: Jay Miller
+layout: post
+lang: en
 description: The BPD Council has recognized the work of BAOVOLA Marie Anna and invited her to join the Council.
 featured_image: /assets/images/baovola-jay-pg-day-chi-2025.webp
 ---
