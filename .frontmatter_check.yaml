@@ -1,7 +1,7 @@
 # Pattern-specific rules
 patterns:
   - name: "Global Defaults"
-    pattern: "_posts./*.md" # match ALL `.md` files
+    pattern: "blog./*.md" # match ALL `.md` files
     rules:
       - field_name: date
       - field_name: description
