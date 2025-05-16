@@ -27,6 +27,15 @@
             script.id = "commitchange-script";
             script.src = "https://us.commitchange.com/js/donate-button.v2.js";
 
+            script.onload = function () {
+              const observer = new MutationObserver(function (mutations) {
+                const iframe = document.querySelector(".commitchange-iframe-embedded");
+                if (iframe && !iframe.hasAttribute("title")) {
+                  iframe.setAttribute("title", "Donation form for Black Python Devs");
+                  observer.disconnect(); // Stop observing once we've set the title
+                }
+              });
+
               observer.observe(document.body, { childList: true, subtree: true });
             };
 
@@ -76,11 +85,3 @@
     </div>
   </section>
 </div>
-<script>
-  const observer = new MutationObserver(function (mutations) {
-    const iframe = document.querySelector(".commitchange-iframe-embedded");
-    if (iframe && !iframe.hasAttribute("title")) {
-      iframe.setAttribute("title", "Donation form for Black Python Devs");
-      observer.disconnect(); // Stop observing once we've set the title
-    }
-</script>
