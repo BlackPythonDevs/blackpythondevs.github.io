@@ -1,17 +1,25 @@
----
-layout: default
----
+{% extends "default.html" %}
+
+{% block content %}
 <div class="home">
-  {% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
+  {% set t = site.data.locales[page.lang][page.lang] %}
+  {% if page.title %}
+    {% set header = page.title %}
+  {% else %}
+    {% set header = site.title %}
+  {% endif %}
+  
   <article class="hero">
     <div class="hero-text">{{ t.index.lead }}</div>
   </article>
+  
   {{ content }}
 
-  <img src="{{'/assets/images/dcus.jpg' | relative_url }}"  alt="DjangoCon US 2023"/>
+  <img src="{{ url_for('static', filename='images/dcus.jpg') }}" alt="DjangoCon US 2023"/>
 
-  {%- include latest-posts.html -%}
-  {%- include join_us.html -%}
-  {%- include partnerships.html -%}
-  {%- include newsletter_form.html newsletter_title="Learn what the community and its members are doing from our newsletter!" -%}
+  {% include "latest-posts.html" %}
+  {% include "join_us.html" %}
+  {% include "partnerships.html" %}
+  {% include "newsletter_form.html" %}
 </div>
+{% endblock %}
