@@ -1,0 +1,862 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Untitled Site-Blog</title>
+    <link>http://localhost:8000/</link>
+    <description></description>
+    <atom:link href="http://localhost:8000/blog.rss" rel="self" type="application/rss+xml" />
+
+<item>
+<title>Black Python Devs Ghana Connect Meetup</title>  <description><![CDATA[<p>On Saturday, August 17th, 2024, Stancy and Afi hosted the Black Python Devs Ghana Connect Meetup at Accra Mall, Pizza Inn. The event started at 1 PM with a warm introduction and welcome remarks from our moderator, Theresa Seyram Agbenyegah. We had an enthusiastic turnout of 22 participants, each of whom introduced themselves during an icebreaker session.</p>
+
+<p>Abigail Afi Gbadago then took the floor to share History: Community Formation Story, Members, the goal/mission successes so far(1st anniversary, GNOME donation link/QR scan) with participants. To get the conversation rolling, each participant was asked, <strong>"Why Python?"</strong> This led to a fascinating exchange, where everyone shared their journey and reasons for choosing Python as their preferred programming language.</p>
+
+<p>One of the highlights was an interesting story from an attendee about why he fell in love with Python. “ During my undergraduate studies at KNUST as an engineering student, I was tasked with creating sinusoidal plots and was free to use any programming language. Initially, I used MATLAB but found it somewhat challenging. After some research, I discovered Python, which was much easier to learn. In no time, I could generate beautiful plots using the matplotlib library. This marked the beginning of my journey with Python, eventually leading to proficiency in Django and the development of various applications. In 2020, I returned to Ghana at the peak of COVID-19. I found it challenging to find a job as a biomedical engineer, so I decided to pivot to tech in healthcare, leveraging my experience in writing and developing simple applications. Since the hospital didn't have a software engineer, delivering those services fell on me. I transitioned from developing command-line applications to creating and deploying full-stack applications. Although being the sole developer and handling all aspects of the software development lifecycle was tough, it allowed me to learn a lot, all on my own. Using Django and other Python packages made the process more manageable. Looking back, I realize that choosing Python was worth it ” ~ Douglas Amo-Sargon.</p>
+
+<p><img src="/assets/images/bpd_ghana_connect2.webp" alt="Black Python Devs Ghana Connect Meetup" /></p>
+
+<p>Following this, we engaged in a discussion on the topic of record duplication in the health system, with participants offering their insights and experiences on the matter. The floor was then opened for further discussion, allowing participants to ask questions, share their work, and discuss challenges encountered. The conversation was lively and spontaneous, and we also took a break for refreshments.</p>
+
+<p>The meetup concluded at 3 PM with a group photograph session and a networking opportunity. It was a great experience, and we look forward to the next event!
+See you next time.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-ghana-connect-meetup.html</link>
+<pubDate>Sun, 13 Oct 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-ghana-connect-meetup.html</guid>
+</item><item>
+<title>Black Python Devs Represent in DSF Elections</title>  <description><![CDATA[<p>The DSF Board Elections have opened and voting is available for DSF members now until 27 November 2023 (Anywhere on Earth).</p>
+
+<p>Here are some Amazing stats Regarding the DSF Election as they relate to Black Python Devs.</p>
+
+<ul>
+<li>41% of the DSF Election Candidates are Black
+<ul>
+<li>All of those Candidates are in Black Python Devs Members!</li>
+</ul></li>
+<li>2 are in the Black Python Dev Leadership members running (Velda Kiara and Jay Miller)</li>
+<li>1 is a Black Python Dev Member and leader in other Orgs and Roles
+(Sarah Abderemane)</li>
+<li>33% of DSF Election Candidates are currently living in Africa</li>
+</ul>
+
+<p>There are three seats open and I hope at least one can go to someone in this list of folks:</p>
+
+<ul>
+<li>Velda Kiara</li>
+<li>Chris Achinga</li>
+<li>Sarah Abderemane</li>
+<li>Jay Miller</li>
+</ul>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-represent-in-dsf-elections.html</link>
+<pubDate>Mon, 13 Nov 2023 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-represent-in-dsf-elections.html</guid>
+</item><item>
+<title>Typefully Brings Social Media Management to Black Python Devs</title>  <description><![CDATA[<p>We're excited to have <a href="https://typefully.com">Typefully</a> sponsoring Black Python Devs.</p>
+
+<p>Originally designed to help Twitter (now X) users schedule tweets, create threads and learn more about their engagement with analytics, Typefully has expanded that offering to help individuals and teams across a wider range of services including, Mastodon, Bluesky, and LinkedIn. After reaching out to the company, we were delighted to learn how they were using Python in their offering.</p>
+
+<p>We are happy to announce that Typefully has provided us with the ability to schedule posts and monitor the engagement across all of our social platforms.</p>
+
+<p>The savings that Typefully is offering us gives us the ability to sponsor another event in our current operating budget which means more developers around the world will have access to more local Python community events.</p>
+
+<p>A massive thanks to Typefully for their contribution to Black Python Devs and the greater Python Community.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/typefully-brings-social-media-management-to-black-python-devs.html</link>
+<pubDate>Mon, 02 Dec 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/typefully-brings-social-media-management-to-black-python-devs.html</guid>
+</item><item>
+<title>Amplifying Voices and Fostering Community: Black Python Devs as a Catalyst.</title>  <description><![CDATA[<p>We’re ecstatically pleased as a community to share in the celebration of the incredible impact of Black Python Devs (BPD) on PyHo 2024 (the regional Python community conference of the people of Volta). Through an unwavering commitment to empower underrepresented/underserved developers.</p>
+
+<p>BPD’s dedication to serving as a safe and inclusive space for Black “Pythonistas” of all skill levels is awe inspiring. Fostering a vibrant and supportive community through providing opportunities for connection, learning, and collaboration.</p>
+
+<p>We appreciate Abigail Afi Gbadago, a BPD executive council member for gracing us with her presence during our #Sponsors talk session. Sharing invaluable insights into BPD’s initiatives and the opportunities for participation and collaboration within our local user group.</p>
+
+<p><img src="/assets/images/bpd_pyho_2024_2.jpeg" alt="Woman on stage looking at Black Python Devs Logo on screen" /></p>
+
+<p>Looking ahead, we envisage to continue our collective journey to shaping the future of Python’s open source ecosystem from a collaboration mindset over competition. BPD’s focus on growth and collaboration aligns perfectly with our shared goals and we look forward to working together to achieve even greater heights for the community both locally and globally.</p>
+
+<p><img src="/assets/images/bpd_pyho_2024_3.jpg" alt="a group photo of PyHo 2024 attendees" /></p>
+
+<p>We celebrate the power of Python and the spirit of community and the positive impact of initiatives like Black Python Devs.</p>
+
+<p><strong>PyHo24</strong></p>
+]]></description>
+
+    <link>http://localhost:8000/blog/amplifying-voices-and-fostering-community-black-python-devs-as-a-catalyst.html</link>
+<pubDate>Sat, 02 Nov 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/amplifying-voices-and-fostering-community-black-python-devs-as-a-catalyst.html</guid>
+</item><item>
+<title>BAOVOLA Marie Anna Added to BPD Council</title>  <description><![CDATA[<p>Congratulations to <a href="https://www.linkedin.com/in/baovola-gis-data/">BAOVOLA Marie Anna</a> from Madagascar on her recognition and consideration for the BPD Council!</p>
+
+<p>BAOVOLA hails from Madagascar and is a cofounder of the only official PostgreSQL user group in Africa (recognized by both US and Europe NGOs as there is not Africa NGO)</p>
+
+<p>She’s worked to build the community and through user feedback held her first user group to an astonishing 30 members. Baolova has also organized the first PG Conference in Madagascar.</p>
+
+<p>Her team faces many of the challenges coming from political pressures to language barriers in supported documentation.</p>
+
+<p>PostreSQL is one of/if not the most popular database technologies in the world and prominently used in the Python community. We hope to learn a lot from BAOVOLA!</p>
+
+<p>The BPD council is the sounding board for decisions that need to be made in Black Python Devs. They are the advisory group who share how our actions can impact their communities. The council is made up of organizers, BPD leaders and those in leadership positions around the Python world.</p>
+
+<p>Congratulations again to BAOVOLA!</p>
+
+<p><img src="/assets/images/baovola-jay-p
+g-day-chi-2025.webp" alt="BAOVOLA and Jay at PGDay Chicago 2025" /></p>
+]]></description>
+
+    <link>http://localhost:8000/blog/baovola-marie-anna-added-to-bpd-council.html</link>
+<pubDate>Mon, 28 Apr 2025 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/baovola-marie-anna-added-to-bpd-council.html</guid>
+</item><item>
+<title>Black Python Devs Partners with PyOhio to Foster Community Growth</title>  <description><![CDATA[<p>We are thrilled to announce a significant new partnership between Black Python Devs and <a href="https://www.pyohio.org/2024/">PyOhio</a>! This collaboration marks a major milestone in our mission to amplify the involvement of Black developers within the Python community, with a particular focus on the Ohio region. Our financial support for PyOhio is designed to stimulate community engagement and foster growth in the years to come.</p>
+
+<p>PyOhio, a free annual conference dedicated to the Python programming language, is based in Ohio and caters to a wide range of Python enthusiasts. Their content spans from beginner to advanced levels, aiming to be relevant to a diverse audience including students, software professionals, scientists, hobbyists, and anyone interested in learning more about Python. This mission closely aligns with our goals at Black Python Devs, where we strive to encourage and support Black developers globally, promoting their participation in Python conferences such as PyOhio.</p>
+
+<p>During the announcement of this partnership, our founder, Jay Miller, shared his enthusiasm:</p>
+
+<blockquote>
+  <p>"We are excited to work with the PyOhio team. The PyCon US event in Cleveland was the most diverse location a PyCon US event has been held in the last 10 years. We want to continue to show other communities that when you extend your communities into locations where there are many talented Black present and future developers, we are able to make a positive impact across the board. We are encouraged by PyOhio's ambition and eagerness to work with us and hope they will serve as a standard for other communities across the United States."</p>
+</blockquote>
+
+<p>This partnership is a pivotal step in our efforts to support Black Python developers, starting with those in Ohio. We aim to increase their participation and engagement in the PyOhio community conference through volunteering, speaking, and other collaborative efforts. Our excitement about this partnership is immense, and we look forward to a long and fruitful collaboration with PyOhio.</p>
+
+<p>At this year's PyOhio conference, the Black Python Devs will have a dedicated Black Python Devs booth, and we encourage all attendees to visit and show their support. This partnership promises to be a cornerstone of our efforts to foster a more inclusive and engaged Python community.</p>
+
+<p>We are excited about the future and the positive impact this collaboration will have on our community. Here's to many more years of growth and success together with PyOhio!</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-partners-with-pyohio-to-foster-community-growth.html</link>
+<pubDate>Sat, 20 Jul 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-partners-with-pyohio-to-foster-community-growth.html</guid>
+</item><item>
+<title>O&#39;Reilly Media Partners with Black Python Devs</title>  <description><![CDATA[<p>We are excited to announce a new partnership with O'Reilly Media!</p>
+
+<p>You can <a href="https://oreillymedia.pxf.io/c/5713155/2126973/15173">get a 30-day free trial of O'Reilly's Learning Platform</a>. If you continue past your trial, a portion of your subscription will go to Black Python Devs.</p>
+
+<h2>A multi-faceted partnership</h2>
+
+<p>A common question from professionals is how to continue learning and what resources are trusted by other Python professionals.</p>
+
+<p>Our partnership with O'Reilly is one that will see us providing O'Reilly content to communities of Black Pythonistas through our <a href="https://blackpythondevs.com/bookclub">Book Club</a> and <a href="https://www.meetup.com/pro/black-python-devs">Local Meetups</a>.</p>
+
+<p>We're incredibly excited for this opportunity and we hope that folks considering the O'Reilly Learning Platform will consider using <a href="https://oreillymedia.pxf.io/c/5713155/2126973/15173">our affiliate link</a> to continue their learning and contribute to Black Python Devs.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/o-reilly-media-partners-with-black-python-devs.html</link>
+<pubDate>Mon, 09 Sep 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/o-reilly-media-partners-with-black-python-devs.html</guid>
+</item><item>
+<title>Abigail Mesrenyame Dogbe Honored with Inaugural Outstanding PyLady Award</title>  <description><![CDATA[<p>Every year, the PyLadies community recognizes individuals for their remarkable contributions to the open-source community with the <a href="https://kit.pyladies.com/en/latest/global/award.html">Inaugural Outstanding PyLady award</a>. This year, we are thrilled to announce that <a href="https://mesrenyamedogbe.hashnode.dev">Abigail Mesrenyame Dogbe</a>, a dedicated member of Black Python Devs, has been honored with this prestigious award at PyCon 2024 in Pittsburgh, PA.</p>
+
+<p><a href="https://pyladies.com/">PyLadies</a> is an international mentorship group committed to increasing the participation of women in the Python open-source community. The group’s mission is to cultivate a diverse Python community through outreach, education, conferences, and social gatherings, and it also provides funding for women to attend open-source conferences. The PyLadies community consists of many remarkable members and volunteers who significantly contribute to enhancing the Python community. The Global Council’s Outstanding PyLady award aims to highlight and celebrate the achievements of diverse Pythonistas, recognizing women and non-binary individuals who make extraordinary contributions.</p>
+
+<p>Abigail Mesrenyame Dogbe's contributions to the open-source community are truly exceptional. She is an Open-Source Community Builder, Programs Manager, and STEM Education advocate who is passionate about the empowering potential of open-source software. Through community building, advocacy, and research, Abigail works tirelessly to raise awareness and foster collaboration, sustainability, and inclusivity within open-source communities. Her dedication extends to both local and international communities, particularly within the African Python and Django software communities.</p>
+
+<p><a href="https://kjaymiller.com/">Jay Miller</a>, Black Python Devs Executor, remarked, "Abigail is a source of inspiration for our community and one of the original supporters. She sets a high standard for Pythonistas around the world! I'm so happy to see her efforts being recognized by other groups in the Python community!"</p>
+
+<p>Abigail's impressive list of accolades includes being a Python Software Foundation Fellow, an Individual Member of the Django Software Foundation, a recipient of the Python Software Foundation Community Service Award, and a Google Open-Source Peer Bonus Award. Now, she proudly adds the Inaugural Outstanding PyLady award to her distinguished list of achievements.</p>
+
+<p>Congratulations to Abigail Mesrenyame Dogbe for the amazing work you are doing. Your contributions are an inspiration to many. Keep up the excellent work!</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/abigail-mesrenyame-dogbe-honored-with-inaugural-outstanding-pylady-award.html</link>
+<pubDate>Thu, 25 Jan 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/abigail-mesrenyame-dogbe-honored-with-inaugural-outstanding-pylady-award.html</guid>
+</item><item>
+<title>Marlene Mhangami Recognized as Python Fellow for Q3 2023</title>  <description><![CDATA[<p>Every quarter, the Python Software Foundation recognizes individuals in the community for their exceptional contributions to the Python community. Black Python Devs member <a href="http://marlenemhangami.com/">Marlene Mangami</a> was selected as a fellow for <a href="https://pyfound.blogspot.com/2024/01/announcing-python-software-foundation.html">Q3 2023</a>.</p>
+
+<p>The post highlights that Marlene and other winners are recognized for being "phenomenal leaders," as well as for fostering and maintaining libraries and communities.</p>
+
+<p>Marlene has been heavily involved in the Python community, having served as a PSF Chair and a member of the DEI (Diversity, Equity, and Inclusion) Working Group. She has also played a pivotal role in launching many events across Africa.</p>
+
+<p>Congratulations, Marlene, on being recognized for your hard work! We're excited to see what you have in store for the Python community at large, and for Black Python developers in the future.</p>
+
+<p>To learn more about the PSF Fellows awarded this year, visit the <a href="https://pyfound.blogspot.com/2024/01/announcing-python-software-foundation.html">original announcement</a>.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/marlene-mhangami-recognized-as-python-fellow-for-q3-2023.html</link>
+<pubDate>Thu, 25 Jan 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/marlene-mhangami-recognized-as-python-fellow-for-q3-2023.html</guid>
+</item><item>
+<title>2024 Recap and What to Expect in 2025</title>  <description><![CDATA[<p>2024 was an incredible year for Black Python Devs.</p>
+
+<p>We kicked off May with our official Non-Profit status through joining the GNOME Foundation.</p>
+
+<p>With the help from hundreds of folks at PyCon US, we raised $21,000 to help us with our goals for 2024 and 2025. Grants from the PSF as well as further donations brought our total for the year to over $30,000.</p>
+
+<p>We sponsored 10 events across the US and Africa, hosted one of our own, and partnered with another. Some key achievements include:</p>
+
+<ul>
+<li>Launching our first user group in Accra, Ghana</li>
+<li>Creating a space for mentorship, networking, and sharing knowledge through our Coffee and Code weekly sessions</li>
+<li>Establishing partnerships with companies like Prelude.tech and O'Reilly Media to make resources more affordable and available to Black Python Devs</li>
+</ul>
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" title="2024 Year in Review Presentation" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGbnweUoGY/-WaS6yuP3nwUW_lEH4TNKA/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+<p><a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGbnweUoGY&#x2F;-WaS6yuP3nwUW_lEH4TNKA&#x2F;view?utm_content=DAGbnweUoGY&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">Est. Breakdown of Growth and Expenses</a> by Black Python Devs</p>
+
+<h2>What's in Store for 2025</h2>
+
+<p>Our primary goal is to increase awareness of our <a href="https://blackpythondevs.com/community">community</a> across our target regions. We're closing in on 1000 developers in our community and we want to continue to bring the community together.</p>
+
+<h3>Conference Support</h3>
+
+<p>2025 is where we will demonstrate our full potential. Last year, we sponsored select conferences to evaluate our impact. This included 10 events between the US and Africa. We also helped fund a workshop in Harare, Zimbabwe and held our first <a href="https://blackpythondevs.com/leadership-summit-2024">Leadership Summit</a>.</p>
+
+<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%;
+ padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(63,69,81,0.16); margin-top: 1.6em; margin-bottom: 0.9em; overflow: hidden;
+ border-radius: 8px; will-change: transform;">
+  <iframe loading="lazy" title="2024 conference slide presentation" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0;margin: 0;"
+    src="https://www.canva.com/design/DAGQkaiQC88/yj4db7cTv711QB6D3HF5PQ/view?embed" allowfullscreen="allowfullscreen" allow="fullscreen">
+  </iframe>
+</div>
+
+<p><a href="https:&#x2F;&#x2F;www.canva.com&#x2F;design&#x2F;DAGQkaiQC88&#x2F;yj4db7cTv711QB6D3HF5PQ&#x2F;view?utm_content=DAGQkaiQC88&amp;utm_campaign=designshare&amp;utm_medium=embeds&amp;utm_source=link" target="_blank" rel="noopener">BPD X Conference Logos</a> by Black Python Devs</p>
+
+<p>This year, our plan is to increase our support for existing partner events while adding new partnerships.</p>
+
+<h3>User Groups</h3>
+
+<p>We've been working to bring user groups to locations around the world. Last year, we established our first BPD Community in Accra. In 2025, we aim to launch at least two more user groups. We also plan to directly support existing user groups in areas that serve Black Python developers.</p>
+
+<h3>More Support for Our Community</h3>
+
+<p>We plan to build upon our work with open source and developer resources. Through collaboration with professionals, we'll bring resources to the community through workshops, user group events, and books!</p>
+
+<h2>Leadership Changes</h2>
+
+<p>We recently announced changes in our leadership structure, appointing <a href="https://blackpythondevs.com/2024-12-16-bpd-announces-regional-executors/">Regional Executors</a>. These leaders will address our global goals as well as their regional visions in the near future.</p>
+
+<p>Our first concern among this shift in leadership style is determining the correct scope and length. Currently leaders serve in a continental capacity. It's reasonable for them to build teams to help oversee smaller sub-regions.</p>
+
+<p>We're also excited as these moves allow us to work with more leaders at a local level and better understand the concerns with more granularity and focus.</p>
+
+<h2>We Continue to Need Your Support</h2>
+
+<p>Last year, we exceeded our fundraising expectations, setting us up for early success in 2025. However, our current plans require continued support from the Python community.</p>
+
+<p>We hope to maintain strong individual support while gaining additional corporate sponsors to help us support the developers who make up their diverse talent pools.</p>
+
+<p>If you or your company would like to support us, please visit our <a href="https://blackpythondevs.com/support">support page</a> or email us at <a href="&#x6d;&#97;&#105;&#108;&#x74;&#x6f;&#x3a;&#x73;u&#x70;&#112;&#111;&#114;&#x74;&#x40;&#98;&#x6c;&#x61;&#x63;&#107;&#x70;&#121;&#116;&#104;o&#x6e;&#x64;&#101;&#x76;&#115;&#x2e;&#99;&#111;m">&#x73;u&#x70;&#112;&#111;&#114;&#x74;&#x40;&#98;&#x6c;&#x61;&#x63;&#107;&#x70;&#121;&#116;&#104;o&#x6e;&#x64;&#101;&#x76;&#115;&#x2e;&#99;&#111;m</a>.</p>
+
+<p>Our goal is to make 2025 the best year possible for Black Python developers around the world, and we thank you for your continued support in making that happen.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/2024-recap-and-what-to-expect-in-2025.html</link>
+<pubDate>Wed, 08 Jan 2025 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/2024-recap-and-what-to-expect-in-2025.html</guid>
+</item><item>
+<title>Black Python Devs is sponsoring PyCon Nigeria 2024</title>  <description><![CDATA[<p>We're happy to annouce that Black Python Devs will be sponsoring <a href="https://ng.pycon.org/">PyCon Nigeria 2024</a> as a part of our <em>Build Local Community Initiative</em>. This commitment comes with the added benefit of free student ticket for qualifying Black Python Devs members.</p>
+
+<p>We are proud to extend this opportunity to students in Black Python Devs. We've learned that barriers don't need to be large but can compound. This means that even reducing a single barrier may influence the decision to attend an event greatly.</p>
+
+<p>It's also important that we create opportunities to invest in the next generation of developers as often as possible. This sponsorship aligns with our pillar of <em>Extend Their Reach</em></p>
+
+<h2>Our commitment has encouraged others</h2>
+
+<p>When announcing our intent to sponsor this event we did recieve messages from others in support and asking how they could contribute to getting more folks to the event.</p>
+
+<h2>To Qualify for a free student ticket</h2>
+
+<ol>
+<li>You must be a currently enrolled student in a Nigeria university</li>
+<li>You must be one of the first 75 people member of the <a href="https://discord.gg/xdfSHRrcuH">Black Python Developers Discord</a></li>
+<li>Use the command !pycon-ng in our general channel to receive instructions on how to register for the conference.</li>
+</ol>
+
+<h4>I'm not a student but would like to attend.</h4>
+
+<p>Please join the <a href="https://discord.gg/xdfSHRrcuH">Discord</a> and let us know. We do have a few tickets available for <em>non-students</em>.</p>
+
+<p><em>All tickets for folks presently residing in Nigeria</em></p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-is-sponsoring-pycon-nigeria-2024.html</link>
+<pubDate>Fri, 03 May 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-is-sponsoring-pycon-nigeria-2024.html</guid>
+</item><item>
+<title>Sarah Abderemane Selected to the Django Software Foundation Board of Directors</title>  <description><![CDATA[<p>This year Black Python Devs were strongly represented with <a href="https://blackpythondevs.github.io/2023-11-13-black-python-devs-represent-in-dsf-elections/">41% of the folks running</a> belonging to the community.</p>
+
+<p>We're proud to share that <a href="https://sarahabd.com/">Sarah Abderemane</a> was elected as one of the newest Django Software Foundation board members.</p>
+
+<p>Congratulations Sarah! We look forward to your term as DSF Board Member and thank you for all you do for the Django and Black Python Developer community.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/sarah-abderemane-selected-to-the-django-software-foundation-board-of-directors.html</link>
+<pubDate>Thu, 14 Dec 2023 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/sarah-abderemane-selected-to-the-django-software-foundation-board-of-directors.html</guid>
+</item><item>
+<title>Talk Python Training Partners with Black Python Devs</title>  <description><![CDATA[<p>We are excited to announce a new partnership with TalkPython Training!</p>
+
+<p>When purchasing a course, you can use the promo code <code>bpd-20pc-1c1da</code> to receive a 10% discount. When you do this Black Python Devs will receive a 20% commission on the sale.</p>
+
+<p>This is a great way to support Black Python Devs and invest in your own learning all at the same time. We hope you take advantage of this opportunity.</p>
+
+<h2>Extending a Long Time Partnership</h2>
+
+<p>This is the second partnership that we've done with TalkPython Training. Since our earliest days, Michael Kennedy the founder of the site has been a supporter of Black Python Devs. We are grateful for his continued support and look forward to working with him in the future.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/talk-python-training-partners-with-black-python-devs.html</link>
+<pubDate>Fri, 16 Aug 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/talk-python-training-partners-with-black-python-devs.html</guid>
+</item><item>
+<title>Black Python Devs is Sponsoring PyTexas</title>  <description><![CDATA[<p>We've got some fantastic updates to share about our upcoming involvement with PyTexas! We're thrilled to announce that we are a community sponsor for PyTexas!</p>
+
+<p><a href="https://www.pytexas.org/2024/">PyTexas</a> is a regional Python conference that will be held in Austin, TX on April 19-21, 2024. The conference is a great opportunity to learn, network, and share your knowledge with others in the mid-southwestern United States.</p>
+
+<h2>Ticket Giveaway:</h2>
+
+<p>As part of our sponsorship, we've been given 4 in-person full access tickets (includes tutorial access, the afterparty invite and a shirt). This is a great opportunity for those eager to learn and connect.</p>
+
+<p>To qualify you must live in one of the following states:</p>
+
+<ul>
+<li>Texas</li>
+<li>Louisiana</li>
+<li>New Mexico</li>
+<li>Oklahoma</li>
+<li>Arkansas</li>
+</ul>
+
+<p>To Apply: Please use this google form - https://forms.gle/VRsyzHcUHtz8Dgd17. Note you must be a member of Black Python Devs to apply. If you are not a member, please <a href="https://blackpythondevs.github.io/community/">join the Discord or LinkedIn group</a> first.</p>
+
+<blockquote>
+  <p>Only the conference Tickets are covered (you will be responsible for Food, Hotel, and Travel). We encourage everyone to apply for <a href="https://www.pytexas.org/2024/attend/#grants">PyTexas' grant</a> if they need additional financial support is needed.</p>
+</blockquote>
+
+<h2>The CFP deadline is this Sunday (14 Jan 2024)!</h2>
+
+<p>Another way to attend for free is to be selected as a speaker! The CFP deadline is this Sunday (14 Jan 2024)! It's your chance to share your knowledge and insights. Black Python Devs has plenty of members with speaking experience that can help you with your CFP submission.</p>
+
+<p>Let's make the most of this opportunity and show our support for the community. Looking forward to seeing many of you there!</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-is-sponsoring-pytexas.html</link>
+<pubDate>Fri, 12 Jan 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-is-sponsoring-pytexas.html</guid>
+</item><item>
+<title>Black Python Devs is now a Non-Profit Under the GNOME Foundation</title>  <description><![CDATA[<p>The <a href="https://foundation.gnome.org/">GNOME Foundation</a> and Black Python Devs are proud to announce that our organizations have entered into a fiscal sponsorship agreement for the mutual benefit of our communities and the greater OS world.</p>
+
+<p>The GNOME Foundation is a nonprofit organization that believes in a world where everyone is empowered by technology they can trust. We do this by building a diverse and sustainable free software personal computing ecosystem. We have been operating as a Project since August 1997, and as a Foundation since August 2000. Our software is available not only free of charge, but with certain freedoms guaranteed for those end users. We dream of a world where those users are in control of their own computing, and that access to that computing can be assured. Releasing twice per year, the GNOME desktop is the default desktop environment across most of the large Linux distributions. The GNOME Foundation, a 501(c)3 nonprofit organization incorporated in the United States, will serve as the nonprofit umbrella for Black Python Devs as the new organization continues to fundraise, build its membership, and <a href="/about/">develop its own programs</a>.</p>
+
+<p>Black Python Devs is a global community hoping to increase the participation of Black and Colo(u)red Pythonistas in the greater Python Developer Community. Our goal is to become the largest community of Black Python Developers in the world and establish our community as a source for diverse leaders in local, regional, and global Python communities. The organization works to establish guidance, mentorship, and career support for Black Pythonistas around the world, and it also creates opportunities for the Python community to invest in local communities of Black Python Devs members. The organization aims to increase participation of Black Python Devs members in existing Python community programs, events, and initiatives, and it also continues the development and growth of Black Python Devs members by establishing open-source programs.</p>
+
+<p>“I saw a post on the FOSS Foundation email list sharing that Black Python Devs was seeking a fiscal sponsor for their important work. I immediately reached out to Jay Miller to offer the GNOME Foundation as a place where BPDs could find a welcoming home. I was impressed with Jay’s leadership and his vision for BPDs. One of my key goals for the GNOME Foundation is to create more channels to nurture and include diverse groups in the GNOME community and in the OS world in general to create a more inclusive, more representative, more empowered community for our shared work. I am very enthusiastic about this fiscal sponsorship and look forward to seeing BPDs continue to grow and have a positive impact,” said Holly Million, executive director of the GNOME Foundation.</p>
+
+<p>“We were pleasantly shocked when the GNOME foundation reached out to us!” said Jay Miler, Founder and Executor of Black Python Devs. “Our community leaders were excited and strongly supported our partnership plans. It is important that we push beyond our comfort regularly to make an impact and the guidance we’ve received in this process has already worked to better prepare Black Python Devs for the journey ahead.”</p>
+
+<p>For more information about the GNOME Foundation, contact <a href="&#x6d;&#97;&#105;&#108;&#x74;&#111;&#x3a;&#105;&#110;&#102;&#x6f;&#x40;&#103;&#x6e;&#111;&#x6d;&#101;&#x2e;&#x6f;&#114;g">&#105;&#110;&#102;&#x6f;&#x40;&#103;&#x6e;&#111;&#x6d;&#101;&#x2e;&#x6f;&#114;g</a></p>
+
+<p>For more information about Black Python Devs, contact <a href="&#109;&#97;&#x69;&#x6c;&#116;&#x6f;&#x3a;&#108;&#101;&#97;&#100;&#101;&#114;&#115;&#x68;&#105;&#x70;&#x40;&#98;&#108;&#x61;&#x63;&#x6b;&#x70;&#121;&#x74;&#104;&#x6f;&#110;&#100;&#x65;&#x76;&#115;&#x2e;&#x63;&#111;&#x6d;">&#108;&#101;&#97;&#100;&#101;&#114;&#115;&#x68;&#105;&#x70;&#x40;&#98;&#108;&#x61;&#x63;&#x6b;&#x70;&#121;&#x74;&#104;&#x6f;&#110;&#100;&#x65;&#x76;&#115;&#x2e;&#x63;&#111;&#x6d;</a></p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-is-now-a-non-profit-under-the-gnome-foundation.html</link>
+<pubDate>Thu, 16 May 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-is-now-a-non-profit-under-the-gnome-foundation.html</guid>
+</item><item>
+<title>Reflecting on the last two years with our BPD Leaders</title>  <description><![CDATA[<p>On 23 April 2025, Black Python Devs celebrated it's second birthday. We're honored to reflect on this day and amazed in the growth we've seen.</p>
+
+<p>We learned a long time ago that the best way to build a community devoted to sharing Python to so many people around the world is to empower and support the leaders of the community and those who lead their own respective communities.</p>
+
+<p>The BPD and greater Python landscape has changed significantly since 2023. As we enter our third year, I wanted to share some of lessons learned from many folks on our leadershisp team.</p>
+
+<h3>Dedicated Space together</h3>
+
+<blockquote>
+  <p>I think for me it's the fact that I wouldn't be able to discover some great folks without this community. You know you are part of a community but it's hard if there is no space dedicated to exchange together. This is one thing I really enjoy with Black Python Devs. See that we can face the same situation even if it's not the same country or continent, and celebrate the success of those whose talks have been selected or those who are coming together for an event. It's easier to create relationships and help others who might be interested in leadership position to ask questions to us, leaders.</p>
+  
+  <p><em>Sarah Abderemane</em> - France</p>
+</blockquote>
+
+<h3>Integrity in action</h3>
+
+<blockquote>
+  <p>Something I’ve learned is that true leadership is integrity in action—leading consistently by example, not just instruction. BPD is a community built on this principle, where members are empowered to step in, contribute, and lead in their own right. It’s this foundation that rolls out the red carpet for both new and seasoned members to thrive and keep the “torch burning”</p>
+  
+  <p><em>Sandra Ashipala</em> - Germany</p>
+</blockquote>
+
+<h3>Giving folks leverage</h3>
+
+<blockquote>
+  <p>For me having been opportuned to work not only with folks remotely here but also onsite. And these are the majors i have discorvered and learnt.</p>
+  
+  <p>The fact that there many folks who have greatly been hoping to join a community thats concerned about them and thier complexion as Devs. We have really brought this to them.</p>
+  
+  <p>Giving folks the leverage to handle specific tasks, this isnt just building them personally but also building them mentally in dealing with people with different idealogy from theirs.</p>
+  
+  <p>Working with different minds as Leaders here have greatly shaped how I tend to respond to matters and making sure, not stepping on toes intentionally.</p>
+  
+  <p><em>Emmanuel 'Nuel' Egwu</em> - Nigeria</p>
+</blockquote>
+
+<h3>You cannot go far alone</h3>
+
+<blockquote>
+  <p>I have learnt about the power of team work. You cannot go far alone. You need people to move with you. Through the Black Python Devs events we have had [<a href="/leadership-summit-2024">Black Python Devs Leadership</a>] we had last year, team work is one thing that stood out. From working with @Nuel and @sandramsc , I enjoyed everything.</p>
+  
+  <p>Another thing is I have learnt is that admitting that you don't have enough capacity to handle à certain task. It is never wrong to admit that you can't handle it. This one has really helped me in my current job when I admitted I had little knowledge with Oracle databases . This gave me the opportunity to learn from the team and I can say I have seen much growth.</p>
+  
+  <p>Plus good thing my company works with many DBMS flavors eg PostgreSQL, MSSQL, Oracle and Mysql. I am happy I have got the exposure I needed.</p>
+  
+  <p><em>Doreen Nangira</em> - Kenya</p>
+</blockquote>
+
+<h3>Learning from others</h3>
+
+<blockquote>
+  <p>It has been a wild ride on my end since my accident and I could not really commit that much to BPD related meetings (not all I will say), but while working alongside you all, I was able to get help from some folks in here.</p>
+  
+  <p>If not team work then delays in one person's tasks would lead to failure of the team. We are more powerful together. Since I joined here I learned a lot particularly from Abigail Afi Gbadago, Jay Miller, and Dawn Wages.</p>
+  
+  <p>In fact, BPD made me a better leader for this and for my other communities. I am grateful to be counted among this team.</p>
+  
+  <p><em>Steve Yonkeu</em> - Cameroon</p>
+</blockquote>
+
+<h3>Community Kindness</h3>
+
+<blockquote>
+  <p>It’s been amazing to be part of this amazing community. Since becoming more actively involved, I’ve learned the true meaning of community kindness and how important it is to create space for others to show up, grow, and feel seen.</p>
+  
+  <p>I’ve also had the privilege of working with some incredibly talented and generous people. Thank you all for the amazing experience so far</p>
+  
+  <p><em>Damilola Oladele</em> - Nigeria</p>
+</blockquote>
+
+<h3>A sense of belonging</h3>
+
+<blockquote>
+  <p>I've learned people crave a sense of belonging. They seek connections within a group that has similar interests, has gone through similar struggles, who appreciate their help, and values their input. I've noticed the group they want to belong to the most is a group that wants them to be there. We provide that sense of belonging 24/7 virtually in our Discord. People want that sense of belonging in person too. Building up existing events, workshops, conferences, etc. helps ensure there is something local they can attend to feel that belonging in their own communities. When people from our community connect with people from their local community, it really becomes OUR community.</p>
+  
+  <p><em>Lazouich Ford</em> - United States</p>
+</blockquote>
+
+<hr />
+
+<p>Black Python Devs has evolved into a much larger project that I could ever believe. I'm humbled by the amazing leaders that I see. I know there is so much more to do and I'm encouraged by the team that is actively involved and leading our Black Python Devs.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/reflecting-on-the-last-two-years-with-our-bpd-leaders.html</link>
+<pubDate>Sat, 26 Apr 2025 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/reflecting-on-the-last-two-years-with-our-bpd-leaders.html</guid>
+</item><item>
+<title>Black Python Devs Partners with Python Morsels for High Five Launch</title>  <description><![CDATA[<p>We’re thrilled to announce a that Python Morsels is offering us an affiliate partnership for <a href="https://www.pythonmorsels.com/high-five/">Python High Five</a>, a comprehensive 10-week Python course starting in early September.</p>
+
+<p>You can sign up for the program use the discount code <strong>BlackPythonDevs</strong> to get $30 off the course. Python Morsels also agrees to make a donation to Black Python Devs for each time the code is used.</p>
+
+<p><strong>Python High Five</strong> is a course is designed to help you get your start into programming with Python. <em>Over 10 weeks you’ll move from “I’ve never written any Python code before” to “I can write Python programs”.</em></p>
+
+<p>This course differs from other getting started courses in many ways, including:</p>
+
+<ul>
+<li>Daily exercises over the 10 week period.</li>
+<li>daily check-ins for accountability</li>
+<li>Spaced learning</li>
+<li>Community support</li>
+<li>Real world applications</li>
+</ul>
+
+<h2>A Partnership That Gives Back</h2>
+
+<p>We've been wanting to partner with Python Morsels for the past few months. When Trey (Founder of Python Morsels) mentioned wanting to help us by offering this affiliate link, we jumped on the opportunity.</p>
+
+<h2>Get a discount on the course and also donate to BPD</h2>
+
+<p>When you use the discount code at "BlackPythonDevs," you’ll get $30 off the course fee, and Python High Five will donate $70 to support our community initiatives. You’re not only investing in your own education, but you’re also contributing to the growth and development of our community.</p>
+
+<p>How to Get Started
+If you’re interested in joining the Python High Five course, simply visit <a href="https://www.pythonmorsels.com/high-five/">this link</a> and use the discount code "BlackPythonDevs" at checkout. Remember, the course begins in early September so don't wait, sign up today!</p>
+
+<p>We hope you take advantage of this fantastic opportunity to enhance your Python skills and contribute to our community at the same time. Thank you for being an integral part of our journey!</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-partners-with-python-morsels-for-high-five-launch.html</link>
+<pubDate>Thu, 15 Aug 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-partners-with-python-morsels-for-high-five-launch.html</guid>
+</item><item>
+<title>Black Python Devs at PyconUG 2024</title>  <description><![CDATA[<p>Wednesday, 9th, October, 2024, was Uganda's Independence day.</p>
+
+<p>We were celebrating 62 years of independence. This also happened to be the first day of the 2nd installment of <a href="https://ug.pycon.org/2024">Pyconug conference 2024</a>. It was a very exciting day and alot of the Ugandan pythonistas and pythoneers were waiting in anticipation for this day. Pyconug had alot of remarkable sponsors this year; from international brands like Github, JetBrains and the Python Software Foundation to local brands like Africa's talking platform and more.</p>
+
+<p><img src="/assets/images/pyconug-toebias.jpeg" alt="Toebias at PyCon UG" /></p>
+
+<p>One of the sponsors for this year's pyconug conference was the BlackPythonDevs community.
+We were able to purchase up to 47 student tickets that would enable 47 students attend the conference. I'm happy to report that out of the 47 students that were sponsored, 22 students were able to attend the 5-day conference. Most of the students attended on the 4th and 5th day of the event, which was Saturday and Sunday respectively. I also noted that most of the students that attended where male and only a handful of female students could make it.</p>
+
+<p>Throughout the 5 days of the pyconug conference, I was able to interact with the sponsored black python devs students and gathered their view on their experience so far. To most of the students, this was their first ever tech conference to attend. They were overwhelmed by the number of developers that attended, the talks that were given, the food that was served and the socializing events that took place among developers. It was a really thrilling experience for them.</p>
+
+<p>On day-4 and day-5 of the conference, I had a short session with them before their lunch to share about BlackPythonDevs, who were their sponsors. I introduced to them what BlackPythonDevs is and I invited questions for those that had any. Most of the questions I received where around what "BlackPythonDevs" actually meant. Was it referring to a black python; in which case one of the students playfully suggested it be renamed to black mamba instead, what exactly was BlackPythonDevs. It's when I understood that these students did not know the concept of being black. When I tried to point out that it was a community of python developers that identified as black, it spiraled up a lot of questions. Like; what does it mean to be black, are Africans black? How about North-Africans? How about the really light(yellow) skinned Khoi people? There were a lot of questions that I didn't have the answers for.</p>
+
+<p>I brought back the students to focus on what matters. We need to strive for unity so we shouldn't focus on things that separate us. Skin color, hair texture, accent and more are all just variations of who we are as people, and they shouldn't be the main focus. Once we were done with our short interaction, I was able to have a brief photo moment with the students that attended on various days.</p>
+
+<p>Once the conference was done, some students were able to write up on their experience at their first ever python event sponsored by BlackPythonDevs. Here are some of the links to what the students expressed on their linkedIn platforms.</p>
+
+<ul>
+<li>Shakiran Nannyombi - <a href="https://www.linkedin.com/posts/shakiran-nannyombi-401057222_v-machinelearning-advice-activity-7251508529713344512-_-2o/">Wraping up PyconUG 2024</a></li>
+<li>Wahid Kokole - <a href="https://www.linkedin.com/posts/wahid-kokole-1270a210a_pyconuganda-pyconuganda2024-activity-7252370483545862144-A7F_/">Attending PyconUG</a></li>
+<li>Bryant Nuwe - <a href="https://www.linkedin.com/posts/bryant-nuwe-06225a28a_pyconuganda2024-pyconuganda-opensource-activity-7249821894869209088-Up8w/">Excited to have attended PyconUG</a></li>
+</ul>
+
+<p>In conclusion, the students and I are grateful towards BlackPythonDevs for sponsoring these students' experience and their first ever Pyconug conference. We do hope more opportunities like these will be availed to the students to have a successful journey in their tech career.</p>
+
+<p><img src="/assets/images/pyconug-bpd-group-photo-day-4.jpeg" alt="Group photo on Day of PyCon UG" /></p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-at-pyconug-2024.html</link>
+<pubDate>Fri, 25 Oct 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-at-pyconug-2024.html</guid>
+</item><item>
+<title>DjangoCon US 2023</title>  <description><![CDATA[<p>In Durham, North Carolina, approximately 300 Django developers gathered from all over the world for <a href="https://2023.djangocon.us/">DjangoCon US</a>. This event showcased the knowledge of the community and celebrated its cultural diversity and the diversity of its hosting city. The event was located at the Marriot Convention Center, in the heart of the city. There were many resturants and smaller attractions.</p>
+
+<h2>Location Diversity Index: Good</h2>
+
+<p>The Location Diversity Index is a check against events in the United States for cultural diversity. Durham, North Carolina served as a wonderful backdrop for this conference. Known for its vibrant culture and diverse community, it was an excellent choice for a smaller Python conference, measuring at <strong>Good</strong> with the primary demographic only making up 56% of the population. This reflects the inclusive spirit of Python conferences, welcoming individuals from all walks of life.</p>
+
+<h2>Diversity at a Glance</h2>
+
+<p>While diversity at the conference was notable, the conference appeared to have less than 10% Black attendees. That said the presence of black attendees did feel greater than conferences significantly larger.</p>
+
+<p>Even though there is room for improvement, the conference made strides in addressing the racial diversity of the conference. Conversations about how to improve this have already started.</p>
+
+<h2>Events:</h2>
+
+<h3>DjangoGirls Durham</h3>
+
+<p>DjangoCon hosted a <a href="https://djangogirls.org/en/events/">DjangoGirls</a> event in in the <a href="https://www.caktusgroup.com/">Caktus Group</a> space. The event featured a MAJORITY of black participants.</p>
+
+<p><img src="https://kjaymiller.azureedge.net/media/djangogirls-participants.jpg" alt="Attendees from the DjangoGirls Durham Event" /></p>
+
+<h3>Black Python Devs Ice Cream Social</h3>
+
+<p>The conference kicked off the night before with the Black Python Devs Ice Cream Social at Durhams <a href="https://theparlour.co/"><em>The Parlour</em></a>, our first official in-person event! 10 members attended and enjoyed a relaxed atmosphere for many folks to meet for the first time.</p>
+
+<p><img src="https://kjaymiller.azureedge.net/media/DCUS%20IceCream%20Social.jpg" alt="Selfie from attendees of the Ice Cream Social" /></p>
+
+<p>An ice cream parlor, with its universal appeal, served as a sweet alternative to an event in a bar, making it easy for attendees who do not drink to feel included. There were also diary-free options for those with sensitivities.</p>
+
+<p><img src="https://jmblogstorrage.blob.core.windows.net/media/ICS%20speech.jpg" alt="Jay Speaking to Participants of the Ice Cream Social" /></p>
+
+<h3>Black Python Devs Open Space</h3>
+
+<p>The Black Python Devs Open Space was another engaging event, drawing nine Black Python developers along with two allies. The conversation was focused on what we could do with zero funding. Topics ranged from new events around contributing to open source and helping members find job opportunities. These types of events are essential in fostering a sense of community and belonging among underrepresented groups.</p>
+
+<h3>Fun at the BoxCar Bar + Arcade</h3>
+
+<p>Many Black Python Devs members retreated to the <a href="https://theboxcarbar.com/durham/"><em>Barcade</em></a> (A combination of bar and arcade). The following morning was filled with many speakers telling each other, "That was SO MUCH FUN!".</p>
+
+<p><img src="https://kjaymiller.azureedge.net/media/bpd_boxcar_barcade.jpeg" alt="Velda and other members hanging out at Boxcar Bar + Arcade" /></p>
+
+<h3>Speakers:</h3>
+
+<p>One of the highlights of the conference was the diverse lineup of speakers. Eight Black speakers took the stage, bringing a unique perspective to the discussions. Their talks covered a range of topics, from Python best practices to the importance of diversity and inclusion in tech.</p>
+
+<p>The playlist of talks from our members as well as some other notable presentations will be made available on the <a href="https://youtube.com/@blackpythondevs">Black Python Devs YouTube Channel</a></p>
+
+<hr />
+
+<p>The Python Conference in Durham, North Carolina, demonstrated the power of the Python community to bring together people from diverse backgrounds. While there is room for improvement in terms of representation, the organizers took steps to create an inclusive environment through targeted events and a diverse lineup of speakers. As Python continues to evolve, it is essential that its community does so as well, with events like this contributing to its ongoing growth and inclusivity.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/djangocon-us-2023.html</link>
+<pubDate>Fri, 20 Oct 2023 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/djangocon-us-2023.html</guid>
+</item><item>
+<title>Black Python Devs x PyCon US</title>  <description><![CDATA[<p>PyCon US is coming and Black Python Devs will represented strongly.</p>
+
+<p><img src="/assets/images/bpd_x_github.jpg" alt="Black Python Devs x PyCon US 24" /></p>
+
+<p>Here's a list of all the things happening at PyCon US!</p>
+
+<h2>Come hang out at the August Williams African Cultural Center 📖</h2>
+
+<p>We try to learn a little about the local community and one another. Before all the fun at PyCon US we're going to take a trip to the <a href="https://awaacc.org/">August Williams African Cultural Center</a>.</p>
+
+<h2>Opening Keynote from Black Python Devs Founder Jay Miller 🎤</h2>
+
+<p>Jay Miller will be giving the opening keynote for the start of PyCon US. There we will be sharing with the Python Community what we're doing, what is planned, and how they can help us bring more Black Pythonistas to the global Python community!</p>
+
+<h2>Come visit us at the Black Python Devs Community Booth 👕✊🏾</h2>
+
+<p>Black Python Devs will be running a booth in the expo hall where you can find information about Black Python Devs, its members and more.</p>
+
+<h2>The Leaders in Black Python Panel at the PSF Booth 🤩🤩🤩</h2>
+
+<p>We've been invited to crash the PSF booth to host a panel featuring Black leaders in the Python community. (More information to come)</p>
+
+<h2>The 3rd Annual Black Python Developers Open Space 🎉🎤🎉</h2>
+
+<p>We're going to be back for our 3rd Black Python Developers Open Space. Connect with other Black Python Devs members for a <em>no code-switch</em> celebration and conversation!</p>
+
+<h2>When is all this happening!</h2>
+
+<p>We'll have information on all the happenings at our booth and in the Black Python Devs discord. <a href="/community">Join the community</a> and stay up to date!</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-x-pycon-us.html</link>
+<pubDate>Wed, 13 Mar 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-x-pycon-us.html</guid>
+</item><item>
+<title>Why We Use Black, Colored and Coloured when Describing Members</title>  <description><![CDATA[<p>We've received concerns from (up to this point) entirely white folks on the internet about our usage of words like <em>Colored</em> and <em>Coloured</em> when regarding some of our members.</p>
+
+<p>We understand the power of words. Our usage of the phrase <em>Colo(u)red</em> is intentional and I will happily explain why we made the decision to include it.</p>
+
+<h2>Words have meaning around the world</h2>
+
+<p>Many folks are considered Black in places like the United States, but do not identify with this classification. The <em>Colored</em> designation is for those who do not use the term Black but have been historically excluded from opportunities due to their melanated skin. This extension extends to groups marginalized by colonialism or attempts to dissolve their culture and sense of identity. We also recognize that some of these cultures see Black identity with positivity and pride such as the Aboriginal people of Australia. We understand that cultural identity is one of the most important things and we invited them to join us without having to accept a term that we have given them. This includes cultures like the Maori people of Aotearoa (New Zealand), many Samoans, Polynesians and other Pacific Island cultures, as well as many Afro-infused Latin American communities.</p>
+
+<p>Our usage of Colored, while a negative or avoided term in the United States, is not as controversial in the rest of the world and served as the best descriptor for some folks in our community where terms like <em>people of color</em> would be considered too broad.</p>
+
+<h2>Some people identify as Coloured</h2>
+
+<p>The use of Coloured is also intentional. We understand Blackness is also divided amongst communities of color. Our usage is in homage to the people who identify as <em>Coloured</em> in places like South Africa due to their mixed race.This includes those that were assigned a label for their mixed cultures such as mulattos and mestizos. They often do not identify as Black and in some cases are not accepted as Black in their country, but they are welcomed with open arms in our community.</p>
+
+<h2>Our messaging is supported by those it defines</h2>
+
+<p>I want to note that our global leadership made up of representatives across 4 continents along with our advisors and hundreds of members support our wording and more importantly its inclusive meaning. We've had the challenging conversation of people of Afro-Latin and Indigenous communities who were hesitant to join because of the word "Black". They appreciate our attempts to include them in both membership and messaging.</p>
+
+<p>We respect that Black identity is not a clear cut designation. We do not gate or police blackness in our community and our <a href="https://github.com/BlackPythonDevs/.github/blob/main/CODE_OF_CONDUCT.md">Code of Conduct</a> and policies prohibit the act of attacking a person's blackness.</p>
+
+<p>Our message's goal is to extend an invitation to other individuals of color that feel closely aligned with the struggles that comes when others perceive you as Black even if their identity doesn't match our language. I hope we have outlined that our usage of the phrase <em>Black and Colo(u)red</em> people shows our expression intent to create an inclusive community for a group of people who have often been historically excluded from opportunities in tech in part because of how primarily White communities have regarded them. We choose not to bundle them under a single moniker of Black, which in some cases even they would not accept that classification for themselves.</p>
+
+<p>We also appreciate the GNOME foundation’s support and understanding. We predicted that many individuals, especially those from the US, would not consider the immense challenge of finding wording to accurately describe the individuals of our community. An overwhelming majority of our members are not from the US and are happy in the efforts we've made to help them feel included.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/why-we-use-black-colored-and-coloured-when-describing-members.html</link>
+<pubDate>Wed, 22 May 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/why-we-use-black-colored-and-coloured-when-describing-members.html</guid>
+</item><item>
+<title>Introducing the Regional Leadership Model at Black Python Devs</title>  <description><![CDATA[<p>As Black Python Devs continues to grow globally, we're excited to announce the appointment of Regional Executors for North America and Africa. These roles are designed to better serve our expanding community while fostering sustainable leadership development.</p>
+
+<h2>Goals for this change</h2>
+
+<p>Our new model is designed to:</p>
+
+<ol>
+<li>Establish a consistent leadership pipeline that offers valuable experience to emerging leaders</li>
+<li>Create clear transition paths for leaders ready to pursue larger opportunities</li>
+<li>Distribute responsibilities more effectively by region, ensuring regional needs are met by those who understand local contexts</li>
+<li>Reduce centralized workload on the primary Executor role</li>
+</ol>
+
+<h2>The New Leadership Structure</h2>
+
+<p>We're implementing a two-tier regional leadership system that operates under the Black Python Devs Executor Role, comprising Regional Executors who serve as primary leaders for their geographic regions and Vice Regional Executors (to be named later) who act as supporting partners. This structure creates a leadership pipeline while fostering mentorship and succession planning within each region, with Regional Executors taking point on strategic initiatives and Vice Regional Executors providing crucial operational support and continuity for their respective territories.</p>
+
+<p>Regional leaders will focus on:</p>
+
+<ul>
+<li>Establishing new BPD user groups in areas lacking meetup support</li>
+<li>Appointing local leaders to assist with local initiatives</li>
+<li>Identifying and coordinating with user groups and regional conferences for sponsorship opportunities</li>
+<li>Developing and maintaining relationships with regional sponsors</li>
+<li>Managing region-specific initiatives and community needs</li>
+</ul>
+
+<h3>Term Limits and Succession</h3>
+
+<p>To ensure fresh perspectives while maintaining continuity:</p>
+
+<ul>
+<li>Leaders serve one-year terms</li>
+<li>Maximum of 3 consecutive years in either role</li>
+<li>Vice Regional Executors naturally transition to Regional Executor roles (unless they opt out)</li>
+<li>New Vice Regional Executors are appointed by incoming Regional Executors</li>
+</ul>
+
+<p>This creates a natural two-year leadership cycle, providing clarity and stability in succession planning.</p>
+
+<h2>Initial Leadership Appointments</h2>
+
+<p>We're excited to announce our first set of regional leaders:</p>
+
+<h3>Africa Regional Executor: Abigail Afi Gbadago</h3>
+
+<p>Afi has shown considerable dedication to Black Python Devs. One of its early members, she quickly worked to develop a local community in Ghana, helping launch our first in-person community.</p>
+
+<p>She also launched our Open Source Mentorship Program in which she coordinated with package maintainers, first-time contributors, and mentors to help folks get their first contributions.</p>
+
+<p>Afi is also a director for the Django Software Foundation, and a Microsoft MVP.</p>
+
+<h3>North America Regional Executor: Lazouich Ford</h3>
+
+<p>Laz has shown over the last year the power of helping where he can. He has jumped deeper and deeper into leadership over the last year and is one of the community's most reliable members. Laz is one of the organizers for the Black Python Devs Book Club and an active participant of our leadership council conversations. When a decision is made Laz has often given much thought and concern and shared those consideration with the other leaders.</p>
+
+<p>Both leaders have plans for their region that will be published in the near future.</p>
+
+<h2>Pilot Implementation</h2>
+
+<p>We're initially launching this model for the Africa and North America continents. We understand that culture is not monolithic and we hope placing concerted leadership will help to find similarities and also identify gaps that we hope to fill with smaller region leadership roles.</p>
+
+<h2>The BPD Executor’s role</h2>
+
+<p>These regional executor roles will report to the Black Python Devs Executor which will remain a permanent, global leadership position with no term limit. In the coming years, the Executor role should transition to a more traditional Executive Director role.</p>
+
+<p>By delegating regional operations to our new Regional Executors, the Executor role can focus on long-term community health, sustainability, and growth initiatives. This restructuring enables the Executor to dedicate more attention to fostering cross-regional collaboration, develop global partnerships, secure sustainable funding streams, and ensuring Black Python Devs continues to evolve in service of our community's mission and values.</p>
+
+<p>This new leadership structure represents a significant step forward in Black Python Devs' organizational maturity. By creating clear pathways for leadership development and ensuring sustainable succession planning, we're building a foundation for long-term community growth and impact.</p>
+
+<p>We believe this model will enable us to better serve our community while providing valuable leadership opportunities for members across all regions. As we implement these changes, we welcome feedback from our community to help refine and improve the system.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/introducing-the-regional-leadership-model-at-black-python-devs.html</link>
+<pubDate>Mon, 16 Dec 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/introducing-the-regional-leadership-model-at-black-python-devs.html</guid>
+</item><item>
+<title>What is the US Conference City Diversity Metric</title>  <description><![CDATA[<p>In 2022 at DjangoCon I took a look at the location of all of the PyCon US locations and their makeup by race. I highlighted that in the first 10 years of PyCon's existence, 9 of those 10 events were in culturally diverse cities like Atlanta, Washington DC and Chicago. The second half was during Python's boom and the need for larger venues started pushing conferences to more affordable areas with large international airports. These were places like Salt Lake City, Portland, and Montreal.</p>
+
+<p>The metric we used was how much a single racial group makes up the local population. This is what we have labeled the US Conference Diversity City Scale. Here is the breakdown:</p>
+
+<p>| Rating    | Highest Percentage |
+| :-------- | :----------------- |
+| Poor      | &gt; 85%              |
+| Bad       | 76-85%             |
+| Fair      | 66-75%             |
+| Good      | 51-64%             |
+| Excellent | &lt; 50%              |</p>
+
+<h2>Why is it hard to pick Good or Excellent Cities</h2>
+
+<p>Using census data can't be the only factor in choosing a city. Other than white, there is no percentage of race that makes up more than 20% of the population. The most diverse cities are often coastal metropolitans or states sharing a national border.</p>
+
+<p>These areas are also some of the most expensive parts of the country which makes event hosting more expensive.</p>
+
+<p>Also diverse city doesn't mean diverse area. The general county may be inclusive yet still segregated based on historical struggles. Many of the most diverse areas are also the most neglected leading to the higher rates of poverty, crime, and other issues that would deter a conference from hosting in a nearby venue.</p>
+
+<hr />
+
+<p>If you're planning to take your event to a new area remember the closer you are to culturally diverse cities the more likely you'll have a diverse event. That said your location selection is only a part of the journey to a diverse conference.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/what-is-the-us-conference-city-diversity-metric.html</link>
+<pubDate>Sat, 11 Nov 2023 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/what-is-the-us-conference-city-diversity-metric.html</guid>
+</item><item>
+<title>Dawn Wages, Sarah Abderemane and Djangonaut Space Awarded the Malcolm Tredinnick Memorial Prize</title>  <description><![CDATA[<p>Each year the <em>Django Software Foundation</em>, selects a person or group that exemplifies the outstanding service to community as shown by the award's namesake.</p>
+
+<p>This year the honor was awarded to the team at <a href="https://djangonaut.space">Djangonaut Space</a>, an initiative aiming to increase</p>
+
+<blockquote>
+  <p>This program places an emphasis on group-learning, sustainability and longevity.</p>
+</blockquote>
+
+<p>The program is lead by a small team of long-time Django community contributors including Black Python Dev Members <a href="https://dawnwages.info/">Dawn Wages</a> and <a href="https://sarahabd.com/">Sarah Abderemane</a>.</p>
+
+<p>The DSF selected the community based on the amazing success of their pilot program as the team moves into their second cohort.</p>
+
+<blockquote>
+  <p>the program had a stellar pilot session, propelling 🎉 nine 🎉 pull requests (PRs) to Django and launching 🎊 five 🎊 new contributors into the Django community. 🥳 Given the community's enthusiastic interest and demand, the program is well-positioned to evolve and expand at warp speed, welcoming even more Djangonauts on future missions. 🚀</p>
+</blockquote>
+
+<p>Djangonaut Space is an example of programs that Black Python Devs hopes to partner with in the future to create pathways for Black Python Developers to contribute to open source projects with guidance and assistance. Congratulations to Dawn, Sarah, and the rest of the Djangonaut Space team!</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/dawn-wages-sarah-abderemane-and-djangonaut-space-awarded-the-malcolm-tredinnick-memorial-prize.html</link>
+<pubDate>Thu, 14 Dec 2023 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/dawn-wages-sarah-abderemane-and-djangonaut-space-awarded-the-malcolm-tredinnick-memorial-prize.html</guid>
+</item><item>
+<title>Black Python Devs Leadership Summit</title>  <description><![CDATA[<p>The Black Python Devs Leadership Summit, which took place on September 21st at 8 a.m. was a successful event.</p>
+
+<h2>Event Breakdown</h2>
+
+<p>The Summit began with Registration at the front desk where each attendee's name was written on lanyards. Afterwards, participants grabbed a light meal to kick off the day.</p>
+
+<p>At 9 am, Welcome and Opening Remarks were given by Abigail Afi Gbadago.
+After this, Jay introduced the morning session, which was followed by a chop-it-up session during which we talked about succession, mental health, and leadership skills.</p>
+
+<p>From 10:15 to 11:00 a.m., Jay Miller gave a State of BPD highlighting our leadership, growth, sponsorships, and initiatives from 2024 with plans for 2025.</p>
+
+<p>At midday, we took a 2-hour lunch break.</p>
+
+<p>After lunch, we had a keynote address by Wesley Faulkner on Leadership vs Management</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/A9HkxFDH1Cs?si=fe_OK9-r9xNF5q-3" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+<p><br>
+<br>
+<img src="/assets/images/bpd-leadership-summit-2.jpeg" alt="Black Python Devs Ghana Connect Meetup" /></p>
+
+<p>Right after, there was a Coffee Break at 10:15 - 10:30.</p>
+
+<p>After the break, Loren Crary gave a sponsor Lightning Talk on behalf of the PSF.</p>
+
+<p>Then there were our interactive talks where we received updates from:</p>
+
+<ul>
+<li><p>-Kudzayi on Experiences Leading Workshops in Zim (What Works/What Doesn’t)</p></li>
+<li><p>-Afi on the Open Source Program (Challenges, Successes and Overall Progress)</p></li>
+</ul>
+
+<p>After a coffee break followed by a 50-minute Panel Discussion with:</p>
+
+<pre><code>- Loren
+- Velda
+- Jeff
+- Monica
+- Benedict
+</code></pre>
+
+<p>At 2:50 - 3:00 in the afternoon, we prepared to break out into sessions for an hour; these sessions were very informative and we recapped at 4:15 - 4:45 pm.</p>
+
+<p>At 4:45 - 5:00 pm, we took a coffee break and grabbed snacks from the hall before going in for the Closing Remarks.</p>
+
+<p>To wrap up the day, we had a fun, soft drinks session and water cooler conversations were had while we closed up the summit and went for dinner in the area.</p>
+
+<h2>Key Discussions</h2>
+
+<p>There was a lot of conversation around succession planning and feelings of being overwhelmed, burnout, and not feeling that opportunities to help and receive help were being effectively handled. This starts at the top and the executor agrees that they need to be willing to put more trust in the team. They also showed interest in creating standardized methods for onboarding and offboarding new leaders.</p>
+
+<p>There were also conversations about helping people get more involved in open source. A breakout session on physical health and wellness as well as conversations around fundraising opportunities for BPD.</p>
+
+<h2>Logistics</h2>
+
+<p>Overall the event came in under budget at approximately $2000. The biggest with the generous donation of a venue by the Caktus group. This event was completely covered by the We also raised an additional $200 in donations for BPD. We had about 25 in attendance in person with another 20 consistently online. One highlight was that we had a couple of folks from the local community find out about the event and join us. There was a lot of conversation about the Raleigh-Durham area being a potential site for a local Black Python Devs User Group.</p>
+
+<p>There is currently a plan for at least one other independent leadership summit to be held in Africa (location not yet announced) in the Fall of 2025 and a possible leadership summit to be held at PyCon US 2025 as a track. If we can standardize cost and logistics, we can see these leadership summits as a regional track that can benefit more local communities.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-leadership-summit.html</link>
+<pubDate>Sat, 19 Oct 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-leadership-summit.html</guid>
+</item><item>
+<title>Black Python Developers Running for the 2024 Python Software Foundation Board</title>  <description><![CDATA[<p>We are thrilled to announce that four exceptional Black Python developers are running for the <a href="https://www.python.org/psf-landing/">Python Software Foundation (PSF)</a> Board of Directors this year. The candidates are Monica Oyugi, Abigail Dogbe, Darrell Jenkins, and Jeremy Tanner. Their dedication and contributions to the Python community are truly inspiring.</p>
+
+<h4>Candidates for the PSF Board</h4>
+
+<ul>
+<li><a href="https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/monica-oyugi/">Monica Oyugi</a></li>
+<li><a href="https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/abigail-dogbe/">Abigail Dogbe</a></li>
+<li><a href="https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/darrell-jenkins/">Darrell Jenkins</a></li>
+<li><a href="https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/jeremy-tanner/">Jeremy Tanner</a></li>
+</ul>
+
+<h4>The Role of the PSF</h4>
+
+<p>The Python Software Foundation is the organization behind the Python programming language. Its mission is to promote, protect, and advance the Python programming language while supporting and facilitating the growth of a diverse and international community of Python programmers. The PSF plays a crucial role in fostering the development of Python and ensuring its continued success and inclusivity.</p>
+
+<h4>Summary of Their Campaign</h4>
+
+<p>Our four candidates are united in their vision to further enhance the Python community by promoting diversity, inclusion, and innovation. They aim to support underrepresented groups, foster educational initiatives, and ensure the Python community remains welcoming and accessible to everyone. Their collective experience and passion for Python will undoubtedly contribute to the PSF's mission.</p>
+
+<h4>Current Black PSF Board Members</h4>
+
+<p>We are also proud to acknowledge the current Black members of the PSF Board, Dawn Wages and Denny Perez. Their exceptional work and dedication serve as an inspiration to us all.</p>
+
+<p>We wish Monica Oyugi, Abigail Dogbe, Darrell Jenkins, and Jeremy Tanner the very best in their candidacies and extend our full support to them.</p>
+
+<p>To view all the nominations for the PSF Board, please visit <a href="https://www.python.org/nominations/elections/2024-python-software-foundation-board/nominees/">the full nominations page</a>.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-developers-running-for-the-2024-python-software-foundation-board.html</link>
+<pubDate>Wed, 03 Jul 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-developers-running-for-the-2024-python-software-foundation-board.html</guid>
+</item><item>
+<title>Black Python Devs Running for the DSF</title>  <description><![CDATA[<p>The <a href="https://www.djangoproject.com/weblog/2024/oct/28/2025-dsf-board-candidates/">DSF Board Candidates have been announced</a> and voting is now open for DSF members now until 15 November (Anywhere on Earth).</p>
+
+<p>The DSF Board serve two year terms. "This is an excellent opportunity to help advance Django. They guide the direction of the marketing, governance and outreach activities of the Django community."</p>
+
+<p>Here are some Black Python Devs Members Running for the four seats open:</p>
+
+<ul>
+<li><a href="https://www.djangoproject.com/weblog/2024/oct/28/2025-dsf-board-candidates/#abigail-gbadago">Abigail Gbadago — Accra, Ghana</a></li>
+<li><a href="https://www.djangoproject.com/weblog/2024/oct/28/2025-dsf-board-candidates/#ariane-djeupang-jocelyne">Ariane Djeupang Jocelyne — Yaounde, Cameroon</a></li>
+<li><a href="https://www.djangoproject.com/weblog/2024/oct/28/2025-dsf-board-candidates/#chris-achinga">Chris Achinga — Mombasa, Kenya</a></li>
+<li><a href="https://www.djangoproject.com/weblog/2024/oct/28/2025-dsf-board-candidates/#julius-nana-acheampong-boakye">Julius Nana Acheampong Boakye — Accra, Ghana</a></li>
+<li><a href="https://www.djangoproject.com/weblog/2024/oct/28/2025-dsf-board-candidates/#keanya-phelps">Keanya Phelps — Chicago, USA</a></li>
+</ul>
+
+<p>The mission of Black Python Devs is to <em>extend the Python Communities to communities of Black Pythonistas around the world</em> and these individuals all represent leadership in their local communities.</p>
+
+<p>We wish each candidate the best of luck in this election.</p>
+]]></description>
+
+    <link>http://localhost:8000/blog/black-python-devs-running-for-the-dsf.html</link>
+<pubDate>Tue, 29 Oct 2024 08:00:00 -0000</pubDate>  <guid isPermaLink="true">http://localhost:8000/blog/black-python-devs-running-for-the-dsf.html</guid>
+</item></channel>
+</rss>

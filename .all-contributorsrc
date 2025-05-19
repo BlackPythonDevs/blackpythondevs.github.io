@@ -1,7 +1,14 @@
 {
-    "files": [
-        "CONTRIBUTORS.md"
-    ],
-    "projectName": "blackpythondevs.github.io",
-    "projectOwner": "blackpythondevs/orgs"
+  "projectName": "https://github.com/olaluwe/blackpythondevs.github.io.git",
+  "projectOwner": "olaluwe",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "files": ["CONTRIBUTORS.md", "all-contributorsrc"],
+  "imageSize": 100,
+  "commit": false,
+  "commitConvention": "none",
+  "contributors": [],
+  "contributorsPerLine": 7,
+  "linkToUsage": false
 }
+

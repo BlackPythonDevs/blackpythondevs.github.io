@@ -1,4 +1,4 @@
-@all-contributors 
+@all-contributors
 please add @olaluwe for code, design, doc, review, etc.
 please add @oleksis for code, design, doc, review, etc.
 please add @kjaymiller for code, design, doc, review, etc.
