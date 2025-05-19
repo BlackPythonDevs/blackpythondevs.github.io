@@ -1,2 +1,2 @@
-@all-contributors 
-please add @olaluwe for "Fixing the all-contributor issue".
+@All-Contributors please add @olaluwe for code, design, doc, review, etc.
+
