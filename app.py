@@ -2,6 +2,7 @@ from render_engine import Site, Page
 
 app = Site()
 app.template_path = "_layouts"
+app.static_paths.add("assets")
 app.site_vars["locales"] = ["en"]
 
 
