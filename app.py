@@ -1,4 +1,4 @@
-from render_engine import Site, Page
+from render_engine import Site, Page, Collection
 
 navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
@@ -25,3 +25,12 @@ class Index(Page):
 class About(Page):
     content_path = "pages/about.html"
     template = "default.html"
+
+
+@app.collection
+class Events(Collection):
+    content_path = "events"
+    template = "default.html"
+    routes = ["./events"]
+    has_archive = True
+    archive_template = "event-list.html"

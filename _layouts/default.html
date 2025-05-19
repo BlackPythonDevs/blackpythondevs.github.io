@@ -20,7 +20,9 @@
   <body>
     {%- include '_includes/header.html' -%}
     <main class="container" role="main" aria-label="Content">
-        {{ content }}
+
+      {% block content %}
+      {% endblock %}
     </main>
     {%- include '_includes/footer.html' -%}
     <script src="/assets/js/jquery.min.js"></script>

@@ -1,0 +1,6 @@
+{% extends "default.html" %}
+{% block content %}
+    {% for page in pages %}
+        <a href="{{ page }}.html">{{ page }}</a>
+    {% endfor %}
+{% endblock %}
