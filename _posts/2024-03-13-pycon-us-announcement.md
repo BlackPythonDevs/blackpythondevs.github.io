@@ -1,5 +1,5 @@
 ---
-date: 2024-03-13
+date: 2024-03-13 08:00:00
 description: Explore how Black Python Devs is shaping the future of the Python community
   through a range of events and activities at PyCon US.
 lang: en
