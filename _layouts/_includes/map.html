@@ -1,0 +1,100 @@
+<!-- Load Leaflet CSS and JS from CDN -->
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.css"
+/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.9.4/leaflet.js"></script>
+
+<style>
+  #map-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+
+  #map {
+    height: 500px;
+    width: 100%;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+  }
+
+  h1 {
+    color: #333;
+    text-align: center;
+  }
+
+  .instructions {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+</style>
+
+<div id="map-container">
+  <h1>Interactive Map</h1>
+  <div id="map"></div>
+  <div class="instructions">
+    <p>
+      <strong>Instructions:</strong> You can drag to move the map, scroll to
+      zoom in/out, and click on the marker to see information.
+    </p>
+  </div>
+</div>
+
+<script>
+  // Global variables
+  let map;
+  let geojsonLayer = null;
+  const countryMap = new Map();
+  var country_count = {{count_by_country | tojson}}
+
+  // Initialize map once
+  function initMap() {
+    map = L.map(
+      "map", {
+      maxZoom: 5,
+      minZoom: 1
+      }
+    ).setView([0, 0], 2);
+    L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png").addTo(
+      map,
+    );
+
+
+    // Load GeoJSON once
+    fetch("/static/countries.geojson")
+      .then((response) => response.json())
+      .then((data) => {
+        geojsonLayer = L.geoJSON(data).addTo(map);
+        // Only update after geojsonLayer is defined
+        updateMapData();
+      });
+  }
+
+  // Update map data - check if geojsonLayer exists first
+  function updateMapData() {
+    if (!geojsonLayer) return; // Skip if geojsonLayer not loaded yet
+
+    console.log(country_count)
+    geojsonLayer.eachLayer((layer) => {
+      const countryName = layer.feature.properties.name;
+      const count = country_count[countryName] || 0;
+
+      // Update style
+      layer.setStyle({
+        color: "#3388ff",
+        weight: 1,
+        fillColor: "#ff0000",
+        fillOpacity: count > 0 ? Math.min(0.20 + count / 200, 0.9) : 0,
+      });
+
+      // Update popup
+      layer.bindPopup(`${countryName}: ${count}`);
+    });
+  }
+
+  initMap();
+</script>
