@@ -1,6 +1,6 @@
 ---
 author: Jay Miller
-date: 2023-11-13
+date: 2023-11-13 08:00:00
 description: Find out how the growing presence of Black Python Developers is shaping
   the future of diversity in the tech industry through the DSF Elections.
 lang: en
