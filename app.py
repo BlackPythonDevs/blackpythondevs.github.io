@@ -10,3 +10,9 @@ app.site_vars["locales"] = ["en"]
 class Index(Page):
     template = "index.html"
     content_path = "index.html"
+
+
+@app.page
+class About(Page):
+    content_path = "pages/about.html"
+    template = "default.html"
