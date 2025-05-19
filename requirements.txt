@@ -1,6 +1,5 @@
 # Page Generation
 render-engine
-render-engine-pico
 render-engine[cli]
 
 
