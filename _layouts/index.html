@@ -2,24 +2,19 @@
 
 {% block content %}
 <div class="home">
-  {% set t = site.data.locales[page.lang][page.lang] %}
-  {% if page.title %}
-    {% set header = page.title %}
+  {% if title %}
+    {% set header = title %}
   {% else %}
     {% set header = site.title %}
   {% endif %}
-  
-  <article class="hero">
-    <div class="hero-text">{{ t.index.lead }}</div>
-  </article>
+
   
   {{ content }}
 
-  <img src="{{ url_for('static', filename='images/dcus.jpg') }}" alt="DjangoCon US 2023"/>
 
-  {% include "latest-posts.html" %}
-  {% include "join_us.html" %}
-  {% include "partnerships.html" %}
-  {% include "newsletter_form.html" %}
+  {% include "_includes/latest-posts.html" %}
+  {% include "_includes/join_us.html" %}
+  {% include "_includes/partnerships.html" %}
+  {% include "_includes/newsletter_form.html" %}
 </div>
 {% endblock %}
