@@ -1,6 +1,6 @@
 ---
 author: Anotida Expected Msiiwa
-date: 2024-07-20
+date: 2024-07-20 08:00:00
 description: Discover how Black Python Devs is teaming up with PyOhio to create a
   more inclusive and diverse community, supporting and amplifying the voices of Black
   developers in Ohio and beyond.

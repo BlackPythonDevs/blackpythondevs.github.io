@@ -1,5 +1,5 @@
 ---
-date: 2024-12-02
+date: 2024-12-02 08:00:00
 description: We're happy to announce that Typefully is sponsoring Black Python Devs.
 lang: en
 layout: post
