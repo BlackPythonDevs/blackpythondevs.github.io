@@ -1,12 +1,12 @@
-from render_engine import Site, Page
+from render_engine import Site, Page, Collection
 
 navigation = [
-    {"text": "Home", "url": "/", "fa": "fa fa-home fa-fw"},
-    {"text": "Blog", "url": "/blog/", "fa": "fa fa-newspaper fa-fw"},
-    {"text": "About Us", "url": "/about/", "fa": "fa fa-info-circle fa-fw"},
-    {"text": "Events", "url": "/events/", "fa": "fa fa-calendar fa-fw"},
-    {"text": "Community", "url": "/community/", "fa": "fa fa-users fa-fw"},
-    {"text": "Support Us", "url": "/support/", "fa": "fa-solid fa-money-check-dollar"},
+    {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
+    {"text": "Blog", "url": "/blog.html", "fa": "fa fa-newspaper fa-fw"},
+    {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
+    {"text": "Events", "url": "/events.html", "fa": "fa fa-calendar fa-fw"},
+    {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
+    {"text": "Support Us", "url": "/support.html", "fa": "fa-solid fa-money-check-dollar"},
 ]
 
 app = Site()
@@ -18,7 +18,6 @@ app.site_vars["navigation"] = navigation
 @app.page
 class Index(Page):
     template = "index.html"
-    current = "nav-current"
     content_path = "index.html"
 
 
@@ -26,3 +25,12 @@ class Index(Page):
 class About(Page):
     content_path = "pages/about.html"
     template = "default.html"
+
+
+@app.collection
+class Events(Collection):
+    content_path = "events"
+    template = "default.html"
+    routes = ["./events"]
+    has_archive = True
+    archive_template = "event-list.html"
