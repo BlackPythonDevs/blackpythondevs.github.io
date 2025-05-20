@@ -16,34 +16,7 @@
   <h2>Support Black Python Devs</h2>
   <article>
     <div class="grid">
-      <div>
-        <script>
-          (function () {
-            if (document.getElementById("commitchange-script")) return;
-            var npo = 6464;
-            var script = document.createElement("script");
-            var first = document.getElementsByTagName("script")[0];
-            script.setAttribute("data-npo-id", npo);
-            script.id = "commitchange-script";
-            script.src = "https://us.commitchange.com/js/donate-button.v2.js";
-
-            script.onload = function () {
-              const observer = new MutationObserver(function (mutations) {
-                const iframe = document.querySelector(".commitchange-iframe-embedded");
-                if (iframe && !iframe.hasAttribute("title")) {
-                  iframe.setAttribute("title", "Donation form for Black Python Devs");
-                  observer.disconnect(); // Stop observing once we've set the title
-                }
-              });
-
-              observer.observe(document.body, { childList: true, subtree: true });
-            };
-
-            first.parentNode.insertBefore(script, first);
-          })();
-        </script>
-        <a data-amounts="25,50,100,250,500,1000,1500" class="commitchange-donate" data-designation="Black Python Devs" data-embedded=""></a>
-      </div>
+      <div>{% include "_includes/support_widget.html" %}</div>
       <div>
         <img class="donation-photo" src="/assets/images/gnome_powered_bpd_stacked.png" alt="Black Python Devs logo with GNOME Foundation sponsorship" />
       </div>

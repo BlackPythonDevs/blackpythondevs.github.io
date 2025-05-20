@@ -1,5 +1,9 @@
+import typing
+import pathlib
+import json
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
+from render_engine_parser import BasePageParser
 
 navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
@@ -29,7 +33,32 @@ class Index(Page):
 
 @app.page
 class About(Page):
-    content_path = "pages/about.html"
+    content_path = "about.html"
+    template = "default.html"
+
+
+@app.page
+class Support(Page):
+    parser = MarkdownPageParser
+    content_path = "support.md"
+    template = "support.html"
+
+    def __init__(
+        self,
+        content_path: pathlib.Path | str | None = None,
+        content: typing.Any | None = None,
+        Parser: type[BasePageParser] | None = None,
+    ) -> None:
+        super().__init__(content_path, content, Parser)
+        self.data = json.loads(
+            pathlib.Path("_data/foundational_supporters.json").read_text()
+        )
+
+
+@app.collection
+class Pages(Collection):
+    Parser = MarkdownPageParser
+    content_path = "pages"
     template = "default.html"
 
 

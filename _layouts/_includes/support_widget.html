@@ -1,0 +1,22 @@
+<script>
+  (function () {
+    if (document.getElementById("commitchange-script")) return;
+    var npo = 6464;
+    var script = document.createElement("script");
+    var first = document.getElementsByTagName["script"](0);
+    script.setAttribute("data-npo-id", npo);
+    script.id = "commitchange-script";
+    script.src = "https://us.commitchange.com/js/donate-button.v2.js";
+
+    // Add this to your existing CommitChange script
+    const observer = new MutationObserver(() => {
+      document.querySelectorAll(".commitchange-iframe-embedded").forEach((iframe) => {
+        if (!iframe.title) iframe.title = "Donation form for Black Python Devs";
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+
+    first.parentNode.insertBefore(script, first);
+  })();
+</script>
+<a data-amounts="25,50,100,250,500,1000,1500" class="commitchange-donate" data-designation="Black Python Devs" data-embedded=""></a>
