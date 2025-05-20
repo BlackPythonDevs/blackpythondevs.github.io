@@ -7,7 +7,11 @@ navigation = [
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
     {"text": "Events", "url": "/events", "fa": "fa fa-calendar fa-fw"},
     {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
-    {"text": "Support Us", "url": "/support.html", "fa": "fa-solid fa-money-check-dollar"},
+    {
+        "text": "Support Us",
+        "url": "/support.html",
+        "fa": "fa-solid fa-money-check-dollar",
+    },
 ]
 
 app = Site()
@@ -15,6 +19,7 @@ app.template_path = "_layouts"
 app.static_paths.add("assets")
 app.site_vars["locales"] = ["en"]
 app.site_vars["navigation"] = navigation
+
 
 @app.page
 class Index(Page):
@@ -37,13 +42,12 @@ class Events(Collection):
     has_archive = True
     archive_template = "event-list.html"
 
+
 @app.collection
 class Blog(Blog):
     Parser = MarkdownPageParser
-    subcollections = ["tags"]
-    template = "default.html"
+    template = "post.html"
+    content_path = "_posts"
     routes = ["./blog"]
     has_archive = True
-    items_per_page = 20
-    content_path = "_posts"
-
+    archive_template = "event-list.html"

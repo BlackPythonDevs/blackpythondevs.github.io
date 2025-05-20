@@ -22,6 +22,9 @@
     <main class="container" role="main" aria-label="Content">
 
       {% block content %}
+      {% if content %}
+      {{content}}
+      {% endif %}
       {% endblock %}
     </main>
     {%- include '_includes/footer.html' -%}

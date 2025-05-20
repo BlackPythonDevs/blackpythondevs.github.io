@@ -1,6 +1,7 @@
 {% extends "default.html" %}
 
-<section>
+{% block content %}
+<section class="container">
   {%- if featured_image -%}
   <div class="hero-banner">
     <img src="{{ featured_image }}" class="featured-image" alt="author image">
@@ -12,14 +13,11 @@
   {%- endif -%}
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
     <header class="post-header">
-      <h1 class="post-title p-name" itemprop="name headline">{{ title|e }}</h1>
+      <h1 class="post-title p-name" itemprop="name headline">{{ title }}</h1>
       <p class="post-meta">
-        {%- for author in author %}
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           <span class="p-author h-card" itemprop="name">{{ author }}</span>
         </span>
-        {%- if not loop.last %}, {% endif -%}
-        {%- endfor -%}
 
       </p>
     </header>
@@ -29,7 +27,7 @@
   </article>
 </section>
 
-{% set author = authors | selectattr("name", "equalto", author) | first %}
+{% set author = authors %}
 <section>
   {% if author and author.bio %}
   <hr />
