@@ -31,7 +31,6 @@ class Index(Page):
 class About(Page):
     content_path = "pages/about.html"
     template = "default.html"
-    routes = ["about"]
 
 
 @app.collection
