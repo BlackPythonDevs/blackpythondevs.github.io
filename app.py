@@ -39,7 +39,7 @@ class About(Page):
 
 @app.page
 class Support(Page):
-    parser = MarkdownPageParser
+    Parser = MarkdownPageParser
     content_path = "support.md"
     template = "support.html"
 
