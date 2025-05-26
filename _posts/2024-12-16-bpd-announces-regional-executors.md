@@ -1,5 +1,5 @@
 ---
-date: 2024-12-16 08:00:00
+date: 2024-12-16
 description: Black Python Devs is announcing a major change to leadership at the top
   level.
 lang: en

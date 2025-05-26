@@ -1,6 +1,6 @@
 ---
 author: Abigail Afi Gbadago
-date: 2024-10-13 08:00:00
+date: 2024-10-13
 description: Discover how Ghanaian developers turned their passion for coding into
   a career with inspiring stories of perseverance and innovation in Python.
 featured_image: /assets/images/bpd_ghana_connect1.webp

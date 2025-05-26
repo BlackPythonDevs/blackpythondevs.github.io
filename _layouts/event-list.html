@@ -1,13 +1,13 @@
 {% extends "default.html" %}
 {% block content %}
 <section>
-<h1>Blog Posts<h1>
+<h1>Blog Posts</h1>
     {% for page in pages %}
       <article>
         <h2><a href="{{ page }}.html">
           {{ page.title }}
         </a></h2>
-        <small>{{page.author}}</small>
+        <small>{{page.author}} {{page.date}}</small>
       </article>
     {% endfor %}
     </section>

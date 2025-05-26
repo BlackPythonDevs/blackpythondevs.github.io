@@ -1,6 +1,7 @@
 # Page Generation
 render-engine
 render-engine[cli]
+pyyaml
 
 
 # linting

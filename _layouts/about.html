@@ -1,11 +1,6 @@
----
-layout: default
-lang: en
-title: About Us
-slug: about
----
-
-<section>
+{% extends 'default.html' %}
+{% block content %}
+  <article>
   <h1>About Black Python Devs</h1>
 
   <p>Black Python Devs was created by its founder Jay Miller after seeing a trend of the same handful of Black developers speaking at major conferences, taking leadership positions, and dealing with the same challenges towards burnout.</p>
@@ -21,7 +16,7 @@ slug: about
   </p>
 
   <p>At PyCon US 2023 after an open space a Discord server called Black Python Devs was created where the community could continue to encourage this momentum and support one another.</p>
-</section>
+    </article>
 <section>
   <div class="grid">
     <article>
@@ -41,13 +36,12 @@ slug: about
     </article>
   </div>
 </section>
-<section>
   <h3>Leadership Team</h3>
 
   <div class="grid" style="margin: auto; text-align: center">
-    {% for leader in site.data.leadership.Executors %}
+    {% for leader in data['Executors'] %}
 
-    <article class="leadership-photo-container">
+      <article class="leadership-photo-container">
       {% if leader.image %}
       <img class="leadership-photo" alt="photo of {{leader.name}}" src="{{ leader.image }}" />
       {% endif %}
@@ -60,10 +54,10 @@ slug: about
     {% endfor %}
   </div>
 
-  <h3>Team Leads & Advisors</h3>
+  <h3>Team Leads</h3>
 
   <div class="grid" style="margin: auto; text-align: center">
-    {% for leader in site.data.leadership.Advisors %}
+    {% for leader in data['Leaders'] %}
 
     <article class="leadership-photo-container">
       {% if leader.image %}
@@ -74,20 +68,37 @@ slug: about
         {{ leader.title }}
       </p>
     </article>
-
     {% endfor %}
   </div>
+
+ <h3>Advisors</h3>
+  <article class="grid">
+  {% for group in (data.Advisors | sort | slice(3)) %}
+  <div>
+      <ul>
+      {% for leader in group %}
+      <li><strong>{{ leader }} </strong><br /></li>
+      {% endfor %}
+      </ul>
+  </div>
+  {% endfor %}
+  </article>
 
   <h3>BPD Leadership Council</h3>
 
   <article>
     <p>We also vet our actions through our Black Python Devs Leadership Council made up of members who serve as Python Community leaders on a local, regional, or global scale.</p>
+    <div class="grid">
+    {% for group in data.Council | sort | slice(3) %}
     <div>
-      {% assign council = site.data.leadership.Council | sort %} {% for leader in council %}
       <ul>
+      {% for leader in group %}
         <li><strong>{{ leader }}</strong></li>
-      </ul>
       {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
     </div>
   </article>
 </section>
+{% endblock %}

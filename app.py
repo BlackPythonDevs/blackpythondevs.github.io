@@ -1,3 +1,4 @@
+import yaml
 import typing
 import pathlib
 import json
@@ -33,8 +34,8 @@ class Index(Page):
 
 @app.page
 class About(Page):
-    content_path = "about.html"
-    template = "default.html"
+    template = "about.html"
+    data = yaml.safe_load(pathlib.Path("_data/leadership.yaml").read_text())
 
 
 @app.page
@@ -42,17 +43,7 @@ class Support(Page):
     Parser = MarkdownPageParser
     content_path = "support.md"
     template = "support.html"
-
-    def __init__(
-        self,
-        content_path: pathlib.Path | str | None = None,
-        content: typing.Any | None = None,
-        Parser: type[BasePageParser] | None = None,
-    ) -> None:
-        super().__init__(content_path, content, Parser)
-        self.data = json.loads(
-            pathlib.Path("_data/foundational_supporters.json").read_text()
-        )
+    data = json.loads(pathlib.Path("_data/foundational_supporters.json").read_text())
 
 
 @app.collection
@@ -78,4 +69,4 @@ class Blog(Blog):
     content_path = "_posts"
     routes = ["./blog"]
     has_archive = True
-    archive_template = "event-list.html"
+    archive_template = "blog-list.html"

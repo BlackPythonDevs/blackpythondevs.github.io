@@ -2,7 +2,7 @@
 title: Reflecting on the last two years with our BPD Leaders
 author: Jay Miller
 description:
-date: 2025-04-26 08:00:00
+date: 2025-04-26
 layout: post
 lang: en
 ---

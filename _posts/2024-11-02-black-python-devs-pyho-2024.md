@@ -1,6 +1,6 @@
 ---
 author: Kafui Alordo
-date: 2024-11-02 08:00:00
+date: 2024-11-02
 description: Discover how Black Python Devs is redefining the future of Python's open
   source ecosystem by creating a safe and inclusive space for underrepresented developers.
 featured_image: /assets/images/bpd_pyho_2024.jpg

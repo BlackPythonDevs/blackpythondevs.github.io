@@ -1,5 +1,5 @@
 ---
-date: 2024-01-25 08:00:00
+date: 2024-01-25
 description: Meet Marlene Mhangami, a trailblazing leader in the Python community
   recognized for her exceptional contributions as PSF Chair and DEI Working Group
   member, now highlighted as a Q3 2023 Python Fellow.
