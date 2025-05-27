@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="" />
     <title> | Index</title>
-    <link rel="stylesheet" href="/assets/css/bpd.css" />
     <link rel="stylesheet" href="/assets/css/pico.min.css" />
+    <link rel="stylesheet" href="/assets/css/pico.colors.min.css" />
+    <link rel="stylesheet" href="/assets/css/bpd.css" />
     <link rel="alternate" hreflang="en" href="/index.html" />
     <link rel="alternate" hreflang="x-default" href="/index.html" />
   </head>
@@ -51,15 +52,20 @@
 </header><main class="container" role="main" aria-label="Content">
 
 <div class="home">
-
+</div>
   
+<article class="grid hero">
+  <div>
+    <img style="max-width: 15rem; max-height:20rem;" src="/assets/images/bpd_stacked.png" />
+  </div>
+  <div style="">
+    <h1 class="hero-text">Creating stable leaders and communities for Black Pythonistas around the world.</h1>
+  </div>
+</article>
+
+
   <h2>Our Mission</h2>
 <div class="grid hero-section">
-  <article class="pico-background-sand-100">
-    <h3>Secure the bag</h3>
-    <p>Establish guidance, mentorship, and career support for <em>Black Python Devs</em> Members</p>
-    <p><a class="contrast" href="/about.html">Learn More</a></p>
-  </article>
   <article class="pico-background-pumpkin-650">
     <h3 class="pico-color-pumpkin-50">Diversity By Inclusion</h3>
     <p class="pico-color-pumpkin-50">We encourage members to get involved beyond participation. Members can become maintainers, maintainers become leaders.</p>
@@ -83,14 +89,16 @@
 
 <div class="grid">
   <article id="join-us">
-    <h2>Not a member yet?</h2>
-    <p>Are you a Black Python Developer</p>
     <div class="grid">
-      <a href="https://discord.gg/XUc3tFqCT3" role="button" class="pico-background-violet-650" style="color: #03dfff"
-        ><span><i class="fab fa-discord"></i></span> Join our Discord</a
-      >
-      <a href="https://www.linkedin.com/groups/14336241/" role="button" class="pico-background-azure-650" style="color: #03dfff"
-        ><span><i class="fab fa-linkedin"></i></span> Join our LinkedIn Group</a
+      <a href="https://discord.gg/XUc3tFqCT3" role="button" class="pico-background-violet-650">
+        <span style="margin: 0 1rem;">
+          <i  class="fab fa-discord"></i></span>
+        <span>
+        Join our Discord
+        </span>
+      </a>
+
+      <a href="https://www.linkedin.com/groups/14336241/" role="button" class="pico-background-azure-650 white-button" ><span style="margin: 0 1rem;"><i class="fab fa-linkedin"></i></span>Join our LinkedIn Group</a
       >
     </div>
   </article>
@@ -104,34 +112,21 @@
     if (document.getElementById("commitchange-script")) return;
     var npo = 6464;
     var script = document.createElement("script");
-    var first = document.getElementsByTagName["script"](0);
+    var first = document.getElementsByTagName("script")[0];
     script.setAttribute("data-npo-id", npo);
     script.id = "commitchange-script";
     script.src = "https://us.commitchange.com/js/donate-button.v2.js";
-
-    // Add this to your existing CommitChange script
-    const observer = new MutationObserver(() => {
-      document.querySelectorAll(".commitchange-iframe-embedded").forEach((iframe) => {
-        if (!iframe.title) iframe.title = "Donation form for Black Python Devs";
-      });
-    });
-    observer.observe(document.body, { childList: true, subtree: true });
-
     first.parentNode.insertBefore(script, first);
   })();
 </script>
-<a data-amounts="25,50,100,250,500,1000,1500" class="commitchange-donate" data-designation="Black Python Devs" data-embedded=""></a></div>
+<a class="commitchange-donate" data-amounts="15,25,50,100,250,500" data-embedded=""></a></div>
       <div>
         <img class="donation-photo" src="/assets/images/gnome_powered_bpd_stacked.png" alt="Black Python Devs logo with GNOME Foundation sponsorship" />
       </div>
     </div>
+      <small>Black Python Devs is a Non-Profit, fiscally hosted under the GNOME Foundation. GNOME does take a percentage for operating costs for our account and administration but at least 90% of proceeds goes directly to Black Python Devs General Purpose
+      Fund as detailed here.</small>
   </article>
-  <div>
-    <p>
-      Black Python Devs is a Non-Profit, fiscally hosted under the GNOME Foundation. GNOME does take a percentage for operating costs for our account and administration but at least 90% of proceeds goes directly to Black Python Devs General Purpose
-      Fund as detailed here.
-    </p>
-  </div>
   <section>
     <h3>Corporate Sponsors</h3>
     <div class="grid">
@@ -182,8 +177,7 @@
   <p>
     <a href="https://buttondown.email/black-python-devs/archive">Read the latest issue.</a>
   </p>
-</article></div>
-    </main><footer role="contentinfo">
+</article>    </main><footer role="contentinfo">
   <div class="wrapper">
     <div class="footer-grid">
       <!-- About Us Section -->
