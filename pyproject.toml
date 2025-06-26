@@ -1,0 +1,26 @@
+[project]
+name = "blackpythondevs-site"
+version = "0.1.0"
+description = "Black Python Devs community website"
+dependencies = ["render-engine[cli]==2025.6.1a1", "pyyaml"]
+
+[project.optional-dependencies]
+dev = [
+  "pre-commit",
+  "typer",
+  "rich",
+  "python-frontmatter",
+  "ephemeral_port_reserve",
+  "pytest-playwright",
+  "pytest-xprocess",
+  "axe-core-python==0.1.0",
+  "axe-playwright-python==0.1.4",
+]
+
+[render-engine.cli]
+module = "app"
+site = "app"
+
+[build-system]
+requires = ["setuptools", "wheel"]
+build-backend = "setuptools.build_meta"

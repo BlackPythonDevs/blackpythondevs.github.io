@@ -1,5 +1,4 @@
 import yaml
-import typing
 import pathlib
 import json
 from render_engine import Site, Page, Collection, Blog
@@ -47,6 +46,12 @@ class Support(Page):
     data = json.loads(pathlib.Path("_data/foundational_supporters.json").read_text())
 
 
+@app.page
+class UpcomingEvents(Page):
+    template = "events.html"
+    slug = "events"
+
+
 @app.collection
 class Pages(Collection):
     Parser = MarkdownPageParser
@@ -55,11 +60,11 @@ class Pages(Collection):
 
 
 @app.collection
-class Events(Collection):
+class BPDEvents(Collection):
     Parser = MarkdownPageParser
     content_path = "events"
     template = "default.html"
-    routes = ["./events"]
+    routes = ["./bpd-events"]
     has_archive = True
     archive_template = "event-list.html"
 
