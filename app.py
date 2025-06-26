@@ -8,7 +8,12 @@ navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
     {"text": "Blog", "url": "/blog", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
-    {"text": "Events", "url": "/events", "fa": "fa fa-calendar fa-fw"},
+    {"text": "BPD Events", "url": "/bpd-events", "fa": "fa fa-calendar fa-fw"},
+    {
+        "text": "Sponsored Events",
+        "url": "/sponsored-events.html",
+        "fa": "fa fa-handshake fa-fw",
+    },
     {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
     {
         "text": "Support Us",
@@ -46,9 +51,9 @@ class Support(Page):
 
 
 @app.page
-class UpcomingEvents(Page):
-    template = "events.html"
-    slug = "events"
+class SponsoredEvents(Page):
+    template = "sponsored-events.html"
+    slug = "sponsored-events"
 
 
 @app.collection

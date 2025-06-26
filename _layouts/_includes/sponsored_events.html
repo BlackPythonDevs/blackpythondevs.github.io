@@ -1,6 +1,6 @@
-{% if site.data.events.conferences.size > 0 %}
-<div class="conference grid">
-  {% for conference in site.data.events.conferences %}
+{% if site.data.events.sponsored_events.size > 0 %}
+<div class="sponsored_event grid">
+  {% for sponsored_event in site.data.events.sponsored_events %}
   <article>
     <h2>
       <a href="{{ conference.url }}">{{ conference.name }}</a>
