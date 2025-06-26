@@ -24,6 +24,7 @@ app.template_path = "_layouts"
 app.static_paths.add("assets")
 app.site_vars["locales"] = ["en"]
 app.site_vars["navigation"] = navigation
+app.site_vars["DATETIME_FORMAT"] = "%d %b %Y"
 
 
 @app.page
@@ -55,6 +56,7 @@ class Pages(Collection):
 
 @app.collection
 class Events(Collection):
+    Parser = MarkdownPageParser
     content_path = "events"
     template = "default.html"
     routes = ["./events"]
