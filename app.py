@@ -3,7 +3,6 @@ import pathlib
 import json
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
-from render_engine_parser import BasePageParser
 
 navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},

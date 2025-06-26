@@ -1,7 +1,4 @@
-
-{% block content %}
-{% for page in pages %}
-{%- if page.list_title -%}
+{% block content %} {% for page in pages %} {%- if page.list_title -%}
 <h2 class="post-list-heading">{{ list_title }}</h2>
 {% endif %}
 <article class="post-list">
@@ -18,8 +15,7 @@
 <div class="pager">
   <ul class="pagination">
     {%- if paginator.previous_page %}
-    <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page
-      }}</a></li>
+    <li><a href="{{ paginator.previous_page_path | relative_url }}" class="previous-page">{{ paginator.previous_page }}</a></li>
     {%- else %}
     <li>
       <div class="pager-edge">•</div>
@@ -37,7 +33,4 @@
     {%- endif %}
   </ul>
 </div>
-{%- endif %}
-
-    {% endfor %}
-{% endblock %}
+{%- endif %} {% endfor %} {% endblock %}

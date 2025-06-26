@@ -6,21 +6,20 @@
   <article>
     <h3>{{year}} Supporters</h3>
     <div class="grid">
-    {% for data_lists in data[year] | slice(3) %}
-    <section class="">
-      <div>
+      {% for data_lists in data[year] | slice(3) %}
+      <section class="">
+        <div>
           <ul>
-          {% for supporter in data_lists %}
-            <li>{{supporter}}</li> 
-          {% endfor %}
+            {% for supporter in data_lists %}
+            <li>{{supporter}}</li>
+            {% endfor %}
           </ul>
-      </div>
-    </section>
-    {% endfor %}
-  </div>
-</article>
+        </div>
+      </section>
+      {% endfor %}
+    </div>
+  </article>
   {% endfor %}
-    <p>You can view the archive of supporters<sup>*</sup> by year at https://github.com/blackpythondevs/blackpythondevs.</p>
-    <p>* <sub>Those who marked their desire to remain anonymous have not been included</sub></p>
-  </div>
+  <p>You can view the archive of supporters<sup>*</sup> by year at https://github.com/blackpythondevs/blackpythondevs.</p>
+  <p>* <sub>Those who marked their desire to remain anonymous have not been included</sub></p>
 </section>
