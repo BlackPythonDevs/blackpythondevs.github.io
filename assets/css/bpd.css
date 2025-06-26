@@ -435,7 +435,7 @@ a[role="button"] {
 }
 
 a.white-button {
-  color: #fff important!;
+  color: #fff !important;
 }
 
 img.leadership-photo {
