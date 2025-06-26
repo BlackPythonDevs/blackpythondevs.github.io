@@ -18,3 +18,5 @@ pytest-playwright
 pytest-xprocess
 axe-core-python==0.1.0
 axe-playwright-python==0.1.4
+Pillow==11.2.1
+
