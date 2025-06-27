@@ -17,7 +17,6 @@ updates:
     versioning-strategy: "auto"
     labels:
       - "dependencies"
-      - "ruby"
     commit-message:
       prefix: "bundle"
       include: "scope"
