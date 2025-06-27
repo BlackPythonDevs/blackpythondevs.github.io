@@ -2,7 +2,7 @@ Executors:
   - name: Jay Miller
     title: Executor
     image: https://github.com/kjaymiller.png
-    alt: photo of Jayj
+    alt: photo of Jay
 
   - name: Abigail Afi Gbadago
     title: Executor (Africa)
@@ -20,24 +20,24 @@ Executors:
     title: Vice-Executor (North America)
     image: /assets/images/keanya.webp
 
-Advisors:
+Leaders:
   - name: Damilola Oladele
     title: Documentation Lead
 
   - name: Doreen Nangira
-    title: Advisor, Code of Conduct Team Lead
-
-  - name: Benedict Koji Amofah
-    title: Advisor
-
-  - name: Ronald Maravanyika
-    title: Advisor
-
-  - name: Kudzayi Bamhare
-    title: Advisor
+    title: Code of Conduct Team Lead
 
   - name: Sandra Ashipala
     title: Welcoming Team
+
+Advisors:
+  - Benedict Koji Amofah
+  - Ronald Maravanyika
+  - Kudzayi Bamhare
+  - Kojo Idrissa
+  - Carol Willing
+  - Jeff Triplett
+  - Dr. Kari L. Jordan
 
 Council:
   - Dawn Wages

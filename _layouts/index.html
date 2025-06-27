@@ -1,17 +1,29 @@
----
-layout: default
----
+{% extends "default.html" %}
+
+{% block content %}
 <div class="home">
-  {% assign t = site.data.locales[page.lang][page.lang] %} {% if page.title %} {% assign header = page.title %} {% else %} {% assign header = site.title %} {% endif %}
-  <article class="hero">
-    <div class="hero-text">{{ t.index.lead }}</div>
-  </article>
+  {% if title %}
+    {% set header = title %}
+  {% else %}
+    {% set header = site.title %}
+  {% endif %}
+</div>
+
+<article class="grid hero">
+  <div>
+    <img style="max-width: 15rem; max-height:20rem;" src="/assets/images/bpd_stacked.png" />
+  </div>
+  <div style="">
+    <h1 class="hero-text">Helping build communities for Black Pythonistas around the world.</h1>
+  </div>
+</article>
+
+
   {{ content }}
 
-  <img src="{{'/assets/images/dcus.jpg' | relative_url }}"  alt="DjangoCon US 2023"/>
 
-  {%- include latest-posts.html -%}
-  {%- include join_us.html -%}
-  {%- include partnerships.html -%}
-  {%- include newsletter_form.html newsletter_title="Learn what the community and its members are doing from our newsletter!" -%}
-</div>
+  {% include "_includes/latest-posts.html" %}
+  {% include "_includes/join_us.html" %}
+  {% include "_includes/partnerships.html" %}
+  {% include "_includes/newsletter_form.html" %}
+{% endblock %}

@@ -389,6 +389,10 @@ footer {
   border: 1px solid var(--minima-border-color-01);
 }
 
+a[role="button"] {
+  color: var(--pico-primary-inverse) !important;
+}
+
 .social-media-list li a:hover {
   border-color: var(--minima-border-color-02);
 }
@@ -416,25 +420,22 @@ footer {
 
 .hero {
   width: 100%;
-  /* background-color: #222; */
   background-image: url("/assets/images/hero-bpd-background.jpg");
-  background-color: RGBA(25, 25, 25, 0.8);
-  height: 25rem;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
 }
 
-.hero > p {
-  color: #fff;
-  font-size: larger;
+.hero > div {
+  margin: auto;
 }
 
 .hero-text {
   font-size: 2rem;
   font-weight: 100;
-  color: #fff;
   font-style: italic;
+  color: var(--pico-primary-inverse);
+}
+
+a.white-button {
+  color: #fff !important;
 }
 
 img.leadership-photo {

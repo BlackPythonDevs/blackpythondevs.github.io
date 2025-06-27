@@ -1,0 +1,24 @@
+{% if site.data.events.sponsored_events.size > 0 %}
+<div class="sponsored_event grid">
+  {% for sponsored_event in site.data.events.sponsored_events %}
+  <article>
+    <h2>
+      <a href="{{ conference.url }}">{{ conference.name }}</a>
+    </h2>
+    <h5>{{ conference.speaker }}</h5>
+    <p>
+      <strong>{{ conference.start_date }} - {{ conference.end_date }}</strong>
+      {% if conference.conference_location != "_No response_" %}
+      <br />
+      <strong>{{ conference.location }}</strong>
+    </p>
+    {% endif %}
+    <p>{{ conference.description }}</p>
+  </article>
+  {% endfor %}
+</div>
+{% else %}
+<b>No conferences</b>
+{% endif %}
+
+<hr />

@@ -1,0 +1,13 @@
+<script>
+  (function () {
+    if (document.getElementById("commitchange-script")) return;
+    var npo = 6464;
+    var script = document.createElement("script");
+    var first = document.getElementsByTagName("script")[0];
+    script.setAttribute("data-npo-id", npo);
+    script.id = "commitchange-script";
+    script.src = "https://us.commitchange.com/js/donate-button.v2.js";
+    first.parentNode.insertBefore(script, first);
+  })();
+</script>
+<a class="commitchange-donate" data-amounts="15,25,50,100,250,500" data-embedded=""></a>

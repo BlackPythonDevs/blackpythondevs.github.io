@@ -1,5 +1,8 @@
-# page-generation
-gh-issues
+# Page Generation
+render-engine
+render-engine[cli]
+pyyaml
+
 
 # linting
 pre-commit

@@ -1,0 +1,20 @@
+{% extends "default.html" %}
+{% block content %}
+<section>
+<h1>Blog Posts</h1>
+    {% for page in pages %}
+      <article class="grid">
+        {% if page.featured_image %}<div><img class="featured-image" src="{{page.featured_image}}" /></div>{% endif %}
+        <div>
+          <h2><a href="{{ page }}.html">
+              {{ page.title }}
+          </a></h2>
+          {% if page.description %}
+          <p>{{page.description}}</p>
+          {% endif %}
+          <small>{{page.author}} - <strong>{{page.date | format_datetime}}</strong></small>
+        </div>
+      </article>
+    {% endfor %}
+    </section>
+{% endblock %}
