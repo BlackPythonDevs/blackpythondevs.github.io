@@ -1,3 +1,5 @@
+import time
+import socket
 import pathlib
 from typing import Generator
 
@@ -17,20 +19,33 @@ def page_url(xprocess, url_port):
     url, port = url_port
 
     class Starter(ProcessStarter):
-        timeout = 40
         # Start the process
-        args = [
-            "bundle",
-            "exec",
-            "jekyll",
-            "serve",
-            "--source",
-            pathlib.Path().cwd().absolute(),
-            "--port",
-            port,
-        ]
+        args = ["render-engine", "serve"]
         terminate_on_interrupt = True
-        pattern = "Server running... press ctrl-c to stop."
+
+        def startup_check(self):
+            # Polling mechanism for a more robust startup check
+            max_attempts = 5
+            attempt_interval = 1  # seconds
+
+            for _ in range(max_attempts):
+                try:
+                    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+                    sock.connect(("localhost", port))
+                    sock.sendall(b"ping\n")
+                    response = sock.recv(
+                        1024
+                    )  # Receive enough bytes to get the full response
+                    if response == b"pong!":  # Compare to bytes
+                        return True
+                except (ConnectionRefusedError, OSError):
+                    # Connection not yet ready, or process not fully up
+                    pass
+                finally:
+                    sock.close()  # Ensure socket is closed
+
+                time.sleep(attempt_interval)
+            return False  # Failed to connect after max_attempts
 
     xprocess.ensure("page_url", Starter)
 

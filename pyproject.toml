@@ -2,7 +2,7 @@
 name = "blackpythondevs-site"
 version = "0.1.0"
 description = "Black Python Devs community website"
-dependencies = ["render-engine[cli]==2025.6.1a1", "pyyaml"]
+dependencies = ["render-engine[cli]==2025.6.1b2", "pyyaml"]
 
 [project.optional-dependencies]
 dev = [
