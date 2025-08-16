@@ -2,6 +2,7 @@ index.html
 assets/js/jquery.min.js
 assets/js/index.js
 _layouts/*.html
+/_layouts/_includes/pitch_deck.html
 _includes/conferences.html
 _includes/header.html
 _includes/social.html
