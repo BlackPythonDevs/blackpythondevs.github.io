@@ -1,20 +1,38 @@
 {% extends 'default.html' %}
 {% block content %}
 <section>
-  <h1>Upcoming Conferences</h1>
+  <h1>Supported Events</h1>
 
-  <p>Black Python Devs aims to partner with Python conferences around the world to increase the visibility and opportunities for Black leadership in the Python community. We understand that when you put qualified individuals on stage and at conferences it increases their value and opportunities for employment.</p>
+  <p>Black Python Devs aims to partner with Python conferences and events around the world to increase the visibility and opportunities for Black developers and leaders in the Python community.</p>
 
-  <p>Here are some highlighted upcoming conferences where you can find Black Python Developers involved on stage or behind the scenes</p>
+  <p>We believe that sponsorships does the following:</p>
+  <ul>
+    <li>👫 - raises awareness amongst our community to attend events.</li>
+    <li>🌐 - supports Python events that are accessible to black communities</li>
 
-  {% for conference in conferences %}
-  {% include '_includes/conferences.html' %}
-  {% endfor %}
+  </ul>
+  <p>Here is a look at events this year that we've supported:</p>
+  </section>
 
-  <h2>Regular Meetups</h2>
+  <section>
+    <h2>Events Sponsored in {{year}}</h2>
+  <section class="grid">
+    {% for segment in data[year] | sort %}
+    <article>
+    <h3>{{segment}}</h3>
+      {% for event in data[year][segment] | sort %}
+        <p>{{event}}</p>
+      {% endfor %}
+    </article>
+    {% endfor %}
+  </section>
 
-  <p>Join us every Friday for a cup of coffee and a chance to code with fellow Python enthusiasts. Our community is open to all levels of experience, from beginners to experts.</p>
-
-  <p>We'll be discussing the latest trends in Python development, sharing tips and tricks, and working on projects together. Whether you're looking to learn something new or just want to hang out with like-minded people, this is the perfect opportunity to do so. We look forward to seeing you there!</p>
+  <p>Interested in Black Python Devs supporting your event. Review our <a href="https://github.com/BlackPythonDevs/blackpythondevs/blob/main/policies/event-grants.md#22-budget-considerations">Grant Criteria</a> and email your prospectus to <a href="mailto:sponsorships@blackpythondevs.com">sponsorships@blackpythondevs.com</a></p>
 </section>
-{% endblock %}
+
+<section>
+<h2>Regular Meetups</h2>
+
+  <p>Join us every Friday for a cup of coffee and a chance to code with fellow Python enthusiasts. Our community is open to all levels of experience, sharing tips and tricks, and working on projects together. Whether you're looking to learn something new or just want to hang out with like-minded people, this is the perfect opportunity to do so. We look forward to seeing you there!</p>
+</section>
+{%endblock %}

@@ -1,6 +1,9 @@
-import yaml
-import pathlib
+import datetime
 import json
+import pathlib
+
+import yaml
+
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
 
@@ -54,6 +57,8 @@ class Support(Page):
 class SponsoredEvents(Page):
     template = "sponsored-events.html"
     slug = "sponsored-events"
+    data = json.loads(pathlib.Path("_data/sponsored_events.json").read_text())
+    template_vars = {"year": str(datetime.date.today().year)}
 
 
 @app.collection
