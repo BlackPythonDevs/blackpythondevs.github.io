@@ -1,0 +1,8 @@
+{
+  "2024": ["PyTexas", "PyOhio", "PyCon Africa", "PyCon South Africa", "PyCon Zimbabwe", "PyCon Nigeria", "IndabaX - Botswana", "PyCon Uganda", "PyHo - Ghana"],
+  "2025": {
+    "Africa": ["Django Girls - Ho", "PyCon Africa", "DjangoCon Africa", "IndabaX - Botswana", "PyCon Namibia", "PyTogo", "Zero to Hero Mentorship Program - Nigeria"],
+    "North America": ["PyTexas Foundation", "PyOhio", "PyBeach"],
+    "South America": ["Ubuntu Tech - Colombia", "Django Girls - Colombia"]
+  }
+}
