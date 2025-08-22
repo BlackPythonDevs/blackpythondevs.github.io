@@ -14,16 +14,28 @@
   <p>Here is a look at events this year that we've supported:</p>
   </section>
 
+
   <section>
-    <h2>Events Sponsored in {{year}}</h2>
-  <section class="grid">
-    {% for segment in data[year] | sort %}
-    <article>
-    <h3>{{segment}}</h3>
-      {% for event in data[year][segment] | sort %}
-        <p>{{event}}</p>
+    <h2>Events Sponsored by year</h2>
+    {% for segment_year in data | sort(reverse=True) %}
+    {% if segment_year == year %}
+    <details name="{{segment_year}}" open>
+    {% else %}
+    <details name="{{segment_year}}">
+    {% endif %}
+    <summary>{{segment_year}}</summary>
+      <section class="grid">
+      {% for segment in data[segment_year] | sort %}
+      <article>
+      <h3>{{segment}}</h3>
+        {% for event in data[segment_year][segment] | sort %}
+          <p>{{event}}</p>
+        {% endfor %}
+      </article>
       {% endfor %}
-    </article>
+      </section>
+    </details>
+    <hr/>
     {% endfor %}
   </section>
 
