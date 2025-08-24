@@ -70,6 +70,7 @@ class Pages(Collection):
 
 @app.collection
 class BPDEvents(Collection):
+    title = "BPD Events"
     Parser = MarkdownPageParser
     content_path = "events"
     template = "default.html"
