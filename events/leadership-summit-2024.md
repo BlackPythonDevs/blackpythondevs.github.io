@@ -1,7 +1,7 @@
 ---
 layout: event
 lang: en
-title: Black Python Devs Leadership Summit
+title: Black Python Devs Leadership Summit 2024
 tito_event: black-python-devs/leadership-summit
 event_banner: "/assets/images/bpd-summit-card-deck.jpg"
 commitchange_campaign_id: 5515
