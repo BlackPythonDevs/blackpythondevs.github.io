@@ -1,4 +1,3 @@
-import itertools
 import datetime
 import json
 import pathlib
@@ -10,7 +9,7 @@ from render_engine_markdown import MarkdownPageParser
 
 navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
-    {"text": "Blog", "url": "/blog", "fa": "fa fa-newspaper fa-fw"},
+    {"text": "Blog", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
     {"text": "BPD Events", "url": "/bpd-events", "fa": "fa fa-calendar fa-fw"},
     {
@@ -88,12 +87,3 @@ class Blog(Blog):
     has_archive = True
     archive_template = "blog-list.html"
     items_per_page = 10
-
-
-if __name__ == "__main__":
-    blog = app.route_list["blog"]
-    posts = list(blog)
-    batched_posts = list(itertools.batched(posts, 10))
-    print(vars(list(blog.archives)[1]))
-    print(f"num of posts: {len(posts)}")
-    print(len(batched_posts))
