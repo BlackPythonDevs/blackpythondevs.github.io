@@ -3,7 +3,7 @@
   <h1 class="site-title">
     <a class="logo-text" href="/index.html"><img src="{{ '/assets/images/black_python_devs_logo-horizontal-white.png' }}" alt="Black Python Devs" /></a>
   </h1>
-  <nav class="site-navigation" aria-label="Main navigation">
+  <nav class="site-navigation" aria-label="Main navigation" style="padding-right: 2em">
     <div class="site-navigation-wrap">
       <ul class="menu" role="menu">
         {% for item in navigation %} {% set current = nil %} {% set nav_lang = nil %} {% if url == item.url %} {% set current = 'nav-current' %} {% endif %} {% if lang != 'en' %} {% set nav_lang = lang %} {% endif %}

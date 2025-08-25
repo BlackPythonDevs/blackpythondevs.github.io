@@ -9,7 +9,7 @@ from render_engine_markdown import MarkdownPageParser
 
 navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
-    {"text": "Blog", "url": "/blog", "fa": "fa fa-newspaper fa-fw"},
+    {"text": "Blog", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
     {"text": "BPD Events", "url": "/bpd-events", "fa": "fa fa-calendar fa-fw"},
     {
@@ -87,3 +87,4 @@ class Blog(Blog):
     routes = ["./blog"]
     has_archive = True
     archive_template = "blog-list.html"
+    items_per_page = 10
