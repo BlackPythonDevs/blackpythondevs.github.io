@@ -93,7 +93,7 @@ requires-dist = [
     { name = "pytest-xprocess", marker = "extra == 'dev'" },
     { name = "python-frontmatter", marker = "extra == 'dev'" },
     { name = "pyyaml" },
-    { name = "render-engine", extras = ["cli"], specifier = "==2025.6.1b2" },
+    { name = "render-engine", extras = ["cli"], specifier = ">=2025.7.1a1" },
     { name = "rich", marker = "extra == 'dev'" },
     { name = "typer", marker = "extra == 'dev'" },
 ]
@@ -573,7 +573,7 @@ wheels = [
 
 [[package]]
 name = "render-engine"
-version = "2025.6.1b2"
+version = "2025.7.1a1"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "jinja2" },
@@ -587,9 +587,9 @@ dependencies = [
     { name = "render-engine-parser" },
     { name = "rich" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/23/4a/65092dc4a79566de876488763da363c6f7712a84a6df4b55412ffcaecac7/render_engine-2025.6.1b2.tar.gz", hash = "sha256:b28fc15effaacb6c1c2a80faf8ef2200f858976dfa5ccc0e8dbc0668175b9972", size = 11829992, upload-time = "2025-06-18T13:29:58.266Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/1e/13/d20ff046b5df43bd4fd91c3114aa25f7281c53f52fad17428a7472553a68/render_engine-2025.7.1a1.tar.gz", hash = "sha256:06eff7d7109ac6406f2a189c8b54622b4a1c53210343d61d2d035ad729ba2d16", size = 11830760, upload-time = "2025-08-25T00:50:55.707Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/95/db/8d6d1e8577099d10c95a71acb46c29058af97879fff79d182ba9f6d2eeeb/render_engine-2025.6.1b2-py3-none-any.whl", hash = "sha256:5d75bfccecdc00e6933d2f6bb428411e9634d99740e80b55280bb9311d79ec6c", size = 35777, upload-time = "2025-06-18T13:29:55.988Z" },
+    { url = "https://files.pythonhosted.org/packages/4a/4c/0dc4b8b841d2122cdec51e7f6c0ad25c1a2f02e6fa1c2f927d3f3a539a21/render_engine-2025.7.1a1-py3-none-any.whl", hash = "sha256:0f2fda96b1c4c8eaac774e5b6171b2247e026d5c7cbd125638c8fbbc8af95b4a", size = 36281, upload-time = "2025-08-25T00:50:53.913Z" },
 ]
 
 [package.optional-dependencies]

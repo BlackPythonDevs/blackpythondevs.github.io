@@ -1,3 +1,4 @@
+import itertools
 import datetime
 import json
 import pathlib
@@ -86,3 +87,13 @@ class Blog(Blog):
     routes = ["./blog"]
     has_archive = True
     archive_template = "blog-list.html"
+    items_per_page = 10
+
+
+if __name__ == "__main__":
+    blog = app.route_list["blog"]
+    posts = list(blog)
+    batched_posts = list(itertools.batched(posts, 10))
+    print(vars(list(blog.archives)[1]))
+    print(f"num of posts: {len(posts)}")
+    print(len(batched_posts))
