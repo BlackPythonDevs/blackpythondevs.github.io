@@ -31,6 +31,7 @@ app.static_paths.add("assets")
 app.site_vars["locales"] = ["en"]
 app.site_vars["navigation"] = navigation
 app.site_vars["DATETIME_FORMAT"] = "%d %b %Y"
+app.site_vars["year"] = str(datetime.date.today().year)
 
 
 @app.page
@@ -58,7 +59,7 @@ class SponsoredEvents(Page):
     template = "sponsored-events.html"
     slug = "sponsored-events"
     data = json.loads(pathlib.Path("_data/sponsored_events.json").read_text())
-    template_vars = {"year": str(datetime.date.today().year)}
+    template_vars = {}
 
 
 @app.collection
