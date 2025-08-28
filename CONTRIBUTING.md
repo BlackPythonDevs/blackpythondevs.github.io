@@ -3,8 +3,8 @@
 Follow these steps and note these guidelines to begin contributing:
 
 1. First step is to set up the local development environment.
-1. Bug fixes are always welcome. Start by reviewing the [list of bugs](https://github.com/BlackPythonDevs/blackpythondevs.github.io/issues).
-1. A good way to easily start contributing is to pick and work on a [good first issue](https://github.com/BlackPythonDevs/blackpythondevs.github.io/labels/good%20first%20issue). We try to make these issues as clear as possible and provide basic info on how the code should be changed, and if something is unclear feel free to ask for more information on the issue.
+2. Bug fixes are always welcome. Start by reviewing the [list of bugs](https://github.com/BlackPythonDevs/blackpythondevs.github.io/issues).
+3. A good way to easily start contributing is to pick and work on a [good first issue](https://github.com/BlackPythonDevs/blackpythondevs.github.io/labels/good%20first%20issue). We try to make these issues as clear as possible and provide basic info on how the code should be changed, and if something is unclear feel free to ask for more information on the issue.
 
 # Diagram of the infrastructure in use
 
@@ -14,55 +14,70 @@ Below are some diagrams to best explain the file structure of the website, the d
 
 The diagram below illustrates the main navigation structure of BPD website, showing how the homepage `(Index)` connects to various sections, including the `Home`, `Blog`, `About Us`, `Events`, and `Community`. Each blog article, represented as `Article1` and `Article2`, is linked directly from the `Blog` section.
 
-```mermaid
-flowchart TD
-    Index --> Home
-    Index --> Blog
-    Blog --> Article1
-    Blog --> Article2
-    Index --> AboutUs
-    Index --> Events
-    Index --> Community
 ```
+Website Structure:
+Index/
+├── Home
+├── Blog/
+│   ├── Article1
+│   └── Article2
+├── About Us
+├── Events
+├── Sponsored Events
+├── Community
+└── Sponsor Us
+```
+
+TTT
 
 ## Development structure
 
 The diagram below outlines the file structure of the development environment. The root node represents the main directory, containing essential files and folders like `_config.yml`, `_posts`, `_layouts`, `_includes`, `_data`, `_articles`, and `assets`. Each folder contains further organization of specific files. This will aid contributors in understanding how the project is organized and where different components are located.
 
-```mermaid
-    flowchart TD
-    root --> _config.yml
-    root --> _posts/
-    root --> _layouts/
-    root --> _includes/
-    root --> _data/
-    root --> _articles/
-    root --> assets/
-    root --> about.md
-    root --> index.html
-    root --> tests/
-    _posts/ --> post1
-    _posts/ --> post2
-    assets/ --> css/
-    assets/ --> images/
-    assets/ --> js/
+```
+Development Structure:
+root/
+├── _archive # old pages that should mostly be ignored
+├── _posts/
+│   ├── post1
+│   └── post2
+├── _layouts/
+│   └── _includes/
+├── _data/ # This is where yaml and json files live
+│   ├── data_file1
+│   └── data_file2
+├── assets/ # static files that will be copied over
+│   ├── css/
+│   ├── images/
+│   └── js/
+├── pages/ # static pages represented in Render Engine und
+├── about.md # content pages
+├── index.html
+└── tests/
 ```
 
-## How some information are generated
+## How Pages are generated
+
+The website uses render engine to read `app.py`. You can learn more about Render Engine on their [docs page](https://render-engine.readthedocs.io/en/stable/). The important locations to know.
+
+`app.py` is the instruction file for render engine.
 
 The diagram below explains how information is generated for the about page, showing how the `about.md`(source content) connects with other contents, templates and configuration files. The `about.md` file links to `_layouts/default.html` and `_includes/header.html` and `footer.html`, which define the page layout and thus generates a `about.html` this html file can be styled and scripted with files in the `assets/` folder. This diagram clarifies the rendering process and how different files work together to create the final output for the about page.
 
-```mermaid
-    flowchart TD
-    about.md --> _layouts/default.html
-    about.md --> _config.yml
-    _layouts/default.html --> _includes/header.html
-    _layouts/default.html --> _includes/footer.html
-    _layouts/default.html --> about.html
-    _config.yml --> about.html
-    about.html --> assets/css/style.css
-    about.html --> assets/js/script.js
+```python
+@app.page
+class About(Page):
+    template = "about.html"
+    data = yaml.safe_load(pathlib.Path("_data/leadership.yaml").read_text())
 ```
+
+```
+
+```
+
+The `@app.page` tells Render Engine that we're build a single page vs a collection of pages.
+
+The `class About(Page):` tells us about the Page object. Attributes will pass information on render engine and the jinja template that will be loaded
 
 # How to Contribute
 
@@ -107,55 +122,33 @@ The diagram below explains how information is generated for the about page, show
 
   ![Black Python Devs Codespace](/assets/images/blackpythondevs_codespace.png)
 
-- Now that you have the code editor set up, you need to install the dependencies. To do this, you have to open the code editor's terminal and run the command `bundle install`.
+## Use UV
 
-- The easiest way to open the terminal is to click on the 3 horizontal lines (also known as hamburger) at the top left of the code editor > Terminal > New Terminal:
+[uv](https://astral.sh/uv) is a Python package and project manager.
 
-  ![Terminal starter](/assets/images/terminal_starter3.png)
+This project uses uv as it is currently the easiest way for developers with different levels of comfort of Python to quickly and safely get started.
 
-- In the terminal run the command `bundle install`.
-
-  ![Bundle install terminal](/assets/images/bundle_install_terminal.png)
-
-- Afterwards, run the command `pip install -r requirements.txt` to install the python dev dependencies.
-
-  ![Pip install terminal](/assets/images/pip_install_terminal.png)
+- Install the dependencies. In the terminal, at the project root, open the code editor's terminal and run the command `uv sync --extra dev`.
 
 - Install the pre-commit hooks to automatically format the code before committing. Run the command `pre-commit install`:
 
   ![Pre-commit install terminal](/assets/images/pre-commit_install_terminal.png)
 
-- After installing the dependencies, its time to run the application. We do this by running the command `bundle exec jekyll serve --detach` or run the default **Build Task** <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>:
+- After installing the dependencies, its time to run the application. We do this by running the command `uv run render-engine serve`
 
-  ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
+- The server address shows `http://127.0.0.1:8000`.
 
-- The server address shows `http://127.0.0.1:4000`. This is the address for any local computer so this server will be wrong since the application is running on a remote computer so we have to get the address of that computer. We can get the address by clicking on the Ports tab next to the Terminal:
+> [!NOTE] REMINDER: If using codespaces you will need to forward the port <kbd>Ctrl</kbd> + Click on the Forwarded Address assigned to Port 8000. This will open the running application in a new tab:
 
-  ![Codespace ports](/assets/images/codespace_ports2.png)
-
-- <kbd>Ctrl</kbd> + Click on the Forwarded Address assigned to Port 4000. This will open the running application in a new tab:
-
-  ![Running page](/assets/images/running_page.png)
+![Running page](/assets/images/running_page.png)
 
 ### Testing Changes (create new tests as needed)
 
-- To run the test suites for the codebase
+- Run all tests in the test-suite with the command `uv run python -m pytest`:
 
-  - Ensure the site is running locally with `bundle exec jekyll serve --detach`. This will run the server in the background, and any content changes will immediately reflect on the site.
-
-    ![Jekyll serve terminal](/assets/images/jekyll_serve_terminal.png)
-
-    - If you need to restart the server, you can run `pkill -f jekyll` to stop the server and then run `bundle exec jekyll serve --detach` to start the server again.
-
-  - Run all tests in the test-suite with the command `python3 -m pytest`:
-
-    ![Pytest terminal](/assets/images/pytest_run_terminal.png)
+  ![Pytest terminal](/assets/images/pytest_run_terminal.png)
 
 ### Pushing Changes
-
-- Run `pre-commit run --all` to ensure your code is formatted and linted correctly before pushing your changes.
-
-  ![Pre-commit run terminal](/assets/images/pre-commit_run_terminal.png)
 
 - Run `git commit -m "<Your commit message>"` to commit your changes.
 
