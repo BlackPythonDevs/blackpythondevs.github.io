@@ -28,7 +28,6 @@ Index/
 └── Sponsor Us
 ```
 
-TTT
 
 ## Development structure
 
