@@ -135,7 +135,7 @@ This project uses uv as it is currently the easiest way for developers with diff
 
 - The server address shows `http://127.0.0.1:8000`.
 
-> [!NOTE] REMINDER: If using codespaces you will need to forward the port <kbd>Ctrl</kbd> + Click on the Forwarded Address assigned to Port 8000. This will open the running application in a new tab:
+> [!NOTE] REMINDER: If using Codespaces you will need to forward the port <kbd>Ctrl</kbd> + Click on the Forwarded Address assigned to Port 8000. This will open the running application in a new tab:
 
 ![Running page](/assets/images/running_page.png)
 
