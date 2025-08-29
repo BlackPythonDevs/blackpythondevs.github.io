@@ -131,7 +131,7 @@ This project uses uv as it is currently the easiest way for developers with diff
 
   ![Pre-commit install terminal](/assets/images/pre-commit_install_terminal.png)
 
-- After installing the dependencies, its time to run the application. We do this by running the command `uv run render-engine serve`
+- After installing the dependencies, it's time to run the application. We do this by running the command `uv run render-engine serve`
 
 - The server address shows `http://127.0.0.1:8000`.
 
