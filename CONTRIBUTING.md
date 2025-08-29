@@ -72,8 +72,6 @@ class About(Page):
 
 ```
 
-```
-
 The `@app.page` tells Render Engine that we're build a single page vs a collection of pages.
 
 The `class About(Page):` tells us about the Page object. Attributes will pass information on render engine and the jinja template that will be loaded
