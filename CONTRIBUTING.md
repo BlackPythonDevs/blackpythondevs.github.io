@@ -49,7 +49,7 @@ root/
 │   ├── css/
 │   ├── images/
 │   └── js/
-├── pages/ # static pages represented in Render Engine und
+├── pages/ # static pages represented in Render Engine under pages/
 ├── about.md # content pages
 ├── index.html
 └── tests/
