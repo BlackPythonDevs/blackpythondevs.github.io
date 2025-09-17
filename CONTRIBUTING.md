@@ -28,7 +28,6 @@ Index/
 └── Sponsor Us
 ```
 
-
 ## Development structure
 
 The diagram below outlines the file structure of the development environment. The root node represents the main directory, containing essential files and folders like `_config.yml`, `_posts`, `_layouts`, `_includes`, `_data`, `_articles`, and `assets`. Each folder contains further organization of specific files. This will aid contributors in understanding how the project is organized and where different components are located.
@@ -162,15 +161,17 @@ This project uses uv as it is currently the easiest way for developers with diff
 Events are currently created manually by adding entries to `_data/events.json`. To create a conference, use the following JSON structure:
 
 ```
+
 {
-  "name": "Conference name",
-  "url": "https://blackpythondevs.com/",
-  "start_date": "2025-02-10",
-  "end_date": "2025-09-20",
-  "location": "Thailand",
-  "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit ...",
-  "speaker": "Tim Osahenru"
+"name": "Conference name",
+"url": "https://blackpythondevs.com/",
+"start_date": "2025-02-10",
+"end_date": "2025-09-20",
+"location": "Thailand",
+"description": "Lorem ipsum dolor sit amet consectetur adipiscing elit ...",
+"speaker": "Tim Osahenru"
 }
+
 ```
 
 ### Regular meetups
@@ -178,20 +179,24 @@ Events are currently created manually by adding entries to `_data/events.json`. 
 We have two recurring meetups: **Coffee and Code** and our **Monthly Meetup**. These events remain consistent in format, with only the **date, time, and speaker** subject to change. Updates can be made within the `meetups` list:
 
 ```
- {
-      "name": "Coffee and Code",
-      "date": "2023-09-20",
-      "location": "Online (Discord)",
-      "description": "A casual meetup for developers to code together.",
-      "speaker": "Jay Miller",
-      "topic": "Web Development"
-    },
-    {
-      "name": "Monthly meetup",
-      "date": "2023-09-20",
-      "location": "Remote",
-      "description": "Share ideas, and network over coffee.",
-      "speaker": "Jay Miller",
-      "topic": "Open Source"
-    }
+
+{
+"name": "Coffee and Code",
+"date": "2023-09-20",
+"location": "Online (Discord)",
+"description": "A casual meetup for developers to code together.",
+"speaker": "Jay Miller",
+"topic": "Web Development"
+},
+{
+"name": "Monthly meetup",
+"date": "2023-09-20",
+"location": "Remote",
+"description": "Share ideas, and network over coffee.",
+"speaker": "Jay Miller",
+"topic": "Open Source"
+}
+
+```
+
 ```
