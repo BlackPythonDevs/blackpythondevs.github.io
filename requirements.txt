@@ -17,5 +17,5 @@ ephemeral_port_reserve
 pytest-playwright
 pytest-xprocess
 axe-core-python==0.1.0
-axe-playwright-python==0.1.4
-Pillow==11.2.1
+axe-playwright-python==0.1.5
+Pillow==11.3.0
