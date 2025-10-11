@@ -2,8 +2,6 @@ import datetime
 import json
 import pathlib
 
-import yaml
-
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
 
@@ -18,6 +16,7 @@ navigation = [
         "fa": "fa fa-handshake fa-fw",
     },
     {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
+    {"text": "Discounts", "url": "/partnerships.html", "fa": "fa-regular fa-handshake"},
     {
         "text": "Support Us",
         "url": "/support.html",
@@ -43,7 +42,6 @@ class Index(Page):
 @app.page
 class About(Page):
     template = "about.html"
-    data = yaml.safe_load(pathlib.Path("_data/leadership.yaml").read_text())
 
 
 @app.page
@@ -60,6 +58,12 @@ class SponsoredEvents(Page):
     slug = "sponsored-events"
     data = json.loads(pathlib.Path("_data/sponsored_events.json").read_text())
     template_vars = {}
+
+
+@app.page
+class Partnerships(Page):
+    template = "partnerships.html"
+    data = json.loads(pathlib.Path("_data/partnerships.json").read_text())
 
 
 @app.collection
