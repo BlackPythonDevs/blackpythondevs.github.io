@@ -32,7 +32,3 @@ repos:
     rev: 23.9.1
     hooks:
       - id: black
-  - repo: https://github.com/kjaymiller/frontmatter-check
-    rev: "2025.1.1b2"
-    hooks:
-      - id: frontmatter-check

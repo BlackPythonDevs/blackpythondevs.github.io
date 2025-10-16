@@ -42,6 +42,7 @@ class Index(Page):
 @app.page
 class About(Page):
     template = "about.html"
+    data = json.loads(pathlib.Path("_data/leadership.json").read_text())
 
 
 @app.page
