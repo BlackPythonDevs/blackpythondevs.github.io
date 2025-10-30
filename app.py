@@ -67,6 +67,14 @@ class Partnerships(Page):
     data = json.loads(pathlib.Path("_data/partnerships.json").read_text())
 
 
+@app.page
+class CodeOfConduct(Page):
+    Parser = MarkdownPageParser
+    content_path = "pages/coc.md"
+    template = "default.html"
+    slug = "coc"
+
+
 @app.collection
 class Pages(Collection):
     Parser = MarkdownPageParser
