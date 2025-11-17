@@ -14,7 +14,7 @@ dev = [
   "pytest-playwright",
   "pytest-xprocess",
   "axe-core-python==0.1.0",
-  "axe-playwright-python==0.1.4",
+  "axe-playwright-python==0.1.6",
 ]
 
 [render-engine.cli]
