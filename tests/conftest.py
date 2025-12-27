@@ -14,12 +14,10 @@ def url_port() -> tuple[str, int]:
 ROUTES = [
     "",
     "blog",
-    "about",
-    "events",
-    "community",
-    "leadership",
-    "book-club",
-    "support",
+    "about.html",
+    "bpd-events",
+    "community.html",
+    "support.html",
 ]
 
 
