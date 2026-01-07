@@ -20,19 +20,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      - name: Set up Python
-        uses: actions/setup-python@v4
+      - name: Install uv
+        uses: astral-sh/setup-uv@v4
         with:
-          python-version: "3.13"
-          cache: "pip"
+          version: "latest"
+      - name: Set up Python
+        run: uv python install 3.12
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install -e .
-          python -m playwright install --with-deps chromium
+          uv sync --extra dev
+          uv run playwright install --with-deps chromium
       - name: Build
         run: |
-          render-engine serve
+          uv run render-engine build
       - uses: actions/upload-artifact@v4
         with:
           name: website

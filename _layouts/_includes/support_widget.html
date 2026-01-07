@@ -8,6 +8,15 @@
     script.id = "commitchange-script";
     script.src = "https://us.commitchange.com/js/donate-button.v2.js";
     first.parentNode.insertBefore(script, first);
+
+    // Add accessibility attributes to iframe after it's created
+    setTimeout(function () {
+      var iframe = document.querySelector(".commitchange-iframe-embedded");
+      if (iframe && !iframe.hasAttribute("title")) {
+        iframe.setAttribute("title", "Donation form for Black Python Devs");
+        iframe.setAttribute("aria-label", "Donation form for Black Python Devs");
+      }
+    }, 1000);
   })();
 </script>
 <a class="commitchange-donate" data-amounts="15,25,50,100,250,500" data-embedded=""></a>

@@ -1,70 +1,84 @@
+import pathlib
+import pytest
+from playwright.sync_api import expect, sync_playwright
+from axe_core_python.sync_playwright import Axe
+import frontmatter
+from typing import Generator
+import subprocess
+import http.server
+import socketserver
+import threading
 import time
 import socket
-import pathlib
-from typing import Generator
-
-import pytest
-import frontmatter
-from xprocess import ProcessStarter
-from playwright.sync_api import Page, expect, sync_playwright
 
 
-from axe_core_python.sync_playwright import Axe
+def find_free_port():
+    """Find a free port to use for the test server"""
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind(("", 0))
+        s.listen(1)
+        port = s.getsockname()[1]
+    return port
 
 
-@pytest.fixture(scope="module")
-def page_url(xprocess, url_port):
-    """Returns the url of the live server"""
+@pytest.fixture(scope="session")
+def built_site():
+    """Build the site once for all tests"""
+    print("Building site for tests...")
+    result = subprocess.run(
+        ["uv", "run", "render-engine", "build"],  # use uv
+        capture_output=True,
+        text=True,
+    )
+    if result.returncode != 0:
+        pytest.fail(f"Failed to build site: {result.stderr}")
+    return pathlib.Path("output")
 
-    url, port = url_port
 
-    class Starter(ProcessStarter):
-        # Start the process
-        args = ["render-engine", "serve"]
-        terminate_on_interrupt = True
+@pytest.fixture(scope="session")
+def test_server(built_site):
+    """Start a simple HTTP server to serve the built site"""
+    port = find_free_port()
 
-        def startup_check(self):
-            # Polling mechanism for a more robust startup check
-            max_attempts = 5
-            attempt_interval = 1  # seconds
+    class Handler(http.server.SimpleHTTPRequestHandler):
+        def __init__(self, *args, **kwargs):
+            super().__init__(*args, directory=str(built_site), **kwargs)
 
-            for _ in range(max_attempts):
-                try:
-                    sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-                    sock.connect(("localhost", port))
-                    sock.sendall(b"ping\n")
-                    response = sock.recv(
-                        1024
-                    )  # Receive enough bytes to get the full response
-                    if response == b"pong!":  # Compare to bytes
-                        return True
-                except (ConnectionRefusedError, OSError):
-                    # Connection not yet ready, or process not fully up
-                    pass
-                finally:
-                    sock.close()  # Ensure socket is closed
+    httpd = socketserver.TCPServer(("", port), Handler)
 
-                time.sleep(attempt_interval)
-            return False  # Failed to connect after max_attempts
+    # Start server in a thread
+    server_thread = threading.Thread(target=httpd.serve_forever)
+    server_thread.daemon = True
+    server_thread.start()
 
-    xprocess.ensure("page_url", Starter)
+    # Wait for server to start
+    time.sleep(1)
 
+    base_url = f"http://localhost:{port}"
+
+    yield base_url
+
+    httpd.shutdown()
+
+
+@pytest.fixture(scope="session")
+def browser_context(test_server):
+    """Create a browser context for all tests"""
     with sync_playwright() as p:
         browser = p.chromium.launch()
         context = browser.new_context()
         page = context.new_page()
 
-        # Return the URL of the live server
-        yield page, url
+        yield page, test_server
 
-        # Clean up the process
-        xprocess.getinfo("page_url").terminate()
+        context.close()
+        browser.close()
 
 
-def test_accessibility(page_url: tuple[Page, str]):
+def test_accessibility(browser_context):
     """Run accessibility tests on the homepage"""
-    page, live_server_url = page_url
-    page.goto(f"{live_server_url}/")
+    page, base_url = browser_context
+    page.goto(f"{base_url}/")
 
     axe = Axe()
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
@@ -74,49 +88,30 @@ def test_accessibility(page_url: tuple[Page, str]):
     ), f"Accessibility violations found: {results['violations']}"
 
 
-def test_destination(
-    loaded_route: str,
-    page_url: tuple[Page, str],
-) -> None:
+def test_destination(loaded_route: str, browser_context) -> None:
     """Test that the destinations page loads with seeded data"""
-    # Create a destination
-    page, live_server_url = page_url
-    response = page.goto(f"{live_server_url}/{loaded_route}")
+    page, base_url = browser_context
+    response = page.goto(f"{base_url}/{loaded_route}")
+    assert response.status == 200
 
-    assert response.status == 200  # Check that the page loaded successfully
-
-
-# LANG_ROUTES = (
-#     "/es/",
-#     "/es/about/",
-#     "/es/events/",
-#     "/es/community/",
-#     "/sw/",
-#     "/sw/about/",
-#     "/sw/events/",
-#     "/sw/community/",
-# )
 
 LANG_ROUTES = (
     "/",
-    "/about/",
-    "/events/",
-    "/community/",
-    "/support/",
+    "/about.html",
+    "/bpd-events/",
+    "/community.html",
+    "/support.html",
     "/blog/",
 )
 
 
 @pytest.mark.parametrize("route", LANG_ROUTES)
-def test_headers_in_language(page_url: tuple[Page, str], route: str) -> None:
+def test_headers_in_language(browser_context, route: str) -> None:
     """checks the route and the language of each route"""
-    page, live_server_url = page_url
-    response = page.goto(f"{live_server_url}{route}")
+    page, base_url = browser_context
+    response = page.goto(f"{base_url}{route}")
     assert response.status == 200
     doc_lang = page.evaluate("document.documentElement.lang")
-    # lang = route.lstrip("/").split("/", maxsplit=1)[
-    # 0
-    # ]  # urls start with the language if not en
     assert doc_lang == "en"
 
     axe = Axe()
@@ -131,20 +126,19 @@ def test_headers_in_language(page_url: tuple[Page, str], route: str) -> None:
     "title, url",
     (
         ("Home", "/"),
-        ("Blog", "/blog"),
-        ("About Us", "/about/"),
-        ("Events", "/events/"),
-        ("Community", "/community/"),
-        ("Support", "/support/"),
+        ("Blog", "/blog/"),
+        ("About Us", "/about.html"),
+        ("BPD Events", "/bpd-events/"),
+        ("Community", "/community.html"),
+        ("Support Us", "/support.html"),
     ),
 )
-def test_bpdevs_title_en(page_url: tuple[Page, str], title: str, url: str) -> None:
-    page, live_server_url = page_url
-    page.goto(f"{live_server_url}{url}")
+def test_bpdevs_title_en(browser_context, title: str, url: str) -> None:
+    page, base_url = browser_context
+    page.goto(f"{base_url}{url}")
     expect(page).to_have_title(f"Black Python Devs | {title}")
 
     axe = Axe()
-    # results = axe.run(page)
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
@@ -152,14 +146,13 @@ def test_bpdevs_title_en(page_url: tuple[Page, str], title: str, url: str) -> No
     ), f"Accessibility violations found: {results['violations']}"
 
 
-def test_mailto_bpdevs(page_url: tuple[Page, str]) -> None:
-    page, live_server_url = page_url
-    page.goto(live_server_url)
+def test_mailto_bpdevs(browser_context) -> None:
+    page, base_url = browser_context
+    page.goto(base_url)
     mailto = page.get_by_role("link", name="email")
     expect(mailto).to_have_attribute("href", "mailto:contact@blackpythondevs.com")
 
     axe = Axe()
-    # results = axe.run(page)
     results = axe.run(page, options={"runOnly": ["wcag2a", "wcag2aa"]})
 
     assert (
@@ -169,12 +162,12 @@ def test_mailto_bpdevs(page_url: tuple[Page, str]) -> None:
 
 @pytest.mark.parametrize(
     "url",
-    ("/blog",),
+    ("/blog/",),
 )
-def test_page_description_in_index_and_blog(page_url: tuple[Page, str], url: str):
+def test_page_description_in_index_and_blog(browser_context, url: str):
     """Checks for the descriptions data in the blog posts. There should be some objects with the class `post-description`"""
-    page, live_server_url = page_url
-    page.goto(f"{live_server_url}{url}")
+    page, base_url = browser_context
+    page.goto(f"{base_url}{url}")
     expect(page.locator("p.post-description").first).to_be_visible()
     expect(page.locator("p.post-description").first).not_to_be_empty()
 
@@ -189,8 +182,7 @@ def test_page_description_in_index_and_blog(page_url: tuple[Page, str], url: str
 def stem_description(
     path: pathlib.Path,
 ) -> Generator[tuple[str, frontmatter.Post], None, None]:
-    """iterate throug a list returning the stem of the file and the contents"""
-
+    """iterate through a list returning the stem of the file and the contents"""
     for entry in path.glob("*.md"):
         yield (entry.stem, frontmatter.loads(entry.read_text()))
 
@@ -199,15 +191,15 @@ blog_posts = stem_description(pathlib.Path("_posts"))
 
 
 @pytest.mark.parametrize("post", list(blog_posts))
-def test_page_blog_posts(
-    page_url: tuple[Page, str], post: tuple[str, frontmatter.Post]
-):
+def test_page_blog_posts(browser_context, post: tuple[str, frontmatter.Post]):
     """Checks that the meta page description matches the description of the post"""
-    page, live_server_url = page_url
-    entry_stem, frontmatter = post
-    url = f"{live_server_url}/{entry_stem}/"
+    page, base_url = browser_context
+    entry_stem, frontmatter_data = post
 
-    # Increased timeout and added wait_until="networkidle"
+    # Convert blog post filename to URL path
+    # Blog posts are in /blog/ directory in the output
+    url = f"{base_url}/blog/{entry_stem}.html"
+
     page.goto(url, timeout=60000, wait_until="networkidle")
 
     # More robust waiting for the meta description

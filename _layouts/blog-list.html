@@ -21,7 +21,7 @@
   <div role="group">
     <h4>Pages:</h4>
     <div>
-  {% for page in range(1, num_of_pages + 1) %}
+  {% for page in range(1, num_of_pages|int + 1) %}
       <a role="button" {% if page == archive_index %} disabled {% endif %} href="/blog/blog{{page}}.html">{{ page }}</a>
   {% endfor %}
   </div>
