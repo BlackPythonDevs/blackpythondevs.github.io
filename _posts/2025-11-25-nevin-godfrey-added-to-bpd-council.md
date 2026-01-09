@@ -8,7 +8,7 @@ featured_image: /assets/images/nevin-godfrey-council.webp
 
 Congratulations to [Nevin Godfrey](https://www.linkedin.com/in/nevin-godfrey-43b80367/) for recognition and consideration for the BPD Council!
 
-Nevin has been a valued member of the Black Python Devs community since the very beginning, having attended the original Black Python Devs Gathering. This early participation reflects their commitment to building and nurturing spaces for Black developers within the Python ecosystem.
+Nevin has been a valued member of the Black Python Devs community since the very beginning, having attended the original Black Python Devs Gathering. This early participation reflects Nevin's commitment to building and nurturing spaces for Black developers within the Python ecosystem.
 
 Through mentoring, volunteering, and active community engagement, Nevin exemplifies a commitment to inclusive growth and continuous learning in the open-source landscape, making meaningful contributions that strengthen the global developer ecosystem.
 
