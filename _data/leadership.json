@@ -2,29 +2,34 @@
   "Executors": [
     {
       "name": "Jay Miller",
-      "title": "Executor",
+      "title": "Executor (Global)",
       "image": "https://github.com/kjaymiller.png",
       "alt": "photo of Jay"
     },
     {
-      "name": "Abigail Afi Gbadago",
-      "title": "Executor (Africa)",
-      "image": "/assets/images/afi.webp"
+      "name": "Nick Muoh",
+      "title": "Executor (US/Canada)"
     },
     {
-      "name": "Emmanuel Ugwu",
-      "title": "Vice-Executor (Africa)",
+      "name": "Denny Perez",
+      "title": "Executor (LATAM)"
+    },
+    {
+      "name": "Emanuel Ugwu",
+      "title": "Executor (Africa)",
       "image": "/assets/images/nuel.webp"
     },
     {
-      "name": "Lazuich Ford",
-      "title": "Executor (North America)",
-      "image": "/assets/images/laz.webp"
+      "name": "Damilola Oladele",
+      "title": "Executor (Africa - Western)"
     },
     {
-      "name": "Keanya Phelps",
-      "title": "Vice-Executor (North America)",
-      "image": "/assets/images/keanya.webp"
+      "name": "Kudzayi Bamhare",
+      "title": "Executor (Africa Southern)"
+    },
+    {
+      "name": "Brayan Kai",
+      "title": "Executor (Africa - Eastern)"
     }
   ],
   "Leaders": [
@@ -41,7 +46,7 @@
       "title": "Welcoming Team"
     }
   ],
-  "Advisors": ["Benedict Koji Amofah", "Ronald Maravanyika", "Kudzayi Bamhare", "Kojo Idrissa", "Carol Willing", "Jeff Triplett", "Dr. Kari L. Jordan"],
+  "Advisors": ["Benedict Koji Amofah", "Ronald Maravanyika", "Kojo Idrissa", "Carol Willing", "Jeff Triplett", "Dr. Kari L. Jordan"],
   "Council": [
     "Dawn Wages",
     "Sarah Abderemane",
