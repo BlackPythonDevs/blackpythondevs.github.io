@@ -13,7 +13,7 @@ on:
     - cron: "22 15 * * 4"
   push:
     branches: ["gh-pages"]
-  
+
   workflow_dispatch:
 
 # Declare default permissions as read only.
