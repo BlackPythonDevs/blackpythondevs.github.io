@@ -8,21 +8,26 @@
     {% set header = site.title %}
   {% endif %}
 </div>
+</article>
 
-<article class="grid hero">
-  <div>
-    <img style="max-width: 15rem; max-height:20rem;" src="/assets/images/bpd_stacked.png" alt="Black Python Devs logo" />
-  </div>
-  <div style="">
-    <h1 class="hero-text">Helping build communities for Black Pythonistas around the world.</h1>
+<article class="hero">
+  <div class="hero-content">
+    <div class="hero-text-wrapper">
+      <h1 class="hero-text">Helping build communities for Black Pythonistas around the world.</h1>
+    </div>
+    <div class="hero-image-wrapper">
+      <img src="/assets/images/BPD_PyCon_2024_cropped.jpg" alt="Black Python Devs at PyCon 2024" class="hero-image" />
+    </div>
   </div>
 </article>
 
-
-  {{ content }}
-
-
-  {% include "_includes/latest-posts.html" %}
-  {% include "_includes/join_us.html" %}
+<article>
+  {% include "_includes/stats.html" %}
+</article>
+<article>
+  {% include "_includes/support.html" %}
+</article>
+<article>
   {% include "_includes/newsletter_form.html" %}
+</article>
 {% endblock %}

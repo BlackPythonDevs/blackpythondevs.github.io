@@ -36,7 +36,13 @@ app.site_vars["year"] = str(datetime.date.today().year)
 @app.page
 class Index(Page):
     template = "index.html"
-    content_path = "index.html"
+    template_vars = {
+        "member_count": json.loads(pathlib.Path("_data/member_count.json").read_text())[
+            "count"
+        ],
+        "sponsored_events_count": 36,
+        "countries_count": 15,
+    }
 
 
 @app.page
