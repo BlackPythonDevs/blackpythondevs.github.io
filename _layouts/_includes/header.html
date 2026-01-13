@@ -8,7 +8,16 @@
       <ul class="menu" role="menu">
         {% for item in navigation %} {% set current = nil %} {% set nav_lang = nil %} {% if url == item.url %} {% set current = 'nav-current' %} {% endif %} {% if lang != 'en' %} {% set nav_lang = lang %} {% endif %}
         <li class="menu-item {{ current }}" role="menuitem">
+          {% if item.sublinks %}
+          <a href="#" aria-haspopup="true"> <i class="{{ item.fa }}" aria-hidden="true"></i>&nbsp;{{ item.text }} <i class="fa fa-caret-down"></i></a>
+          <ul class="submenu" aria-label="submenu">
+            {% for sub in item.sublinks %}
+            <li><a href="{{ nav_lang }}{{ sub.url }}">{{ sub.text }}</a></li>
+            {% endfor %}
+          </ul>
+          {% else %}
           <a class="{{ current }}" href="{{ nav_lang }}{{ item.url }}"> <i class="{{ item.fa }}" aria-hidden="true"></i>&nbsp;{{ item.text }} </a>
+          {% endif %}
         </li>
         {% endfor %} {% if locales | length > 1 %}
         <li class="menu-item" role="menuitem">
