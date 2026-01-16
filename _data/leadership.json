@@ -4,32 +4,43 @@
       "name": "Jay Miller",
       "title": "Executor (Global)",
       "image": "https://github.com/kjaymiller.png",
-      "alt": "photo of Jay"
+      "alt": "photo of Jay Miller"
     },
     {
       "name": "Nick Muoh",
-      "title": "Executor (US/Canada)"
+      "title": "Executor (US/Canada)",
+      "image": "/assets/images/nick-muoh.webp",
+      "alt": "photo of Nick Muoh"
     },
     {
       "name": "Denny Perez",
-      "title": "Executor (LATAM)"
+      "title": "Executor (LATAM)",
+      "image": "/assets/images/denny-perez.webp",
+      "alt": "photo of Denny Perez"
     },
     {
-      "name": "Emanuel Ugwu",
+      "name": "Emmanuel Ugwu",
       "title": "Executor (Africa)",
-      "image": "/assets/images/nuel.webp"
+      "image": "/assets/images/nuel.webp",
+      "alt": "photo of Emmanuel Ugwu"
     },
     {
       "name": "Damilola Oladele",
-      "title": "Executor (Africa - Western)"
+      "title": "Executor (Africa - Western)",
+      "alt": "photo of Damilola Oladele",
+      "image": "/assets/images/Damilola_Oladele.webp"
     },
     {
       "name": "Kudzayi Bamhare",
-      "title": "Executor (Africa Southern)"
+      "alt": "photo of Kudzayi Bamhare",
+      "title": "Executor (Africa Southern)",
+      "image": "/assets/images/kudzayi-bamhare.webp"
     },
     {
       "name": "Brayan Kai",
-      "title": "Executor (Africa - Eastern)"
+      "title": "Executor (Africa - Eastern)",
+      "image": "/assets/images/brayan-kai.webp",
+      "alt": "photo of Brayan Kai"
     }
   ],
   "Leaders": [
