@@ -16,7 +16,10 @@
       <h1 class="post-title p-name" itemprop="name headline">{{ title }}</h1>
       <p class="post-meta">
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
-          <span class="p-author h-card" itemprop="name">{{ author }}</span>
+          {% for person in author %}
+          <span class="p-author h-card" itemprop="name">{{ person }}</span>
+          {% if not loop.last %}, {% endif %}
+          {% endfor %}
         </span>
 
       </p>

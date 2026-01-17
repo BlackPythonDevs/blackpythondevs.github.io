@@ -1,10 +1,11 @@
 ---
-title: Reflecting on the last two years with our BPD Leaders
-author: Jay Miller
-description:
+author:
+  - Jay Miller
 date: 2025-04-26
-layout: post
+description: null
 lang: en
+layout: post
+title: Reflecting on the last two years with our BPD Leaders
 ---
 
 On 23 April 2025, Black Python Devs celebrated it's second birthday. We're honored to reflect on this day and amazed in the growth we've seen.

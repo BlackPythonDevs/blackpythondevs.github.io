@@ -1,5 +1,6 @@
 ---
-author: Jay Miller
+author:
+  - Jay Miller
 date: 2024-10-29
 description: Discover how a new generation of Black Python Developers is shaping the
   future of Django and the global tech community, and learn about their inspiring

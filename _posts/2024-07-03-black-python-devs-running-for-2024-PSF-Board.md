@@ -1,5 +1,6 @@
 ---
-author: Anotida Expected Msiiwa
+author:
+  - Anotida Expected Msiiwa
 date: 2024-07-03
 description: Join us in learning about four exceptional Black Python developers who
   are shaping the future of the Python community and running for a crucial role on

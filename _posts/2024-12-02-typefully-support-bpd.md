@@ -1,11 +1,12 @@
 ---
+author:
+  - Jay Miller
 date: 2024-12-02
 description: We're happy to announce that Typefully is sponsoring Black Python Devs.
+featured_image: /assets/images/bpd_x_typefully.jpg
 lang: en
 layout: post
 title: Typefully Brings Social Media Management to Black Python Devs
-author: Jay Miller
-featured_image: /assets/images/bpd_x_typefully.jpg
 ---
 
 We're excited to have [Typefully](https://typefully.com) sponsoring Black Python Devs.

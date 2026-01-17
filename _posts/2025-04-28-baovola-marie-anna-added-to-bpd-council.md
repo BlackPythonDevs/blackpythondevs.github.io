@@ -1,9 +1,11 @@
 ---
-title: BAOVOLA Marie Anna Added to BPD Council
+author:
+  - Jay Miller
 date: 2025-04-28
-author: Jay Miller
-description: The BPD Council has recognized the work of BAOVOLA Marie Anna and invited her to join the Council.
+description: The BPD Council has recognized the work of BAOVOLA Marie Anna and invited
+  her to join the Council.
 featured_image: /assets/images/baovola-jay-pg-day-chi-2025.webp
+title: BAOVOLA Marie Anna Added to BPD Council
 ---
 
 Congratulations to [BAOVOLA Marie Anna](https://www.linkedin.com/in/baovola-gis-data/) from Madagascar on her recognition and consideration for the BPD Council!

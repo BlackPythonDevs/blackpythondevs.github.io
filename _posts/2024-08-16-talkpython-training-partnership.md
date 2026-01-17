@@ -1,5 +1,6 @@
 ---
-author: Jay Miller
+author:
+  - Jay Miller
 date: 2024-08-16
 description: Learn how TalkPython Training's new partnership with Black Python Devs
   is driving greater diversity and benefiting learners through a unique opportunity

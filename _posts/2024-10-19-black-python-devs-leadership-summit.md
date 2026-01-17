@@ -1,5 +1,6 @@
 ---
-author: Abigail Afi Gbadago
+author:
+  - Abigail Afi Gbadago
 date: 2024-10-19
 description: Join Abigail Afi Gbadago and other leaders at the highly successful Black
   Python Devs Leadership Summit as they shared insights on succession planning, mental
