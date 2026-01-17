@@ -7,7 +7,7 @@
         <h2><a href="{{ page }}.html">
           {{ page.title }}
         </a></h2>
-        <small>{{page.author}} {{page.date}}</small>
+        <small>{% if page.author %}{{page.author | join(", ")}} {% endif %}{{page.date}}</small>
       </article>
     {% endfor %}
     </section>
