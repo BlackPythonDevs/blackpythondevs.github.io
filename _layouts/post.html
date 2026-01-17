@@ -15,13 +15,14 @@
     <header class="post-header">
       <h1 class="post-title p-name" itemprop="name headline">{{ title }}</h1>
       <p class="post-meta">
+        {% if author %}
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           {% for person in author %}
           <span class="p-author h-card" itemprop="name">{{ person }}</span>
           {% if not loop.last %}, {% endif %}
           {% endfor %}
         </span>
-
+        {% endif %}
       </p>
     </header>
     <div class="post-content e-content" itemprop="articleBody">
@@ -31,6 +32,7 @@
 </section>
 
 <section>
+  {% if author %}
   {% for author_name in author %}
     {% set author_data = SITE_AUTHORS | selectattr("name", "equalto", author_name) | first %}
     {% if author_data and author_data.bio %}
@@ -39,6 +41,7 @@
       <p>{{author_data.bio|e}}</p>
     {% endif %}
   {% endfor %}
+  {% endif %}
 </section>
 
 {% endblock %}
