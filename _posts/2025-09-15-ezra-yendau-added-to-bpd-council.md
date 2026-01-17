@@ -1,7 +1,7 @@
 ---
 author:
   - Jay Miller
-date: 2025-09-16
+date: 2025-09-16 00:00:00
 description: The BPD Council has recognized the work of Ezra Yendau and invited him
   to join the Council.
 featured_image: /assets/images/ezra-yendau-council.webp

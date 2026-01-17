@@ -1,7 +1,7 @@
 ---
 author:
   - Anotida Expected Msiiwa
-date: 2024-07-03
+date: 2024-07-03 00:00:00
 description: Join us in learning about four exceptional Black Python developers who
   are shaping the future of the Python community and running for a crucial role on
   the Python Software Foundation Board.

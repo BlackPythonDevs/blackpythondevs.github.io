@@ -1,5 +1,5 @@
 ---
-date: 2023-10-20
+date: 2023-10-20 00:00:00
 description: Join us for a behind-the-scenes look at DjangoCon US 2023, where diversity
   and inclusion came together to shape a powerful community of Python developers.
 lang: en

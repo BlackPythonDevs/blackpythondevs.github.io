@@ -1,7 +1,7 @@
 ---
 author:
   - Jay Miller
-date: 2025-04-26
+date: 2025-04-26 00:00:00
 description: null
 lang: en
 layout: post

@@ -1,7 +1,7 @@
 ---
 author:
   - Jay Miller
-date: 2023-12-14
+date: 2023-12-14 00:00:00
 description: Discover how the innovative team at Djangonaut Space is making a lasting
   impact on the Django community with sustainable initiatives and groundbreaking projects.
 lang: en

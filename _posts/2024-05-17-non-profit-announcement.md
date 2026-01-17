@@ -1,5 +1,5 @@
 ---
-date: 2024-05-16
+date: 2024-05-16 00:00:00
 description: Discover how a historic partnership between two influential organizations
   is revolutionizing tech diversity and innovation in the open-source world.
 featured_image: /assets/images/BPD_STACKED_featured.png
