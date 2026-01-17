@@ -8,4 +8,3 @@ patterns:
       - field_name: lang
       - field_name: layout
       - field_name: title
-      - field_name: author
