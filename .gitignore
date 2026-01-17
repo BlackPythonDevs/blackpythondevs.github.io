@@ -230,5 +230,3 @@ marimo/_lsp/
 __marimo__/
 .venv
 output
-.issues/
-AGENTS.md
