@@ -30,13 +30,15 @@
   </article>
 </section>
 
-{% set author = authors %}
 <section>
-  {% if author and author.bio %}
-  <hr />
-    <h3>About {{author.name}}</h3>
-    <p>{{author.bio|e}}</p>
-  </section>
-  {% endif %}
+  {% for author_name in author %}
+    {% set author_data = SITE_AUTHORS | selectattr("name", "equalto", author_name) | first %}
+    {% if author_data and author_data.bio %}
+      <hr />
+      <h3>About {{author_data.name}}</h3>
+      <p>{{author_data.bio|e}}</p>
+    {% endif %}
+  {% endfor %}
+</section>
 
 {% endblock %}
