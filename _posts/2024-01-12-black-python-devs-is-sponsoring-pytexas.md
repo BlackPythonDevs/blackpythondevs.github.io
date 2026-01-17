@@ -1,7 +1,7 @@
 ---
 author:
   - Jay Miller
-date: 2024-01-12 00:00:00
+date: 2024-01-12
 description: Discover how Black Python Devs is supporting PyTexas, a premier regional
   Python conference in Austin, TX, and learn about opportunities to attend for free
   through ticket giveaways and speaker selection.

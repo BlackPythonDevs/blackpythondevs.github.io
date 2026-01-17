@@ -1,5 +1,5 @@
 ---
-date: 2024-05-22 00:00:00
+date: 2024-05-22
 description: Join us as we explore a nuanced approach to inclusive language, examining
   the complexities of terms like "Black", "Colored", and "coloured" in describing
   our community members.

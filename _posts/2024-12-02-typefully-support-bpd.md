@@ -1,7 +1,7 @@
 ---
 author:
   - Jay Miller
-date: 2024-12-02 00:00:00
+date: 2024-12-02
 description: We're happy to announce that Typefully is sponsoring Black Python Devs.
 featured_image: /assets/images/bpd_x_typefully.jpg
 lang: en

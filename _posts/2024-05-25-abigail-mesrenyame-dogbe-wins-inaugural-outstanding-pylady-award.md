@@ -1,7 +1,7 @@
 ---
 author:
   - Anotida Expected Msiiwa
-date: 2024-01-25 00:00:00
+date: 2024-01-25
 description: Meet Abigail Mesrenyame Dogbe, a dedicated member of Black Python Devs
   and recipient of the Inaugural Outstanding PyLady award, whose inspiring contributions
   to the open-source community are empowering women in STEM.

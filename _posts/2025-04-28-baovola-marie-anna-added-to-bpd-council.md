@@ -1,7 +1,7 @@
 ---
 author:
   - Jay Miller
-date: 2025-04-28 00:00:00
+date: 2025-04-28
 description: The BPD Council has recognized the work of BAOVOLA Marie Anna and invited
   her to join the Council.
 featured_image: /assets/images/baovola-jay-pg-day-chi-2025.webp

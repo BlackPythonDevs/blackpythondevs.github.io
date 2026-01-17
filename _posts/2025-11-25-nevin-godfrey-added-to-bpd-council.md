@@ -1,7 +1,7 @@
 ---
 author:
   - Jay Miller
-date: 2025-11-25 00:00:00
+date: 2025-11-25
 description: The BPD Council has recognized the work of Nevin Godfrey and invited
   him to join the Council.
 featured_image: /assets/images/nevin-godfrey-council.webp
