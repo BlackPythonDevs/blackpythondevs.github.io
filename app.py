@@ -52,11 +52,10 @@ class Support(Page):
 
 
 @app.page
-class SponsoredEvents(Page):
-    template = "sponsored-events.html"
-    slug = "sponsored-events"
-    data = json.loads(pathlib.Path("_data/sponsored_events.json").read_text())
-    template_vars = {}
+class Events(Page):
+    template = "events.html"
+    slug = "events"
+    data = json.loads(pathlib.Path("_data/events.json").read_text())
 
 
 @app.page

@@ -1,0 +1,21 @@
+{
+  "bpd_events": [
+    {
+      "title": "Black Python Devs Leadership Summit 2024",
+      "url": "/events/leadership-summit-2024.html",
+      "date": "2024-10-18 00:00:00",
+      "location": "Durham, NC"
+    }
+  ],
+  "sponsored_events": {
+    "2024": {
+      "Africa": ["PyCon Africa", "PyCon South Africa", "PyCon Zimbabwe", "PyCon Nigeria", "IndabaX - Botswana", "PyCon Uganda", "PyHo - Ghana"],
+      "North America": ["PyTexas", "PyOhio"]
+    },
+    "2025": {
+      "Africa": ["Django Girls - Koforidua", "Django Girls - Ho", "PyCon Africa", "DjangoCon Africa", "IndabaX - Botswana", "PyCon Namibia", "PyTogo", "Zero to Hero Mentorship Program - Nigeria", "PyCon Nigeria"],
+      "North America": ["PyTexas Foundation", "PyOhio", "PyBeach", "PyBay", "PyDay Santo Domingo (SDQ)"],
+      "South America": ["Ubuntu Tech - Colombia", "Django Girls - Colombia"]
+    }
+  }
+}

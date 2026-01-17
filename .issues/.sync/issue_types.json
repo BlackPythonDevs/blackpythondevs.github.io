@@ -1,0 +1,20 @@
+{
+  "issue_types": [
+    {
+      "id": "IT_kwDOCJKUFs4BNcjg",
+      "name": "Bug",
+      "description": "An unexpected problem or behavior"
+    },
+    {
+      "id": "IT_kwDOCJKUFs4BNcji",
+      "name": "Feature",
+      "description": "A request, idea, or new functionality"
+    },
+    {
+      "id": "IT_kwDOCJKUFs4BNcje",
+      "name": "Task",
+      "description": "A specific piece of work"
+    }
+  ],
+  "synced_at": "2026-01-09T15:22:57.5743Z"
+}

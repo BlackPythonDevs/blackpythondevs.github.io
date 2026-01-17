@@ -1,0 +1,201 @@
+{
+  "labels": [
+    {
+      "name": "a11y",
+      "color": "C822A6"
+    },
+    {
+      "name": "announcement",
+      "color": "65EAAD"
+    },
+    {
+      "name": "automated issue",
+      "color": "F244E0"
+    },
+    {
+      "name": "automated pr",
+      "color": "ededed"
+    },
+    {
+      "name": "backlog",
+      "color": "A9DD9A"
+    },
+    {
+      "name": "blog post",
+      "color": "9E889B"
+    },
+    {
+      "name": "bug",
+      "color": "d73a4a"
+    },
+    {
+      "name": "conference",
+      "color": "D87148"
+    },
+    {
+      "name": "conference_accepted",
+      "color": "71846D"
+    },
+    {
+      "name": "conference_approved",
+      "color": "7FA733"
+    },
+    {
+      "name": "content",
+      "color": "ACC446"
+    },
+    {
+      "name": "css",
+      "color": "2794D2"
+    },
+    {
+      "name": "data",
+      "color": "E1961B"
+    },
+    {
+      "name": "dependencies",
+      "color": "052215"
+    },
+    {
+      "name": "design",
+      "color": "5853F8"
+    },
+    {
+      "name": "design_change",
+      "color": "12BFBB"
+    },
+    {
+      "name": "devcontainer",
+      "color": "1CB5A8"
+    },
+    {
+      "name": "documentation",
+      "color": "0075ca"
+    },
+    {
+      "name": "duplicate",
+      "color": "cfd3d7"
+    },
+    {
+      "name": "enhancement",
+      "color": "a2eeef"
+    },
+    {
+      "name": "epic",
+      "color": "b60205"
+    },
+    {
+      "name": "events",
+      "color": "134F9E"
+    },
+    {
+      "name": "github actions",
+      "color": "2D9AED"
+    },
+    {
+      "name": "good first issue",
+      "color": "7057ff"
+    },
+    {
+      "name": "hacktoberfest-accepted",
+      "color": "AB296E"
+    },
+    {
+      "name": "help wanted",
+      "color": "008672"
+    },
+    {
+      "name": "high priority",
+      "color": "B60205"
+    },
+    {
+      "name": "hold",
+      "color": "834137"
+    },
+    {
+      "name": "i18n",
+      "color": "1FEC6C"
+    },
+    {
+      "name": "idea",
+      "color": "15B86C"
+    },
+    {
+      "name": "infrastructure",
+      "color": "4E0B08"
+    },
+    {
+      "name": "invalid",
+      "color": "e4e669"
+    },
+    {
+      "name": "javascript",
+      "color": "74E221"
+    },
+    {
+      "name": "leadership summit",
+      "color": "8E8FB7"
+    },
+    {
+      "name": "more-thought",
+      "color": "4FCFC6"
+    },
+    {
+      "name": "partnerships",
+      "color": "93B826"
+    },
+    {
+      "name": "performance",
+      "color": "2684FF"
+    },
+    {
+      "name": "playwright",
+      "color": "193BE3"
+    },
+    {
+      "name": "python",
+      "color": "7B6C1B"
+    },
+    {
+      "name": "question",
+      "color": "d876e3"
+    },
+    {
+      "name": "report",
+      "color": "ededed"
+    },
+    {
+      "name": "responsiveness",
+      "color": "772001"
+    },
+    {
+      "name": "ruby",
+      "color": "EDFB22"
+    },
+    {
+      "name": "security",
+      "color": "0D6780"
+    },
+    {
+      "name": "swahili",
+      "color": "E56133"
+    },
+    {
+      "name": "testing",
+      "color": "77D2FA"
+    },
+    {
+      "name": "translation",
+      "color": "9ADB5C"
+    },
+    {
+      "name": "typo",
+      "color": "aaaaaa"
+    },
+    {
+      "name": "wontfix",
+      "color": "ffffff"
+    }
+  ],
+  "synced_at": "2026-01-09T15:22:57.5743Z"
+}
