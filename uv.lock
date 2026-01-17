@@ -39,14 +39,14 @@ wheels = [
 
 [[package]]
 name = "axe-playwright-python"
-version = "0.1.4"
+version = "0.1.7"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "playwright" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/6c/e6/1b5f21cb55fa7fcba64a1efe9989208650f87b3e23ff23d79dadfb83b41f/axe_playwright_python-0.1.4.tar.gz", hash = "sha256:100f2f4af4525eea231bcc527ac40593805523e1433984e048fde28fea1d488a", size = 148933, upload-time = "2023-07-25T13:15:23.249Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/74/90/684e8ae7e7563318d197f1bfbacd561a19716e6cdb6420e7e97ef49d427c/axe_playwright_python-0.1.7.tar.gz", hash = "sha256:f0f3d59061abbaee9990d0309f855210ec8fd6ca5bf076f39210289ac0961258", size = 189815, upload-time = "2025-12-01T05:19:31.061Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/ce/1b/3fdbaba9260311a0bbb1d387242032da4fe2b83b14670d487d141caded7a/axe_playwright_python-0.1.4-py3-none-any.whl", hash = "sha256:74c0993ac92c2ede522c56bf2cdda42216b22af53c4d94a684767fd42883c7fb", size = 116731, upload-time = "2023-07-25T13:15:17.42Z" },
+    { url = "https://files.pythonhosted.org/packages/02/b0/6460c11d515cb09d90993e948c730a3d4b6673cc5cd99663179bbc48a758/axe_playwright_python-0.1.7-py3-none-any.whl", hash = "sha256:8699e904466cc2206fa2fa414b4d59aab68e34ba8449c6d082896ca1950440e2", size = 156509, upload-time = "2025-12-01T05:19:29.285Z" },
 ]
 
 [[package]]
@@ -86,7 +86,7 @@ dev = [
 [package.metadata]
 requires-dist = [
     { name = "axe-core-python", marker = "extra == 'dev'", specifier = "==0.1.0" },
-    { name = "axe-playwright-python", marker = "extra == 'dev'", specifier = "==0.1.4" },
+    { name = "axe-playwright-python", marker = "extra == 'dev'", specifier = "==0.1.7" },
     { name = "ephemeral-port-reserve", marker = "extra == 'dev'" },
     { name = "pre-commit", marker = "extra == 'dev'" },
     { name = "pytest-playwright", marker = "extra == 'dev'" },
