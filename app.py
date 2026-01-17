@@ -4,6 +4,21 @@ import pathlib
 
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
+from render_engine.engine import engine
+from email.utils import format_datetime
+
+
+def safe_to_pub_date(value):
+    if isinstance(value, datetime.date) and not isinstance(value, datetime.datetime):
+        value = datetime.datetime.combine(value, datetime.datetime.min.time())
+    if isinstance(value, datetime.datetime):
+        if value.tzinfo is None:
+            value = value.replace(tzinfo=datetime.timezone.utc)
+        return format_datetime(value)
+    return value
+
+
+engine.filters["to_pub_date"] = safe_to_pub_date
 
 navigation = [
     {"text": "News", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
