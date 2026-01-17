@@ -17,6 +17,11 @@ def check_authors():
                 if not isinstance(author, list):
                     print(f"Error: Author in {file_path} is not a list: {author}")
                     failed = True
+                elif len(author) == 0:
+                    print(
+                        f"Error: Author list in {file_path} is empty. Remove the field if there is no author."
+                    )
+                    failed = True
         except Exception as e:
             print(f"Error processing {file_path}: {e}")
             failed = True

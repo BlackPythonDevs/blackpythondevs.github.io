@@ -31,6 +31,9 @@ app.site_vars["locales"] = ["en"]
 app.site_vars["navigation"] = navigation
 app.site_vars["DATETIME_FORMAT"] = "%d %b %Y"
 app.site_vars["year"] = str(datetime.date.today().year)
+app.site_vars["SITE_AUTHORS"] = json.loads(
+    pathlib.Path("_data/authors.json").read_text()
+)
 
 
 @app.page
