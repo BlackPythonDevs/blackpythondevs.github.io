@@ -610,6 +610,8 @@ ul.speaking-list {
   color: #868e96;
   font-weight: 700;
   font-size: 0.88889rem;
+  font-family: inherit;
+  outline: none;
 }
 
 .menu-item details.dropdown summary:hover,
@@ -635,7 +637,7 @@ ul.speaking-list {
   position: absolute;
   top: 100%;
   right: 0;
-  left: auto;
+  left: auto; /* Ensure it doesn't align left */
   min-width: 200px;
   background-color: #222;
   border: 1px solid #d7d7d7;
@@ -645,12 +647,15 @@ ul.speaking-list {
   display: flex !important;
   flex-direction: column !important;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: left; /* Keep text inside aligned left */
 }
 
 .menu-item details.dropdown ul.dropdown-menu li.dropdown-item {
   display: block !important;
   margin: 0;
   width: 100%;
+  border: none;
+  padding: 0;
 }
 
 .menu-item details.dropdown ul.dropdown-menu li.dropdown-item a {
@@ -659,6 +664,8 @@ ul.speaking-list {
   width: 100%;
   color: #868e96;
   text-decoration: none;
+  font-size: 0.88889rem;
+  font-weight: normal;
 }
 
 .menu-item details.dropdown ul.dropdown-menu li.dropdown-item a:hover {
