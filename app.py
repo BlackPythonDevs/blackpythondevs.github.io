@@ -15,7 +15,6 @@ navigation = [
         "url": "/sponsored-events.html",
         "fa": "fa fa-handshake fa-fw",
     },
-    {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
     {"text": "Discounts", "url": "/partnerships.html", "fa": "fa-regular fa-handshake"},
     {
         "text": "Support Us",
