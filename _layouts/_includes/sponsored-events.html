@@ -18,20 +18,20 @@
     <h2>Events Sponsored by year</h2>
     {% for segment_year in data.sponsored | sort(reverse=True) %}
       {% if segment_year == year %}
-      <details name="{{segment_year}}" open>
+        <details name="{{segment_year}}" open>
       {% else %}
-      <details name="{{segment_year}}">
+        <details name="{{segment_year}}">
       {% endif %}
       <summary>{{segment_year}}</summary>
-        <section class="grid">
-        {% for segment in data.sponsored[segment_year] | sort %}
+      <section class="grid">
+      {% for segment in data.sponsored[segment_year] | sort %}
         <article>
         <h3>{{segment}}</h3>
           {% for event in data.sponsored[segment_year][segment] | sort %}
             <p>{{event}}</p>
           {% endfor %}
         </article>
-        {% endfor %}
+      {% endfor %}
       </section>
       </details>
       <hr/>
