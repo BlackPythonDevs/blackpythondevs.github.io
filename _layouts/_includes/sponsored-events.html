@@ -1,3 +1,4 @@
+<!-- This file is ignored by Prettier due to Jinja syntax conflicts -->
 <article>
   <section>
     <h2>Supported Events</h2>
@@ -24,14 +25,14 @@
       {% endif %}
       <summary>{{segment_year}}</summary>
       <section class="grid">
-      {% for segment in data.sponsored[segment_year] | sort %}
-        <article>
-        <h3>{{segment}}</h3>
-          {% for event in data.sponsored[segment_year][segment] | sort %}
-            <p>{{event}}</p>
-          {% endfor %}
-        </article>
-      {% endfor %}
+        {% for segment in data.sponsored[segment_year] | sort %}
+<article>
+          <h3>{{segment}}</h3>
+            {% for event in data.sponsored[segment_year][segment] | sort %}
+              <p>{{event}}</p>
+            {% endfor %}
+          </article>
+        {% endfor %}
       </section>
       </details>
       <hr/>
