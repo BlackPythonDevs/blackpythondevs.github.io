@@ -588,7 +588,7 @@ ul.speaking-list {
 }
 
 /* Navigation Dropdowns */
-.menu-item details {
+.menu-item details.dropdown {
   position: relative;
   display: inline-block;
   padding: 0;
@@ -599,7 +599,7 @@ ul.speaking-list {
   width: auto;
 }
 
-.menu-item details summary {
+.menu-item details.dropdown summary {
   cursor: pointer;
   list-style: none;
   margin-bottom: 0;
@@ -610,58 +610,65 @@ ul.speaking-list {
   color: #868e96;
   font-weight: 700;
   font-size: 0.88889rem;
+  font-family: inherit;
+  outline: none;
 }
 
-.menu-item details summary:hover,
-.menu-item details[open] summary {
+.menu-item details.dropdown summary:hover,
+.menu-item details.dropdown[open] summary {
   color: #3588ff;
   background: transparent !important;
 }
 
-.menu-item details summary::-webkit-details-marker {
+.menu-item details.dropdown summary::-webkit-details-marker {
   display: none;
 }
 
 /* Remove the default arrow from Pico or browser */
-.menu-item details summary::after {
+.menu-item details.dropdown summary::after {
   display: none; 
 }
 
-.menu-item details[open] > summary {
+.menu-item details.dropdown[open] > summary {
   margin-bottom: 0;
 }
 
-.menu-item details ul {
+.menu-item details.dropdown ul.dropdown-menu {
   position: absolute;
   top: 100%;
   right: 0;
-  left: auto;
+  left: auto; /* Ensure it doesn't align left */
   min-width: 200px;
   background-color: #222;
   border: 1px solid #d7d7d7;
   padding: 0.5rem 0;
   margin: 0;
   z-index: 1000;
-  display: flex;
+  display: flex !important;
   flex-direction: column !important;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: left; /* Keep text inside aligned left */
 }
 
-.menu-item details ul li {
-  display: block;
+.menu-item details.dropdown ul.dropdown-menu li.dropdown-item {
+  display: block !important;
   margin: 0;
   width: 100%;
+  border: none;
+  padding: 0;
 }
 
-.menu-item details ul li a {
+.menu-item details.dropdown ul.dropdown-menu li.dropdown-item a {
   display: block;
   padding: 8px 15px;
   width: 100%;
   color: #868e96;
   text-decoration: none;
+  font-size: 0.88889rem;
+  font-weight: normal;
 }
 
-.menu-item details ul li a:hover {
+.menu-item details.dropdown ul.dropdown-menu li.dropdown-item a:hover {
   background-color: rgba(255, 255, 255, 0.1);
   color: #3588ff;
 }
