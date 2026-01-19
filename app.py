@@ -9,18 +9,7 @@ navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
     {"text": "Blog", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
-    {
-        "text": "Events",
-        "fa": "fa fa-calendar fa-fw",
-        "subitems": [
-            {"text": "BPD Events", "url": "/bpd-events", "fa": "fa fa-calendar fa-fw"},
-            {
-                "text": "Sponsored Events",
-                "url": "/sponsored-events.html",
-                "fa": "fa fa-handshake fa-fw",
-            },
-        ],
-    },
+    {"text": "Events", "fa": "fa fa-calendar fa-fw", "url": "/events.html"},
     {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
     {"text": "Discounts", "url": "/partnerships.html", "fa": "fa-regular fa-handshake"},
     {
@@ -63,11 +52,18 @@ class Support(Page):
 
 
 @app.page
-class SponsoredEvents(Page):
-    template = "sponsored-events.html"
-    slug = "sponsored-events"
+class Events(Page):
+    template = "events.html"
     data = json.loads(pathlib.Path("_data/sponsored_events.json").read_text())
-    template_vars = {}
+
+
+@app.collection
+class BPDEvents(Collection):
+    title = "BPD Events"
+    Parser = MarkdownPageParser
+    content_path = "events"
+    template = "default.html"
+    routes = ["./-events"]
 
 
 @app.page
@@ -81,17 +77,6 @@ class Pages(Collection):
     Parser = MarkdownPageParser
     content_path = "pages"
     template = "default.html"
-
-
-@app.collection
-class BPDEvents(Collection):
-    title = "BPD Events"
-    Parser = MarkdownPageParser
-    content_path = "events"
-    template = "default.html"
-    routes = ["./bpd-events"]
-    has_archive = True
-    archive_template = "event-list.html"
 
 
 @app.collection

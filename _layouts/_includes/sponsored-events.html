@@ -1,7 +1,5 @@
-{% extends 'default.html' %}
-{% block content %}
 <section>
-  <h1>Supported Events</h1>
+  <h2>Supported Events</h2>
 
   <p>Black Python Devs aims to partner with Python conferences and events around the world to increase the visibility and opportunities for Black developers and leaders in the Python community.</p>
 
@@ -17,7 +15,7 @@
 
   <section>
     <h2>Events Sponsored by year</h2>
-    {% for segment_year in data | sort(reverse=True) %}
+    {% for segment_year in data.sponsored | sort(reverse=True) %}
     {% if segment_year == year %}
     <details name="{{segment_year}}" open>
     {% else %}
@@ -25,10 +23,10 @@
     {% endif %}
     <summary>{{segment_year}}</summary>
       <section class="grid">
-      {% for segment in data[segment_year] | sort %}
+      {% for segment in data.sponsored[segment_year] | sort %}
       <article>
       <h3>{{segment}}</h3>
-        {% for event in data[segment_year][segment] | sort %}
+        {% for event in data.sponsored[segment_year][segment] | sort %}
           <p>{{event}}</p>
         {% endfor %}
       </article>
@@ -42,9 +40,3 @@
   <p>Interested in Black Python Devs supporting your event. Review our <a href="https://github.com/BlackPythonDevs/blackpythondevs/blob/main/policies/event-grants.md#22-budget-considerations">Grant Criteria</a> and email your prospectus to <a href="mailto:sponsorships@blackpythondevs.com">sponsorships@blackpythondevs.com</a></p>
 </section>
 
-<section>
-<h2>Regular Meetups</h2>
-
-  <p>Join us every Friday for a cup of coffee and a chance to code with fellow Python enthusiasts. Our community is open to all levels of experience, sharing tips and tricks, and working on projects together. Whether you're looking to learn something new or just want to hang out with like-minded people, this is the perfect opportunity to do so. We look forward to seeing you there!</p>
-</section>
-{%endblock %}
