@@ -594,6 +594,9 @@ ul.speaking-list {
   padding: 0;
   margin: 0;
   border: none;
+  background: transparent !important;
+  box-shadow: none !important;
+  width: auto;
 }
 
 .menu-item details summary {
@@ -601,6 +604,18 @@ ul.speaking-list {
   list-style: none;
   margin-bottom: 0;
   padding: 5px 0;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  color: #868e96;
+  font-weight: 700;
+  font-size: 0.88889rem;
+}
+
+.menu-item details summary:hover,
+.menu-item details[open] summary {
+  color: #3588ff;
+  background: transparent !important;
 }
 
 .menu-item details summary::-webkit-details-marker {
@@ -619,7 +634,8 @@ ul.speaking-list {
 .menu-item details ul {
   position: absolute;
   top: 100%;
-  left: 0;
+  right: 0;
+  left: auto;
   min-width: 200px;
   background-color: #222;
   border: 1px solid #d7d7d7;
@@ -627,7 +643,7 @@ ul.speaking-list {
   margin: 0;
   z-index: 1000;
   display: flex;
-  flex-direction: column;
+  flex-direction: column !important;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
