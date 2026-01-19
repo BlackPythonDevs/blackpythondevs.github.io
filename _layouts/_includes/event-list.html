@@ -1,0 +1,8 @@
+<article>
+  <h2>BPD Organized Events</h2>
+  <ul>
+    {% for page in data.bpd %}
+    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+  </ul>
+</article>

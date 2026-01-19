@@ -626,7 +626,7 @@ ul.speaking-list {
 
 /* Remove the default arrow from Pico or browser */
 .menu-item details.dropdown summary::after {
-  display: none; 
+  display: none;
 }
 
 .menu-item details.dropdown[open] > summary {
@@ -646,7 +646,7 @@ ul.speaking-list {
   z-index: 1000;
   display: flex !important;
   flex-direction: column !important;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   text-align: left; /* Keep text inside aligned left */
 }
 
