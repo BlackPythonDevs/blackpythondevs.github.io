@@ -9,11 +9,17 @@ navigation = [
     {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
     {"text": "Blog", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
-    {"text": "BPD Events", "url": "/bpd-events", "fa": "fa fa-calendar fa-fw"},
     {
-        "text": "Sponsored Events",
-        "url": "/sponsored-events.html",
-        "fa": "fa fa-handshake fa-fw",
+        "text": "Events",
+        "fa": "fa fa-calendar fa-fw",
+        "subitems": [
+            {"text": "BPD Events", "url": "/bpd-events", "fa": "fa fa-calendar fa-fw"},
+            {
+                "text": "Sponsored Events",
+                "url": "/sponsored-events.html",
+                "fa": "fa fa-handshake fa-fw",
+            },
+        ],
     },
     {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
     {"text": "Discounts", "url": "/partnerships.html", "fa": "fa-regular fa-handshake"},
