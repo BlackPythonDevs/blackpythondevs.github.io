@@ -9,13 +9,13 @@
         {% for item in navigation %} {% set current = nil %} {% set nav_lang = nil %} {% if item.url and url == item.url %} {% set current = 'nav-current' %} {% endif %} {% if lang != 'en' %} {% set nav_lang = lang %} {% endif %}
         <li class="menu-item {{ current }}" role="menuitem">
           {% if item.subitems %}
-            <details role="list">
+            <details role="list" class="dropdown">
               <summary aria-haspopup="listbox">
                 <i class="{{ item.fa }}" aria-hidden="true"></i>&nbsp;{{ item.text }}
               </summary>
-              <ul role="listbox">
+              <ul role="listbox" class="dropdown-menu">
                 {% for sub in item.subitems %}
-                  <li><a href="{{ nav_lang }}{{ sub.url }}"><i class="{{ sub.fa }}" aria-hidden="true"></i>&nbsp;{{ sub.text }}</a></li>
+                  <li class="dropdown-item"><a href="{{ nav_lang }}{{ sub.url }}"><i class="{{ sub.fa }}" aria-hidden="true"></i>&nbsp;{{ sub.text }}</a></li>
                 {% endfor %}
               </ul>
             </details>
