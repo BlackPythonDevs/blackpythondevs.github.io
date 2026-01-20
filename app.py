@@ -11,11 +11,10 @@ navigation = [
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
     {"text": "Events", "fa": "fa fa-calendar fa-fw", "url": "/events.html"},
     {"text": "Community", "url": "/community.html", "fa": "fa fa-users fa-fw"},
-    {"text": "Discounts", "url": "/partnerships.html", "fa": "fa-regular fa-handshake"},
     {
         "text": "Support Us",
         "url": "/support.html",
-        "fa": "fa-solid fa-money-check-dollar",
+        "fa": "fa-solid fa-hand-holding-heart",
     },
 ]
 
