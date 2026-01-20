@@ -1,5 +1,6 @@
 ---
-author: Jay Miller
+author:
+  - Jay Miller
 date: 2024-09-09
 description: Get the inside scoop on O'Reilly Media's innovative partnership with
   Black Python Devs and discover how it's revolutionizing access to high-quality learning

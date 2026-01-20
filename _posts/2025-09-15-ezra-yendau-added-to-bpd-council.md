@@ -1,9 +1,11 @@
 ---
-title: Ezra Yendau Added to BPD Council
+author:
+  - Jay Miller
 date: 2025-09-16
-author: Jay Miller
-description: The BPD Council has recognized the work of Ezra Yendau and invited him to join the Council.
+description: The BPD Council has recognized the work of Ezra Yendau and invited him
+  to join the Council.
 featured_image: /assets/images/ezra-yendau-council.webp
+title: Ezra Yendau Added to BPD Council
 ---
 
 Congratulations to [Ezra Yendau](https://www.linkedin.com/in/ezra-yendau-601ba3246/) for recognition and consideration for the BPD Council!

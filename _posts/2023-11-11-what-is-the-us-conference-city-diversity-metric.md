@@ -1,5 +1,6 @@
 ---
-author: Jay Miller
+author:
+  - Jay Miller
 date: 2023-11-11
 description: Discover how the US Conference Diversity Metric can inform your event's
   location and create a more inclusive experience for attendees, with expert analysis

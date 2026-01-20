@@ -1,9 +1,11 @@
 ---
-title: Nevin Godfrey Added to BPD Council
+author:
+  - Jay Miller
 date: 2025-11-25
-author: Jay Miller
-description: The BPD Council has recognized the work of Nevin Godfrey and invited him to join the Council.
+description: The BPD Council has recognized the work of Nevin Godfrey and invited
+  him to join the Council.
 featured_image: /assets/images/nevin-godfrey-council.webp
+title: Nevin Godfrey Added to BPD Council
 ---
 
 Congratulations to [Nevin Godfrey](https://www.linkedin.com/in/nevin-godfrey-43b80367/) for recognition and consideration for the BPD Council!

@@ -1,7 +1,7 @@
 ---
 title: Black Python Devs Regional Executorship Election Results
 date: 2025-11-11
-author: Jay Miller
+author: [Jay Miller]
 description: Announcing the results of our regional executorship election and congratulating our newly elected regional executives.
 ---
 

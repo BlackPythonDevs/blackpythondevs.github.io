@@ -1,5 +1,6 @@
 ---
-author: Jay Miller
+author:
+  - Jay Miller
 date: 2023-12-14
 description: Discover how Sarah Abderemane's selection to the Django Software Foundation
   Board of Directors is a significant milestone for the thriving Black Python Devs

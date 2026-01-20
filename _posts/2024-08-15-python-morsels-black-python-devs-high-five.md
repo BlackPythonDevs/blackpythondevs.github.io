@@ -1,5 +1,6 @@
 ---
-author: Jay Miller
+author:
+  - Jay Miller
 date: 2024-08-15
 description: Discover how to kickstart your Python skills with a comprehensive 10-week
   course, featuring daily exercises, community support, and real-world applications
