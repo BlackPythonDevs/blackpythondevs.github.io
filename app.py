@@ -6,7 +6,6 @@ from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
 
 navigation = [
-    {"text": "Home", "url": "/index.html", "fa": "fa fa-home fa-fw"},
     {"text": "News", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
     {"text": "Events", "fa": "fa fa-calendar fa-fw", "url": "/events.html"},
