@@ -1,11 +1,19 @@
 {
-  "2024": {
-    "Africa": ["PyCon Africa", "PyCon South Africa", "PyCon Zimbabwe", "PyCon Nigeria", "IndabaX - Botswana", "PyCon Uganda", "PyHo - Ghana"],
-    "North America": ["PyTexas", "PyOhio"]
-  },
-  "2025": {
-    "Africa": ["Django Girls - Koforidua", "Django Girls - Ho", "PyCon Africa", "DjangoCon Africa", "IndabaX - Botswana", "PyCon Namibia", "PyTogo", "Zero to Hero Mentorship Program - Nigeria", "PyCon Nigeria"],
-    "North America": ["PyTexas Foundation", "PyOhio", "PyBeach", "PyBay", "PyDay Santo Domingo (SDQ)"],
-    "South America": ["Ubuntu Tech - Colombia", "Django Girls - Colombia"]
+  "bpd": [
+    {
+      "title": "Black Python Devs Leadership Summita 2024",
+      "url": "/bpd-events/black-python-devs-leadership-summit-2024.html"
+    }
+  ],
+  "sponsored": {
+    "2024": {
+      "Africa": ["PyCon Africa", "PyCon South Africa", "PyCon Zimbabwe", "PyCon Nigeria", "IndabaX - Botswana", "PyCon Uganda", "PyHo - Ghana"],
+      "North America": ["PyTexas", "PyOhio"]
+    },
+    "2025": {
+      "Africa": ["Django Girls - Koforidua", "Django Girls - Ho", "PyCon Africa", "DjangoCon Africa", "IndabaX - Botswana", "PyCon Namibia", "PyTogo", "Zero to Hero Mentorship Program - Nigeria", "PyCon Nigeria"],
+      "North America": ["PyTexas Foundation", "PyOhio", "PyBeach", "PyBay", "PyDay Santo Domingo (SDQ)"],
+      "South America": ["Ubuntu Tech - Colombia", "Django Girls - Colombia"]
+    }
   }
 }
