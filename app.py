@@ -8,12 +8,6 @@ from render_engine_markdown import MarkdownPageParser
 navigation = [
     {"text": "News", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
-    {"text": "BPD Events", "url": "/bpd-events", "fa": "fa fa-calendar fa-fw"},
-    {
-        "text": "Sponsored Events",
-        "url": "/sponsored-events.html",
-        "fa": "fa fa-handshake fa-fw",
-    },
     {"text": "Discounts", "url": "/partnerships.html", "fa": "fa-regular fa-handshake"},
     {"text": "Events", "fa": "fa fa-calendar fa-fw", "url": "/events.html"},
     {
