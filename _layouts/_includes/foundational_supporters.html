@@ -3,14 +3,14 @@
   <p>Black Python Devs operates primarily on support from individuals. It is those supporters that serve as the foundation for what we do.</p>
   <p>We would like to recognize our supporters who donate at least $200 each year.</p>
 
-  {% for data_year in data %} {% if data_year == year %}
+  {% for data_year in foundational_supporters %} {% if data_year == year %}
   <details name="{{data_year}}" open>
     {% else %}
     <details name="{{data_year}}">
       {% endif %}
       <summary>{{data_year}}</summary>
       <div class="grid">
-        {% for data_lists in data[data_year] | sort | slice(3) %}
+        {% for data_lists in foundational_supporters[data_year] | sort | slice(3) %}
         <section class="">
           <div>
             <ul>

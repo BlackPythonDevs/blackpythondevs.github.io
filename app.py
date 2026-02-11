@@ -8,7 +8,6 @@ from render_engine_markdown import MarkdownPageParser
 navigation = [
     {"text": "News", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
     {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
-    {"text": "Discounts", "url": "/partnerships.html", "fa": "fa-regular fa-handshake"},
     {"text": "Events", "fa": "fa fa-calendar fa-fw", "url": "/events.html"},
     {
         "text": "Support Us",
@@ -46,7 +45,12 @@ class Support(Page):
     Parser = MarkdownPageParser
     content_path = "support.md"
     template = "support.html"
-    data = json.loads(pathlib.Path("_data/foundational_supporters.json").read_text())
+    data = {
+        "foundational_supporters": json.loads(
+            pathlib.Path("_data/foundational_supporters.json").read_text()
+        ),
+        "partnerships": json.loads(pathlib.Path("_data/partnerships.json").read_text()),
+    }
 
 
 @app.page
@@ -62,12 +66,6 @@ class BPDEvents(Collection):
     content_path = "events"
     template = "default.html"
     routes = ["./-events"]
-
-
-@app.page
-class Partnerships(Page):
-    template = "partnerships.html"
-    data = json.loads(pathlib.Path("_data/partnerships.json").read_text())
 
 
 @app.collection

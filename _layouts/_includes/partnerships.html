@@ -1,0 +1,17 @@
+<section>
+  <h2 id="partnerships">Partnerships</h2>
+  <p>Black Python Devs has partnered with the following organizations to offer discounts and benefits to our community.</p>
+  <div class="grid">
+    {% for partner in partnerships %}
+    <article>
+      <header>
+        <a href="{{partner.url}}">
+          <img src="{{partner.logo}}" alt="{{partner.name}} logo" style="max-height: 80px; object-fit: contain" />
+        </a>
+      </header>
+      <h3><a href="{{partner.url}}">{{partner.name}}</a></h3>
+      <p>{{partner.description}}</p>
+    </article>
+    {% endfor %}
+  </div>
+</section>

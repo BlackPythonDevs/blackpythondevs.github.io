@@ -3,6 +3,9 @@
 {% block content %}
 {{content}}
 {% include "_includes/support_widget.html" %}
+{% set partnerships=data.partnerships %}
+{% include "_includes/partnerships.html" %}
+{% set foundational_supporters=data.foundational_supporters %}
 {% include "_includes/foundational_supporters.html" %}
 {% include "_includes/pitch_deck.html" %}
 {% endblock %}
