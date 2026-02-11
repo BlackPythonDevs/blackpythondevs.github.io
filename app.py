@@ -46,8 +46,10 @@ class Support(Page):
     content_path = "support.md"
     template = "support.html"
     data = {
-            "foundational_supporters": json.loads(pathlib.Path("_data/foundational_supporters.json").read_text()),
-            "partnerships": json.loads(pathlib.Path("_data/partnerships.json").read_text()),
+        "foundational_supporters": json.loads(
+            pathlib.Path("_data/foundational_supporters.json").read_text()
+        ),
+        "partnerships": json.loads(pathlib.Path("_data/partnerships.json").read_text()),
     }
 
 
