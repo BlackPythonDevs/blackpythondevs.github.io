@@ -47,6 +47,7 @@ class Support(Page):
     content_path = "support.md"
     template = "support.html"
     data = json.loads(pathlib.Path("_data/foundational_supporters.json").read_text())
+    partnerships = json.loads(pathlib.Path("_data/partnerships.json").read_text())
 
 
 @app.page
