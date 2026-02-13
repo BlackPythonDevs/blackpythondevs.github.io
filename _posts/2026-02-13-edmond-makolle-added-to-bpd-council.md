@@ -3,7 +3,7 @@ author:
   - Sarah Abderemane
 date: 2026-02-13
 description: The BPD Council has recognized the work of Edmond Makolle and invited him to join the Council.
-featured_image: /assets/images/edmond-makolle-council.webp
+featured_image: /assets/images/banner_edmond_makolle.webp
 title: Edmond Makolle Added to BPD Council
 ---
 
