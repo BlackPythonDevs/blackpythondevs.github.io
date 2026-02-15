@@ -99,7 +99,6 @@ LANG_ROUTES = (
     "/",
     "/about.html",
     "/bpd-events/",
-    "/community.html",
     "/support.html",
     "/blog/",
 )
@@ -129,7 +128,6 @@ def test_headers_in_language(browser_context, route: str) -> None:
         ("Blog", "/blog/"),
         ("About Us", "/about.html"),
         ("BPD Events", "/bpd-events/"),
-        ("Community", "/community.html"),
         ("Support Us", "/support.html"),
     ),
 )

@@ -137,7 +137,6 @@ After systematically reviewing all 38 HTML files in the output directory, **147 
 ### Pages with Fewest Issues (2 issues each):
 
 - Most individual blog posts (22 files) - title + hreflang only
-- `/community.html` - title + copyright only
 - `/support.html` - title + copyright only
 
 ## Recommendations
