@@ -6,7 +6,6 @@ help:
     @just --list
 
 # Install dependencies
-install: sync
 sync:
     uv sync --all-extras
 
@@ -23,6 +22,10 @@ lint:
     uv run ruff check .
     uv run ruff format --check .
 
+# Install hooks
+install-hooks:
+    uv run pre-commit install
+
 # Run pre-commit hooks
 pre-commit:
     uv run pre-commit run --all-files
@@ -36,5 +39,5 @@ test-verbose:
     uv run --dev pytest -v
 
 # Run full development workflow
-dev: install lint test build
+dev: sync lint test build
     @echo "✓ Development workflow complete"
