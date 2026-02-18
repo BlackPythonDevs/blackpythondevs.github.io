@@ -146,9 +146,7 @@ This project uses uv as it is currently the easiest way for developers with diff
 
 This project provides a [justfile](./justfile) to simplify common development tasks.
 
-Before running any of the commands below, ensure that [just](https://just.systems/man/en/introduction.html) is installed on your system.
-
-Once installed, you can run the following commands from the project root:
+Before running any of the commands below, ensure that [just](https://just.systems/man/en/introduction.html) is installed on your system.Once installed, you can run the following commands from the project root:
 
 - Install all dependencies using `uv sync`
 
@@ -160,6 +158,12 @@ just sync
 
 ```
 just serve
+```
+
+- Run build
+
+```
+just build
 ```
 
 - Run linters
