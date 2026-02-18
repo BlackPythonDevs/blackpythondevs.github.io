@@ -69,8 +69,6 @@ class About(Page):
     data = yaml.safe_load(pathlib.Path("_data/leadership.yaml").read_text())
 ```
 
-```
-
 The `@app.page` tells Render Engine that we're building a single page vs a collection of pages.
 
 The `class About(Page):` tells us about the Page object. Attributes will pass information on render engine and the jinja template that will be loaded
@@ -144,6 +142,60 @@ This project uses uv as it is currently the easiest way for developers with diff
 
   ![Pytest terminal](/assets/images/pytest_run_terminal.png)
 
+### Using Justfile
+
+This project provides a [justfile](./justfile) to simplify common development tasks.
+
+Before running any of the commands below, ensure that [just](https://just.systems/man/en/introduction.html) is installed on your system.
+
+Once installed, you can run the following commands from the project root:
+
+- Install all dependencies using `uv sync`
+
+```
+just sync
+```
+
+- Run the development server
+
+```
+just serve
+```
+
+- Run linters
+
+```
+just lint
+```
+
+- Run the test
+
+```
+just test
+```
+
+- Run pre-commit hooks
+
+```
+just pre-commit
+```
+
+- Run the full development workflow
+
+```
+just dev
+```
+
+- List available commands
+
+```
+just
+
+or
+
+just --list
+```
+
 ### Pushing Changes
 
 - Run `git commit -m "<Your commit message>"` to commit your changes.
@@ -160,26 +212,23 @@ This project uses uv as it is currently the easiest way for developers with diff
 
 Events are currently created manually by adding entries to `_data/events.json`. To create a conference, use the following JSON structure:
 
-```
-
+```json
 {
-"name": "Conference name",
-"url": "https://blackpythondevs.com/",
-"start_date": "2025-02-10",
-"end_date": "2025-09-20",
-"location": "Thailand",
-"description": "Lorem ipsum dolor sit amet consectetur adipiscing elit ...",
-"speaker": "Tim Osahenru"
+  "name": "Conference name",
+  "url": "https://blackpythondevs.com/",
+  "start_date": "2025-02-10",
+  "end_date": "2025-09-20",
+  "location": "Thailand",
+  "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit ...",
+  "speaker": "Tim Osahenru"
 }
-
 ```
 
 ### Regular meetups
 
 We have two recurring meetups: **Coffee and Code** and our **Monthly Meetup**. These events remain consistent in format, with only the **date, time, and speaker** subject to change. Updates can be made within the `meetups` list:
 
-```
-
+```json
 {
 "name": "Coffee and Code",
 "date": "2023-09-20",
@@ -196,7 +245,4 @@ We have two recurring meetups: **Coffee and Code** and our **Monthly Meetup**. T
 "speaker": "Jay Miller",
 "topic": "Open Source"
 }
-
-```
-
 ```
