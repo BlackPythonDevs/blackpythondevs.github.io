@@ -1,4 +1,4 @@
-# Black Python Devs Website - Task Runner
+# Black Python Devs Website - Just recipes
 # Run tasks with: just <task-name>
 
 # Display all available commands
