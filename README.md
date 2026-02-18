@@ -226,6 +226,13 @@ You can deploy your project locally but the fastest way to contribute is to use 
             <br />
             <sub><b>Brijesh Thummar</b></sub>
         </a>
+    </td>
+    <td align="center">
+        <a href="https://github.com/danielcrisho">
+            <img src="https://avatars.githubusercontent.com/u/69733783?v=4" width="100;" alt="danielcristho"/>
+            <br />
+            <sub><b>Daniel Pepuho</b></sub>
+        </a>
     </td></tr>
 </table>
 <!-- readme: collaborators,contributors -end -->
