@@ -52,17 +52,6 @@ We're looking for submissions around the following:
   </footer>
 </section>
 
-Who is invited?
-Anyone in leadership or wanting to get into leadership at the local, regional, or global level of the Python community and its many organizations.
-How much is it?
-Free
-There's a CFP this year?
-We're happy to be partnering with PyOhio this year and they've agreed to let us user their CFP system. This gives us the ability to invite potential speakers. We will reveal instructions soon!
-Is there speaker reimbursement?
-We will be able to reimburse speakers for travel based on our travel support policy.
-
-## CFP Open Now!
-
 ## Schedule
 
 - 09:30 - Keynote Speaker - TBA
