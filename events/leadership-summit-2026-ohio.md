@@ -4,10 +4,10 @@ slug: black-python-devs-leadership-summit-2026-ohio
 ---
 
 ![event_banner for bdp-leaership-summit-2026-ohio](/assets/images/bpd-leadership-summit-2026-ohio-banner.jpg)
+
 <!-- markdownlint-disable MD033 MD041 -->
 
-
-The Black Python Devs Leadership Summit is a Single Day workshop where leaders in the Python Community are invited to connect, grow, and learn with one another. 
+The Black Python Devs Leadership Summit is a Single Day workshop where leaders in the Python Community are invited to connect, grow, and learn with one another.
 
 We are happy to announce the 2026 Black Python Devs Leadership Summit, held the day before PyOhio **July 25 2026** at the PyOhio Venue - **Cleveland State University Student Center in Cleveland, OH**.
 
@@ -19,10 +19,9 @@ Even though Black Pyhon Devs is the producer of this event, this event is a publ
 
 Anyone in leadership or wanting to get into leadership at the local, regional, or global level of the Python community and its many organizations will benefit from attending this event.
 
-## How much is it? 
+## How much is it?
 
 **Free**
-
 
 ## Is there a CFP
 
@@ -55,17 +54,14 @@ We're looking for submissions around the following:
 
 Who is invited?
 Anyone in leadership or wanting to get into leadership at the local, regional, or global level of the Python community and its many organizations.
-How much is it? 
+How much is it?
 Free
-There's a CFP this year? 
+There's a CFP this year?
 We're happy to be partnering with PyOhio this year and they've agreed to let us user their CFP system. This gives us the ability to invite potential speakers. We will reveal instructions soon!
 Is there speaker reimbursement?
 We will be able to reimburse speakers for travel based on our travel support policy.
 
-
 ## CFP Open Now!
-
-
 
 ## Schedule
 
@@ -80,5 +76,3 @@ We will be able to reimburse speakers for travel based on our travel support pol
 - 3:30 - Community Talk
 - 4:00 - Break & Setup
 - 4:15 - Closing Remarks - Jay Miller
-
-
