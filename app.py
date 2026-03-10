@@ -65,7 +65,7 @@ class BPDEvents(Collection):
     Parser = MarkdownPageParser
     content_path = "events"
     template = "default.html"
-    routes = ["./-events"]
+    routes = ["./bpd-events"]
 
 
 @app.collection
