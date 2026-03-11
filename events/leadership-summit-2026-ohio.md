@@ -13,6 +13,9 @@ We are happy to announce the 2026 Black Python Devs Leadership Summit, held the 
 
 This is done in partnership with the [PyOhio Organization](https://www.pyohio.org/2026/) that Black Python Devs has been proud to support for several years.
 
+<a role="button" href="https://pretalx.com/pyohio-2026/submit/?track=6985-black-python-devs-leadership-summit">Submit Talk Today!</a>
+<a role="button" class="secondary" href="https://pyohio.org/2026">Learn More About PyOhio</a>
+
 ## Who is invited?
 
 Even though Black Python Devs is the producer of this event, this event is a public event held under the Code of Conduct for [Black Python Devs](https://blackpythondevs.com/code-of-conduct.html) and [PyOhio](https://www.pyohio.org/2026/code-of-conduct/).
