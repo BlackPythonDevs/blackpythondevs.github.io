@@ -27,7 +27,7 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 
 For the first time we're opening up the afternoon sessions to selected speakers from a Call for Papers (CFP). We hope to bring presentations from folks all over to energize and inform today's and tomorrow's Leaders of the Python Community.
 
-The [CFP is currently open](https://pretalx.com/pyohio-2026/submit). Set the track to _Black Python Devs Leadership Summit_. Talk should be 20 minutes with Q&A.
+The [CFP is currently open](https://pretalx.com/pyohio-2026/submit/?track=6985-black-python-devs-leadership-summit). Set the track to _Black Python Devs Leadership Summit_. Talk should be 20 minutes with Q&A.
 
 We're looking for submissions around the following:
 
@@ -54,11 +54,15 @@ We're looking for submissions around the following:
 
 ## Schedule
 
-- 09:30 - Keynote Speaker - TBA
-- 10:45 - (Break)
-- 11:00 - Chop it up session - Everyone
-- 12:00 - 1:30 Lunch (Break)
-- 1:30 - Afternoon Keynote - TBA
+- 08:00 - Registration and Mingling
+- 09:00 - Welcome
+- 09:15 - Venue Sponsor Host - PyOhio
+- 09:20 - Keynote Speaker - TBA
+- 10:20 - Break & Setup
+- 10:30 - Chop it up session - Everyone
+- 11:30 - 1:00 Lunch (Break)
+- 1:05 - Corporate Sponsor
+- 1:15 - Afternoon Keynote - TBA
 - 2:15 - Break & Setup
 - 2:30 - Community Talk
 - 3:00 - Community Talk
