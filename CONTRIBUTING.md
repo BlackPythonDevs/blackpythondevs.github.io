@@ -106,7 +106,7 @@ The `class About(Page):` tells us about the Page object. Attributes will pass in
 ## Working on an issue
 
 - Please create a separate branch for each issue you work on. Avoid working on multiple issues from the same branch, as this can complicate the review process
-- The easiest way to make changes and and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
+- The easiest way to make changes and test them is by using [![GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/BlackPythonDevs/blackpythondevs.github.io)
 
 - You can also access the Codespaces from the repository main page:
 
