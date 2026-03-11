@@ -3,19 +3,19 @@ title: Black Python Devs Leadership Summit 2026 at PyOhio
 slug: black-python-devs-leadership-summit-2026-ohio
 ---
 
-![event_banner for bdp-leaership-summit-2026-ohio](/assets/images/bpd-leadership-summit-2026-ohio-banner.jpg)
+![event_banner for bdp-leadership-summit-2026-ohio](/assets/images/bpd-leadership-summit-2026-ohio-banner.jpg)
 
 <!-- markdownlint-disable MD033 MD041 -->
 
 The Black Python Devs Leadership Summit is a Single Day workshop where leaders in the Python Community are invited to connect, grow, and learn with one another.
 
-We are happy to announce the 2026 Black Python Devs Leadership Summit, held the day before PyOhio **July 25 2026** at the PyOhio Venue - **Cleveland State University Student Center in Cleveland, OH**.
+We are happy to announce the 2026 Black Python Devs Leadership Summit, held the day before PyOhio **July 25 2026** at the PyOhio venue - **Cleveland State University Student Center in Cleveland, OH**.
 
 This is done in partnership with the [PyOhio Organization](https://www.pyohio.org/2026/) that Black Python Devs has been proud to support for several years.
 
 ## Who is invited?
 
-Even though Black Pyhon Devs is the producer of this event, this event is a public event held under the Code of Conduct for [Black Python Devs](https://blackpythondevs.com/code-of-conduct.html) and [PyOhio](https://www.pyohio.org/2026/code-of-conduct/).
+Even though Black Python Devs is the producer of this event, this event is a public event held under the Code of Conduct for [Black Python Devs](https://blackpythondevs.com/code-of-conduct.html) and [PyOhio](https://www.pyohio.org/2026/code-of-conduct/).
 
 Anyone in leadership or wanting to get into leadership at the local, regional, or global level of the Python community and its many organizations will benefit from attending this event.
 
