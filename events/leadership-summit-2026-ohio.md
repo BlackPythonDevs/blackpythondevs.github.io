@@ -9,7 +9,7 @@ slug: black-python-devs-leadership-summit-2026-ohio
 
 The Black Python Devs Leadership Summit is a Single Day workshop where leaders in the Python Community are invited to connect, grow, and learn with one another.
 
-We are happy to announce the 2026 Black Python Devs Leadership Summit, held the day before PyOhio **July 25 2026** at the PyOhio venue - **Cleveland State University Student Center in Cleveland, OH**.
+We are happy to announce the 2026 Black Python Devs Leadership Summit on **July 24 2026**, the day before PyOhio, at the PyOhio venue - **Cleveland State University Student Center in Cleveland, OH**.
 
 This is done in partnership with the [PyOhio Organization](https://www.pyohio.org/2026/) that Black Python Devs has been proud to support for several years.
 
