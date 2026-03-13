@@ -32,6 +32,39 @@ For the first time we're opening up the afternoon sessions to selected speakers 
 
 The [CFP is currently open](https://pretalx.com/pyohio-2026/submit/?track=6985-black-python-devs-leadership-summit). Set the track to _Black Python Devs Leadership Summit_. Talk should be 20 minutes with Q&A.
 
+The CFP closes on 2026-04-20 08:00 (America/New_York).
+
+<div id="cfp-countdown" style="text-align:center; margin: 1.5rem 0; padding: 1.5rem; border: 1px solid var(--pico-card-border-color); border-radius: var(--pico-border-radius); background: var(--pico-card-background-color); box-shadow: var(--pico-box-shadow);">
+  <p id="countdown-text" style="font-size: 1.25rem; font-weight: bold;"></p>
+  <a role="button" href="https://pretalx.com/pyohio-2026/submit/?track=6985-black-python-devs-leadership-summit">Submit to the CFP</a>
+</div>
+
+<script>
+(function() {
+  const deadline = new Date("2026-04-20T08:00:00-04:00");
+  const el = document.getElementById("countdown-text");
+  const container = document.getElementById("cfp-countdown");
+
+  function update() {
+    const now = new Date();
+    const diff = deadline - now;
+    if (diff <= 0) {
+      el.textContent = "The CFP is now closed.";
+      const btn = container.querySelector("a[role='button']");
+      if (btn) { btn.setAttribute("disabled", ""); btn.removeAttribute("href"); }
+      return;
+    }
+    const days = Math.floor(diff / 86400000);
+    const hours = Math.floor((diff % 86400000) / 3600000);
+    const minutes = Math.floor((diff % 3600000) / 60000);
+    const seconds = Math.floor((diff % 60000) / 1000);
+    el.textContent = days + "d " + hours + "h " + minutes + "m " + seconds + "s until CFP closes";
+    requestAnimationFrame(update);
+  }
+  update();
+})();
+</script>
+
 We're looking for submissions around the following:
 
 - serving as a leader in a regional or global tech community
