@@ -3,7 +3,7 @@ name = "blackpythondevs-site"
 version = "0.1.0"
 description = "Black Python Devs community website"
 requires-python = ">=3.13"
-dependencies = ["render-engine[cli]>=2025.7.1a1", "pyyaml"]
+dependencies = ["render-engine[cli]>=2026.3.4a2", "pyyaml"]
 
 [project.optional-dependencies]
 dev = [
@@ -18,7 +18,7 @@ dev = [
   "axe-playwright-python==0.1.7",
 ]
 
-[render-engine.cli]
+[tool.render-engine.cli]
 module = "app"
 site = "app"
 

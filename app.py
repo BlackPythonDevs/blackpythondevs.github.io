@@ -16,6 +16,13 @@ navigation = [
     },
 ]
 
+markdown_extras = [
+    "footnotes",
+    "fenced-code-blocks",
+    "header-ids",
+    "tables",
+]
+
 app = Site()
 app.template_path = "_layouts"
 app.static_paths.add("assets")
@@ -63,6 +70,7 @@ class Events(Page):
 class BPDEvents(Collection):
     title = "BPD Events"
     Parser = MarkdownPageParser
+    parser_extras = {"markdown_extras": markdown_extras}
     content_path = "events"
     template = "default.html"
     routes = ["./bpd-events"]
@@ -71,6 +79,7 @@ class BPDEvents(Collection):
 @app.collection
 class Pages(Collection):
     Parser = MarkdownPageParser
+    parser_extras = {"markdown_extras": markdown_extras}
     content_path = "pages"
     template = "default.html"
 
@@ -78,6 +87,7 @@ class Pages(Collection):
 @app.collection
 class Blog(Blog):
     Parser = MarkdownPageParser
+    parser_extras = {"markdown_extras": markdown_extras}
     template = "post.html"
     content_path = "_posts"
     routes = ["./blog"]

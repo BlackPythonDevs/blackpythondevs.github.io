@@ -1,0 +1,103 @@
+Error with markdown2 when upgrading render-engine
+
+Recent Change  from `uv sync --upgrade`
+
+```diff
+diff --git a/pyproject.toml b/pyproject.toml
+index 64fab8b..cfed612 100644
+--- a/pyproject.toml
++++ b/pyproject.toml
+@@ -3,7 +3,7 @@ name = "blackpythondevs-site"
+ version = "0.1.0"
+ description = "Black Python Devs community website"
+ requires-python = ">=3.13"
+-dependencies = ["render-engine[cli]>=2025.7.1a1", "pyyaml"]
++dependencies = ["render-engine[cli]>=2025.11.1", "pyyaml"]
+ 
+ [project.optional-dependencies]
+ dev = [
+@@ -18,7 +18,7 @@ dev = [
+   "axe-playwright-python==0.1.7",
+ ]
+ 
+-[render-engine.cli]
++[tool.render-engine.cli]
+ module = "app"
+ site = "app"
+``` 
+
+
+Here is the output from `uv run render-engine build`
+
+```bash
+uv run --no-dev --prerelease=allow render-engine build
+Traceback (most recent call last):
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/bin/render-engine", line 10, in <module>
+    sys.exit(app())
+             ~~~^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           ~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+                           ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine_cli/cli.py", line 145, in build
+    site.render()
+    ~~~~~~~~~~~^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine/site.py", line 384, in render
+    entry.render(*args)
+    ~~~~~~~~~~~~^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine/collection.py", line 316, in render
+    for entry in ThreadPool(processes=os.cpu_count()).imap_unordered(self._render, self.all_content):
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/.local/share/uv/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/multiprocessing/pool.py", line 873, in next
+    raise value
+  File "/Users/kjaymiller/.local/share/uv/python/cpython-3.14.2-macos-aarch64-none/lib/python3.14/multiprocessing/pool.py", line 125, in worker
+    result = (True, func(*args, **kwds))
+                    ~~~~^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine/collection.py", line 306, in _render
+    entry.render(self.site.theme_manager)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine/page.py", line 167, in render
+    self.rendered_content = self._render_content(theme_manager.engine)
+                            ~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine/page.py", line 129, in _render_content
+    return self._render_from_template(template, **kwargs)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine/page.py", line 88, in _render_from_template
+    template_data = {"data": self._data, "content": self._content}
+                                                    ^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine/page.py", line 263, in _content
+    return self.Parser.parse(self.content, extras=getattr(self, "parser_extras", {}))
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/render_engine_markdown/__init__.py", line 18, in parse
+    return markdown(
+        content,
+        extras=extras.get("markdown_extras", []) if extras else [],
+    )
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/markdown2.py", line 210, in markdown
+    use_file_vars=use_file_vars, cli=cli).convert(text)
+                                          ~~~~~~~^^^^^^
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/markdown2.py", line 504, in convert
+    text = self._hash_html_blocks(text, raw=True)
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/markdown2.py", line 255, in inner
+    text = func(md, text, *args, **kwargs)
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/markdown2.py", line 991, in _hash_html_blocks
+    text = self._strict_tag_block_sub(text, self._block_tags_a, hash_html_block_sub)
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/markdown2.py", line 1120, in _strict_tag_block_sub
+    block = callback(block.rstrip('\n'))  # remove trailing newline
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/markdown2.py", line 4417, in result
+    return function(*args + rest, **combined)
+  File "/Users/kjaymiller/blackpythondevs.github.io/.venv/lib/python3.14/site-packages/markdown2.py", line 927, in _hash_html_block_sub
+    assert m is not None
+           ^^^^^^^^^^^^^
+AssertionError
+error: Recipe `build` failed on line 18 with exit code 1
+```
