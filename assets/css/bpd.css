@@ -438,6 +438,17 @@ a.white-button {
   color: #fff !important;
 }
 
+.hero-section article {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.hero-section article > header {
+  min-height: 6em;
+  display: flex;
+}
+
 img.leadership-photo {
   border-radius: 1em;
   width: 5rem;
