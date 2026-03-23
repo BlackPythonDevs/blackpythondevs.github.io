@@ -42,4 +42,3 @@ $(document).ready(function () {
     loadLanguage($("#language option:selected").val());
   });
 });
-
