@@ -1,6 +1,4 @@
-name: Playwright Tests
-# https://devblogs.microsoft.com/python/announcing-playwright-for-python-reliable-end-to-end-testing-for-the-web/
-# https://github.com/marketplace/actions/run-playwright-tests
+name: Site Tests
 
 on:
   push:
@@ -13,7 +11,7 @@ on:
 
 jobs:
   test:
-    timeout-minutes: 30
+    timeout-minutes: 10
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -22,11 +20,8 @@ jobs:
         with:
           version: "latest"
       - name: Set up Python
-        run: uv python install 3.12
+        run: uv python install 3.13
       - name: Install dependencies
-        run: |
-          uv sync --extra dev
-          uv run playwright install --with-deps chromium
+        run: uv sync --extra dev
       - name: Run Tests
-        run: |
-          uv run python -m pytest tests/test.py::test_destination -v || echo "Some tests failed but continuing..."
+        run: uv run pytest -v
