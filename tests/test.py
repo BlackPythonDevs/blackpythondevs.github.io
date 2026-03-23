@@ -113,9 +113,7 @@ def test_headers_in_language(
         ("Support | Black Python Devs", "support.html"),
     ),
 )
-def test_bpdevs_title_en(
-    built_site: pathlib.Path, title: str, file_path: str
-) -> None:
+def test_bpdevs_title_en(built_site: pathlib.Path, title: str, file_path: str) -> None:
     """Check that each page has the expected title."""
     parsed = parse_html(built_site / file_path)
     assert parsed.title == title, f"Expected title '{title}', got '{parsed.title}'"
@@ -151,6 +149,6 @@ def test_blog_post_has_meta_description(
 ) -> None:
     """Check that each blog post has a meta description tag."""
     parsed = parse_html(post_file)
-    assert parsed.meta_description is not None, (
-        f"Missing meta description in {post_file.name}"
-    )
+    assert (
+        parsed.meta_description is not None
+    ), f"Missing meta description in {post_file.name}"

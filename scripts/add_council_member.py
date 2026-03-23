@@ -115,13 +115,17 @@ Congratulations again to {first_name}!
 
 
 def main():
-    parser = argparse.ArgumentParser(
-        description="Add a new member to the BPD Council"
+    parser = argparse.ArgumentParser(description="Add a new member to the BPD Council")
+    parser.add_argument(
+        "--name", required=True, help="Full name of the new council member"
     )
-    parser.add_argument("--name", required=True, help="Full name of the new council member")
     parser.add_argument("--image", required=True, help="Path to the member's photo")
-    parser.add_argument("--bio", required=True, help="Bio paragraph(s) for the blog post")
-    parser.add_argument("--linkedin", default=None, help="LinkedIn profile URL (optional)")
+    parser.add_argument(
+        "--bio", required=True, help="Bio paragraph(s) for the blog post"
+    )
+    parser.add_argument(
+        "--linkedin", default=None, help="LinkedIn profile URL (optional)"
+    )
     parser.add_argument(
         "--date",
         default=None,
