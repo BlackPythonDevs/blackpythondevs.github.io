@@ -1,14 +1,15 @@
 <div class="grid">
-  <article id="join-us">
+  <article id="join-us" class="card">
     <div class="grid">
-      <a href="https://discord.gg/XUc3tFqCT3" role="button" class="pico-background-violet-650">
-        <span style="margin: 0 1rem"> <i class="fab fa-discord"></i></span>
-        <span> Join our Discord </span>
+      <a href="https://discord.gg/XUc3tFqCT3" role="button" class="btn-discord">
+        <i class="iconoir-discord" aria-hidden="true"></i>
+        <span>Join our Discord</span>
       </a>
 
-      <a href="https://www.linkedin.com/groups/14336241/" role="button" class="pico-background-azure-650 white-button"
-        ><span style="margin: 0 1rem"><i class="fab fa-linkedin"></i></span>Join our LinkedIn Group</a
-      >
+      <a href="https://www.linkedin.com/groups/14336241/" role="button" class="btn-linkedin">
+        <i class="iconoir-linkedin" aria-hidden="true"></i>
+        <span>Join our LinkedIn Group</span>
+      </a>
     </div>
   </article>
 </div>
@@ -26,12 +27,5 @@
       Fund as detailed here.</small
     >
   </article>
-  <section>
-    <h3>Corporate Sponsors</h3>
-    <div class="grid">
-      <article class="sponsor">
-        <img src="/assets/images/gnome-foundation-blue.png" alt="GNOME Foundation Logo" style="height: 2rem" />
-      </article>
-    </div>
-  </section>
+  {% include "_includes/sponsors.html" %}
 </div>

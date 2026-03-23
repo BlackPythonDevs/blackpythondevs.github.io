@@ -10,10 +10,10 @@
 </div>
 
 <article class="grid hero">
-  <div>
-    <img style="max-width: 15rem; max-height:20rem;" src="/assets/images/bpd_stacked.png" alt="Black Python Devs logo" />
+  <div style="display:flex;align-items:center;justify-content:center">
+    <img style="max-width: 14rem; max-height:18rem; filter: drop-shadow(0 4px 40px var(--bpd-gold-wash));" src="/assets/images/bpd_stacked.png" alt="Black Python Devs logo" />
   </div>
-  <div style="">
+  <div style="display:flex;align-items:center">
     <h1 class="hero-text">Helping build communities for Black Pythonistas around the world.</h1>
   </div>
 </article>
@@ -21,8 +21,5 @@
 
   {{ content }}
 
-
-  {% include "_includes/latest-posts.html" %}
-  {% include "_includes/join_us.html" %}
-  {% include "_includes/newsletter_form.html" %}
+  {% include "_includes/sponsors.html" %}
 {% endblock %}

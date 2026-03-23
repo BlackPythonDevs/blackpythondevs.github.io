@@ -57,14 +57,7 @@
       "title": "Welcoming Team"
     }
   ],
-  "Advisors": [
-    "Benedict Koji Amofah",
-    "Ronald Maravanyika",
-    "Kojo Idrissa",
-    "Carol Willing",
-    "Jeff Triplett",
-    "Dr. Kari L. Jordan"
-  ],
+  "Advisors": ["Benedict Koji Amofah", "Ronald Maravanyika", "Kojo Idrissa", "Carol Willing", "Jeff Triplett", "Dr. Kari L. Jordan"],
   "Council": [
     "Dawn Wages",
     "Sarah Abderemane",

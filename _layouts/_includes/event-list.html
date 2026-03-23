@@ -1,8 +1,8 @@
-<article>
+<section>
   <h2>BPD Organized Events</h2>
-  <ul>
+  <div class="grid" style="grid-template-columns: repeat(auto-fit, minmax(220px, 320px))">
     {% for page in data.bpd %}
-    <li><a href="{{ page.url }}">{{ page.title }}</a></li>
+    <div class="card" style="padding: 1.25rem 1.5rem"><a href="{{ page.url }}">{{ page.title }}</a></div>
     {% endfor %}
-  </ul>
-</article>
+  </div>
+</section>

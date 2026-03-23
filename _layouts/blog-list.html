@@ -3,28 +3,26 @@
 <section>
 <h1>Blog Posts</h1>
     {% for page in pages %}
-      <article class="grid">
-        {% if page.featured_image %}<div><img class="featured-image" src="{{page.featured_image}}" /></div>{% endif %}
+      <article class="card grid" style="align-items: center; gap: 2rem;">
+        {% if page.featured_image %}<div><img class="featured-image" src="{{page.featured_image}}" style="width:100%; border-radius: 10px; object-fit:cover;" /></div>{% endif %}
         <div>
-          <h2><a href="{{ page }}.html">
+          <h2 style="margin-bottom: .4rem;"><a href="{{ page }}.html">
               {{ page.title }}
           </a></h2>
           {% if page.description %}
-          <p>{{page.description}}</p>
+          <p style="color: var(--bpd-muted); margin-bottom: .6rem;">{{page.description}}</p>
           {% endif %}
-          <small>{% if page.author %}{{page.author | join(", ")}} - {% endif %}<strong>{{page.date | format_datetime}}</strong></small>
+          <small>{% if page.author %}{{page.author | join(", ")}} <span style="color:var(--bpd-faint);">&middot;</span> {% endif %}<strong>{{page.date | format_datetime}}</strong></small>
         </div>
       </article>
     {% endfor %}
     </section>
 <section>
-  <div role="group">
-    <h4>Pages:</h4>
-    <div>
+  <div role="group" style="display:flex; align-items:center; justify-content:center; gap:.5rem; flex-wrap:wrap; margin-top: 2rem;">
+    <span style="color:var(--bpd-muted); font-weight:500; margin-right:.5rem;">Pages:</span>
   {% for page in range(1, num_of_pages|int + 1) %}
       <a role="button" {% if page == archive_index %} disabled {% endif %} href="/blog/blog{{page}}.html">{{ page }}</a>
   {% endfor %}
-  </div>
   </div>
 </section>
 {%endblock %}
