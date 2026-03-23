@@ -2,19 +2,10 @@
 
 {% block content %}
 <section class="container">
-  {%- if featured_image -%}
-  <div class="hero-banner">
-    <img src="{{ featured_image }}" class="featured-image" alt="author image">
-  </div>
-  {%- else -%}
-  <div class="hero-banner">
-      <img src="/assets/images/bpd_stacked.png" class="featured-image" alt="Hero image">
-  </div>
-  {%- endif -%}
   <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
-    <header class="post-header">
+    <header class="post-header" style="margin-bottom: 2rem; padding-bottom: 1.5rem; border-bottom: 1px solid var(--bpd-border);">
       <h1 class="post-title p-name" itemprop="name headline">{{ title }}</h1>
-      <p class="post-meta">
+      <p class="post-meta" style="color: var(--bpd-muted); font-size: .9rem;">
         {% if author %}
         <span itemprop="author" itemscope itemtype="http://schema.org/Person">
           {% for person in author %}
@@ -25,7 +16,7 @@
         {% endif %}
       </p>
     </header>
-    <div class="post-content e-content" itemprop="articleBody">
+    <div class="post-content e-content" itemprop="articleBody" style="font-size: 1.05rem; line-height: 1.82;">
       {{ content }}
     </div>
   </article>
@@ -36,9 +27,10 @@
   {% for author_name in author %}
     {% set author_data = SITE_AUTHORS | selectattr("name", "equalto", author_name) | first %}
     {% if author_data and author_data.bio %}
-      <hr />
-      <h3>About {{author_data.name}}</h3>
-      <p>{{author_data.bio|e}}</p>
+      <article style="border-left: 3px solid var(--bpd-gold); margin-top: 2rem;">
+        <h3 style="margin-bottom: .5rem;">About {{author_data.name}}</h3>
+        <p style="color: var(--bpd-muted);">{{author_data.bio|e}}</p>
+      </article>
     {% endif %}
   {% endfor %}
   {% endif %}

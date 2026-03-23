@@ -1,6 +1,7 @@
 {% extends 'default.html' %}
 {% block content %}
-  <article>
+
+<section>
   <h1 id="about-black-python-devs">About Black Python Devs</h1>
 
   <p>Black Python Devs was created by its founder Jay Miller after seeing a trend of the same handful of Black developers speaking at major conferences, taking leadership positions, and dealing with the same challenges towards burnout.</p>
@@ -16,115 +17,117 @@
   </p>
 
   <p>At PyCon US 2023 after an open space a Discord server called Black Python Devs was created where the community could continue to encourage this momentum and support one another.</p>
-    </article>
-<section>
-  <article>
-    <h2 id="our-principles">Our Principles</h2>
-    <ul>
-      <li><strong>Diverse Leadership:</strong> We build and support diverse leadership in Python globally.</li>
-      <li><strong>Financial Support:</strong> We provide financial support for Python and tech communities in Black communities, whether predominantly Black spaces or Black spaces within predominantly non-Black spaces.</li>
-      <li><strong>Collective Voice:</strong> We speak as a collection of Black leaders on how decisions impact Black developers at multiple career levels.</li>
-      <li><strong>Community &amp; Belonging:</strong> We provide a community where people of color can see developers with similar backgrounds and build strong bonds in the tech space.</li>
-    </ul>
-  </article>
 </section>
-<section>
-  <article>
-    <h2 id="community-support">Community Support</h2>
-    <p>We're hoping to continue growing the diverse communities we support. Python is everywhere and we've primarily been focusing on groups under the PSF umbrella of influence, but we hope that expands to the diaspora communities as well as communities completely unaware of Python's official community efforts.</p>
-  </article>
-</section>
-  <h3 id="leadership-team">Leadership Team</h3>
 
-  <div class="grid" style="margin: auto; text-align: center">
+<section>
+  <h2 id="our-principles">Our Principles</h2>
+  <ul>
+    <li><strong>Diverse Leadership:</strong> We build and support diverse leadership in Python globally.</li>
+    <li><strong>Financial Support:</strong> We provide financial support for Python and tech communities in Black communities, whether predominantly Black spaces or Black spaces within predominantly non-Black spaces.</li>
+    <li><strong>Collective Voice:</strong> We speak as a collection of Black leaders on how decisions impact Black developers at multiple career levels.</li>
+    <li><strong>Community &amp; Belonging:</strong> We provide a community where people of color can see developers with similar backgrounds and build strong bonds in the tech space.</li>
+  </ul>
+</section>
+
+<section>
+  <h2 id="community-support">Community Support</h2>
+  <p>We're hoping to continue growing the diverse communities we support. Python is everywhere and we've primarily been focusing on groups under the PSF umbrella of influence, but we hope that expands to the diaspora communities as well as communities completely unaware of Python's official community efforts.</p>
+</section>
+
+<section>
+  <h2 id="leadership-team">Leadership Team</h2>
+
+  <div class="grid" style="margin: auto;">
     {% for leader in data['Executors'] %}
-
-      <article class="leadership-photo-container">
-      {% if leader.image %}
-      <img class="leadership-photo" alt="photo of {{leader.name}}" src="{{ leader.image }}" />
-      {% endif %}
-      <p>
-        <strong>{{ leader.name }}</strong><br />
-        {{ leader.title }}
-      </p>
-    </article>
-
+      <article class="leadership-card">
+        {% if leader.image %}
+        <img class="leadership-photo" alt="photo of {{leader.name}}" src="{{ leader.image }}" />
+        {% endif %}
+        <div>
+          <strong>{{ leader.name }}</strong><br />
+          <small style="color: var(--bpd-muted);">{{ leader.title }}</small>
+        </div>
+      </article>
     {% endfor %}
   </div>
+</section>
 
+<section>
   <h3 id="team-leads">Team Leads</h3>
 
-  <div class="grid" style="margin: auto; text-align: center">
+  <div class="grid" style="margin: auto;">
     {% for leader in data['Leaders'] %}
-
-    <article class="leadership-photo-container">
-      {% if leader.image %}
-      <img class="leadership-photo" alt="photo of {{leader.name}}" src="{{ leader.image }}" />
-      {% endif %}
-      <p>
-        <strong>{{ leader.name }}</strong><br />
-        {{ leader.title }}
-      </p>
-    </article>
+      <article class="leadership-card">
+        {% if leader.image %}
+        <img class="leadership-photo" alt="photo of {{leader.name}}" src="{{ leader.image }}" />
+        {% endif %}
+        <div>
+          <strong>{{ leader.name }}</strong><br />
+          <small style="color: var(--bpd-muted);">{{ leader.title }}</small>
+        </div>
+      </article>
     {% endfor %}
   </div>
+</section>
 
- <h3 id="advisors">Advisors</h3>
-  <article class="grid">
-  {% for group in (data.Advisors | sort | slice(3)) %}
-  <div>
+<section>
+  <h3 id="advisors">Advisors</h3>
+  <div class="grid">
+    {% for group in (data.Advisors | sort | slice(3)) %}
+    <div>
       <ul>
-      {% for leader in group %}
-      <li><strong>{{ leader }} </strong><br /></li>
-      {% endfor %}
+        {% for leader in group %}
+        <li><strong>{{ leader }}</strong></li>
+        {% endfor %}
       </ul>
+    </div>
+    {% endfor %}
   </div>
-  {% endfor %}
-  </article>
+</section>
 
+<section>
   <h3 id="leadership-council">BPD Leadership Council</h3>
-
-  <article>
-    <p>We also vet our actions through our Black Python Devs Leadership Council made up of members who serve as Python Community leaders on a local, regional, or global scale.</p>
-    <div class="grid">
+  <p>We also vet our actions through our Black Python Devs Leadership Council made up of members who serve as Python Community leaders on a local, regional, or global scale.</p>
+  <div class="grid">
     {% for group in data.Council | sort | slice(3) %}
     <div>
       <ul>
-      {% for leader in group %}
+        {% for leader in group %}
         <li><strong>{{ leader }}</strong></li>
-      {% endfor %}
+        {% endfor %}
       </ul>
     </div>
     {% endfor %}
-    </div>
-  </article>
-</section>
-<section>
-  <h2 id="join-the-community">Join the Community</h2>
-  <p>The Black Python Devs Community is a vibrant group of developers who are passionate about Python and coding. Whether you're a seasoned developer or just starting out, there's a place for you here.</p>
-
-  <div class="grid">
-      <article>
-          <h3 id="connect-with-us">Connect With Us</h3>
-          <p>We've created spaces where you can connect with us and other community members.</p>
-          <ul>
-              <li><strong>Discord:</strong> <a href="https://discord.gg/XUc3tFqCT3">Join our server</a></li>
-              <li><strong>Twitter/X:</strong> <a href="https://x.com/blackpythondevs">Follow us</a></li>
-              <li><strong>Instagram:</strong> <a href="https://www.instagram.com/blackpythondevs/">Follow us</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/black-python-devs">Page</a> | <a href="https://www.linkedin.com/groups/14336241/">Group</a></li>
-              <li><strong>Email:</strong> <a href="mailto:contact@blackpythondevs.com">contact@blackpythondevs.com</a></li>
-          </ul>
-      </article>
-
-      <article>
-          <h3 id="get-involved">Get Involved</h3>
-          <ul>
-              <li>Participate in discussions on Discord.</li>
-              <li>Share your projects and get feedback.</li>
-              <li>Contribute to our community projects.</li>
-              <li>Attend our virtual meetups and events.</li>
-          </ul>
-      </article>
   </div>
 </section>
+
+<section>
+  <h2 id="join-the-community">Join the Community</h2>
+  <p style="margin-bottom: 2.5rem;">The Black Python Devs Community is a vibrant group of developers who are passionate about Python and coding. Whether you're a seasoned developer or just starting out, there's a place for you here.</p>
+
+  <div class="grid" style="gap: 3rem;">
+    <div>
+      <h3 id="connect-with-us" style="margin-bottom: 1.2rem;">Connect With Us</h3>
+      <p style="margin-bottom: 1.5rem;">We've created spaces where you can connect with us and other community members.</p>
+      <ul style="line-height: 1.8;">
+        <li><strong>Discord:</strong> <a href="https://discord.gg/XUc3tFqCT3">Join our server</a></li>
+        <li><strong>Twitter/X:</strong> <a href="https://x.com/blackpythondevs">Follow us</a></li>
+        <li><strong>Instagram:</strong> <a href="https://www.instagram.com/blackpythondevs/">Follow us</a></li>
+        <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/company/black-python-devs">Page</a> | <a href="https://www.linkedin.com/groups/14336241/">Group</a></li>
+        <li><strong>Email:</strong> <a href="mailto:contact@blackpythondevs.com">contact@blackpythondevs.com</a></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3 id="get-involved" style="margin-bottom: 1.2rem;">Get Involved</h3>
+      <ul style="line-height: 1.8;">
+        <li>Participate in discussions on Discord.</li>
+        <li>Share your projects and get feedback.</li>
+        <li>Contribute to our community projects.</li>
+        <li>Attend our virtual meetups and events.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
 {% endblock %}
