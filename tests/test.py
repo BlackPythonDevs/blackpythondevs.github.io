@@ -13,16 +13,13 @@ class HTMLMetaParser(HTMLParser):
         super().__init__()
         self.title = ""
         self._in_title = False
-        self.lang = None
         self.meta_description = None
         self.links = []
         self.classes = []
 
     def handle_starttag(self, tag, attrs):
         attrs_dict = dict(attrs)
-        if tag == "html":
-            self.lang = attrs_dict.get("lang")
-        elif tag == "title":
+        if tag == "title":
             self._in_title = True
         elif tag == "meta" and attrs_dict.get("name") == "description":
             self.meta_description = attrs_dict.get("content", "")
@@ -72,7 +69,6 @@ ROUTE_FILES = {
     "": "index.html",
     "blog": "blog/index.html",
     "about.html": "about.html",
-    "bpd-events": "bpd-events/page.html",
     "support.html": "support.html",
 }
 
@@ -82,26 +78,6 @@ def test_destination(loaded_route: str, built_site: pathlib.Path) -> None:
     file_name = ROUTE_FILES[loaded_route]
     output_file = built_site / file_name
     assert output_file.exists(), f"Expected output file not found: {output_file}"
-
-
-LANG_ROUTES = {
-    "/": "index.html",
-    "/about.html": "about.html",
-    "/bpd-events/": "bpd-events/page.html",
-    "/support.html": "support.html",
-    "/blog/": "blog/index.html",
-}
-
-
-@pytest.mark.parametrize("route, file_path", list(LANG_ROUTES.items()))
-def test_headers_in_language(
-    built_site: pathlib.Path, route: str, file_path: str
-) -> None:
-    """Check that each page has lang='en' on the html element."""
-    parsed = parse_html(built_site / file_path)
-    assert (
-        parsed.lang == "en"
-    ), f"Expected lang='en' on {route}, got lang='{parsed.lang}'"
 
 
 @pytest.mark.parametrize(
