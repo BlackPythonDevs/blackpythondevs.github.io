@@ -8,7 +8,7 @@ dependencies = [
     "pyyaml",
 ]
 
-[project.optional-dependencies]
+[dependency-groups]
 dev = [
   "pre-commit",
   "typer",

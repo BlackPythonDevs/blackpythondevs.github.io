@@ -2,9 +2,6 @@ version = 1
 revision = 3
 requires-python = ">=3.13"
 
-[options]
-prerelease-mode = "allow"
-
 [[package]]
 name = "annotated-doc"
 version = "0.0.4"
@@ -57,7 +54,7 @@ dependencies = [
     { name = "render-engine", extra = ["cli"] },
 ]
 
-[package.optional-dependencies]
+[package.dev-dependencies]
 dev = [
     { name = "pre-commit" },
     { name = "pytest" },
@@ -68,15 +65,18 @@ dev = [
 
 [package.metadata]
 requires-dist = [
-    { name = "pre-commit", marker = "extra == 'dev'" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "python-frontmatter", marker = "extra == 'dev'" },
     { name = "pyyaml" },
     { name = "render-engine", extras = ["cli"], specifier = ">=2026.3.4a2" },
-    { name = "rich", marker = "extra == 'dev'" },
-    { name = "typer", marker = "extra == 'dev'" },
 ]
-provides-extras = ["dev"]
+
+[package.metadata.requires-dev]
+dev = [
+    { name = "pre-commit" },
+    { name = "pytest" },
+    { name = "python-frontmatter" },
+    { name = "rich" },
+    { name = "typer" },
+]
 
 [[package]]
 name = "certifi"
