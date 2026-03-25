@@ -4,7 +4,6 @@ ROUTES = [
     "",
     "blog",
     "about.html",
-    "bpd-events",
     "support.html",
 ]
 
