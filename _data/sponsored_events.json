@@ -18,6 +18,10 @@
       "Africa": ["Django Girls - Koforidua", "Django Girls - Ho", "PyCon Africa", "DjangoCon Africa", "IndabaX - Botswana", "PyCon Namibia", "PyTogo", "Zero to Hero Mentorship Program - Nigeria", "PyCon Nigeria"],
       "North America": ["PyTexas Foundation", "PyOhio", "PyBeach", "PyBay", "PyDay Santo Domingo (SDQ)"],
       "South America": ["Ubuntu Tech - Colombia", "Django Girls - Colombia"]
+    },
+    "2026": {
+      "Africa": ["PyCon Namibia"],
+      "North America": ["PyCascades"]
     }
   }
 }
