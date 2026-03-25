@@ -14,4 +14,3 @@ Our corporate sponsorships program allows Anaconda to promote job opportunities 
 This sponsorship will help secure infrastructure funding for black Python devs operate in 2026 and beyond. Our infrastructure budget is the resource that supports subscription and event costs. It is not intended (but potentially can be used) to sponsor events as we hope our partnerships with our sponsors will help them to establish relationships with the communities and leaders that we support.
 
 Thank you to Anaconda on this decision to sponsor the Python Community and Black Python Devs.
-
