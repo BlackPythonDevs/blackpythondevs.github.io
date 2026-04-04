@@ -4,8 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="{% if description%}{{ description | escape }}{% else %}{{ site.description }}{% endif %}" />
+    <meta name="theme-color" content="#060910" />
     <title>{% if title == 'Index' %}Black Python Devs{% elif title %}{{ title }} | Black Python Devs{% else %}Black Python Devs{% endif %}</title>
-    <link rel="stylesheet" href="{{ '/assets/css/pico.min.css' }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&family=Syne:wght@700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/iconoir-icons/iconoir@main/css/iconoir.css" />
     <link rel="stylesheet" href="{{ '/assets/css/pico.colors.min.css' }}" />
     <link rel="stylesheet" href="{{ '/assets/css/bpd.css' }}" />
     {% set lang_slash = lang %}
@@ -16,11 +20,15 @@
     {% else %}
     <link rel="alternate" hreflang="{{ lang }}" href="{{ site.url }}/{{ lang }}{{ default_url }}" />
     {% endif %}
+    <script>
+      (function(){var t=localStorage.getItem('theme');if(t==='light'||t==='dark')document.documentElement.setAttribute('data-theme',t)})();
+    </script>
   </head>
 
   <body>
+    <a class="skip-to-content" href="#main-content">Skip to content</a>
     {%- include '_includes/header.html' -%}
-    <main class="container" role="main" aria-label="Content">
+    <main id="main-content" class="container" role="main" aria-label="Content">
 
       {% block content %}
       {% if content %}
@@ -33,6 +41,27 @@
     {%- include '_includes/footer.html' -%}
     <script src="/assets/js/jquery.min.js"></script>
     <script src="/assets/js/bpd.js"></script>
-    <script src="https://kit.fontawesome.com/1bbe56de49.js" crossorigin="anonymous"></script>
+    <script>
+      (function(){
+        var btn=document.getElementById('theme-toggle');
+        if(!btn)return;
+        var icon=btn.querySelector('i');
+        var osDark=window.matchMedia('(prefers-color-scheme:dark)');
+        function eff(){var s=localStorage.getItem('theme');return(s==='light'||s==='dark')?s:osDark.matches?'dark':'light'}
+        function upd(){if(icon)icon.className=eff()==='dark'?'iconoir-sun-light':'iconoir-half-moon'}
+        upd();
+        btn.addEventListener('click',function(e){
+          e.stopPropagation();
+          var doc=document.documentElement;
+          doc.classList.add('theme-transition');
+          var next=eff()==='dark'?'light':'dark';
+          doc.setAttribute('data-theme',next);
+          localStorage.setItem('theme',next);
+          upd();
+          setTimeout(function(){doc.classList.remove('theme-transition')},600);
+        });
+        osDark.addEventListener('change',upd);
+      })();
+    </script>
   </body>
 </html>

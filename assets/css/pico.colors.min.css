@@ -1,57 +1,187 @@
-@charset "UTF-8"; /*!
- * Pico CSS ✨ v2.0.6 (https://picocss.com)
- * Copyright 2019-2024 - Licensed under MIT
- */
+/* Black Python Devs — Design Tokens
+   Pico color file repurposed as token store.
+   pico.min.css is NO LONGER loaded — these tokens stand alone. */
 
-/* base colors */
+/* ── Dark mode (default) ── */
 :root {
-  --pico-color-blue: #2060df;
+  --bpd-void: #181c2a;
+  --bpd-base: #1e2234;
+  --bpd-raised: #24293c;
+  --bpd-surface: #2b3046;
+  --bpd-overlay: #323850;
 
-  --pico-color-azure-650: #015887;
+  --bpd-cyan: #7fb8c4;
+  --bpd-cyan-dim: #6a9da8;
+  --bpd-cyan-wash: rgba(127, 184, 196, 0.08);
+  --bpd-cyan-glow: rgba(127, 184, 196, 0.18);
 
-  --pico-color-pumpkin-800: #482802;
+  --bpd-gold: #e8a838;
+  --bpd-gold-dim: #c48a20;
+  --bpd-gold-wash: rgba(232, 168, 56, 0.1);
 
-  --pico-color-pumpkin-650: #7a4400;
+  --bpd-violet: #7c3aed;
+  --bpd-violet-hi: #9061f0;
+  --bpd-azure: #0c7ec2;
+  --bpd-azure-hi: #1a94dd;
 
-  --pico-color-pumpkin-50: #fceee3;
+  --bpd-white: #f0f2f5;
+  --bpd-text: #c4c9d4;
+  --bpd-muted: #8b91a4;
+  --bpd-faint: #4a5068;
+  --bpd-border: #343b55;
+  --bpd-border-hi: #424a64;
 
-  --pico-color-sand-100: #f3eddc;
-
-  --pico-color-zinc-800: #2d3138;
-
-  --pico-color-violet-650: #6935b3;
-
-  --pico-color-light: #03d5ff;
-  --pico-color-dark: #000;
+  --bpd-header-bg: rgba(24, 28, 42, 0.92);
+  --bpd-code-bg: var(--bpd-raised);
+  --bpd-body-texture: rgba(0, 229, 255, 0.015);
+  --bpd-hero-overlay-start: rgba(24, 28, 42, 0.94);
+  --bpd-hero-overlay-mid: rgba(24, 28, 42, 0.8);
+  --bpd-hero-overlay-end: rgba(24, 28, 42, 0.93);
 }
 
-/* active background colors */
+/* ── Light mode ── */
+@media (prefers-color-scheme: light) {
+  :root {
+    --bpd-void: #f5f6f8;
+    --bpd-base: #ebedf2;
+    --bpd-raised: #ffffff;
+    --bpd-surface: #f0f1f5;
+    --bpd-overlay: #e4e6ec;
+
+    --bpd-cyan: #00758f;
+    --bpd-cyan-dim: #005c70;
+    --bpd-cyan-wash: rgba(0, 117, 143, 0.07);
+    --bpd-cyan-glow: rgba(0, 117, 143, 0.15);
+
+    --bpd-gold: #8a5e09;
+    --bpd-gold-dim: #6e4b08;
+    --bpd-gold-wash: rgba(138, 94, 9, 0.08);
+
+    --bpd-violet: #6d28d9;
+    --bpd-violet-hi: #7c3aed;
+    --bpd-azure: #0369a1;
+    --bpd-azure-hi: #0284c7;
+
+    --bpd-white: #111827;
+    --bpd-text: #374151;
+    --bpd-muted: #5b616e;
+    --bpd-faint: #9ca3af;
+    --bpd-border: #d1d5db;
+    --bpd-border-hi: #b0b6c2;
+
+    --bpd-header-bg: rgba(245, 246, 248, 0.92);
+    --bpd-code-bg: #f0f1f5;
+    --bpd-body-texture: rgba(0, 134, 163, 0.025);
+    --bpd-hero-overlay-start: rgba(245, 246, 248, 0.92);
+    --bpd-hero-overlay-mid: rgba(245, 246, 248, 0.75);
+    --bpd-hero-overlay-end: rgba(245, 246, 248, 0.9);
+  }
+}
+
+/* ── Manual theme overrides (JS toggle) ── */
+[data-theme="light"] {
+  --bpd-void: #f5f6f8;
+  --bpd-base: #ebedf2;
+  --bpd-raised: #ffffff;
+  --bpd-surface: #f0f1f5;
+  --bpd-overlay: #e4e6ec;
+  --bpd-cyan: #00758f;
+  --bpd-cyan-dim: #005c70;
+  --bpd-cyan-wash: rgba(0, 117, 143, 0.07);
+  --bpd-cyan-glow: rgba(0, 117, 143, 0.15);
+  --bpd-gold: #8a5e09;
+  --bpd-gold-dim: #6e4b08;
+  --bpd-gold-wash: rgba(138, 94, 9, 0.08);
+  --bpd-violet: #6d28d9;
+  --bpd-violet-hi: #7c3aed;
+  --bpd-azure: #0369a1;
+  --bpd-azure-hi: #0284c7;
+  --bpd-white: #111827;
+  --bpd-text: #374151;
+  --bpd-muted: #5b616e;
+  --bpd-faint: #9ca3af;
+  --bpd-border: #d1d5db;
+  --bpd-border-hi: #b0b6c2;
+  --bpd-header-bg: rgba(245, 246, 248, 0.92);
+  --bpd-code-bg: #f0f1f5;
+  --bpd-body-texture: rgba(0, 134, 163, 0.025);
+  --bpd-hero-overlay-start: rgba(245, 246, 248, 0.92);
+  --bpd-hero-overlay-mid: rgba(245, 246, 248, 0.75);
+  --bpd-hero-overlay-end: rgba(245, 246, 248, 0.9);
+}
+
+[data-theme="dark"] {
+  --bpd-void: #181c2a;
+  --bpd-base: #1e2234;
+  --bpd-raised: #24293c;
+  --bpd-surface: #2b3046;
+  --bpd-overlay: #323850;
+  --bpd-cyan: #7fb8c4;
+  --bpd-cyan-dim: #6a9da8;
+  --bpd-cyan-wash: rgba(127, 184, 196, 0.08);
+  --bpd-cyan-glow: rgba(127, 184, 196, 0.18);
+  --bpd-gold: #e8a838;
+  --bpd-gold-dim: #c48a20;
+  --bpd-gold-wash: rgba(232, 168, 56, 0.1);
+  --bpd-violet: #7c3aed;
+  --bpd-violet-hi: #9061f0;
+  --bpd-azure: #0c7ec2;
+  --bpd-azure-hi: #1a94dd;
+  --bpd-white: #f0f2f5;
+  --bpd-text: #c4c9d4;
+  --bpd-muted: #8b91a4;
+  --bpd-faint: #4a5068;
+  --bpd-border: #343b55;
+  --bpd-border-hi: #424a64;
+  --bpd-header-bg: rgba(24, 28, 42, 0.92);
+  --bpd-code-bg: var(--bpd-raised);
+  --bpd-body-texture: rgba(0, 229, 255, 0.015);
+  --bpd-hero-overlay-start: rgba(24, 28, 42, 0.94);
+  --bpd-hero-overlay-mid: rgba(24, 28, 42, 0.8);
+  --bpd-hero-overlay-end: rgba(24, 28, 42, 0.93);
+}
+
+/* ── Utility classes (replace old pico-background-* usage) ── */
+.btn-discord {
+  background: var(--bpd-violet);
+  color: #fff;
+}
+.btn-discord:hover {
+  background: var(--bpd-violet-hi);
+}
+.btn-linkedin {
+  background: var(--bpd-azure);
+  color: #fff;
+}
+.btn-linkedin:hover {
+  background: var(--bpd-azure-hi);
+}
+
+/* Legacy compat — templates that still reference these */
 .pico-background-violet-650 {
-  background-color: var(--pico-color-violet-650);
-  color: var(--pico-color-light);
+  background: var(--bpd-violet);
+  color: #fff;
 }
 .pico-background-azure-650 {
-  background-color: var(--pico-color-azure-650);
-  color: var(--pico-color-light);
+  background: var(--bpd-azure);
+  color: #fff;
 }
 .pico-background-sand-100 {
-  background-color: var(--pico-color-sand-100);
-  color: var(--pico-color-dark);
+  background: #f3eddc;
+  color: var(--bpd-void);
 }
 .pico-background-pumpkin-800 {
-  background-color: var(--pico-color-pumpkin-800);
-  color: var(--pico-color-light);
+  background: #482802;
+  color: var(--bpd-cyan);
 }
 .pico-background-pumpkin-650 {
-  background-color: var(--pico-color-pumpkin-650);
-  color: var(--pico-color-light);
+  background: #7a4400;
+  color: var(--bpd-cyan);
 }
 .pico-background-zinc-800 {
-  background-color: var(--pico-color-zinc-800);
-  color: var(--pico-color-light);
+  background: var(--bpd-surface);
+  color: var(--bpd-cyan);
 }
-
-/* text-colors */
 .pico-color-pumpkin-50 {
-  color: var(--pico-color-pumpkin-50);
+  color: #fceee3;
 }

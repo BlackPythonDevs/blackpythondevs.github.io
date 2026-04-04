@@ -6,14 +6,33 @@ from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
 
 navigation = [
-    {"text": "News", "url": "/blog/blog1.html", "fa": "fa fa-newspaper fa-fw"},
-    {"text": "About Us", "url": "/about.html", "fa": "fa fa-info-circle fa-fw"},
-    {"text": "Events", "fa": "fa fa-calendar fa-fw", "url": "/events.html"},
+    {
+        "text": "News",
+        "url": "/blog/blog1.html",
+        "icon": "iconoir-journal-page",
+    },
+    {
+        "text": "About Us",
+        "url": "/about.html",
+        "icon": "iconoir-group",
+    },
+    {
+        "text": "Events",
+        "url": "/events.html",
+        "icon": "iconoir-calendar",
+    },
     {
         "text": "Support Us",
         "url": "/support.html",
-        "fa": "fa-solid fa-hand-holding-heart",
+        "icon": "iconoir-donate",
     },
+]
+
+markdown_extras = [
+    "footnotes",
+    "fenced-code-blocks",
+    "header-ids",
+    "tables",
 ]
 
 app = Site()
@@ -63,14 +82,16 @@ class Events(Page):
 class BPDEvents(Collection):
     title = "BPD Events"
     Parser = MarkdownPageParser
+    parser_extras = {"markdown_extras": markdown_extras}
     content_path = "events"
     template = "default.html"
-    routes = ["./-events"]
+    routes = ["./bpd-events"]
 
 
 @app.collection
 class Pages(Collection):
     Parser = MarkdownPageParser
+    parser_extras = {"markdown_extras": markdown_extras}
     content_path = "pages"
     template = "default.html"
 
@@ -78,6 +99,7 @@ class Pages(Collection):
 @app.collection
 class Blog(Blog):
     Parser = MarkdownPageParser
+    parser_extras = {"markdown_extras": markdown_extras}
     template = "post.html"
     content_path = "_posts"
     routes = ["./blog"]

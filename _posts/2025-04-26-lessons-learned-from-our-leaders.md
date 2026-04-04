@@ -8,11 +8,11 @@ layout: post
 title: Reflecting on the last two years with our BPD Leaders
 ---
 
-On 23 April 2025, Black Python Devs celebrated it's second birthday. We're honored to reflect on this day and amazed in the growth we've seen.
+On 23 April 2025, Black Python Devs celebrated its second birthday. We're honored to reflect on this day and amazed in the growth we've seen.
 
 We learned a long time ago that the best way to build a community devoted to sharing Python to so many people around the world is to empower and support the leaders of the community and those who lead their own respective communities.
 
-The BPD and greater Python landscape has changed significantly since 2023. As we enter our third year, I wanted to share some of lessons learned from many folks on our leadershisp team.
+The BPD and greater Python landscape has changed significantly since 2023. As we enter our third year, I wanted to share some of the lessons learned from many folks on our leadership team.
 
 ### Dedicated Space together
 
