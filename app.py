@@ -1,6 +1,7 @@
 import datetime
 import json
 import pathlib
+import pluggy
 
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
@@ -37,6 +38,16 @@ markdown_extras = [
     "tables",
 ]
 
+hookspec = pluggy.HookspecMarker("render_engine")
+hookimpl = pluggy.HookimplMarker("render_engine")
+
+
+class GenerateMapPlugin:
+    @staticmethod
+    @hookimpl
+    def pre_build_site():
+        generate_map()
+
 
 app = Site()
 app.template_path = "_layouts"
@@ -48,6 +59,8 @@ app.site_vars["year"] = str(datetime.date.today().year)
 app.site_vars["SITE_AUTHORS"] = json.loads(
     pathlib.Path("_data/authors.json").read_text()
 )
+
+app.plugin_manager.register_plugin(GenerateMapPlugin)
 
 
 @app.page
@@ -79,11 +92,6 @@ class Support(Page):
 class Events(Page):
     template = "events.html"
     data = json.loads(pathlib.Path("_data/sponsored_events.json").read_text())
-
-    def render(self, *args, **kwargs):
-        """Generate the Folium map HTML for the Events page before rendering."""
-        generate_map()
-        return super().render(*args, **kwargs)
 
 
 @app.collection
