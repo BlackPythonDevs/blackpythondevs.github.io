@@ -6,6 +6,7 @@ requires-python = ">=3.13"
 dependencies = [
     "render-engine[cli]>=2026.3.4a2",
     "pyyaml",
+    "folium>=0.20.0",
 ]
 
 [dependency-groups]
@@ -15,6 +16,7 @@ dev = [
   "rich",
   "python-frontmatter",
   "pytest",
+  "ruff",
 ]
 
 [tool.render-engine.cli]
