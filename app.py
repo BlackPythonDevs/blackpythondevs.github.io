@@ -5,6 +5,8 @@ import pathlib
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
 
+from scripts.map import generate_map
+
 navigation = [
     {
         "text": "News",
@@ -34,6 +36,7 @@ markdown_extras = [
     "header-ids",
     "tables",
 ]
+
 
 app = Site()
 app.template_path = "_layouts"
@@ -76,6 +79,11 @@ class Support(Page):
 class Events(Page):
     template = "events.html"
     data = json.loads(pathlib.Path("_data/sponsored_events.json").read_text())
+
+    def render(self, *args, **kwargs):
+        """Generate the Folium map HTML for the Events page before rendering."""
+        generate_map()
+        return super().render(*args, **kwargs)
 
 
 @app.collection
