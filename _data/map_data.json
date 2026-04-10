@@ -1,0 +1,87 @@
+{
+  "BWA": {
+    "Name": "Botswana",
+    "Sponsored": {
+      "IndabaX - Botswana": [2024, 2025]
+    }
+  },
+  "COL": {
+    "Name": "Colombia",
+    "Sponsored": {
+      "Ubuntu Tech - Colombia": [2025],
+      "Django Girls - Colombia": [2025]
+    }
+  },
+  "DOM": {
+    "Name": "Dominican Republic",
+    "Sponsored": {
+      "PyDay Santo Domingo (SDQ)": [2025]
+    }
+  },
+  "GHA": {
+    "Name": "Ghana",
+    "Sponsored": {
+      "PyHo - Ghana": [2024],
+      "Django Girls - Koforidua": [2025],
+      "Django Girls - Ho": [2025]
+    }
+  },
+  "NAM": {
+    "Name": "Namibia",
+    "Sponsored": {
+      "PyCon Namibia": [2025, 2026]
+    }
+  },
+  "NGA": {
+    "Name": "Nigeria",
+    "Sponsored": {
+      "PyCon Nigeria": [2024, 2025],
+      "Zero to Hero Mentorship Program - Nigeria": [2025]
+    }
+  },
+  "TGO": {
+    "Name": "Togo",
+    "Sponsored": {
+      "PyTogo": [2025]
+    }
+  },
+  "TZA": {
+    "Name": "Tanzania",
+    "Sponsored": {
+      "DjangoCon Africa": [2025]
+    }
+  },
+  "UGA": {
+    "Name": "Uganda",
+    "Sponsored": {
+      "PyCon Uganda": [2024],
+      "PyCon Africa 2024": [2024]
+    }
+  },
+  "USA": {
+    "Name": "United States",
+    "Sponsored": {
+      "PyTexas": [2024],
+      "PyOhio": [2024, 2025],
+      "PyTexas Foundation": [2025],
+      "PyBeach": [2025],
+      "PyBay": [2025],
+      "PyCascades": [2026],
+      "Black Python Devs Leadership Summit": [2024, 2026]
+    }
+  },
+  "ZAF": {
+    "Name": "South Africa",
+    "Sponsored": {
+      "PyCon South Africa": [2024],
+      "PyCon Africa 2025": [2025]
+    }
+  },
+  "ZWE": {
+    "Name": "Zimbabwe",
+    "Sponsored": {
+      "PyCon Zimbabwe": [2024]
+    }
+  },
+  "BRA": { "Members in this country": true }
+}

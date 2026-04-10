@@ -1,9 +1,12 @@
 import datetime
 import json
 import pathlib
+import pluggy
 
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
+
+from scripts.map import generate_map
 
 navigation = [
     {
@@ -35,6 +38,16 @@ markdown_extras = [
     "tables",
 ]
 
+hookimpl = pluggy.HookimplMarker("render_engine")
+
+
+class GenerateMapPlugin:
+    @staticmethod
+    @hookimpl
+    def pre_build_site():
+        generate_map()
+
+
 app = Site()
 app.template_path = "_layouts"
 app.static_paths.add("assets")
@@ -45,6 +58,8 @@ app.site_vars["year"] = str(datetime.date.today().year)
 app.site_vars["SITE_AUTHORS"] = json.loads(
     pathlib.Path("_data/authors.json").read_text()
 )
+
+app.plugin_manager.register_plugin(GenerateMapPlugin)
 
 
 @app.page
