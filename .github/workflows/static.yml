@@ -32,6 +32,8 @@ jobs:
         uses: actions/checkout@v4
       - name: Install UV
         uses: astral-sh/setup-uv@v5
+      - name: Build map
+        run: uv run python scripts/map.py
       - name: Build the site
         run: uv run --no-dev --prerelease=allow render-engine build
       - uses: actions/upload-artifact@v4
