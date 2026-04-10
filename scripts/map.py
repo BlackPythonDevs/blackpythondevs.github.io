@@ -123,6 +123,8 @@ def generate_map():
     for feature in geojson_data["features"]:
         props = feature["properties"]
         iso = props.get("ISO_A3")
+        if iso == "-99":
+            iso = props.get("ISO_A3_EH", iso)
 
         if iso in map_data:
             name = props.get("NAME", iso)

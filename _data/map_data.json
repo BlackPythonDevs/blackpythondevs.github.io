@@ -83,5 +83,18 @@
       "PyCon Zimbabwe": [2024]
     }
   },
-  "BRA": { "Members in this country": true }
+  "BRA": { "Members in this country": true },
+  "CAN": { "Name": "Canada", "Members in this country": true },
+  "DEU": { "Name": "Germany", "Members in this country": true },
+  "GBR": { "Name": "United Kingdom", "Members in this country": true },
+  "FRA": { "Name": "France", "Members in this country": true },
+  "IRL": { "Name": "Ireland", "Members in this country": true },
+  "ESP": { "Name": "Spain", "Members in this country": true },
+  "MAR": { "Name": "Morocco", "Members in this country": true },
+  "EGY": { "Name": "Egypt", "Members in this country": true },
+  "KEN": { "Name": "Kenya", "Members in this country": true },
+  "ETH": { "Name": "Ethiopia", "Members in this country": true },
+  "SSD": { "Name": "South Sudan", "Members in this country": true },
+  "MDG": { "Name": "Madagascar", "Members in this country": true },
+  "MOZ": { "Name": "Mozambique", "Members in this country": true }
 }
