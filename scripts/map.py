@@ -99,21 +99,22 @@ def generate_map():
             if isinstance(value, dict):
                 html = ""
                 for k, v in value.items():
-                    html += f"<strong>{k}:</strong> {render(v)}<br>"
+                    if k == "Name":
+                        continue
+                    # If the value is exactly True, show only the key name.
+                    if v is True:
+                        html += f"{k}<br>"
+                        continue
+
+                    # If the value is a list of years (or any list), show the key once.
+                    # This keeps event names from repeating with each year.
+                    if isinstance(v, list):
+                        html += f"{k}<br>"
+                        continue
+
+                    # Otherwise recurse for nested structures.
+                    html += f"<br><strong>{k}:</strong> <br>{render(v)}<br>"
                 return html
-
-            elif isinstance(value, list):
-                return (
-                    "<div style='margin-left:10px'>"
-                    + "<br>".join(f"• {render(v)}" for v in value)
-                    + "</div>"
-                )
-
-            elif isinstance(value, (int, float, str, bool)):
-                return str(value)
-
-            else:
-                return str(value)
 
         return render(data)
 
@@ -132,7 +133,7 @@ def generate_map():
                 "properties": {
                     "ISO_A3": iso,
                     "Country": name,
-                    "popup_html": f"<strong><span style='text-decoration: underline; font-size: 14px;'>{name}</span></strong><br><br>{build_popup_html(data)}",
+                    "popup_html": f"<strong><span style='text-decoration: underline; font-size: 14px;'>{name}</span></strong><br>{build_popup_html(data)}",
                 },
                 "geometry": {
                     "type": feature["geometry"]["type"],
@@ -145,21 +146,13 @@ def generate_map():
 
     # Curated high-contrast palette (dark-mode friendly)
     palette = [
-        "#4E79A7",  # blue
-        "#F28E2B",  # orange
-        "#E15759",  # red
-        "#76B7B2",  # teal
-        "#59A14F",  # green
-        "#EDC948",  # yellow
-        "#B07AA1",  # purple
-        "#FF9DA7",  # pink
-        "#9C6ADE",  # violet
-        "#17BECF",  # cyan
-        "#FFBF00",  # amber
-        "#2ECC71",  # bright green
-        "#1F77B4",  # strong blue
-        "#FF7F0E",  # vivid orange
-        "#D62728",  # strong red
+        "#FFDA63",  # Pale Gold - Very light, almost a yellow-gold. Great for subtle highlights.
+        "#FFB347",  # Peach Gold - A warmer, softer gold. Good for adding a gentle glow.
+        "#FFC107",  # Amber Gold - A brighter, more saturated gold, leaning towards amber.
+        "#FFD700",  # Gold - Classic, vibrant gold. Use sparingly for key landmarks or strong accents.
+        "#E6CA00",  # Dark Gold - A deeper, richer gold with a hint of brown.  Excellent for shadows and adding depth.
+        "#B8860B",  # Bronze Gold - A muted, aged gold with brown undertones.  Adds a sense of history and realism.
+        "#8B4513",  # Saddle Gold - A dark, warm gold Best for deep shadows and distant elements.
     ]
 
     iso_codes = (f["properties"]["ISO_A3"] for f in countries_geo["features"])
@@ -180,9 +173,9 @@ def generate_map():
         countries_geo,
         style_function=lambda feature: {
             "fillColor": country_colors.get(feature["properties"]["ISO_A3"]),
-            "color": "#666",
+            "color": "#ffffff",
             "weight": 0.7,
-            "fillOpacity": 0.9,
+            "fillOpacity": 0.75,
         },
         tooltip=folium.GeoJsonTooltip(fields=["Country"]),
         popup=folium.GeoJsonPopup(fields=["popup_html"], labels=False, parse_html=True),

@@ -1,39 +1,87 @@
 {
   "BWA": {
-    "Sponsored": ["IndabaX - Botswana"]
+    "Name": "Botswana",
+    "Sponsored": {
+      "IndabaX - Botswana": [2024, 2025]
+    }
   },
   "COL": {
-    "Sponsored": ["Ubuntu Tech - Colombia", "Django Girls - Colombia"]
+    "Name": "Colombia",
+    "Sponsored": {
+      "Ubuntu Tech - Colombia": [2025],
+      "Django Girls - Colombia": [2025]
+    }
   },
   "DOM": {
-    "Sponsored": ["PyDay Santo Domingo (SDQ)"]
+    "Name": "Dominican Republic",
+    "Sponsored": {
+      "PyDay Santo Domingo (SDQ)": [2025]
+    }
   },
   "GHA": {
-    "Sponsored": ["PyHo - Ghana", "Django Girls - Koforidua", "Django Girls - Ho"]
+    "Name": "Ghana",
+    "Sponsored": {
+      "PyHo - Ghana": [2024],
+      "Django Girls - Koforidua": [2025],
+      "Django Girls - Ho": [2025]
+    }
   },
   "NAM": {
-    "Sponsored": ["PyCon Namibia"]
+    "Name": "Namibia",
+    "Sponsored": {
+      "PyCon Namibia": [2025, 2026]
+    }
   },
   "NGA": {
-    "Sponsored": ["PyCon Nigeria", "Zero to Hero Mentorship Program - Nigeria"]
+    "Name": "Nigeria",
+    "Sponsored": {
+      "PyCon Nigeria": [2024, 2025],
+      "Zero to Hero Mentorship Program - Nigeria": [2025]
+    }
   },
   "TGO": {
-    "Sponsored": ["PyTogo"]
+    "Name": "Togo",
+    "Sponsored": {
+      "PyTogo": [2025]
+    }
   },
   "TZA": {
-    "Sponsored": ["DjangoCon Africa"]
+    "Name": "Tanzania",
+    "Sponsored": {
+      "DjangoCon Africa": [2025]
+    }
   },
   "UGA": {
-    "Sponsored": ["PyCon Uganda", "PyCon Africa 2024"]
+    "Name": "Uganda",
+    "Sponsored": {
+      "PyCon Uganda": [2024],
+      "PyCon Africa 2024": [2024]
+    }
   },
   "USA": {
-    "Events": ["Black Python Devs Leadership Summit 2026 at PyOhio", "Black Python Devs Leadership Summit 2024"],
-    "Sponsored": ["PyTexas", "PyOhio", "PyTexas Foundation", "PyBeach", "PyBay", "PyCascades"]
+    "Name": "United States",
+    "Sponsored": {
+      "PyTexas": [2024],
+      "PyOhio": [2024, 2025],
+      "PyTexas Foundation": [2025],
+      "PyBeach": [2025],
+      "PyBay": [2025],
+      "PyCascades": [2026],
+      "Black Python Devs Leadership Summit": [2024, 2026]
+    }
   },
   "ZAF": {
-    "Sponsored": ["PyCon South Africa", "PyCon Africa 2025"]
+    "Name": "South Africa",
+    "Sponsored": {
+      "PyCon South Africa": [2024],
+      "PyCon Africa 2025": [2025]
+    }
   },
   "ZWE": {
-    "Sponsored": ["PyCon Zimbabwe"]
-  }
+    "Name": "Zimbabwe",
+    "Sponsored": {
+      "PyCon Zimbabwe": [2024]
+    }
+  },
+  "BRA": { "Members in this country": true }
 }

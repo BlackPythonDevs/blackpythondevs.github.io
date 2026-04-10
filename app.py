@@ -38,7 +38,6 @@ markdown_extras = [
     "tables",
 ]
 
-hookspec = pluggy.HookspecMarker("render_engine")
 hookimpl = pluggy.HookimplMarker("render_engine")
 
 
