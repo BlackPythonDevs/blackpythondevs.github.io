@@ -183,8 +183,44 @@ def generate_map():
         popup=folium.GeoJsonPopup(fields=["popup_html"], labels=False, parse_html=True),
     ).add_to(m)
 
+    # Add reset zoom button
+    reset_zoom_html = """
+    <div style="position: fixed; 
+                top: 10px; right: 50px; width: 36px; height: 36px; 
+                background-color: #3a3a3a; border: 2px solid #5a5a5a;
+                border-radius: 4px; z-index: 1000; cursor: pointer;
+                display: flex; align-items: center; justify-content: center;
+                font-size: 20px; color: #fff; transition: all 0.2s ease;"
+         id="resetZoomBtn"
+         title="Reset map zoom">↺</div>
+    <script>
+        document.getElementById('resetZoomBtn').addEventListener('click', function() {
+            // Access the Leaflet map instance
+            var mapElement = document.querySelector('.leaflet-container');
+            if (mapElement && mapElement.__map_data) {
+                mapElement.__map_data.setView([20, 0], 2);
+            }
+        });
+        document.getElementById('resetZoomBtn').addEventListener('mouseover', function() {
+            this.style.backgroundColor = '#4a4a4a';
+            this.style.boxShadow = '0 0 5px rgba(255,255,255,0.2)';
+        });
+        document.getElementById('resetZoomBtn').addEventListener('mouseout', function() {
+            this.style.backgroundColor = '#3a3a3a';
+            this.style.boxShadow = 'none';
+        });
+    </script>
+    """
+    
+    m.get_root().html.add_child(folium.Element(reset_zoom_html))
+
     # Save
     map_path = "assets/map.html"
     m.save(map_path)
 
     logging.info(f"Map saved as {map_path}")
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    generate_map()
