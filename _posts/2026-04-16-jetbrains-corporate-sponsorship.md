@@ -13,6 +13,6 @@ This sponsorship will help secure infrastructure funding for Black Python Devs t
 
 Our corporate sponsorship program allows JetBrains to promote job opportunities directly in our Discord, promotion of JetBrains campaigns, events, and initiatives to our community, the direct communication access to our BPD Council, as well as the ability to host dedicated events for BPD leaders and members.
 
-This infrastructure support is the resource that funds subscription and BPD event and event support costs. It is not intended to replace those orgs sponsoring events as we hope our partnerships with our sponsors will help them to establish their own relationships with the communities and leaders that we support.
+This infrastructure support is the resource that funds subscription, BPD event, and event support costs. It is not intended to replace those orgs sponsoring events as we hope our partnerships with our sponsors will help them to establish their own relationships with the communities and leaders that we support.
 
 Thank you again to JetBrains for their decision to sponsor the Python community and Black Python Devs.
