@@ -3,7 +3,7 @@ author:
   - Jay Miller
 date: 2026-04-16
 description: Black Python Devs is happy to announce that JetBrains has made the decision to become a corporate sponsor of Black Python Devs
-featured_image: /assets/images/jetbrains.webp
+featured_image: /assets/images/corporate-sponsorship-jetbrains.webp
 title: JetBrains is now a corporate sponsor of Black Python Devs
 ---
 
