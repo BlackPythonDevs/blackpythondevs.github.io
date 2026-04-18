@@ -69,6 +69,11 @@ class Index(Page):
 
 
 @app.page
+class Community(Page):
+    content_path = "community.html"
+
+
+@app.page
 class Partnerships(Page):
     content_path = "partnerships.html"
 
