@@ -74,6 +74,11 @@ class Community(Page):
 
 
 @app.page
+class Partnerships(Page):
+    content_path = "partnerships.html"
+
+
+@app.page
 class About(Page):
     template = "about.html"
     data = json.loads(pathlib.Path("_data/leadership.json").read_text())

@@ -116,6 +116,16 @@ def test_community_redirects_to_about(built_site: pathlib.Path) -> None:
     ), "community.html should redirect to /about.html#join-the-community"
 
 
+def test_partnerships_redirects_to_support(built_site: pathlib.Path) -> None:
+    """Check that partnerships.html contains a redirect to the support page."""
+    partnerships = built_site / "partnerships.html"
+    assert partnerships.exists(), "partnerships.html should exist in build output"
+    content = partnerships.read_text()
+    assert (
+        "/support.html#partnerships" in content
+    ), "partnerships.html should redirect to /support.html#partnerships"
+
+
 def _blog_post_files() -> list[pathlib.Path]:
     """Get all blog post HTML files (excluding index and pagination pages)."""
     blog_dir = OUTPUT_DIR / "blog"
