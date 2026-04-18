@@ -106,6 +106,16 @@ def test_mailto_bpdevs(built_site: pathlib.Path) -> None:
     ), "Expected mailto:contact@blackpythondevs.com link not found"
 
 
+def test_community_redirects_to_about(built_site: pathlib.Path) -> None:
+    """Check that community.html contains a redirect to the about page."""
+    community = built_site / "community.html"
+    assert community.exists(), "community.html should exist in build output"
+    content = community.read_text()
+    assert (
+        "/about.html#join-the-community" in content
+    ), "community.html should redirect to /about.html#join-the-community"
+
+
 def _blog_post_files() -> list[pathlib.Path]:
     """Get all blog post HTML files (excluding index and pagination pages)."""
     blog_dir = OUTPUT_DIR / "blog"
