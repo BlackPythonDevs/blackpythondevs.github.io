@@ -38,6 +38,11 @@ test:
 test-verbose:
     uv run --dev pytest -v
 
+# Add a sponsored conference and regenerate the activity map
+# Usage: just add-conference --title "PyCon Brazil" --year 2026 --continent "South America" --country "Brazil"
+add-conference *ARGS:
+    uv run python scripts/add_conference.py {{ARGS}}
+
 # Run full development workflow
 dev: sync lint test build
     @echo "✓ Development workflow complete"
