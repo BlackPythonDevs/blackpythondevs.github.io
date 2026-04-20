@@ -183,8 +183,102 @@ def generate_map():
         popup=folium.GeoJsonPopup(fields=["popup_html"], labels=False, parse_html=True),
     ).add_to(m)
 
+    # Add reset zoom control using a direct approach
+    # This script will be added at the end and executed immediately
+    reset_control_script = folium.Element("""
+    <script>
+    (function() {
+        var attempts = 0;
+        var maxAttempts = 50;
+        
+        function addResetControl() {
+            attempts++;
+            
+            // Check if Leaflet is loaded
+            if (typeof L === 'undefined' || !L.Control) {
+                if (attempts < maxAttempts) {
+                    setTimeout(addResetControl, 100);
+                }
+                return;
+            }
+            
+            // Define the control if not already defined
+            if (!L.Control.ResetZoom) {
+                L.Control.ResetZoom = L.Control.extend({
+                    options: { position: 'topleft' },
+                    onAdd: function(map) {
+                        var container = L.DomUtil.create('div', 'leaflet-bar leaflet-control');
+                        var link = L.DomUtil.create('a', '', container);
+                        link.href = '#';
+                        link.title = 'Reset map zoom';
+                        link.innerHTML = '↺';
+                        link.style.width = '30px';
+                        link.style.height = '30px';
+                        link.style.lineHeight = '30px';
+                        link.style.textAlign = 'center';
+                        link.style.fontSize = '18px';
+                        link.style.cursor = 'pointer';
+                        
+                        L.DomEvent.on(link, 'click', function(e) {
+                            L.DomEvent.preventDefault(e);
+                            map.setView([20, 0], 2);
+                        });
+                        L.DomEvent.on(link, 'mouseover', function() {
+                            link.style.backgroundColor = '#f4f4f4';
+                        });
+                        L.DomEvent.on(link, 'mouseout', function() {
+                            link.style.backgroundColor = '';
+                        });
+                        L.DomEvent.disableClickPropagation(link);
+                        return container;
+                    }
+                });
+                L.control.resetZoom = function(opts) {
+                    return new L.Control.ResetZoom(opts);
+                };
+            }
+            
+            // Find all map divs and add the control
+            var mapDivs = document.querySelectorAll('[id^="map_"]');
+            var added = false;
+            mapDivs.forEach(function(mapDiv) {
+                var mapId = mapDiv.id;
+                if (window[mapId] && typeof window[mapId].addControl === 'function') {
+                    try {
+                        window[mapId].addControl(L.control.resetZoom());
+                        added = true;
+                    } catch(e) {
+                        // Control might already be added
+                    }
+                }
+            });
+            
+            // If we couldn't add and still have attempts, try again
+            if (!added && attempts < maxAttempts) {
+                setTimeout(addResetControl, 100);
+            }
+        }
+        
+        // Start the process
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', addResetControl);
+        } else {
+            // DOM already loaded
+            setTimeout(addResetControl, 50);
+        }
+    })();
+    </script>
+    """)
+    
+    m.get_root().html.add_child(reset_control_script)
+
     # Save
     map_path = "assets/map.html"
     m.save(map_path)
 
     logging.info(f"Map saved as {map_path}")
+
+
+if __name__ == "__main__":
+    logging.basicConfig(level=logging.INFO)
+    generate_map()
