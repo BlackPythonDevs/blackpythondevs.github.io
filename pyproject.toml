@@ -7,6 +7,8 @@ dependencies = [
     "render-engine[cli]>=2026.3.4a2",
     "pyyaml",
     "folium>=0.20.0",
+    "click",
+    "pycountry",
 ]
 
 [dependency-groups]
