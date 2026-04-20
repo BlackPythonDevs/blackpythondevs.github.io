@@ -185,15 +185,16 @@ def generate_map():
 
     # Add reset zoom control using a direct approach
     # This script will be added at the end and executed immediately
-    reset_control_script = folium.Element("""
+    reset_control_script = folium.Element(
+        """
     <script>
     (function() {
         var attempts = 0;
         var maxAttempts = 50;
-        
+
         function addResetControl() {
             attempts++;
-            
+
             // Check if Leaflet is loaded
             if (typeof L === 'undefined' || !L.Control) {
                 if (attempts < maxAttempts) {
@@ -201,7 +202,7 @@ def generate_map():
                 }
                 return;
             }
-            
+
             // Define the control if not already defined
             if (!L.Control.ResetZoom) {
                 L.Control.ResetZoom = L.Control.extend({
@@ -218,7 +219,7 @@ def generate_map():
                         link.style.textAlign = 'center';
                         link.style.fontSize = '18px';
                         link.style.cursor = 'pointer';
-                        
+
                         L.DomEvent.on(link, 'click', function(e) {
                             L.DomEvent.preventDefault(e);
                             map.setView([20, 0], 2);
@@ -237,7 +238,7 @@ def generate_map():
                     return new L.Control.ResetZoom(opts);
                 };
             }
-            
+
             // Find all map divs and add the control
             var mapDivs = document.querySelectorAll('[id^="map_"]');
             var added = false;
@@ -252,13 +253,13 @@ def generate_map():
                     }
                 }
             });
-            
+
             // If we couldn't add and still have attempts, try again
             if (!added && attempts < maxAttempts) {
                 setTimeout(addResetControl, 100);
             }
         }
-        
+
         // Start the process
         if (document.readyState === 'loading') {
             document.addEventListener('DOMContentLoaded', addResetControl);
@@ -268,8 +269,9 @@ def generate_map():
         }
     })();
     </script>
-    """)
-    
+    """
+    )
+
     m.get_root().html.add_child(reset_control_script)
 
     # Save
