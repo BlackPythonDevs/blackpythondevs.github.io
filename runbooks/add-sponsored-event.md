@@ -23,8 +23,9 @@ Use the `add_conference` script — it updates `sponsored_events.json`,
 just add-conference --title "PyCon Cameroon" --year 2026 --continent "Africa" --country "Cameroon"
 ```
 
-Or call the script directly (required when the title contains spaces and
-dashes, since `just` splits positional args):
+Or call the script directly if you're using positional args or run into
+shell-quoting issues with `just`. Quoted flags such as `--title "PyCon
+Cameroon"` should work with `just`:
 
 ```
 uv run python scripts/add_conference.py \
