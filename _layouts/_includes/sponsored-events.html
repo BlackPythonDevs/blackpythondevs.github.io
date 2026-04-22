@@ -11,12 +11,12 @@
       <li>Supports Python events that are accessible to black communities</li>
 
     </ul>
-    <p>Here is a look at events this year that we've supported:</p>
   </section>
 
 
   <section>
     <h2>Events Sponsored by year</h2>
+    <p><em>Note: Some events listed here are community sponsorships in which no money was transferred between parties. These reflect partnerships where Black Python Devs contributed visibility, volunteer time, or other non-monetary support.</em></p>
     {% for segment_year in data.sponsored | sort(reverse=True) %}
       {% if segment_year == year %}
         <details name="{{segment_year}}" open>

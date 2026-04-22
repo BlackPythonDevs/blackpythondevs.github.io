@@ -12,7 +12,7 @@ Below are some diagrams to best explain the file structure of the website, the d
 
 ## Website structure
 
-The diagram below illustrates the main navigation structure of BPD website, showing how the homepage `(Index)` connects to various sections, including the `Home`, `Blog`, `About Us`, `Events`, and `Community`. Each blog article, represented as `Article1` and `Article2`, is linked directly from the `Blog` section.
+The diagram below illustrates the main navigation structure of BPD website, showing how the homepage `(Index)` connects to various sections, including the `Home`, `Blog`, `About Us`, `Events`, and `Support Us`. Each blog article, represented as `Article1` and `Article2`, is linked directly from the `Blog` section.
 
 ```
 Website Structure:
@@ -24,8 +24,7 @@ Index/
 ├── About Us
 ├── Events
 ├── Sponsored Events
-├── Community
-└── Sponsor Us
+└── Support Us
 ```
 
 ## Development structure

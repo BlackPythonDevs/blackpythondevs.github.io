@@ -3,7 +3,7 @@ author:
   - Jay Miller
 date: 2026-03-25
 description: Black Python Devs is happy to announce that Anaconda has made the decision to become a corporate sponsor of Black Python Devs
-featured_image: /assets/images/bpd-x-anaconda-2026.webp
+featured_image: /assets/images/corporate-sponsorship-anaconda.webp
 title: Anaconda is now a corporate sponsor of Black Python Devs
 ---
 
