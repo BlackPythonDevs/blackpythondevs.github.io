@@ -5,6 +5,12 @@
       "IndabaX - Botswana": [2024, 2025]
     }
   },
+  "CMR": {
+    "Name": "Cameroon",
+    "Sponsored": {
+      "PyCon Cameroon": [2026]
+    }
+  },
   "COL": {
     "Name": "Colombia",
     "Sponsored": {
@@ -144,11 +150,5 @@
   "MOZ": {
     "Name": "Mozambique",
     "Members in this country": true
-  },
-  "CMR": {
-    "Name": "Cameroon",
-    "Sponsored": {
-      "PyCon Cameroon": [2026]
-    }
   }
 }
