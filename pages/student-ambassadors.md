@@ -1,9 +1,3 @@
----
-layout: page
-lang: en
-title: Student Ambassador Program
-permalink: /student-ambassadors/
----
 
 
 ## BPD Student Ambassador Program
