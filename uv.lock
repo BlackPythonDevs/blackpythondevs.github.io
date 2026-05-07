@@ -53,6 +53,7 @@ dependencies = [
     { name = "click" },
     { name = "folium" },
     { name = "pycountry" },
+    { name = "python-slugify" },
     { name = "pyyaml" },
     { name = "render-engine", extra = ["cli"] },
 ]
@@ -72,6 +73,7 @@ requires-dist = [
     { name = "click" },
     { name = "folium", specifier = ">=0.20.0" },
     { name = "pycountry" },
+    { name = "python-slugify", specifier = ">=8.0.4" },
     { name = "pyyaml" },
     { name = "render-engine", extras = ["cli"], specifier = ">=2026.3.4a2" },
 ]

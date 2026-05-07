@@ -5,18 +5,59 @@ and an announcement post.
 
 **Reference PRs:** #853 (Ariane), #851 (Edmond), #849 (Israel)
 
+## Stage inputs in `tmp/`
+
+`tmp/` is the standard staging area for inputs to people-related runbooks
+(council members, foundational supporters, sponsor logos, etc.). It is
+git-ignored, so drop the raw bio and photo a maintainer sends you there:
+
+```
+tmp/
+  ariza-profile.md       # bio copy, draft notes, intake email, etc.
+  Valen__Laura-9.jpg     # original photo from the member
+```
+
+Nothing under `tmp/` ever gets committed — the script copies the optimized
+image into `assets/images/` and writes the bio into `_posts/`.
+
+### Optimize the image first
+
+Photos from members are typically large originals (multi-MB JPEGs). Before
+handing one to the script, optimize it down to a 512×512 webp:
+
+```bash
+mv tmp/Valen__Laura-9.jpg tmp/laura-council.jpg   # rename to the slug you want
+just optimize-image tmp/laura-council.jpg          # rewrites in place -> tmp/laura-council.webp
+```
+
+`just optimize-image` wraps ImageMagick (`magick`); install it with
+`brew install imagemagick` if missing. It writes a 512×512 webp next to the
+source and removes the original. Equivalent one-liner if you prefer:
+
+```bash
+magick tmp/laura-council.jpg -resize '512x512^' -gravity center \
+    -extent 512x512 -strip -quality 82 tmp/laura-council.webp
+```
+
+`cwebp`, `squoosh`, or any other tool is fine — the goal is a square webp
+under ~80 KB. Avoid committing the unoptimized original to `assets/images/`.
+
 ## Recommended: use the script
 
 `scripts/add_council_member.py` automates all three steps:
 
 ```bash
-uv run python scripts/add_council_member.py \
+just add-council-member \
     --name "First Last" \
-    --image /path/to/photo.webp \
-    --bio "Their bio text here..." \
+    --image tmp/laura-council.webp \
+    --bio-file tmp/laura-profile.md \
     --linkedin "https://linkedin.com/in/..." \
     --date 2026-04-20
 ```
+
+`--bio-file` reads the bio from disk (recommended — avoids shell-quoting
+issues with multiline markdown). Pass `--bio "..."` instead if you'd rather
+inline a short string. The two flags are mutually exclusive.
 
 The script:
 

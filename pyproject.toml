@@ -9,6 +9,7 @@ dependencies = [
     "folium>=0.20.0",
     "click",
     "pycountry",
+    "python-slugify>=8.0.4",
 ]
 
 [dependency-groups]

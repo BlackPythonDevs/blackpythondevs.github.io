@@ -10,7 +10,7 @@ Usage:
     python scripts/add_council_member.py \
         --name "First Last" \
         --image /path/to/photo.webp \
-        --bio "Their bio text here..." \
+        (--bio "Their bio text here..." | --bio-file tmp/their-profile.md) \
         [--linkedin "https://linkedin.com/in/..."] \
         [--date 2026-03-22]
 """
@@ -19,9 +19,10 @@ import argparse
 import json
 import shutil
 import subprocess
-import re
 from datetime import date
 from pathlib import Path
+
+from slugify import slugify
 
 ROOT = Path(__file__).resolve().parent.parent
 LEADERSHIP_JSON = ROOT / "_data" / "leadership.json"
@@ -34,10 +35,6 @@ COUNCIL_BLURB = (
     "can impact their communities. The council is made up of organizers, BPD leaders "
     "and those in leadership positions around the Python world."
 )
-
-
-def slugify(name: str) -> str:
-    return re.sub(r"[^a-z0-9]+", "-", name.lower()).strip("-")
 
 
 def copy_image(source: Path, name_slug: str) -> str:
@@ -120,8 +117,11 @@ def main():
         "--name", required=True, help="Full name of the new council member"
     )
     parser.add_argument("--image", required=True, help="Path to the member's photo")
-    parser.add_argument(
-        "--bio", required=True, help="Bio paragraph(s) for the blog post"
+    bio_group = parser.add_mutually_exclusive_group(required=True)
+    bio_group.add_argument("--bio", help="Bio paragraph(s) for the blog post")
+    bio_group.add_argument(
+        "--bio-file",
+        help="Path to a file (e.g. tmp/their-profile.md) containing the bio",
     )
     parser.add_argument(
         "--linkedin", default=None, help="LinkedIn profile URL (optional)"
@@ -139,6 +139,14 @@ def main():
     if not image_source.exists():
         parser.error(f"Image file not found: {image_source}")
 
+    if args.bio_file:
+        bio_path = Path(args.bio_file).expanduser().resolve()
+        if not bio_path.exists():
+            parser.error(f"Bio file not found: {bio_path}")
+        bio = bio_path.read_text().strip()
+    else:
+        bio = args.bio
+
     name_slug = slugify(args.name)
 
     # 1. Copy image
@@ -151,7 +159,7 @@ def main():
     # 3. Create blog post
     create_blog_post(
         name=args.name,
-        bio=args.bio,
+        bio=bio,
         image_path=image_path,
         linkedin=args.linkedin,
         post_date=post_date,

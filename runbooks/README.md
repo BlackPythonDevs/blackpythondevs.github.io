@@ -22,4 +22,16 @@ Every runbook assumes:
 3. You run `just pre-commit` and `just test` before pushing.
 4. You preview locally with `just serve` (render-engine dev server).
 
+### Staging area: `tmp/`
+
+`tmp/` is git-ignored and is the standard place to drop raw inputs while
+working a runbook — bio drafts, intake emails, and unoptimized photos. The
+scripts read from `tmp/` and write the finished artifacts into `_posts/`,
+`_data/`, and `assets/images/`. Nothing under `tmp/` is meant to be committed.
+
+Always optimize images before they land in `assets/images/`. Use
+`just optimize-image <src>` (ImageMagick wrapper that rewrites the file in
+place as a 512×512 webp and removes the original) or any equivalent tool —
+the goal is a square webp under ~80 KB.
+
 See `CONTRIBUTING.md` and `MAINTAINERS.md` for repository-wide conventions.

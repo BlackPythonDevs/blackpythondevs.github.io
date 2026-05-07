@@ -16,6 +16,7 @@ _site/
 vendor/
 2
 test_images
+tmp/
 *-version
 .DS_Store
 .coverage
@@ -232,3 +233,4 @@ __marimo__/
 output
 .hist
 /assets/map.html
+claude
