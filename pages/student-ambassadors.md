@@ -1,4 +1,7 @@
-
+---
+title: Student Ambassador Program
+description: Empowering student leaders in Python communities globally.
+---
 
 ## BPD Student Ambassador Program
 
