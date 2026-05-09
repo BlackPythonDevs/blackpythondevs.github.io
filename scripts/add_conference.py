@@ -114,18 +114,21 @@ def main(title: str, year: int, continent: str, country: str) -> None:
     click.echo("Regenerating assets/map.html ...")
     generate_map()
     click.echo("Running pre-commit on modified files ...")
-    subprocess.run(
-        [
-            "pre-commit",
-            "run",
-            "--files",
-            str(SPONSORED_JSON),
-            str(MAP_JSON),
-            str(ROOT / "assets" / "map.html"),
-        ],
-        cwd=ROOT,
-        check=False,
-    )
+    try:
+        subprocess.run(
+            [
+                "pre-commit",
+                "run",
+                "--files",
+                str(SPONSORED_JSON),
+                str(MAP_JSON),
+                str(ROOT / "assets" / "map.html"),
+            ],
+            cwd=ROOT,
+            check=False,
+        )
+    except FileNotFoundError:
+        click.echo("Skipping pre-commit (not installed).")
     click.echo("Done.")
 
 
