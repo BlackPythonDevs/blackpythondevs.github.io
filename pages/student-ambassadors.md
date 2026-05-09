@@ -17,34 +17,34 @@ This initiative supports students who are passionate about Python, leadership, a
 
 ### What You’ll Do
 
-- Build and grow Python communities on campus  
-- Organize workshops, meetups, and learning sessions  
-- Support peer learning and collaboration  
-- Represent your campus within the global BPD network  
+- Build and grow Python communities on campus
+- Organize workshops, meetups, and learning sessions
+- Support peer learning and collaboration
+- Represent your campus within the global BPD network
 
 ---
 
 ### Why Join
 
-- Leadership experience  
-- Global exposure  
-- Access to a network of developers  
-- Opportunity to create impact  
+- Leadership experience
+- Global exposure
+- Access to a network of developers
+- Opportunity to create impact
 
 ---
 
 ### FAQ
 
-*Who can apply?*  
+_Who can apply?_
 Students currently enrolled in a university or higher institution.
 
-*Do I need to be an expert in Python?*  
+_Do I need to be an expert in Python?_
 No. Passion and willingness to learn are more important.
 
-*Is this a paid role?* 
+_Is this a paid role?_
 No. It is a leadership and community-building opportunity.
 
-*Is the program global?*
+_Is the program global?_
 Yes. Open to students across different regions.
 
 ---
