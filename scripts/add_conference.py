@@ -17,6 +17,8 @@ The ISO_A3 country code is resolved from --country via pycountry.
 """
 
 import json
+import subprocess
+from datetime import date
 from pathlib import Path
 
 import click
@@ -85,7 +87,13 @@ def update_map_data(title: str, year: int, iso: str, country: str) -> None:
 
 @click.command(help="Add a sponsored conference and regenerate the activity map.")
 @click.option("--title", required=True, help="Conference title.")
-@click.option("--year", type=int, required=True, help="Year sponsored.")
+@click.option(
+    "--year",
+    type=int,
+    default=lambda: date.today().year,
+    show_default="current year",
+    help="Year sponsored.",
+)
 @click.option(
     "--continent",
     required=True,
@@ -105,6 +113,19 @@ def main(title: str, year: int, continent: str, country: str) -> None:
     update_map_data(title, year, iso, canonical)
     click.echo("Regenerating assets/map.html ...")
     generate_map()
+    click.echo("Running pre-commit on modified files ...")
+    subprocess.run(
+        [
+            "pre-commit",
+            "run",
+            "--files",
+            str(SPONSORED_JSON),
+            str(MAP_JSON),
+            str(ROOT / "assets" / "map.html"),
+        ],
+        cwd=ROOT,
+        check=False,
+    )
     click.echo("Done.")
 
 
