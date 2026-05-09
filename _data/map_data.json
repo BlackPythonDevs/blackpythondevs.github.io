@@ -152,5 +152,11 @@
   "MOZ": {
     "Name": "Mozambique",
     "Members in this country": true
+  },
+  "GMB": {
+    "Name": "Gambia",
+    "Sponsored": {
+      "PyCon Senegambia": [2025]
+    }
   }
 }
