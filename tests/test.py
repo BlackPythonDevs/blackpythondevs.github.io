@@ -132,7 +132,8 @@ def test_pycon_redirects_to_blog_post(built_site: pathlib.Path) -> None:
     assert pycon.exists(), "pycon.html should exist in build output"
     content = pycon.read_text()
     assert (
-        "/blog/black-python-devs-at-pycon-us-2026.html" in content
+        "https://blackpythondevs.com/blog/black-python-devs-at-pycon-us-2026.html"
+        in content
     ), "pycon.html should redirect to the PyCon US 2026 blog post"
 
 
