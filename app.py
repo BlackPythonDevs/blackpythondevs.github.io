@@ -89,6 +89,11 @@ class Leadership(Page):
 
 
 @app.page
+class Pycon(Page):
+    content_path = "pycon.html"
+
+
+@app.page
 class About(Page):
     template = "about.html"
     data = json.loads(pathlib.Path("_data/leadership.json").read_text())

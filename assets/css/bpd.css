@@ -1004,6 +1004,47 @@ a.logo-text:hover img {
   color: var(--bpd-cyan);
 }
 
+/* ── 12b. PyCon Banner ───────────────────────────────────── */
+
+.pycon-banner {
+  background: var(--bpd-gold-wash);
+  border: 1px solid var(--bpd-gold-dim);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  transition:
+    border-color 0.4s ease,
+    box-shadow 0.4s ease;
+}
+.pycon-banner:hover {
+  border-color: var(--bpd-gold);
+  box-shadow: 0 0 24px var(--bpd-gold-wash);
+}
+.pycon-banner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1rem 1.5rem;
+  color: var(--bpd-white);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+}
+.pycon-banner a:hover {
+  color: var(--bpd-gold);
+}
+.pycon-banner i {
+  font-size: 1.1em;
+  flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+  .pycon-banner a {
+    font-size: 0.9rem;
+    padding: 0.85rem 1rem;
+  }
+}
+
 /* ── 13. Hero ─────────────────────────────────────────────── */
 
 .hero {
