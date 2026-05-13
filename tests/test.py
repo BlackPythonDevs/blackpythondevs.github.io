@@ -126,6 +126,17 @@ def test_partnerships_redirects_to_support(built_site: pathlib.Path) -> None:
     ), "partnerships.html should redirect to /support.html#partnerships"
 
 
+def test_pycon_redirects_to_blog_post(built_site: pathlib.Path) -> None:
+    """Check that pycon.html contains a redirect to the PyCon US blog post."""
+    pycon = built_site / "pycon.html"
+    assert pycon.exists(), "pycon.html should exist in build output"
+    content = pycon.read_text()
+    assert (
+        "https://blackpythondevs.com/blog/black-python-devs-at-pycon-us-2026.html"
+        in content
+    ), "pycon.html should redirect to the PyCon US 2026 blog post"
+
+
 def _blog_post_files() -> list[pathlib.Path]:
     """Get all blog post HTML files (excluding index and pagination pages)."""
     blog_dir = OUTPUT_DIR / "blog"

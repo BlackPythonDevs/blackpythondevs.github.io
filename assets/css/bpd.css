@@ -1004,6 +1004,86 @@ a.logo-text:hover img {
   color: var(--bpd-cyan);
 }
 
+/* ── 12b. PyCon Banner ───────────────────────────────────── */
+
+/* PyCon US 2026 brand purple — lightened in dark mode for contrast */
+.pycon-banner {
+  --pycon-purple: #d28de8;
+}
+@media (prefers-color-scheme: light) {
+  .pycon-banner {
+    --pycon-purple: #680579;
+  }
+}
+[data-theme="light"] .pycon-banner {
+  --pycon-purple: #680579;
+}
+[data-theme="dark"] .pycon-banner {
+  --pycon-purple: #d28de8;
+}
+
+.pycon-banner {
+  position: relative;
+  background: var(--bpd-raised);
+  border: 1px solid var(--bpd-border);
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  overflow: hidden;
+  transition:
+    border-color 0.5s ease,
+    box-shadow 0.5s ease,
+    transform 0.5s ease;
+}
+
+/* luminous gold seam — echoes site header + newsletter card */
+.pycon-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--bpd-gold-wash) 25%, var(--bpd-gold) 50%, var(--bpd-gold-wash) 75%, transparent);
+  border-radius: 12px 12px 0 0;
+}
+
+.pycon-banner:hover {
+  border-color: var(--bpd-border-hi);
+  box-shadow: 0 0 28px var(--bpd-cyan-glow);
+  transform: translateY(-2px);
+}
+
+.pycon-banner a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0.85rem;
+  padding: 1.1rem 1.5rem;
+  color: var(--pycon-purple);
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+}
+
+.pycon-banner-icon {
+  color: var(--pycon-purple);
+  font-size: 1.15rem;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+
+.pycon-banner:hover .pycon-banner-icon {
+  transform: translateX(4px);
+}
+
+@media (max-width: 600px) {
+  .pycon-banner a {
+    padding: 0.95rem 1.1rem;
+    font-size: 0.92rem;
+  }
+}
+
 /* ── 13. Hero ─────────────────────────────────────────────── */
 
 .hero {
