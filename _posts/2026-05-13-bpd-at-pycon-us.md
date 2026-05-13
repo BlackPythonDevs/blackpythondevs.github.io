@@ -30,7 +30,7 @@ We have some amazing swag available with a donation including our classic Black 
 
 Shirts are available for those who donate at $35. Jackets are at $100.
 
-![PyCon US swag](assets/images/pyconus-merch-social-card.webp)
+![PyCon US swag](/assets/images/pyconus-merch-social-card.webp)
 
 It will be first come first serve so make sure you donate as fast as possible.
 
