@@ -19,10 +19,10 @@ Our community booth will be setup in the expo hall. Come say hi to us and make s
 
 We will have our usual events. We'll keep this page updated with times and locations:
 
-## |Event |Location | Date | Time |
-
-| Chop it Up Session | PSF Booth - Expo Hall | 15 May | 4pm |
-| Open Space | TBD | 17 May | TBD |
+| Event              | Location              | Date   | Time |
+| ------------------ | --------------------- | ------ | ---- |
+| Chop it Up Session | PSF Booth - Expo Hall | 15 May | 4pm  |
+| Open Space         | TBD                   | 17 May | TBD  |
 
 ## Swag
 
