@@ -1,7 +1,8 @@
 ---
 title: Black Python Devs at PyCon US 2026
 author: [Jay Miller]
-date: 2026-05-13T12:02:36
+date: 2026-05-13
+featured_image: bpdxpyconus26.webp
 ---
 
 Black Python Devs is back at PyCon US and were bringing the same great traditions with some new gear!
