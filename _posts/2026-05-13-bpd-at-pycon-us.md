@@ -34,4 +34,4 @@ Shirts are available for those who donate at $35. Jackets are at $100.
 
 It will be first come first serve so make sure you donate as fast as possible.
 
-<a href="/sponsor.html" role="button">DONATE</a>
+<a href="/support.html" role="button">DONATE</a>
