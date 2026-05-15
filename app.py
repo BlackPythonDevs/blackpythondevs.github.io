@@ -6,6 +6,7 @@ import pluggy
 from render_engine import Site, Page, Collection, Blog
 from render_engine_markdown import MarkdownPageParser
 
+from render_engine_clean_urls import CleanURLsPlugin
 from scripts.map import generate_map
 
 navigation = [
@@ -60,6 +61,7 @@ app.site_vars["SITE_AUTHORS"] = json.loads(
 )
 
 app.plugin_manager.register_plugin(GenerateMapPlugin)
+app.plugin_manager.register_plugin(CleanURLsPlugin)
 
 
 @app.page
