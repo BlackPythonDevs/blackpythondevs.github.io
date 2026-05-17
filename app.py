@@ -26,7 +26,7 @@ navigation = [
         "icon": "iconoir-calendar",
     },
     {
-        "text": "Support Us",
+        "text": "Donate",
         "url": "/support.html",
         "icon": "iconoir-donate",
     },
