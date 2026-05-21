@@ -4,17 +4,26 @@ version = "0.1.0"
 description = "Black Python Devs community website"
 requires-python = ">=3.13"
 dependencies = [
-  "render-engine[cli]>=2026.3.4a2",
-  "render-engine-clean-urls",
-  "pyyaml",
+  "render-engine[cli]>=2026.5.2a1",
+  "render-engine-clean-urls==0.1.0",
+  "pyyaml==6.0.3",
   "folium>=0.20.0",
-  "click",
-  "pycountry",
+  "click==8.3.1",
+  "pycountry==26.2.16",
   "python-slugify>=8.0.4",
+  "pin-versions>=0.0.0",
 ]
 
 [dependency-groups]
-dev = ["pre-commit", "typer", "rich", "python-frontmatter", "pytest", "ruff"]
+dev = [
+  "pin-versions==2026.3.6",
+  "pre-commit==4.6.0",
+  "typer==0.25.1",
+  "rich==14.3.3",
+  "python-frontmatter==1.1.0",
+  "pytest==9.0.3",
+  "ruff==0.15.13",
+]
 
 [tool.render-engine.cli]
 module = "app"

@@ -3,7 +3,7 @@ import json
 import pathlib
 import pluggy
 
-from render_engine import Site, Page, Collection, Blog
+from render_engine import Site, Page, Collection, Blog, RedirectPage
 from render_engine_markdown import MarkdownPageParser
 
 from render_engine_clean_urls import CleanURLsPlugin
@@ -71,28 +71,35 @@ class Index(Page):
 
 
 @app.page
-class Students(Page):
-    content_path = "students.html"
+class Students(RedirectPage):
+    slug = "students"
+    redirect_url = "/student-ambassador-program.html"
 
 
 @app.page
-class Community(Page):
-    content_path = "community.html"
+class Community(RedirectPage):
+    slug = "community"
+    redirect_url = "/about.html#join-the-community"
 
 
 @app.page
-class Partnerships(Page):
-    content_path = "partnerships.html"
+class Partnerships(RedirectPage):
+    slug = "partnerships"
+    redirect_url = "/support.html#partnerships"
 
 
 @app.page
-class Leadership(Page):
-    content_path = "leadership.html"
+class Leadership(RedirectPage):
+    slug = "leadership"
+    redirect_url = "/black-python-devs-leadership-summit-2026-ohio.html"
 
 
 @app.page
-class Pycon(Page):
-    content_path = "pycon.html"
+class Pycon(RedirectPage):
+    slug = "pycon"
+    redirect_url = (
+        "https://blackpythondevs.com/blog/black-python-devs-at-pycon-us-2026.html"
+    )
 
 
 @app.page
