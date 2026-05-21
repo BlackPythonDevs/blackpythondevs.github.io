@@ -1004,25 +1004,9 @@ a.logo-text:hover img {
   color: var(--bpd-cyan);
 }
 
-/* ── 12b. PyCon Banner ───────────────────────────────────── */
+/* ── 12b. Toast Banner ───────────────────────────────────── */
 
-/* PyCon US 2026 brand purple — lightened in dark mode for contrast */
-.pycon-banner {
-  --pycon-purple: #d28de8;
-}
-@media (prefers-color-scheme: light) {
-  .pycon-banner {
-    --pycon-purple: #680579;
-  }
-}
-[data-theme="light"] .pycon-banner {
-  --pycon-purple: #680579;
-}
-[data-theme="dark"] .pycon-banner {
-  --pycon-purple: #d28de8;
-}
-
-.pycon-banner {
+.toast {
   position: relative;
   background: var(--bpd-raised);
   border: 1px solid var(--bpd-border);
@@ -1036,7 +1020,7 @@ a.logo-text:hover img {
 }
 
 /* luminous gold seam — echoes site header + newsletter card */
-.pycon-banner::before {
+.toast::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1047,38 +1031,42 @@ a.logo-text:hover img {
   border-radius: 12px 12px 0 0;
 }
 
-.pycon-banner:hover {
+.toast:hover {
   border-color: var(--bpd-border-hi);
   box-shadow: 0 0 28px var(--bpd-cyan-glow);
   transform: translateY(-2px);
 }
 
-.pycon-banner a {
+.toast a {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem 0.85rem;
   padding: 1.1rem 1.5rem;
-  color: var(--pycon-purple);
+  color: var(--bpd-cyan);
   text-decoration: none;
   font-weight: 600;
   text-align: center;
 }
 
-.pycon-banner-icon {
-  color: var(--pycon-purple);
+.toast a:hover {
+  color: var(--bpd-white);
+}
+
+.toast-icon {
+  color: var(--bpd-gold);
   font-size: 1.15rem;
   flex-shrink: 0;
   transition: transform 0.3s ease;
 }
 
-.pycon-banner:hover .pycon-banner-icon {
+.toast:hover .toast-icon {
   transform: translateX(4px);
 }
 
 @media (max-width: 600px) {
-  .pycon-banner a {
+  .toast a {
     padding: 0.95rem 1.1rem;
     font-size: 0.92rem;
   }
