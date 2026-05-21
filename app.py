@@ -91,15 +91,13 @@ class Partnerships(RedirectPage):
 @app.page
 class Leadership(RedirectPage):
     slug = "leadership"
-    redirect_url = "/black-python-devs-leadership-summit-2026-ohio.html"
+    redirect_url = "/events/black-python-devs-leadership-summit-2026-ohio.html"
 
 
 @app.page
 class Pycon(RedirectPage):
     slug = "pycon"
-    redirect_url = (
-        "https://blackpythondevs.com/blog/black-python-devs-at-pycon-us-2026.html"
-    )
+    redirect_url = "/blog/black-python-devs-at-pycon-us-2026.html"
 
 
 @app.page
