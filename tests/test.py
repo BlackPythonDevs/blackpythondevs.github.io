@@ -43,6 +43,41 @@ def parse_html(path: pathlib.Path) -> HTMLMetaParser:
     return parser
 
 
+class ToastParser(HTMLParser):
+    """Extract aria-label, link href, and visible text from a `.toast` section."""
+
+    def __init__(self):
+        super().__init__()
+        self._depth = 0
+        self.aria_label: str | None = None
+        self.href: str | None = None
+        self.text: str = ""
+
+    def handle_starttag(self, tag, attrs):
+        attrs_dict = dict(attrs)
+        if self._depth:
+            self._depth += 1
+            if tag == "a" and self.href is None:
+                self.href = attrs_dict.get("href")
+        elif tag == "section" and "toast" in attrs_dict.get("class", "").split():
+            self._depth = 1
+            self.aria_label = attrs_dict.get("aria-label")
+
+    def handle_endtag(self, tag):
+        if self._depth:
+            self._depth -= 1
+
+    def handle_data(self, data):
+        if self._depth:
+            self.text += data
+
+
+def parse_toast(path: pathlib.Path) -> ToastParser | None:
+    parser = ToastParser()
+    parser.feed(path.read_text())
+    return parser if parser.aria_label is not None else None
+
+
 OUTPUT_DIR = pathlib.Path("output")
 
 
@@ -126,15 +161,13 @@ def test_partnerships_redirects_to_support(built_site: pathlib.Path) -> None:
     ), "partnerships.html should redirect to /support.html#partnerships"
 
 
-def test_pycon_redirects_to_blog_post(built_site: pathlib.Path) -> None:
-    """Check that pycon.html contains a redirect to the PyCon US blog post."""
-    pycon = built_site / "pycon.html"
-    assert pycon.exists(), "pycon.html should exist in build output"
-    content = pycon.read_text()
-    assert (
-        "https://blackpythondevs.com/blog/black-python-devs-at-pycon-us-2026.html"
-        in content
-    ), "pycon.html should redirect to the PyCon US 2026 blog post"
+def test_homepage_toast(built_site: pathlib.Path) -> None:
+    """Check that the homepage renders a well-formed toast banner."""
+    toast = parse_toast(built_site / "index.html")
+    assert toast is not None, "homepage should render a .toast section"
+    assert toast.aria_label, "toast should have a non-empty aria-label"
+    assert toast.href, "toast should contain a link with an href"
+    assert toast.text.strip(), "toast should have visible text"
 
 
 def _blog_post_files() -> list[pathlib.Path]:

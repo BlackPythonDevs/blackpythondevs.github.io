@@ -29,6 +29,9 @@
     <a class="skip-to-content" href="#main-content">Skip to content</a>
     {%- include '_includes/header.html' -%}
     <main id="main-content" class="container" role="main" aria-label="Content">
+      {% if toast %}
+        {% include '_includes/toast.html' %}
+      {% endif %}
 
       {% block content %}
       {% if content %}
