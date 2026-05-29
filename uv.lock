@@ -55,7 +55,6 @@ source = { editable = "." }
 dependencies = [
     { name = "click" },
     { name = "folium" },
-    { name = "pin-versions" },
     { name = "pycountry" },
     { name = "python-slugify" },
     { name = "pyyaml" },
@@ -78,7 +77,6 @@ dev = [
 requires-dist = [
     { name = "click", specifier = "==8.3.1" },
     { name = "folium", specifier = ">=0.20.0" },
-    { name = "pin-versions", specifier = ">=0.0.0" },
     { name = "pycountry", specifier = "==26.2.16" },
     { name = "python-slugify", specifier = ">=8.0.4" },
     { name = "pyyaml", specifier = "==6.0.3" },

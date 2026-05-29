@@ -25,16 +25,6 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 
 **Free**
 
-## Is there a CFP
-
-For the first time we opened up the afternoon sessions to selected speakers from a Call for Papers (CFP). We hope to bring presentations from folks all over to energize and inform today's and tomorrow's Leaders of the Python Community.
-
-**The CFP is now closed.** Thank you to everyone who submitted. Selected speakers will be notified and announced on this page.
-
-## Is there speaker reimbursement?
-
-**YES!** Our Community speakers will able to reimburse travel-based expenses based on our [travel support policy](https://github.com/BlackPythonDevs/blackpythondevs/blob/main/policies/volunteer-travel-support.md).
-
 ## Watch Online
 
 <section>
@@ -44,20 +34,57 @@ For the first time we opened up the afternoon sessions to selected speakers from
   </footer>
 </section>
 
+## Keynote Speakers
+
+<div class="grid">
+<article>
+<img src="/assets/images/bpd-summit-oh-2026-bonny.webp" alt="Bonny McClain" />
+<h3><a href="https://www.linkedin.com/in/bonnypmcclain/">Bonny McClain</a></h3>
+<p>Bonny is a dynamic scientist and quantitative storyteller facilitating narratives at the intersection of geospatial data science, climate and sustainability. Defying conventional paths to tech, she brings a refreshing perspective to the field, blending art and science to convey complex ideas through the power of numbers — using words to build worlds.</p>
+<p>Recognized as a leading voice in thinking beyond sound-bites to illuminate climate science and the human impact on our planetary boundaries, Bonny describes storytelling as where perception and truth create friction. Her expertise transforms raw data into compelling narratives that drive impactful decision-making.</p>
+<p>Partnering with organizations to reveal actionable insights promoting environmental responsibility and sustainable practices, it is through these collaborative engagements where actionable insights are proving that often, numbers can tell a better story than simply thinking with words.</p>
+</article>
+<article>
+<img src="/assets/images/bpd-summit-oh-2026-joy.webp" alt="Joy Hopkins" />
+<h3><a href="https://www.linkedin.com/in/joylynhopkins">Joy Hopkins</a></h3>
+<p>Joy Hopkins (she/they) has more than 15 years of experience in education. After an extensive career in the nonprofit sector, they transitioned to tech about 11 years ago. Joy has a deep background in the performing arts which is the foundation for both their communication and project management skills. Their data science expertise and passion lie primarily in data literacy, visualization, and storytelling. Nowadays, Joy is a data science instructor and co-organizer of Data Visualization DC and PyData DC. Joy has a Bachelor's degree from James Madison University and a Master's degree from American University. They're currently pursuing an M.S. in Data Science from Eastern University.</p>
+</article>
+</div>
+
+## Community Speakers
+
+<div class="grid">
+<article>
+<img src="/assets/images/bpd-summit-oh-2026-jon.webp" alt="Jon Bonafato" />
+<h3><a href="https://mastodon.social/@jonafato">Jon Bonafato</a></h3>
+<p>A Metaphor about Chairs</p>
+</article>
+<article>
+<img src="/assets/images/bpd-summit-oh-2026-calypso.webp" alt="Calypso Hernandez" />
+<h3><a href="https://www.linkedin.com/in/calypso-hernandez/">Calypso Hernandez</a></h3>
+<p>Show Up Human in a World of AI</p>
+</article>
+<article>
+<img src="/assets/images/bpd-summit-oh-2026-kattni.webp" alt="Kattni" />
+<h3><a href="https://www.linkedin.com/in/kattni">Kattni</a></h3>
+<p>Approachability and empowerment: On the importance of being there and building up</p>
+</article>
+</div>
+
 ## Schedule
 
 - 08:00 - Registration and Mingling
 - 09:00 - Welcome
 - 09:15 - Venue Sponsor Host - PyOhio
-- 09:20 - Keynote Speaker - TBA
+- 09:20 - Keynote Speaker - Bonny McClain
 - 10:20 - Break & Setup
 - 10:30 - Chop it up session - Everyone
 - 11:30 - 1:00 Lunch (Break)
 - 1:05 - Corporate Sponsor
-- 1:15 - Afternoon Keynote - TBA
+- 1:15 - Afternoon Keynote - Joy Hopkins
 - 2:15 - Break & Setup
-- 2:30 - Community Talk
-- 3:00 - Community Talk
-- 3:30 - Community Talk
+- 2:30 - Community Talk - Jon Bonafato
+- 3:00 - Community Talk - Calypso Hernandez
+- 3:30 - Community Talk - Kattni
 - 4:00 - Break & Setup
 - 4:15 - Closing Remarks - Jay Miller
