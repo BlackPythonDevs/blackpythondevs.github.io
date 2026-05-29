@@ -55,8 +55,8 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 
 <div class="grid">
 <article>
-<img src="/assets/images/bpd-summit-oh-2026-jon.webp" alt="Jon Bonafato" />
-<h3><a href="https://mastodon.social/@jonafato">Jon Bonafato</a></h3>
+<img src="/assets/images/bpd-summit-oh-2026-jon.webp" alt="Jon Banafato" />
+<h3><a href="https://mastodon.social/@jonafato">Jon Banafato</a></h3>
 <p>A Metaphor about Chairs</p>
 </article>
 <article>
