@@ -103,6 +103,12 @@ class Leadership(RedirectPage):
 
 
 @app.page
+class LeadershipSummit(RedirectPage):
+    slug = "leadership-summit"
+    redirect_url = "/bpd-events/black-python-devs-leadership-summit-2026-ohio.html"
+
+
+@app.page
 class Pycon(RedirectPage):
     slug = "pycon"
     redirect_url = "/blog/black-python-devs-at-pycon-us-2026.html"
