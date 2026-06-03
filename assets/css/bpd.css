@@ -1237,6 +1237,75 @@ a[role="button"]:active,
 }
 
 /* color variants */
+a[role="button"].primary,
+.btn.primary {
+  color: #fff;
+  background: var(--bpd-cyan);
+  border: 2px solid transparent;
+}
+a[role="button"].primary:hover,
+.btn.primary:hover {
+  background: var(--bpd-cyan-dim);
+}
+
+a[role="button"].secondary,
+.btn.secondary {
+  color: var(--bpd-void);
+  background: var(--bpd-gold);
+  border: 2px solid transparent;
+}
+a[role="button"].secondary:hover,
+.btn.secondary:hover {
+  color: var(--bpd-void);
+  background: var(--bpd-gold-dim);
+}
+
+a[role="button"].contrast,
+.btn.contrast {
+  color: var(--bpd-void);
+  background: var(--bpd-white);
+  border: 2px solid transparent;
+}
+a[role="button"].contrast:hover,
+.btn.contrast:hover {
+  color: var(--bpd-void);
+  background: var(--bpd-text);
+}
+
+a[role="button"].outline,
+.btn.outline {
+  color: var(--bpd-cyan);
+  background: transparent;
+  border: 2px solid var(--bpd-cyan);
+}
+a[role="button"].outline:hover,
+.btn.outline:hover {
+  color: #fff;
+  background: var(--bpd-cyan);
+}
+a[role="button"].outline.secondary,
+.btn.outline.secondary {
+  color: var(--bpd-gold);
+  background: transparent;
+  border-color: var(--bpd-gold);
+}
+a[role="button"].outline.secondary:hover,
+.btn.outline.secondary:hover {
+  color: var(--bpd-void);
+  background: var(--bpd-gold);
+}
+a[role="button"].outline.contrast,
+.btn.outline.contrast {
+  color: var(--bpd-white);
+  background: transparent;
+  border-color: var(--bpd-white);
+}
+a[role="button"].outline.contrast:hover,
+.btn.outline.contrast:hover {
+  color: var(--bpd-void);
+  background: var(--bpd-white);
+}
+
 a[role="button"][disabled] {
   opacity: 0.5;
   pointer-events: none;

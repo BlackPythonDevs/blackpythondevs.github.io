@@ -13,7 +13,14 @@ We are happy to announce the 2026 Black Python Devs Leadership Summit on **July 
 
 This is done in partnership with the [PyOhio Organization](https://www.pyohio.org/2026/) that Black Python Devs has been proud to support for several years.
 
-<a role="button" class="secondary" href="https://pyohio.org/2026">Learn More About PyOhio</a>
+<div class="grid">
+  <div>
+    <a role="button" class="primary" href="https://www.pyohio.org/2026/attend/registration/">Register for FREE!</a>
+  </div>
+  <div>
+    <a role="button" class="outline" href="https://pyohio.org/2026">Learn More About PyOhio</a>
+  </div>
+</div>
 
 ## Who is invited?
 
@@ -21,14 +28,10 @@ Even though Black Python Devs is the producer of this event, this event is a pub
 
 Anyone in leadership or wanting to get into leadership at the local, regional, or global level of the Python community and its many organizations will benefit from attending this event.
 
-## How much is it?
-
-**Free**
-
 ## Watch Online
 
 <section>
-  <p>The Event is planned to be live-streamed on the <a href="https://youtube.com/@blackpythondevs">Black Python Devs YouTube Channel</a></p>
+  <p>The Event is planned to be live-streamed (if possible) on the <a href="https://youtube.com/@blackpythondevs">Black Python Devs YouTube Channel</a></p>
   <p>Come back on Event Day to Watch</p>
   <p>View on YouTube to interact in the comments.</p>
   </footer>
