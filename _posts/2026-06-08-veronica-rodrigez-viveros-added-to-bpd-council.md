@@ -2,6 +2,8 @@
 title: Verónica Rodríguez Viveros Added to BPD Council
 author: [Denny Perez]
 date: 2026-06-08
+description: The BPD Council has recognized the work of Verónica Rodríguez
+  Viveros and invited them to join the Council.
 featured_image: /assets/images/veronica-rodrigez-viveros-added-to-bpd-council.webp
 ---
 
