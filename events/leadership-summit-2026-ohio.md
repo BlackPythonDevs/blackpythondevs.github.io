@@ -86,7 +86,7 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 - 1:05 - Corporate Sponsor
 - 1:15 - Afternoon Keynote - Joy Hopkins
 - 2:15 - Break & Setup
-- 2:30 - Community Talk - Jon Bonafato
+- 2:30 - Community Talk - Jon Banafato
 - 3:00 - Community Talk - Calypso Hernandez
 - 3:30 - Community Talk - Kattni
 - 4:00 - Break & Setup
