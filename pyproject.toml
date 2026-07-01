@@ -10,7 +10,6 @@ dependencies = [
   "click==8.3.1",
   "pycountry==26.2.16",
   "python-slugify>=8.0.4",
-  "python-frontmatter==1.1.0",
   "pluggy>=1.6.0",
   "render-engine-markdown>=2023.12.1",
   "requests>=2.34.2",
@@ -22,6 +21,7 @@ dev = [
   "pre-commit==4.6.0",
   "typer==0.25.1",
   "rich==14.3.3",
+  "python-frontmatter==1.1.0",
   "pytest==9.0.3",
   "ruff==0.15.13",
   "deptry>=0.25.1",
@@ -37,6 +37,6 @@ build-backend = "setuptools.build_meta"
 
 [tool.deptry]
 known_first_party = ["map"]
-
-[tool.deptry.package_module_name_map]
-frontmatter = "python-frontmatter"
+# check_author_list.py is a dev-only pre-commit hook, not part of the site
+# build, so its dev-group deps (frontmatter) shouldn't be scanned as build deps.
+extend_exclude = ["scripts/check_author_list.py"]
