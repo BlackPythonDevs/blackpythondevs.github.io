@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@a9b33f02405f50e505f17ab8530e42a23200a5d1
         with:
           python-version: "3.13"
       - uses: pre-commit/action@v3.0.0
