@@ -40,3 +40,9 @@ repos:
         language: python
         additional_dependencies: [python-frontmatter]
         pass_filenames: false
+      - id: deptry
+        name: deptry
+        entry: uv run deptry .
+        language: system
+        always_run: true
+        pass_filenames: false

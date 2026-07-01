@@ -4,7 +4,7 @@ import pathlib
 from typing import Iterator
 from urllib.parse import urlparse
 
-import gh_issues
+import gh_issues  # deptry: ignore
 
 QUERY = "repo:blackpythondevs/blackpythondevs.github.io type:issue label:conference"
 
