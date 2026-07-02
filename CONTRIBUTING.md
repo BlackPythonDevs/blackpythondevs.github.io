@@ -34,7 +34,6 @@ The diagram below outlines the file structure of the development environment. Th
 ```
 Development Structure:
 root/
-├── _archive # old pages that should mostly be ignored
 ├── _posts/
 │   ├── post1
 │   └── post2
