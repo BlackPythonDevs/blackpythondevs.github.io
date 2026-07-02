@@ -1411,7 +1411,14 @@ main.page-content div.wrapper p img {
 .sponsor {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 1rem;
+  /* Fixed light background in both themes so full-color sponsor
+     logos stay legible in dark mode (issue #933, option C) */
+  background: #ffffff;
+  border: 1px solid var(--bpd-border);
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
 }
 .post-title > h3 {
   font-size: smaller;
