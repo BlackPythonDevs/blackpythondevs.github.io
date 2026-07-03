@@ -20,8 +20,8 @@
       "South America": ["Ubuntu Tech - Colombia", "Django Girls - Colombia"]
     },
     "2026": {
-      "Africa": ["PyCon Namibia", "Django Girls - Tamale", "PyCon Cameroon", "Build with AI Pwani", "AI Fest Uganda", "Ghana Data Science Summit (IndabaX)"],
-      "North America": ["PyCascades", "PyTexas", "PyNorth Meetups"]
+      "Africa": ["PyCon Togo", "PyCon Namibia", "Django Girls - Tamale", "PyCon Cameroon", "Build with AI Pwani", "AI Fest Uganda", "Ghana Data Science Summit (IndabaX)", "PyHo"],
+      "North America": ["Kids Next Code", "PyCascades", "PyTexas", "PyNorth Meetups"]
     }
   }
 }
