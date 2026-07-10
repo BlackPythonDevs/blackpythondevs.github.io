@@ -7,6 +7,7 @@ derived from the merged PRs of the last ~12 months.
 | ---------------------------------- | -------------------------------------------------------------- | ---------------------- |
 | Add a foundational supporter       | [add-foundational-supporter.md](add-foundational-supporter.md) | #893, #879, #870       |
 | Add a corporate sponsor            | [add-corporate-sponsor.md](add-corporate-sponsor.md)           | #888, #866             |
+| Add a partner                      | [add-partner.md](add-partner.md)                               | #845                   |
 | Add a BPD Council member           | [add-council-member.md](add-council-member.md)                 | #853, #851, #849       |
 | Publish a blog post / announcement | [publish-blog-post.md](publish-blog-post.md)                   | #888, #864             |
 | Add or update a sponsored event    | [add-sponsored-event.md](add-sponsored-event.md)               | #863, #854             |
