@@ -59,7 +59,7 @@ If a community member engages in unacceptable behavior, the community organizers
 
 ## 6. Reporting Guidelines
 
-If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. kjaymiller@gmail.com.
+If you are subject to or witness unacceptable behavior, or have any other concerns, please notify a community organizer as soon as possible. You can email coc@blackpythondevs.com.
 
 Additionally, community organizers are available to help community members to otherwise help those experiencing unacceptable behavior feel safe. In the context of in-person events, organizers will also provide escorts as desired by the person experiencing distress.
 
