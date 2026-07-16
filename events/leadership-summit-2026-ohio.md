@@ -63,9 +63,9 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 <p>A Metaphor about Chairs</p>
 </article>
 <article>
-<img src="/assets/images/bpd-summit-oh-2026-calypso.webp" alt="Calypso Hernandez" />
-<h3><a href="https://www.linkedin.com/in/calypso-hernandez/">Calypso Hernandez</a></h3>
-<p>Show Up Human in a World of AI</p>
+<img src="/assets/images/bpd-summit-oh-2026-laz.webp" alt="Lazouich Ford" />
+<h3><a href="https://www.linkedin.com/in/lazouich-ford/">Lazouich Ford</a></h3>
+<p>Ambiguous Ambition</p>
 </article>
 <article>
 <img src="/assets/images/bpd-summit-oh-2026-kattni.webp" alt="Kattni" />
@@ -87,7 +87,7 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 - 1:15 - Afternoon Keynote - Joy Hopkins
 - 2:15 - Break & Setup
 - 2:30 - Community Talk - Jon Banafato
-- 3:00 - Community Talk - Calypso Hernandez
+- 3:00 - Community Talk - Lazouich Ford
 - 3:30 - Community Talk - Kattni
 - 4:00 - Break & Setup
 - 4:15 - Closing Remarks - Jay Miller
