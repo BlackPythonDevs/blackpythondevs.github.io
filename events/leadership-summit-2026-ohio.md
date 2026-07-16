@@ -65,7 +65,7 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 <article>
 <img src="/assets/images/bpd-summit-oh-2026-laz.webp" alt="Lazouich Ford" />
 <h3><a href="https://www.linkedin.com/in/lazouich-ford/">Lazouich Ford</a></h3>
-<p>Ambiguous Ambition</p>
+<p>Ambiguous Ambition: Lessons from a Year of Leadership</p>
 </article>
 <article>
 <img src="/assets/images/bpd-summit-oh-2026-kattni.webp" alt="Kattni" />
