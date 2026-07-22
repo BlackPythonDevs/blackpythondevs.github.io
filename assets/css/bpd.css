@@ -1364,8 +1364,39 @@ img.leadership-photo:hover {
   height: 4rem;
 }
 
+/* Update annotation — a dated callout for changes to event details. */
+.update-note {
+  border-left: 4px solid var(--bpd-gold);
+  background: var(--bpd-gold-wash);
+  border-radius: 0 10px 10px 0;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+}
+.update-note > :first-child {
+  margin-top: 0;
+}
+.update-note > :last-child {
+  margin-bottom: 0;
+}
+.update-note .update-note-label {
+  display: block;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  margin-bottom: 0.35rem;
+}
+
 /* ── 18. Images ───────────────────────────────────────────── */
 
+/* Speaker cards — force a uniform portrait crop regardless of the
+   source image's aspect ratio so every photo lines up in the grid. */
+img.speaker-photo {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+  border-radius: 10px;
+}
 img.donation-photo {
   max-width: 20rem;
   border-radius: 10px;
