@@ -32,6 +32,11 @@ repos:
     rev: 23.9.1
     hooks:
       - id: black
+  # Add zizmor
+  - repo: https://github.com/zizmorcore/zizmor-pre-commit
+    rev: v1.28.0
+    hooks:
+      - id: zizmor
   - repo: local
     hooks:
       - id: check-author-list
