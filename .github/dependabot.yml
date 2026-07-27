@@ -5,6 +5,25 @@
 
 version: 2
 updates:
+  # Configuration for GitHub Actions
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "weekly"
+    open-pull-requests-limit: 10
+    labels:
+      - "dependencies"
+      - "github-actions"
+    commit-message:
+      prefix: "actions"
+      include: "scope"
+    groups:
+      actions-deps:
+        patterns:
+          - "*"
+    cooldown:
+      default-days: 7
+
   # Configuration for Bundler
   - package-ecosystem: "bundler"
     directory: "/"
@@ -24,6 +43,8 @@ updates:
       ruby-deps:
         patterns:
           - "*"
+    cooldown:
+      default-days: 7
 
   # Configuration for pip
   - package-ecosystem: "pip"
@@ -45,3 +66,5 @@ updates:
       python-deps:
         patterns:
           - "*"
+    cooldown:
+      default-days: 7
