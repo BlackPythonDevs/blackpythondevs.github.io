@@ -69,13 +69,7 @@ app.plugin_manager.register_plugin(CleanURLsPlugin)
 class Index(Page):
     template = "index.html"
     content_path = "index.html"
-    template_vars = {
-        "toast": {
-            "label": "Black Python Devs",
-            "url": "/leadership",
-            "text": "Tickets are on sale for the Python Community Leadership Summit! Learn More!",
-        }
-    }
+    template_vars = {}
 
 
 @app.page

@@ -4,7 +4,7 @@ version = "0.1.0"
 description = "Black Python Devs community website"
 requires-python = ">=3.13"
 dependencies = [
-  "render-engine[cli]>=2026.5.2a1",
+  "render-engine>=2026.5.2a1",
   "render-engine-clean-urls==0.1.0",
   "folium>=0.20.0",
   "click==8.3.1",
@@ -40,3 +40,6 @@ known_first_party = ["map"]
 # check_author_list.py is a dev-only pre-commit hook, not part of the site
 # build, so its dev-group deps (frontmatter) shouldn't be scanned as build deps.
 extend_exclude = ["scripts/check_author_list.py"]
+
+[tool.deptry.per_rule_ignores]
+DEP002 = ["render-engine-cli"]

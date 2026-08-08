@@ -14,11 +14,11 @@ sync:
 
 # Run development server
 serve:
-    uv run render-engine serve
+    uv run --no-dev --prerelease=allow render-engine serve
 
 # Build static site
 build:
-    uv run --no-dev --prerelease=allow render-engine build
+    uvx run --no-dev --prerelease=allow render-engine build
 
 # Run linters
 lint:

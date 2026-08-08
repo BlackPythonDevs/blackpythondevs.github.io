@@ -58,7 +58,7 @@ requires-dist = [
     { name = "pluggy", specifier = ">=1.6.0" },
     { name = "pycountry", specifier = "==26.2.16" },
     { name = "python-slugify", specifier = ">=8.0.4" },
-    { name = "render-engine", extras = ["cli"], specifier = ">=2026.5.2a1" },
+    { name = "render-engine", specifier = ">=2026.5.2a1" },
     { name = "render-engine-clean-urls", specifier = "==0.1.0" },
     { name = "render-engine-markdown", specifier = ">=2023.12.1" },
     { name = "requests", specifier = ">=2.34.2" },
