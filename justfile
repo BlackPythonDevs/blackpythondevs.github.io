@@ -18,7 +18,7 @@ serve:
 
 # Build static site
 build:
-    uvx run --no-dev --prerelease=allow render-engine build
+    uv run --no-dev --prerelease=allow render-engine build
 
 # Run linters
 lint:
