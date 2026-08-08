@@ -15,13 +15,8 @@ This is done in partnership with [PyTexas](https://www.pytexas.org/2027/), runni
 
 Registration, speakers, and the full schedule will be announced here. Follow Black Python Devs to be the first to know.
 
-<div class="grid">
-  <div>
-    <a role="button" class="primary" href="https://www.pytexas.org/2027/">Learn More About PyTexas</a>
-  </div>
-  <div>
-    <a role="button" class="outline" href="https://blackpythondevs.com/about.html#join-the-community">Join the Community</a>
-  </div>
+<div>
+  <a role="button" class="primary" href="https://www.pytexas.org/2027/">Learn More About PyTexas</a>
 </div>
 
 ## Who is invited?
@@ -32,4 +27,4 @@ Anyone in leadership or wanting to get into leadership at the local, regional, o
 
 ## Interested in speaking or sponsoring?
 
-We'll open a call for speakers and share our sponsor prospectus closer to the event. In the meantime, reach out through the [support page](https://blackpythondevs.com/support.html) if you'd like to help make this summit happen.
+We'll open a call for speakers and share our sponsor prospectus closer to the event. In the meantime, [support](https://blackpythondevs.com/support.html) us to help fund this and similar events.
